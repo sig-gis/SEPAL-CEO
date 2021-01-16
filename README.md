@@ -19,7 +19,7 @@ These exercises include step-by-step directions and are built to facilitate lear
 
 To visualize the flow of this manual, see below:
 
-  ![Visualization of manual content](images/manual_content.JPG){:width="350px"}
+    ![Visualization of manual content](images/manual_content.JPG){:width="350px"}
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
@@ -41,13 +41,13 @@ You can find more information here:
 
 ## Getting started
 
-  ![Sepal splash page](images/sepal_splash_page.JPG)
+    ![Sepal splash page](images/sepal_splash_page.JPG)
 
 ### Sign Up to SEPAL
 
 You can request an account by visiting [sepal.io](sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-  ![Request access to sepal.io](images/request_sepal.JPG){:width="350px"}
+    ![Request access to sepal.io](images/request_sepal.JPG){:width="350px"}
 
 1. If you do not have a SEPAL account, you can request access [here](http://tinyurl.com/fao-sepal ).
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
@@ -109,7 +109,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 1. Navigate to [https://sepal.io/](https://sepal.io/) to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login.**
 
-  ![SEPAL login page](images/sepal_login.JPG)
+    ![SEPAL login page](images/sepal_login.JPG)
 
   *When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.*
 
@@ -117,7 +117,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 
 1. Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
-  ![SEPAL home screen](images/sepal_home.JPG)
+    ![SEPAL home screen](images/sepal_home.JPG)
 
 2. There are four main navigation tabs in the dock on the left side of the screen.
 	1. **Process:** select imagery and create mosaics.
@@ -135,7 +135,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 
 6. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
-  ![User Report panel](images/user_report_panel.JPG){:width="350px"}
+    ![User Report panel](images/user_report_panel.JPG){:width="350px"}
 
 
 ### Part 3: Process Tab
@@ -158,7 +158,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 1. Click the green **Files** tab on the left side of the window. This will display all of your files in SEPAL.
 2. For example, click the **downloads** folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.
 
-  ![The files menu](images/files_menu.JPG){:width="350px"}
+    ![The files menu](images/files_menu.JPG){:width="350px"}
 
 3. Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.
 
@@ -179,13 +179,13 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 	1. Press Enter on your keyboard.
 	1. Wait for the new instance to start. This will take several minutes.
 
-  ![The terminal page, including an example of changing the instance](images/terminal.JPG){:width="450px"}
+    ![The terminal page, including an example of changing the instance](images/terminal.JPG){:width="450px"}
 
 ### Part 6: Apps Tab
 
 1. Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.
 
-  ![The Apps interface](images/apps_interface.JPG)
+    ![The Apps interface](images/apps_interface.JPG)
 
 2. This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 	* **R Studio:** provides access to R environment where you can run processing scripts and upload data to your SEPAL folder.
@@ -227,7 +227,7 @@ Create a cloud-free mosaic for 2016 |
 	1. Under Province/Area, notice that there are many different options.
 	1. Select **Mai-Ndombe,** then click **Next.**
 
-  ![The Country or Province selection screen](images/country_province.JPG){:width="350px"}
+    ![The Country or Province selection screen](images/country_province.JPG){:width="350px"}
 
 
 6. In the **Date** menu you can select the **Year** you are interested in or click on **More.**
@@ -253,39 +253,39 @@ Create a cloud-free mosaic for 2016 |
 	1. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
 
-  ![A preview of your mosaic](images/mosaic_preview.JPG){:width="350px"}
+    ![A preview of your mosaic](images/mosaic_preview.JPG){:width="350px"}
 
 
 9. We’re now going to go through the **scene selection process.** This allows you to change which specific images to include in your mosaic.
 	1. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply.**
 	1. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
-  ![Selecting scenes for your mosaic](images/scene_selection.JPG){:width="350px"}
+    ![Selecting scenes for your mosaic](images/scene_selection.JPG){:width="350px"}
 
 
 10. Click Apply. The result should look like the below image.
   1. Notice the collection of circles over the Mai Ndombe study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven’t selected the scenes yet.
   1. Click the Auto-Select button to auto-select some scenes.
 
-  ![Scene selection process showing zeros before selection](images/scene_selection_zeros.JPG){:width="550px"}
+    ![Scene selection process showing zeros before selection](images/scene_selection_zeros.JPG){:width="550px"}
 
-  ![Arrow showing the button for auto selecting scenes](images/auto_select_scenes.JPG){:width="550px"}
+    ![Arrow showing the button for auto selecting scenes](images/auto_select_scenes.JPG){:width="550px"}
 
 
 11. You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click **Select Scenes.** If there is only one scene for an area, that will be the only one selected despite the minimum.
 
-  ![Menu for auto selecting scenes](images/auto_select_scenes_menu.JPG){:width="350px"}
+    ![Menu for auto selecting scenes](images/auto_select_scenes_menu.JPG){:width="350px"}
 
 
 12. You should now see imagery overlain with circles indicating how many scenes are selected.
 
-  ![Example of the imagery with the number of scenes selected](images/imagery_number_scenes.JPG){:width="450px"}
+    ![Example of the imagery with the number of scenes selected](images/imagery_number_scenes.JPG){:width="450px"}
 
 
 13. You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
 	1. Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
 
-  ![The select scenes interface showing 0 available and 4 selected scenes](images/select_scenes_interface.JPG)
+    ![The select scenes interface showing 0 available and 4 selected scenes](images/select_scenes_interface.JPG)
 
 
 14. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
@@ -295,16 +295,16 @@ Create a cloud-free mosaic for 2016 |
 	1. To expand the Landsat image, hover over one of the images and click **Preview.** Click on the image to close the zoomed in graphic and return to the list of scenes.
 	1. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
 
-  ![Removing or previewing selected scenes](images/remove_preview_scenes.JPG){:width="350px"}
+    ![Removing or previewing selected scenes](images/remove_preview_scenes.JPG){:width="350px"}
 
-  ![scene preview screen](images/scene_preview.JPG){:width="350px"}
+    ![scene preview screen](images/scene_preview.JPG){:width="350px"}
 
 
 15. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
 	1. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
   1. You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
-  ![Select scenes screen showing one available scene and 3 selected scenes](images/select_scenes_1.JPG){:width="450px"}
+    ![Select scenes screen showing one available scene and 3 selected scenes](images/select_scenes_1.JPG){:width="450px"}
 
 
 16. You can also change the composing method using the **CMP** button on the lower right.
@@ -312,13 +312,13 @@ Create a cloud-free mosaic for 2016 |
 	1. For this exercise, we will leave these at their default settings.
 	1. If you make changes, click Apply after you’re done.
 
-  ![The composite menu](images/composite.JPG)
+    ![The composite menu](images/composite.JPG)
 
 
 17. Now we’ll explore the **Bands** dropdown.
 	1. Click on the **Red Green Blue** at the bottom of the page.
 
-  ![Arrow pointing at the red, green, blue bands](images/arrow_bands.JPG)
+    ![Arrow pointing at the red, green, blue bands](images/arrow_bands.JPG)
 
 
 18. The below dropdown menu will appear.
@@ -326,12 +326,12 @@ Create a cloud-free mosaic for 2016 |
 1. Once selected, the preview will automatically show what the composite will look like.
 1. Use the scroll wheel on your mouse to zoom in to the mosaic and then click and drag to pan around the image. This will help you assess the quality of the mosaic.
 
-  ![The band combinations menu](images/bands_menu.JPG){:width="350px"}
+    ![The band combinations menu](images/bands_menu.JPG){:width="350px"}
 
 
 19. The map now shows the complete mosaic that incorporates all of the user-defined settings.
 
-  ![The imagery preview with the completed mosaic shown](images/completed_mosaic.JPG){:width="450px"}
+    ![The imagery preview with the completed mosaic shown](images/completed_mosaic.JPG){:width="450px"}
 
 
 20. Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
@@ -350,44 +350,46 @@ Create a cloud-free mosaic for 2016 |
 		1. Finally you can Export the recipe. This downloads a zip file with a JSON of your mosaic specifications.
 	1. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
 
-  ![Save, duplicate, export recipe menu](images/save_duplicate_export_recipe.JPG){:width="350px"}
+    ![Save, duplicate, export recipe menu](images/save_duplicate_export_recipe.JPG){:width="350px"}
 
 
 2. Now if you click on the three lines icon, you should see an additional option: **Revert to old revision…**
 
-  ![After saving the menu adds a revert to old revision option](images/revert_to_old_revision.JPG){:width="350px"}
+    ![After saving the menu adds a revert to old revision option](images/revert_to_old_revision.JPG){:width="350px"}
 
 
 3. Clicking on this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.
 	1. Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
 
-  ![Revisions menu dropdown](images/revisions_menu.JPG)
+    ![Revisions menu dropdown](images/revisions_menu.JPG)
 
 
 4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery.
 	1. To download this imagery mosaic to your SEPAL account, click the **Retrieve** button.
 
-  ![The retrieve button](images/retrieve.JPG){:width="350px"}
+    ![The retrieve button](images/retrieve.JPG){:width="350px"}
 
-  ![The retrieve menu](images/retrieve_menu.JPG){:width="350px"}
+    ![The retrieve menu](images/retrieve_menu.JPG){:width="350px"}
 
 
-	1. A window will appear with the following options:
-		1. **Bands to Retrieve:** select the desired bands you would like to include in the download.
-			1. Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. These are visible spectrum and infrared data collected by Landsat.
-			1. Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
-			1. Metadata on Date, Day of Year, and Days from Target can also be selected.
-		1. **Scale:** the resolution of the mosaic. Landsat data is collected at 30m resolution, so we will leave the slider there.
-		1. **Retrieve to:** Sepal Workspace is the default option. Other options may appear depending on your permissions.
-	1. When you have the desired bands selected, click **Retrieve.**
-	1. You will notice the **Tasks** icon is now spinning. If you click on it, you will see the data retrieval is in process. This step will take some time.
+5. A window will appear with the following options:
+	1. **Bands to Retrieve:** select the desired bands you would like to include in the download.
+		1. Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. These are visible spectrum and infrared data collected by Landsat.
+		1. Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
+		1. Metadata on Date, Day of Year, and Days from Target can also be selected.
+	1. **Scale:** the resolution of the mosaic. Landsat data is collected at 30m resolution, so we will leave the slider there.
+	1. **Retrieve to:** Sepal Workspace is the default option. Other options may appear depending on your permissions.
+1. When you have the desired bands selected, click **Retrieve.**
+1. You will notice the **Tasks** icon is now spinning. If you click on it, you will see the data retrieval is in process. This step will take some time.
 
-  ![Retrieval task being carried out](images/retrieval_task.JPG){:width="350px"}
+    ![Retrieval task being carried out](images/retrieval_task.JPG){:width="350px"}
 
 
 *Note: This will take 25 minutes or more to finish downloading, however, you can move on to the next exercise without waiting for the download to finish. *
 
 **Congratulations! You have successfully completed this exercise. You now know how to create a Landsat mosaic using the many customizable parameters in SEPAL.**
+
+
 
 # Module 2: Image classification
 
@@ -422,19 +424,17 @@ Learn how to create a classification scheme for land cover land use classificati
 “Classification scheme” is the name used to describe the land cover and land use classes adopted. It should cover all of the possible classes that occur in the area of interest. Here, you will create a classification scheme with detailed definitions of the land cover and land use classes to share with interpreters.
 
 1. Create a decision tree for your land cover or land use classes. There may be one already in use by your department.  The tree should capture the most important classifications for your study. Here is an example:
+  1. This example includes a hierarchical component. For example, the green and red categories have multiple sub-categories, which might be multiple types of forest or crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
+  1. For this Exercise, we’ll use a simplified land cover and land use classification as in the second image:
 
-![Decision tree for land cover](images/land_cover_decision_tree.JPG)
+    ![Decision tree for land cover](images/land_cover_decision_tree.JPG){:width="450px"}
 
-
-	1. This example includes a hierarchical component. For example, the green and red categories have multiple sub-categories, which might be multiple types of forest or crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
-	1. For this Exercise, we’ll use a simplified land cover and land use classification as follows:
-
-![The classification scheme we will use for this exercise, with two classes forest and non-forest](images/classification_scheme.JPG)
+    ![The classification scheme we will use for this exercise, with two classes forest and non-forest](images/classification_scheme.JPG){:width="450px"}
 
 
-	1. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land-use categories, CLC, or LUCAS.
+2. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land-use categories, CLC, or LUCAS.
 	1. If applicable, your classification scheme should be consistent with the national land cover and land use definitions. In cases where the classification scheme definition is different from the national definition, you will need to provide a reason.
-2. Create a detailed definition for each land cover and land use and change class included in the classification scheme. We recommend you include measurable thresholds.
+3. Create a detailed definition for each land cover and land use and change class included in the classification scheme. We recommend you include measurable thresholds.
 	1. Our classification will take place in Brazil, in an area of the Amazon rainforest undergoing deforestation.
 		1. We’ll define Forest as an area with over 70% tree cover.
 		1. We’ll define Non-forest as areas with less than 70% tree cover. This will capture urban areas, water, and agricultural fields.
@@ -466,12 +466,12 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 2. Under **Area of Interest:**
 	1. Select **Draw Polygon** from the dropdown list.
 
-![Area of interest dropdown menu](images/aoi_dropdown.JPG)
+    ![Area of interest dropdown menu](images/aoi_dropdown.JPG){:width="450px"}
 
 
 	1. Navigate using the map to the State of Rondônia and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
-![A polygon drawn around the State of Rondonia](images/rondonia.JPG)
+    ![A polygon drawn around the State of Rondonia](images/rondonia.JPG)
 
 
 3. Now use what you have learned in Module 1 to create a mosaic with imagery from the year 2019 (whole year or part of year, your choice). Don’t forget to consider which satellites you would like to include and which scenes you would like to include (all, some).
@@ -490,7 +490,7 @@ For Exercise 2.3, you will need to know how to find your Earth Engine Asset.
 5. You will see a window with information about your mosaic pop up.
 6. Click on the two overlapping box icon to copy your asset’s location.
 
-![Your mosaic’s information pane](images/mosaic_information.JPG)
+    ![Your mosaic’s information pane](images/mosaic_information.JPG)
 
 
 ## Exercise 2.3: Training Data Collection in CEO-SEPAL
@@ -499,7 +499,7 @@ In this exercise, we will learn how to collect training data using the CEO-SEPAL
 
 In this assignment, you will create training data points using a combination of high-resolution imagery and the Landsat composite. These will be used to train the classifier in a supervised classification using SEPAL’s random forests algorithm. The goal of training the classifier is to provide examples of the variety of spectral signatures associated with each class in the map.
 
-![The CEO SEPAL interface](images/ceo_sepal_interface.JPG)
+    ![The CEO SEPAL interface](images/ceo_sepal_interface.JPG)
 
 
 Objectives | Prerequisites
@@ -523,40 +523,40 @@ However, you can also navigate to [https://sepal.io/ceo](https://sepal.io/ceo), 
 	1. Click **Apply,** then click **Next.**
 3. In the Training Data menu, click **Open training data collection tool.**This will open a new window/tab.
 
-![Training data menu](images/training_data_menu.JPG)
+    ![Training data menu](images/training_data_menu.JPG)
 
 
-	1. Click **Add project.**
-	1. Type in a unique name for your training dataset, such as “Amazon training data”.
-	1. Use **TRAINING DATA** as the **Type.**
-		1. The **Training Data** option enables you to create a project from scratch. To use this method, you will need to identify a set of land cover classes to classify (code list) and you will need to add imagery that will be used to identify the types of land cover. You will then manually place your training data on the map and classify them.
-		1. **CEP** stands for Collect Earth Project and it contains a collection of training data points that have already been generated and just need to be classified based on the classes defined within the project. It typically contains a customized method for classifying training data that incorporates % cover.
-	1. Once you select the training data option, you will notice a new parameter: **Scale (m).** This scale refers to the spatial resolution of the imagery you will be classifying to create your map product. Type in 30, as that is the spatial resolution of Landsat. This will create a plot that is 30 m by 30 m.
-	1. Click the **\+** button to the right of the section that says **Code List.** When you click the **\+** button, an empty row is added to the Code List. You need two rows.
-		1. Add “Forest” and “Non Forest” to the Code List.
+1. Click **Add project.**
+1. Type in a unique name for your training dataset, such as “Amazon training data”.
+1. Use **TRAINING DATA** as the **Type.**
+	1. The **Training Data** option enables you to create a project from scratch. To use this method, you will need to identify a set of land cover classes to classify (code list) and you will need to add imagery that will be used to identify the types of land cover. You will then manually place your training data on the map and classify them.
+	1. **CEP** stands for Collect Earth Project and it contains a collection of training data points that have already been generated and just need to be classified based on the classes defined within the project. It typically contains a customized method for classifying training data that incorporates % cover.
+1. Once you select the training data option, you will notice a new parameter: **Scale (m).** This scale refers to the spatial resolution of the imagery you will be classifying to create your map product. Type in 30, as that is the spatial resolution of Landsat. This will create a plot that is 30 m by 30 m.
+1. Click the **\+** button to the right of the section that says **Code List.** When you click the **\+** button, an empty row is added to the Code List. You need two rows.
+	1. Add “Forest” and “Non Forest” to the Code List.
 
-![Training data project setup](images/training_data_project_setup.JPG)
-
-
-	1. Add imagery to the CEO project by clicking on **Add a layer.** This is where you can select the background imagery you will use to collect the training data. You can add multiple different types of imagery, as well as different band combinations of the same imagery.
-		1. Select Google Earth Engine (Assets) from the drop down menu.
-
-![Adding imagery layers](images/add_imagery_layers.JPG)
+    ![Training data project setup](images/training_data_project_setup.JPG){:width="450px"}
 
 
-		1. Add your Earth Engine Asset mosaic. We will add a true-color set of bands first.
-			1. Name your layer. Try ‘Landsat 8 RGB.’
-			1. Paste the link to your mosaic in GEE (see Part 2 in Exercise 2.2).
-			1. Type in ‘red, blue, and green’ for bands.
-			1. Use 0 and 3000 for min and max. You can alter these values slightly based on band min/max in the Landsat 8 satellite.
-		1. Add your Earth Engine Asset mosaic, but type in ‘swir1,nir,red’ to get SWIR, NIR, and red bands. Use a min and max of 300 and 3200.
-		1. You can also add additional band combinations. If you would like to add other versions of this mosaic with different band combinations, repeat steps 5-6, but use different bands and adjust the name according to the bands. For example, try NIR, red, green.
-	1. There are a number of other imagery options in the **Add a layer** drop down menu. Feel free to experiment with these.
+1. Add imagery to the CEO project by clicking on **Add a layer.** This is where you can select the background imagery you will use to collect the training data. You can add multiple different types of imagery, as well as different band combinations of the same imagery.
+	1. Select Google Earth Engine (Assets) from the drop down menu.
 
-![Google Earth Engine Asset setup](images/GEE_asset_setup.JPG)
+    ![Adding imagery layers](images/add_imagery_layers.JPG){:width="450px"}
 
 
-**Note: Digital Globe imagery no longer exists.**
+1. Add your Earth Engine Asset mosaic. We will add a true-color set of bands first.
+	1. Name your layer. Try ‘Landsat 8 RGB.’
+	1. Paste the link to your mosaic in GEE (see Part 2 in Exercise 2.2).
+	1. Type in ‘red, blue, and green’ for bands.
+	1. Use 0 and 3000 for min and max. You can alter these values slightly based on band min/max in the Landsat 8 satellite.
+1. Add your Earth Engine Asset mosaic, but type in ‘swir1,nir,red’ to get SWIR, NIR, and red bands. Use a min and max of 300 and 3200.
+1. You can also add additional band combinations. If you would like to add other versions of this mosaic with different band combinations, repeat steps 5-6, but use different bands and adjust the name according to the bands. For example, try NIR, red, green.
+1. There are a number of other imagery options in the **Add a layer** drop down menu. Feel free to experiment with these.
+
+    ![Google Earth Engine Asset setup](images/GEE_asset_setup.JPG){:width="450px"}
+
+
+    > NOTE: Digital Globe imagery no longer exists.
 
 4. When you’ve set up the project, click on the **Submit** button.
 	1. Notice that the project is now listed. You can click edit if you want to adjust any of the settings for the project.
@@ -573,18 +573,18 @@ Second, not all pixels in the same classes have the exact same values—there is
 	1. Click the blue **collect** button for the **Amazon training data** project.
 	1. You will immediately notice that a black and grey map appears on the screen. There are two drop down menus at the upper left and upper right of the map.
 
-![The CEO SEPAL data collection interface](images/ceo_sepal_data_collection.JPG)
+    ![The CEO SEPAL data collection interface](images/ceo_sepal_data_collection.JPG){:width="450px"}
 
 
-	1. In the upper left corner of the map, the **SEPAL** option is the default dark grey map. You can switch this to **SATELLITE** for satellite imagery.
-	1. In the upper right corner of the map, click the drop down menu that currently reads **Default.**
-	1. Select **LANDSAT 8 RGB,** or the name of your RGB map.
-	1. Use the scroll wheel on your mouse to zoom in to the study area. You can click-hold and drag to pan around the map. Be careful though, as a single click will place a point on the map.
-		1. If you accidentally add a point, you can delete it by clicking on the red **Delete** button in the panel on the right.
-	1. Zoom in close to the imagery (until you can see individual pixels) so that you can see the amount of detail in this Landsat mosaic.
-	1. While zoomed in, click the image layer drop down and select **Default.** You should see a clear difference in spatial resolution between the 30-meter Landsat and the high-resolution (sub-meter) default Satellite imagery from Google (see below).
+1. In the upper left corner of the map, the **SEPAL** option is the default dark grey map. You can switch this to **SATELLITE** for satellite imagery.
+  1. In the upper right corner of the map, click the drop down menu that currently reads **Default.**
+  1. Select **LANDSAT 8 RGB,** or the name of your RGB map.
+  1. Use the scroll wheel on your mouse to zoom in to the study area. You can click-hold and drag to pan around the map. Be careful though, as a single click will place a point on the map.
+  	1. If you accidentally add a point, you can delete it by clicking on the red **Delete** button in the panel on the right.
+  1. Zoom in close to the imagery (until you can see individual pixels) so that you can see the amount of detail in this Landsat mosaic.
+  1. While zoomed in, click the image layer drop down and select **Default.** You should see a clear difference in spatial resolution between the 30-meter Landsat and the high-resolution (sub-meter) default Satellite imagery from Google (see below).
 
-![mid resolution Landsat data and high resolution google imagery](images/landsat_google_imagery.JPG)
+    ![mid resolution Landsat data and high resolution google imagery](images/landsat_google_imagery.JPG)
 
 
 2. Start collecting forest training data.
@@ -594,20 +594,20 @@ Second, not all pixels in the same classes have the exact same values—there is
 	1. Once you are satisfied with your training point, click the **Forest** button on the right side of the screen to classify the point.
 		1. If you haven’t classified the point yet, then you can just click somewhere else on the map instead of deleting the record.
 
-![Collecting data in the CEO SEPAL interface](images/ceo_sepal_collecting_data.JPG)
+    ![Collecting data in the CEO SEPAL interface](images/ceo_sepal_collecting_data.JPG)
 
 
-	1. The information on the screen is then minimized and added to a row on the right side of the screen.
-		1. If you need to modify classification of any of your data points, you can click on the point ID to return to the classification (or delete) options.
-		1. You can click the **Delete** button if you are not satisfied with the placement of the point.
-3. Now let’s click to create another ‘Forest’ point and use it to explore the **Charts** option.
+3. The information on the screen is then minimized and added to a row on the right side of the screen.
+	1. If you need to modify classification of any of your data points, you can click on the point ID to return to the classification (or delete) options.
+	1. You can click the **Delete** button if you are not satisfied with the placement of the point.
+4. Now let’s click to create another ‘Forest’ point and use it to explore the **Charts** option.
 	1. There is a **Charts** drop down menu that allows you to look at the changes in spectral values over time at this point using a variety of spectral indices.
 		1. **Enhanced Vegetation Index (EVI):** highlights areas of high biomass and is particularly responsive to variations in vegetation structure (as opposed to NDVI’s sensitivity to chlorophyll content).
 		1. **EVI2:** a 2-band version of EVI.
 		1. **The Normalized Differenced Moisture Index (NDMI):** estimates the amount of moisture in vegetation.
 		1. **The Normalized Differenced Vegetation Index (NDVI):** a common vegetation index used to measure the amount of healthy, green vegetation in a given area. Forested pixels will typically have a NDVI value between 0.7 and 1.
 		1. **The Normalized Differenced Water Index (NDWI):** highlights plant water content and is most commonly used to gauge plant water stress.
-1. Click the **Charts** drop down menu and select **NDVI.** You should see a chart that looks similar to the below image.
+5. Click the **Charts** drop down menu and select **NDVI.** You should see a chart that looks similar to the below image.
 		1. This chart shows the NDVI values (derived from Landsat) of the pixel you selected for all dates where data is available. These time series charts are important when identifying seasonal (e.g., flooding or leaf senescence of deciduous trees) or permanent land cover changes.
 		1. The chart will take a minute or more to appear.
 		1. Notice that there is a lot more data available for more recent years, while there are only a few data points in the graph for years prior to 2000.
@@ -615,26 +615,26 @@ Second, not all pixels in the same classes have the exact same values—there is
 		1. Zoom into a temporal subset to see seasonal differences in NDVI values. Click on the chart near the year 2013 and drag it to the right to highlight a year or two worth of data. Release the click. Now you will see the chart has been zoomed into that subset time range making the data trends easier to read.
 			1. Note that the Y-axis will scale to the range of values for the available data. Keep an eye on the Y-axis when analyzing different spectral signatures.
 			1. Click the **Reset zoom** button to return to the full time series view.
+      1. To close the chart, click anywhere outside of the chart.
 
-![NDVI time series information](images/NDVI.JPG)
+    ![NDVI time series information](images/NDVI.JPG)
 
 
-	1. To close the chart, click anywhere outside of the chart.
-	1. Explore some of the other vegetation or water indices using the Charts drop down.
+6. Explore some of the other vegetation or water indices using the Charts drop down.
 	1. When you are done, click the **Forest** button again to close the class selection options.
-4. Begin collecting the rest of the 25 **Forest** training data points throughout other parts of the study area.
+7. Begin collecting the rest of the 25 **Forest** training data points throughout other parts of the study area.
 	1. The study area contains an abundance of forested land, so it should be pretty easy to identify places that can be confidently classified as forest. If you’d like, use the charts function to ensure that there is a relatively high NDVI value for the point.
 	1. Continue to switch back and forth between the Landsat mosaic and the base **Satellite** imagery to ensure that:
 		1. you are placing data points within the extent of the mosaic and
 		1. that you aren’t placing a point over a cloud in the mosaic.
 	1. You will notice that the quality of the base **Satellite** imagery varies. This is where the charts can come in particularly handy. You may also find it useful to zoom out and zoom back in, as the imagery changes based on your zoom scale. The images below show the same general area, but at slightly different zoom scales.
 
-![Collecting training data in the CEO SEPAL interface.](images/collect_training_data.JPG)
+    ![Collecting training data in the CEO SEPAL interface.](images/collect_training_data.JPG)
 
 
-	1. Collect about 25 points for the **Forest** land cover class.
+8. Collect about 25 points for the **Forest** land cover class.
 	1. When you are done, zoom out to the full extent of the Amazon Landsat 8 image. Did you place data points somewhat equally across the full region? Are all points clustered in the same region? It’s best to make sure you have data points covering the full spatial extent of the study region, add more points in areas that are sparsely represented if needed.
-3. Once you are satisfied with your array of forested training data points, move on to the **Non-Forest** training points.
+9. Once you are satisfied with your array of forested training data points, move on to the **Non-Forest** training points.
 	1. Since we are using a very basic set of land cover classes for this exercise, this should include agricultural areas, water, and buildings and roads. Therefore, it will be important that you focus on collecting a variety of points from different types of land cover throughout the study area.
 	1. **Water** is one of the easiest classes to identify and the easiest to model, due to the distinct spectral signature of water.
 		1. Look for water bodies within your Landsat image. On your **Landsat 8 SWIR** image, they will appear black.
@@ -643,37 +643,37 @@ Second, not all pixels in the same classes have the exact same values—there is
 		1. The spectral signature for water will be relatively low (0-0.4) when looking at the NDVI chart.
 		1. Some wetland areas may have varying amounts of water throughout the year, so it is important to check the time series charts. If you encounter areas that look like water but have seasonally high NDVI, place your point in a different area that has a more distinct water signature. It is ideal to give the classifier points that are homogenous and unambiguous.
 
-![Collecting data points in water](images/data_points_water.JPG)
+    ![Collecting data points in water](images/data_points_water.JPG)
 
 
-Let’s now collect some building and road non-forest Training Data.
-	1. There are not very many residential areas in the region. However, if you look you can find homes with dirt roads, and there are some airports as well.
+1. Let’s now collect some building and road non-forest Training Data.
+  1. There are not very many residential areas in the region. However, if you look you can find homes with dirt roads, and there are some airports as well.
+  1. Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
+  1. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
-![Collecting residential and other human settlement area datapoints](images/data_points_residential.JPG)
+    ![Collecting residential and other human settlement area datapoints](images/data_points_residential.JPG){:width="450px"}
 
 
-		1. Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
-		1. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
-	1. Next, place several points in grassland/pasture, shrub, and agricultural areas around the study area.
-		1. As you’ve done before, look at the NDVI signature of the points you place before you actually classify them. Grasslands may have NDVI values between 0.4 and 0.6, sometimes a little higher.
-	1. Shrubs or small, non-forest vegetation can sometimes be hard to identify, even with high-resolution imagery. Do your best to find vegetation that is clearly not forest. The NDVI signature of shrubs may be relatively high (0.6-0.8).
+1. Next, place several points in grassland/pasture, shrub, and agricultural areas around the study area.
+	1. As you’ve done before, look at the NDVI signature of the points you place before you actually classify them. Grasslands may have NDVI values between 0.4 and 0.6, sometimes a little higher.
+  1. Shrubs or small, non-forest vegetation can sometimes be hard to identify, even with high-resolution imagery. Do your best to find vegetation that is clearly not forest. The NDVI signature of shrubs may be relatively high (0.6-0.8).
 	1. The texture of the vegetation is one of the best ways to differentiate between trees and grasses/shrubs. Look at the below image and notice the clear contrast between the area where the points are placed and the other areas in the image that have rougher textures and that create shadows.
 
-![Collecting low vegetation data](images/low_vegetation_data.JPG)
+    ![Collecting low vegetation data](images/low_vegetation_data.JPG){:width="450px"}
 
 
-![Collecting low vegetation data](images/low_vegetation_data_2.JPG)
+    ![Collecting low vegetation data](images/low_vegetation_data_2.JPG){:width="450px"}
 
 
 
-	1. Now collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds.
-		1. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent.
-		1. Turn on the Landsat mosaic imagery and navigate to some distinct areas with clouds. Click to place additional **Non-forest** points.
-		1. Pan around other parts of the mosaic and classify the clouds that you find. Ensure that the point you place only contains clouds and excludes any amount of vegetation. As you did with other classes, try and collect points in all parts of the study area.
-		1. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain.
-		1. Note that you may not have any clouds in your Landsat imagery.
+1. Now collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds.
+	1. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent.
+	1. Turn on the Landsat mosaic imagery and navigate to some distinct areas with clouds. Click to place additional **Non-forest** points.
+	1. Pan around other parts of the mosaic and classify the clouds that you find. Ensure that the point you place only contains clouds and excludes any amount of vegetation. As you did with other classes, try and collect points in all parts of the study area.
+	1. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain.
+	1. Note that you may not have any clouds in your Landsat imagery.
 
-![Collecting cloud data](images/cloud_data.JPG)
+    ![Collecting cloud data](images/cloud_data.JPG){:width="450px"}
 
 
 4. Continue collecting Non-forest points. Again, be sure to spread the points out across the study area.
@@ -691,7 +691,7 @@ Now we will download the training data we have collected.
 
 1. Above your training data points you will see a blue Download CSV button.
 
-![Training data points](images/training_data_points.JPG)
+    ![Training data points](images/training_data_points.JPG){:width="450px"}
 
 
 2. Click the CSV button to download the reference data as a comma separated values format.
@@ -703,7 +703,7 @@ Now we will download the training data we have collected.
 		1. YCoordinate and XCoordinate—locational information for all of the training data (in the WGS 84, EPSG 4326, coordinate reference system).
 		1. class—land cover class in integer form. Again, 1=Forest and 2=Non-Forest.
 
-![A sample training data file.](images/sample_training_data.JPG)
+    ![A sample training data file.](images/sample_training_data.JPG){:width="450px"}
 
 
 ### Part 4: Uploading your .csv to Google Earth Engine
@@ -716,33 +716,33 @@ With all your training data points collected, you will now need to upload the da
 	1. Click **New.**
 	1. Select **CSV file (.csv)** under the **Table Upload** section.
 
-![The Google Earth Engine interface for uploading assets.](images/GEE_asset_upload.JPG)
+    ![The Google Earth Engine interface for uploading assets.](images/GEE_asset_upload.JPG){:width="450px"}
 
 
-	1. In the new window that pops up, fill in the requested information.
-		1. Select your **CSV file** from your local machine.
-		1. Optionally, **rename** the asset.
-		1. Choose the **asset id path.** This is the where the asset will be saved once uploaded
-		1. Add XCoordinate and YCoordinate to the Advanced options **X column and Y columns.**
+1. In the new window that pops up, fill in the requested information.
+	1. Select your **CSV file** from your local machine.
+	1. Optionally, **rename** the asset.
+	1. Choose the **asset id path.** This is the where the asset will be saved once uploaded
+	1. Add XCoordinate and YCoordinate to the Advanced options **X column and Y columns.**
 
-![Filling out the X and Y column fields](images/X_Y_fields.JPG)
+    ![Filling out the X and Y column fields](images/X_Y_fields.JPG){:width="450px"}
 
 
-	1. Click Upload to initiate the upload.
-		1. You may need to rename your csv if the filename has spaces. Do this in your computer’s file system and try again.
-	1. After a few minutes your upload should be complete!
-		1. Check the path where you uploaded your asset to confirm it has successfully uploaded.
-		1. Click on the file name.
-		1. Make note of your **TableID,** which you will need for Exercise 2.4.
+1. Click Upload to initiate the upload.
+	1. You may need to rename your csv if the filename has spaces. Do this in your computer’s file system and try again.
+1. After a few minutes your upload should be complete!
+	1. Check the path where you uploaded your asset to confirm it has successfully uploaded.
+	1. Click on the file name.
+	1. Make note of your **TableID,** which you will need for Exercise 2.4.
 
-![The information page with your table id](images/info_page_table_id.JPG)
+    ![The information page with your table id](images/info_page_table_id.JPG){:width="450px"}
 
 
 **Congratulations! You have successfully completed this exercise. You now know how to use SEPAL’s version of Collect Earth Online to create training data for a supervised classification.**
 
 ## Exercise 2.4: Classification Using Machine Learning Algorithms (Random Forests) in SEPAL
 
-![The outcome of a random forest model](images/random_forest_model_outcome.JPG)
+    ![The outcome of a random forest model](images/random_forest_model_outcome.JPG)
 
 
 As mentioned in the Module introduction, the classification algorithm you will be using today is called random forest.  The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on what the pixel should be classified as. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
@@ -750,6 +750,7 @@ As mentioned in the Module introduction, the classification algorithm you will b
 To complete the classification of our mosaicked image you are going to use a random forests classifier contained within the easy-to-use Classification tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives (such as NDVI). There are likely additional data sets that can be used to help differentiate land cover classes, such as elevational data. If that is the case, it would be good to load this into the project and include them in the model. Examples of additional data sets that would probably be quite helpful to differentiate classes include climatic and topographic (aspect, elevation) information.
 
 After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, explore object based approaches opposed to pixel based approaches, or be more creative with specifying the model predictor variables. In the case of being more creative with model predictor variables you can try using multiple dates of data (instead of a single date), or try using texture bands. The possibilities are many and should relate back to the nature of the classes you hope to map. Last but certainly not least is to improve the quality of your training data. Be sure to log all of these decision points in order to recreate your analysis in the future.
+
 Objectives | Prerequisites
 ---------- | --------------
 Run SEPAL’s classification tool. | SEPAL account
@@ -764,10 +765,10 @@ To get a more accurate training dataset, consider combining multiple training da
 1. Navigate to your GEE table information as in Exercise 2.3 Part 4.
 2. Click on Share.
 
-![The GEE table information where you can find your asset table id.](images/info_page_table_id.JPG)
+    ![The GEE table information where you can find your asset table id.](images/info_page_table_id.JPG){:width="450px"}
 
 
-![The sharing interface for your asset table](images/share_asset_table.JPG)
+    ![The sharing interface for your asset table](images/share_asset_table.JPG){:width="450px"}
 
 
 3. Fill in your neighbor’s email address, set them as a **Reader** or **Writer,** and click **Add.**
@@ -793,12 +794,12 @@ To get a more accurate training dataset, consider combining multiple training da
 		1. Click **Apply,** then click **Next.**
 3. Now, we’ll add the Training Data we collected in Exercise 2.3 in the **TRN tab.**
 	1. Enter the path to your Earth Engine asset in the EE Table ID field.
-
-![The training data menu.](images/training_data_menu_2.JPG)
-
-
-	1. In the **Class Column** field select the column name that is associated with the class. In our example this should be ‘class’.
+  1. In the **Class Column** field select the column name that is associated with the class. In our example this should be ‘class’.
 	1. Click **Done.**
+
+    ![The training data menu.](images/training_data_menu_2.JPG){:width="450px"}
+
+
 4. Now a preview will load.
 5. Click on **AUX** to examine the auxiliary data sources available for the classification
 	1. Auxiliary inputs are optional layers which can be added to help aid the classification. There are three additional sources available: Latitude - Includes the latitude of each pixel; Terrain - Includes elevation of each pixel from SRTM data; Water - Includes information from the JRC Global Surface water Mapping layers.
@@ -809,7 +810,7 @@ To get a more accurate training dataset, consider combining multiple training da
 	1. Depending on the training data you collected, your classes may be substantially different.
 	1. The quality of the output map is also dependent on the quality of the mosaic.
 
-![The classification preview screen.](images/classification_preview.JPG)
+    ![The classification preview screen.](images/classification_preview.JPG)
 
 
 7. Now we’ll save our classification output.
@@ -820,7 +821,7 @@ To get a more accurate training dataset, consider combining multiple training da
 	1. Once the download begins, you will see the spinning wheel in the bottom left of the webpage in **Tasks.** Click the spinning wheel to observe the progress of your download.
 	1. When complete, if you chose GEE Asset the file will be in your GEE Assets. If you chose SEPAL workspace, the file will be in your SEPAL downloads folder. (Browse > downloads > classification folder).
 
-![The retrieval interface](images/retrieval_interface.JPG)
+    ![The retrieval interface](images/retrieval_interface.JPG){:width="450px"}
 
 
 ### Part 2: QA/QC considerations and methods
@@ -833,9 +834,9 @@ Following analysis you should spend some time looking at your change detection i
 2. Navigate back to your SEPAL-CEO project at [https://sepal.io/ceo/](https://sepal.io/ceo/).
 	1. Next to your Amazon project, click on **Edit.**
 	1. Add a **new layer,** title it **Classification,** and add the information from your Google Earth Engine classification asset. You have two classes, so your Min should be 1, Max 2, and Bands ‘class’.
-	1. Click Submit.
+	1. Click **Submit.**
 
-![The Google Earth Engine Asset](images/GEE_asset.JPG)
+    ![The Google Earth Engine Asset](images/GEE_asset.JPG){:width="450px"}
 
 
 3. Now click Collect for your Amazon project.
@@ -886,19 +887,18 @@ Before we can identify change, we first need to have images to compare. We will 
 
 *If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.*
 
-![The retrieval screen for mosaics.](images/retrieval_mosaic.JPG)
+    ![The retrieval screen for mosaics.](images/retrieval_mosaic.JPG){:width="450px"}
 
 
 4. Repeat steps 2 & 3 but change the **Date** parameter to 2018.
 
-*Notes: It may take a significant amount of time before your mosaics finish exporting.*
+> NOTE: It may take a significant amount of time before your mosaics finish exporting.
 
 ### Part 2: Create & Collect Change Classification Training Data
 
 Now that we have the mosaics created, we will collect change training data. Though more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2018: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2018 there are four pathways: a pixel can be forest in 2015 and in 2018 (stable forest); a pixel can be non-forest in 2015 and in 2018 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
-![A land cover change flow chart.](images/land_cover_flow_chart.JPG)
-
+    ![A land cover change flow chart.](images/land_cover_flow_chart.JPG){:width="450px"}
 
 
 1. First, we’ll create training data.
@@ -911,40 +911,39 @@ Now that we have the mosaics created, we will collect change training data. Thou
 		1. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2
 		1. Click **Apply** and then repeat steps the previous steps for the 2018 mosaic.
 		1. After adding both mosaics, click **Next.**
-	1. Click **Open training data collection tool.** This will open a new window/tab.
-		1. Click **Add project.**
-		1. Create new project title “Sri Lanka Training Data” with **TRAINING DATA** as the **Type** and a **scale** of 30m.
-		1. Add “Stable Forest”, “Stable Non-Forest”, and “Change” questions to the Code List
+1. Click **Open training data collection tool.** This will open a new window/tab.
+	1. Click **Add project.**
+	1. Create new project title “Sri Lanka Training Data” with **TRAINING DATA** as the **Type** and a **scale** of 30m.
+	1. Add “Stable Forest”, “Stable Non-Forest”, and “Change” questions to the Code List
 
-![The Training Data menu where you can open a training data collection](images/training_data_menu_3.JPG)
+    ![The Training Data menu where you can open a training data collection](images/training_data_menu_3.JPG){:width="450px"}
 
-
-![Setting up the training data project.](images/training_data_project_setup_2.JPG)
-
-
-		1. Add imagery to the CEO project
-			1. Add your Earth Engine Asset mosaics for both years.
-			1. You can also add more than one band combination. See the example below.
-
-![Adding GEE Assets to the project.](images/add_GEE_assets.JPG)
+    ![Setting up the training data project.](images/training_data_project_setup_2.JPG){:width="450px"}
 
 
-		1. Add Hansen Forest Loss layers (loss, yearloss). These are found here: UMD/hansen/global_forest_change_2019_v1_7
-		1. When you’ve set up the project, click on the Submit button.
+1. Add imagery to the CEO project
+	1. Add your Earth Engine Asset mosaics for both years.
+	1. You can also add more than one band combination. See the example below.
 
-![Adding the Hansen Forest Loss layer](images/hansen_forest_loss_layer.JPG)
+    ![Adding GEE Assets to the project.](images/add_GEE_assets.JPG)
 
 
-	1. Collect and upload sample data
-		1. Click on Collect.
-		1. Collect sample data for each land cover class. Switch between your layers in 2015 and 2018 to see differences. You can also use the Hansen Forest Loss layer.
-		1. When you’re done, download the **CSV.**
-		1. Upload your .csv to GEE Asset.
-		1. For more detailed directions, please refer back to Module 2.
+1. Add Hansen Forest Loss layers (loss, yearloss). These are found here: UMD/hansen/global_forest_change_2019_v1_7
+1. When you’ve set up the project, click on the Submit button.
+
+    ![Adding the Hansen Forest Loss layer](images/hansen_forest_loss_layer.JPG)
+
+
+1. Collect and upload sample data
+	1. Click on Collect.
+	1. Collect sample data for each land cover class. Switch between your layers in 2015 and 2018 to see differences. You can also use the Hansen Forest Loss layer.
+	1. When you’re done, download the **CSV.**
+	1. Upload your .csv to GEE Asset.
+	1. For more detailed directions, please refer back to Module 2.
 2. Add training data to the classification recipe
 	1. Now you can add your GEE Asset Table in the main SEPAL window. Return to the classification recipe and enter the path to your training data in the EE Table field
 
-![Add your GEE Asset Table as training data.](images/GEE_asset_table_training_data.JPG)
+    ![Add your GEE Asset Table as training data.](images/GEE_asset_table_training_data.JPG)
 
 
 3. In the **Class Column** field select the column name that holds your class values. If you used SEPAL’s CEO extension this should automatically be filled as **‘class’.**
@@ -952,12 +951,12 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 *If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).*
 
-![Error with GEE asset from an incorrect upload.](images/GEE_asset_error.JPG)
+    ![Error with GEE asset from an incorrect upload.](images/GEE_asset_error.JPG){:width="450px"}
 
 
 5. SEPAL will then load a preview of your classification.
 
-![A preview of the change detection model output.](images/change_detection_model_preview.JPG)
+    ![A preview of the change detection model output.](images/change_detection_model_preview.JPG){:width="450px"}
 
 
 6. In addition to the input features from the Landsat 8 composite, it is possible to add **Auxiliary Sources (AUX)** for the classification. There are three additional sources available:
@@ -967,7 +966,7 @@ Now that we have the mosaics created, we will collect change training data. Thou
 	1. Select **Terrain** and **Water.**
 	1. Click **Apply.**
 
-![Auxiliary sources of data](images/auxiliary_sources.JPG)
+    ![Auxiliary sources of data](images/auxiliary_sources.JPG){:width="450px"}
 
 *Note: If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.*
 
@@ -980,10 +979,10 @@ Now that the hard work of setting up the mosaics and creating and adding the tra
 	1. Select **Google Earth Engine Asset** or **SEPAL Workspace.** Select GEE Asset if you would like to share your map or if you would like to use it for further analysis. Select SEPAL Workspace if you would like to use the map internally only.
 	1. Click **Retrieve.**
 
-![Retrieving the change detection map.](images/retrieve_change_detection_map.JPG)
+    ![Retrieving the change detection map.](images/retrieve_change_detection_map.JPG)
 
 
-![Numbered instructions to retrieve.](images/retrieve_numbered.JPG)
+    ![Numbered instructions to retrieve.](images/retrieve_numbered.JPG){:width="450px"}
 
 
 
@@ -999,7 +998,7 @@ Following analysis you should spend some time looking at your change detection i
 	1. Add a new layer, title it Classification, and add the information from your Google Earth Engine classification asset.
 	1. Click Submit.
 
-![Examining your change detection map](images/examine_change_detection_map.JPG)
+    ![Examining your change detection map](images/examine_change_detection_map.JPG)
 
 
 2. Now click Collect for your Sri Lanka project.
@@ -1008,20 +1007,16 @@ Following analysis you should spend some time looking at your change detection i
 5. If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in Module 4.
 6. However, if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-run the classification following the steps in Parts 2 and 3.
 
-![High resolution image.](images/high_resolution_images.JPG)
+    ![High resolution image.](images/high_resolution_image.JPG){:width="450px"}
 
 
-![2015 imagery.](images/2015_imagery.JPG)
+    ![2015 imagery.](images/2015_imagery.JPG){:width="450px"}
 
 
+    ![2018 imagery.](images/2018_imagery.JPG){:width="450px"}
 
 
-![2018 imagery.](images/2018_imagery.JPG)
-
-
-
-
-![The change detection map.](images/change_detection_map.JPG)
+    ![The change detection map.](images/change_detection_map.JPG){:width="450px"}
 
 
 
@@ -1029,9 +1024,10 @@ Following analysis you should spend some time looking at your change detection i
 
 In this exercise, you will learn more about time series analysis. SEPAL has the BFAST option, described first. We also provide information on TimeSync and LandTrendr, products currently only available outside of SEPAL and CEO.
 
-*Note: TimeSync integration is coming to CEO in late 2020 or 2021.*
+  > NOTE: TimeSync integration is coming to CEO in late 2020 or 2021.
 
 Objectives | Prerequisites
+----------|-------------
 Learn the basics of BFAST explorer in SEPAL | SEPAL account.
 Learn about time series analysis options outside of SEPAL |  
 
@@ -1049,14 +1045,14 @@ More information can be found online at [http://bfast.r-forge.r-project.org/](ht
 3. Find a location on the map that you would like to run BFAST on
 	1. Click a location to drop a marker, and then click the marker to select it
 	1. Select **Landsat 8 SR** from the select satellite products dropdown.
+  1. Click **Get Data.** It may take a moment to download all the data for the point
 
-![The BFAST Explorer interface.](images/BFAST_explorer.JPG)
+    ![The BFAST Explorer interface.](images/BFAST_explorer.JPG)
 
 
-	1. Click **Get Data.** It may take a moment to download all the data for the point
 4. Click the **Analysis** button at the top next to the **Map** button
 
-![Numbered directions for using the BFAST explorer interface](images/BFAST_explorer_numbered.JPG)
+    ![Numbered directions for using the BFAST explorer interface](images/BFAST_explorer_numbered.JPG)
 
 
 5. **Satellite product:** Add your satellite data by selecting them from the satellite products dropdown menu.
@@ -1066,21 +1062,22 @@ More information can be found online at [http://bfast.r-forge.r-project.org/](ht
 		1. **Bfast01** - Checking for one major break in the time series.
 		1. **Bfast** - Time series decomposition and multiple breakpoint detection in tend and seasonal components
 
-*Notes: Each BFSAT algorithm methodology has characteristics which affect when and why you may choose one over the other. For instance, if the goal of an analysis is to monitor when the last time change occurred in a forest then “Bfastmonitor” would be an appropriate choice. Bfast01 may be a good selection when trying to identify if a large disturbance event has occurred, and the full Bfast algorithm may be a good choice if there are multiple times in the time series when change has occurred.*
+> NOTE: Each BFSAT algorithm methodology has characteristics which affect when and why you may choose one over the other. For instance, if the goal of an analysis is to monitor when the last time change occurred in a forest then “Bfastmonitor” would be an appropriate choice. Bfast01 may be a good selection when trying to identify if a large disturbance event has occurred, and the full Bfast algorithm may be a good choice if there are multiple times in the time series when change has occurred.*
+
 6. Select bfastmonitor as the algorithm.
 
-![The BFAST Explorer interface.](images/BFAST_explorer_interface.JPG)
+    ![The BFAST Explorer interface.](images/BFAST_explorer_interface.JPG)
 
 
-	1. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
+1. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
 
-![Additional BFAST visualization](images/BFAST_visualization.JPG)
+    ![Additional BFAST visualization](images/BFAST_visualization.JPG)
 
 
-	1. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
-	1. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
+1. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
+1. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
 
-*Note: The black and white flashing is normal.*
+> NOTE: The black and white flashing is normal.
 
 ### Part 2: TimeSync and LandTrendr
 
@@ -1093,6 +1090,7 @@ TimeSync was created by Oregon State University, Pacific Northwest Research Stat
 From the TimeSync User manual version 3:
 
 > “TimeSync is an application that allows researchers and managers to characterize and quantify disturbance and landscape change by facilitating plot-level interpretation of Landsat time series stacks of imagery (a plot is commonly one Landsat pixel). TimeSync was created in response to research and management needs for time series visualization tools, fueled by rapid global change affecting ecosystems, major advances in remote sensing technologies and theory, and increased availability and use of remotely sensed imagery and data products (Cohen et al., 2010).
+
 TimeSync is a Landsat time series visualization tool (both as a web application and for desktops) that can be used to:
 
 * Characterize the quality of land cover map products derived from Landsat time series.
@@ -1104,8 +1102,7 @@ TimeSync is a tool that researchers and managers can use to validate remotely se
 
 From TimeSync’s Introduction materials, here is an example output:
 
-
-![An example from TimeSync](images/TimeSync_example.JPG)
+    ![An example from TimeSync](images/TimeSync_example.JPG)
 
 For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to:[ timesync.forestry.oregonstate.edu/tutorial.html]( timesync.forestry.oregonstate.edu/tutorial.html). There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here:[ http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf]( http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf), and an introductory presentation here: [https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf).
 
@@ -1120,7 +1117,7 @@ From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, 
 
 From LandTrendr’s documentation, here’s an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: [https://emapr.github.io/LT-GEE/landtrendr.html]( https://emapr.github.io/LT-GEE/landtrendr.html).
 
-![The LandTrendr interface](images/LandTrendr.JPG)
+    ![The LandTrendr interface](images/LandTrendr.JPG)
 
 
  
@@ -1163,23 +1160,23 @@ If your classification is not stored in SEPAL (for example, a classification in 
 3. Choose the **R Studio** application.
 	1. You may be prompted to enter your SEPAL username and password to enter R Studio.
 
-![The apps screen, with RStudio shown.](images/apps_rstudio.JPG)
+    ![The apps screen, with RStudio shown.](images/apps_rstudio.JPG)
 
 
-	1. This will open an instance of RStudio, an IDE for the R programming language.
-	1. You should see a ‘Files’ tab in the lower right window.
-		1. If not, you may need to adjust the window layout. To do this, move your mouse to the right-hand side of the window where a four-way arrow will appear. Click and drag your mouse to the left to reveal the right pane.
-	1. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
+1. This will open an instance of RStudio, an IDE for the R programming language.
+1. You should see a ‘Files’ tab in the lower right window.
+	1. If not, you may need to adjust the window layout. To do this, move your mouse to the right-hand side of the window where a four-way arrow will appear. Click and drag your mouse to the left to reveal the right pane.
+1. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
 
 
-![The RStudio interface in SEPAL.](images/rstudio_interface.JPG)
+    ![The RStudio interface in SEPAL.](images/rstudio_interface.JPG)
 
 
-	1. In the **Upload Files** window, click **Choose File.**
-	1. Navigate to the correct location on your drive and add . click Open.
-	1. Once you’ve selected this file, click **OK** to complete the upload (see below).
-	1. You will see your file appear in the list of files in the lower right-hand pane.
-	1. You may now close the RStudio instance by clicking the tab’s **x.**
+1. In the **Upload Files** window, click **Choose File.**
+1. Navigate to the correct location on your drive and add . click Open.
+1. Once you’ve selected this file, click **OK** to complete the upload (see below).
+1. You will see your file appear in the list of files in the lower right-hand pane.
+1. You may now close the RStudio instance by clicking the tab’s **x.**
 
 ### Part 1: Creating a stratified random sample
 
@@ -1195,12 +1192,12 @@ These directions will provide a stratified random sample of the proper sampling 
 3. Type ‘stratified’ into the search bar or scroll through the different process apps to find “Stratified Area Estimator--Design”
 4. Select **Stratified Area Estimator-Design.** Note that loading the tool takes a few minutes.
 
-![Stratified Area Estimator-Design tool.](images/stratified_area_estimator_design.JPG)
+    ![Stratified Area Estimator-Design tool.](images/stratified_area_estimator_design.JPG)
 
 
-**NOTE: Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.**
+> NOTE: Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.
 
-![Failure of the stratified area estimator tool.](images/fail_stratified_estimator_tool.JPG)
+    ![Failure of the stratified area estimator tool.](images/fail_stratified_estimator_tool.JPG)
 
 
 5. When the tool loads properly, it will look like the image below. Read some of the information on the **Introduction** page to acquaint yourself with the tool.
@@ -1208,7 +1205,7 @@ These directions will provide a stratified random sample of the proper sampling 
 	1. The Description, Background, and ‘How to use the tool” panels provide more information about the tool.
 	1. The Reference and Documents panel provides links to other information about stratified sampling, such as REDD Compass.
 
-![The stratified estimator interface.](images/stratified_estimator_interface.JPG)
+    ![The stratified estimator interface.](images/stratified_estimator_interface.JPG)
 
 
 6. The steps necessary to design the stratified area estimator are located on the left side of the screen and they need to be completed sequentially from top to bottom.
@@ -1217,27 +1214,29 @@ These directions will provide a stratified random sample of the proper sampling 
 	1. In the **Data type** section, click **Input.**
 	1. In the **Browse** window that opens, navigate to the test dataset and select it.
 	1. Then click **Select.**
-
-![Adding files to the stratified area estimator tool](images/add_files_stratified_estimator.JPG)
-
-
-
-	1. Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this Exercise will be saved.
+  1. Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this Exercise will be saved.
 	1. Optionally, you can use a csv with your raster areas instead. We won’t discuss that here.
+
+    ![Adding files to the stratified area estimator tool](images/add_files_stratified_estimator.JPG){:width="450px"}
+
+
 8. Next, click **Strata areas** on the left side of the screen.
 
-![Stratified estimator area calculation screen.](images/stratified_estimator_area_calculation.JPG)
+    ![Stratified estimator area calculation screen.](images/stratified_estimator_area_calculation.JPG)
 
 
 9. In the **Area calculation** section, select **OFT.** OFT stands for the Open Foris Geospatial Toolkit. R is slower but avoids some errors that arise with OFT.
 
-> NOTE: If you choose to use OFT, it will return values for the map that are incorrect if your map stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
+    > NOTE: If you choose to use OFT, it will return values for the map that are incorrect if your map stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
 
-![Stratified estimator tool showing the display map and legend and areas filled out.](images/stratified_estimator_map_legend.JPG)
+    ![Stratified estimator tool showing the display map and legend and areas filled out.](images/stratified_estimator_map_legend.JPG)
 
 
-	1. The **“Do you want to display the map”** checkbox allows you to display your geotiff under “Display map”. Note: The colors displayed in the SAE-Design tool in this section may be different than what you see elsewhere. Additionally, if your ‘no data’ class is 0, the tool will color this as well.
-	1. Click the **Area calculation and legend generation** button. This will take a few minutes to run. After it completes, notice that it has updated the **Legend labeling** section of the page.
+1. The **“Do you want to display the map”** checkbox allows you to display your geotiff under “Display map”.
+
+    > NOTE: The colors displayed in the SAE-Design tool in this section may be different than what you see elsewhere. Additionally, if your ‘no data’ class is 0, the tool will color this as well.
+
+1. Click the **Area calculation and legend generation** button. This will take a few minutes to run. After it completes, notice that it has updated the **Legend labeling** section of the page.
 	1. Next, you will need to adjust the class names in the **Legend labeling** section. Type in the following class names in place of the numeric codes for your Amazon (see below):
 		1. 0 = No Data
 		1. 1 = Forest
@@ -1259,8 +1258,7 @@ These directions will provide a stratified random sample of the proper sampling 
 	1. If you make a mistake, there’s no way to remove the classes. However, just change one of the sliders slightly, move it back, and the class assignments will have been reset.
 	1. **DO NOT assign your No Data class to either high or low confidence.**
 
-![High and low expected user accuracy.](images/high_low_expected_user_accuracy.JPG)
-
+    ![High and low expected user accuracy.](images/high_low_expected_user_accuracy.JPG)
 
 
 11. When you’re satisfied, click on **Sampling Size** on the left panel.
@@ -1273,7 +1271,7 @@ These directions will provide a stratified random sample of the proper sampling 
 	1. You can also check the “Do you want to modify the sampling size” box.
 	1. If you would like, you can edit the name of the file & download a csv with the sample design. The file contains the table shown above with some additional calculations. However, SEPAL will automatically save this file.
 
-![The stratified estimator sampling size and distribution of samples screen.](images/stratified_estimator_sampling.JPG)
+    ![The stratified estimator sampling size and distribution of samples screen.](images/stratified_estimator_sampling.JPG)
 
 
 12. When you’re ready, click on **Sample allocation** to the left.
@@ -1282,32 +1280,32 @@ These directions will provide a stratified random sample of the proper sampling 
 		1. The resulting **distribution of samples** should look similar to the below image. These values will vary depending on your map and the standard error of expected overall accuracy you set.
 		1. Sometimes this step fails, no download button will appear, and you will need to refresh the page and restart the process.
 
-![The stratified estimator tool's sample allocation screen.](images/stratified_estimator_sample.JPG)
+    ![The stratified estimator tool's sample allocation screen.](images/stratified_estimator_sample.JPG)
 
 
-	1. Now fill out the four fields to the right.
-		1. You can add additional data by specifying which country the map is in. Here, Leave the **Choose your country name…** section blank.
-		1. Specify the **number of operators,** or people who will be doing the classification. Here, leave it set to 1. For CEO, this might be the number of users you think your project will have.
-		1. The **size of the interpretation box** depends on your data and corresponds to CEO’s sample plot. This value should be set to the spatial resolution of the imagery you classified (Landsat= 30 meters). Here, leave it at 30 m.
+1. Now fill out the four fields to the right.
+	1. You can add additional data by specifying which country the map is in. Here, Leave the **Choose your country name…** section blank.
+	1. Specify the **number of operators,** or people who will be doing the classification. Here, leave it set to 1. For CEO, this might be the number of users you think your project will have.
+	1. The **size of the interpretation box** depends on your data and corresponds to CEO’s sample plot. This value should be set to the spatial resolution of the imagery you classified (Landsat= 30 meters). Here, leave it at 30 m.
 
 > When should you use CEO, and when should you use the CEO-SEPAL bridge? In general, **the CEO-SEPAL bridge should only be used for very simple use cases.** More specifically, CEO-SEPAL is a great option when you have only high-confidence categories, have a relatively small number of points, when you will collect the data yourself, and when the built in questions about your data points suffice. Most often, you will want to create a CEO project. Creating a CEO project through the collect.earth website is a better option when you have low-confidence categories, a larger number of points in your sample, when you want to use specific validation imagery, when multiple people will collect data and you need to track who is collecting data, and when you need more complex or custom questions about your data points.
 
-> NOTE: CEO-SEPAL does not ask about low confidence categories--this is a problem for creating an error matrix if you have low-confidence categories.
+    > NOTE: CEO-SEPAL does not ask about low confidence categories--this is a problem for creating an error matrix if you have low-confidence categories.
 
-	1. If you would like to create a project via CEO, click on **Download .csv** and follow the steps in Part 2 below. After following the directions in Part 2, you will proceed to Exercise 4.2. We highly recommend using this approach, and we will demonstrate it in this manual.
-	1. To create a project via the CEO-SEPAL bridge, click on **Create CEO project.**
-		1. This will create a CEO project via the CEO-SEPAL bridge.
-		1. This process will take a few minutes and you should see text and completion bars in the lower right as calculations happen.
-		1. Copy-paste the link into your browser window when it appears.
-		1. Be sure to save this link somewhere so you can reference it later.
+1. If you would like to create a project via CEO, click on **Download .csv** and follow the steps in Part 2 below. After following the directions in Part 2, you will proceed to Exercise 4.2. We highly recommend using this approach, and we will demonstrate it in this manual.
+1. To create a project via the CEO-SEPAL bridge, click on **Create CEO project.**
+	1. This will create a CEO project via the CEO-SEPAL bridge.
+	1. This process will take a few minutes and you should see text and completion bars in the lower right as calculations happen.
+	1. Copy-paste the link into your browser window when it appears.
+	1. Be sure to save this link somewhere so you can reference it later.
 
-> **NOTE: you MUST be logged out of CEO for this pathway to work.**
+> NOTE: you MUST be logged out of CEO for this pathway to work.
 
-![Creating a CEO project through SEPAL.](images/ceo_project_sepal.JPG)
+    ![Creating a CEO project through SEPAL.](images/ceo_project_sepal.JPG){:width="450px"}
 
 
-	1. When the project has been created, you can skip down to Exercise 4.2.
-	1. You can download a .shp file to examine your points in QGIS, ArcGIS, or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this manual. Directions can be found in the Institutional manual found here: [https://collect.earth/support](https://collect.earth/support).
+1. When the project has been created, you can skip down to Exercise 4.2.
+1. You can download a .shp file to examine your points in QGIS, ArcGIS, or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this manual. Directions can be found in the Institutional manual found here: [https://collect.earth/support](https://collect.earth/support).
 
 ### Part 2: Creating a CEO project via .csv
 
@@ -1317,18 +1315,18 @@ For projects with large sample sizes, where you want to have multiple people col
 2. Open your downloaded .csv file in Excel or the spreadsheet program of your choice.
 3. First, make sure that your data doesn’t contain a strata of ‘no data’. This can occur if your classification isn’t a perfect rectangle, as seen in this example of Nepal (the red circles are samples that the tool created in the ‘no data’ area). **If you have ‘no data’ rows, return to the SEPAL stratified estimator, and be sure to not include your no data class in the strata selection step.**
 
-![Example data from the SEPAL classification.](images/example_data_sepal_classification.JPG)
+    ![Example data from the SEPAL classification.](images/example_data_sepal_classification.JPG)
 
 
 4. Right now, your stratification is grouped by land cover type (**map_class** column). To reduce the human tendency to use the order of the plots to help identify them (ie. knowing the first 100 plots were classified forest, so being more likely to verify them as forest instead of determining if thats correct) we suggest first randomizing the order of the rows.
 	1. To do this, click the **Sort & Filter** button in Excel
 
-![Using the Sort and Filter features in Excel.](images/sort_filter_excel.JPG)
+    ![Using the Sort and Filter features in Excel.](images/sort_filter_excel.JPG)
 
 
-	1. Next, Sort on the ‘id’ field by value, either smallest to largest or largest to smallest.
+1. Next, Sort on the ‘id’ field by value, either smallest to largest or largest to smallest.
 
-![A custom sort in Excel.](images/custom_sort_excel.JPG)
+    ![A custom sort in Excel.](images/custom_sort_excel.JPG){:width="450px"}
 
 
 5. Next, we need to add the correct columns for CEO. Remember that Latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
@@ -1384,33 +1382,33 @@ For projects with large sample sizes, where you want to have multiple people col
 		1. Note that the Stratified Area Estimator--Analysis only accepts numeric values for the land use types. If you would like to use human-readable text values (e.g. Forest instead of 1), **you MUST follow the directions in Exercise 4.3 Part 2.**
 		1. You can add additional survey questions if you’d like to experiment. An example of two survey cards is shown below.
 
-![An example survey card setup](images/example_survey_card.JPG)
+    ![An example survey card setup](images/example_survey_card.JPG){:width="450px"}
 
 
-	1. When you’re done, click Create Project.
-		1. If you’re successful, you’ll see the review project pane.
-		1. The Project AOI will now show the location of a subset of your plots (a maximum number can be displayed).
-	1. Not shown are the Plot Review and Sample Design, which show a summary of the choices you made or the .csv and .shp files you uploaded. Survey Review shows all the Survey Cards you created, along with the corresponding Component Type, Rules, and Answers.
-	1. At this point, your project has been created, but it hasn’t been published so that other users can see it.
-		1. There is also review project functionality. As an administrator, you review your unpublished project and make suggestions to the questions etc. before it is published for data collection.
+1. When you’re done, click Create Project.
+	1. If you’re successful, you’ll see the review project pane.
+	1. The Project AOI will now show the location of a subset of your plots (a maximum number can be displayed).
+1. Not shown are the Plot Review and Sample Design, which show a summary of the choices you made or the .csv and .shp files you uploaded. Survey Review shows all the Survey Cards you created, along with the corresponding Component Type, Rules, and Answers.
+1. At this point, your project has been created, but it hasn’t been published so that other users can see it.
+	1. There is also review project functionality. As an administrator, you review your unpublished project and make suggestions to the questions etc. before it is published for data collection.
 
-	1. You can either click [Publish Project] or [Configure Geo-Dash]. The option to Configure Geo-Dash will be available after you publish your project, as well.
-		1. For now, let’s click on Configure Geo-Dash.
-		1. A new window or tab will open and you’ll now see the blank Geo-Dash configuration page.
-		1. Geo-Dash is a dashboard that opens in a second window when users begin to analyze sample plots. Geo-Dash provides users with additional information to help them interpret the imagery and better classify sample points and plots. The Geo-Dash tab can be customized to show information such as NDVI time series, forest degradation tools, additional imagery, and digital elevation data.
-		1. If you click on Geo-Dash Help, You’ll access information about all of the Geo-Dash widgets. This information is also in the CEO user manual.
-		1. Add any widgets that you would like for your project. For example, add a NDVI widget following these steps:
-			1. Click on Add Widget, then select the Image Collection type.
-			1. Select your basemap imagery.
-			1. Now you’ll see the data dropdown menu. Select NDVI in this menu.
-			1. Now you’ll see the Title--give your widget a title that describes the data.
-			1. Select the date range using the calendar widgets or by typing it in.
-			1. When you’re done, click Create.
-		1. You can now move the widget by clicking and dragging from the center and resize it by clicking and dragging the lower right-hand corner.
-		1. When you’re done adding widgets, close the Geo-Dash window.
-	1. On the project review page, click publish project.
-		1. Collect earth will ask you to confirm, click OK.
-		1. You can now visit your project from your institution’s page and start collecting data!
+1. You can either click [Publish Project] or [Configure Geo-Dash]. The option to Configure Geo-Dash will be available after you publish your project, as well.
+	1. For now, let’s click on Configure Geo-Dash.
+	1. A new window or tab will open and you’ll now see the blank Geo-Dash configuration page.
+	1. Geo-Dash is a dashboard that opens in a second window when users begin to analyze sample plots. Geo-Dash provides users with additional information to help them interpret the imagery and better classify sample points and plots. The Geo-Dash tab can be customized to show information such as NDVI time series, forest degradation tools, additional imagery, and digital elevation data.
+	1. If you click on Geo-Dash Help, You’ll access information about all of the Geo-Dash widgets. This information is also in the CEO user manual.
+	1. Add any widgets that you would like for your project. For example, add a NDVI widget following these steps:
+		1. Click on Add Widget, then select the Image Collection type.
+		1. Select your basemap imagery.
+		1. Now you’ll see the data dropdown menu. Select NDVI in this menu.
+		1. Now you’ll see the Title--give your widget a title that describes the data.
+		1. Select the date range using the calendar widgets or by typing it in.
+		1. When you’re done, click Create.
+	1. You can now move the widget by clicking and dragging from the center and resize it by clicking and dragging the lower right-hand corner.
+	1. When you’re done adding widgets, close the Geo-Dash window.
+1. On the project review page, click publish project.
+	1. Collect earth will ask you to confirm, click OK.
+	1. You can now visit your project from your institution’s page and start collecting data!
 
 More detailed instructions, including descriptions of many useful options, can be found in the manuals for CEO: [https://collect.earth/support](https://collect.earth/support).
 
@@ -1439,7 +1437,7 @@ If you have not created a response design for the classification you are now eva
 
 As a reminder, our classification used to classify our Forest/Non-forest land cover map was as follows:
 
-![The classification tree.](images/classification_tree.JPG)
+    ![The classification tree.](images/classification_tree.JPG){:width="450px"}
 
 
 We defined Forest as an area with over 70% tree cover. We defined Non-forest as areas with less than 70% tree cover. This captured land covers including urban areas, water, and agricultural fields.
@@ -1460,11 +1458,11 @@ If you have no additional data, you can use remote sensing data, such as Landsat
 
 Consider what additional data you might be able to include in your verification. Do you have access to satellite data at a finer resolution than Landsat? Could you incorporate additional datasets such as stump data or on the ground verifications? You might try searching databases, such as [https://developers.google.com/earth-engine/datasets/](https://developers.google.com/earth-engine/datasets/).
 
-Note that in CEO, these are the additional data sources that you have added to your CEO project. The CEO-SEPAL bridge uses only the default imagery, which is currently Mapbox Satellite.
+In CEO, these are the additional data sources that you have added to your CEO project. The CEO-SEPAL bridge uses only the default imagery, which is currently Mapbox Satellite.
 
 Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation (see Module 5).
 
-![A data source recording document.](images/data_source_recording_doc.JPG)
+    ![A data source recording document.](images/data_source_recording_doc.JPG)
 
 
 **Determine level of effort.**
@@ -1485,22 +1483,22 @@ Compile a list of your data sources and review it with your interpreters. Record
 2. As coordinator, you will record names and contact information of all the participants in the data collection and training.
 	1. Here’s a template:
 
-Name | Contact | Institution | Role for data collection
------|---------|-------------|--------------------------
-Name |Email address and/or phone number | Institution name |Coordinator
-Name |Email address and/or phone number | Institution name |Trainer
-Name |Email address and/or phone number | Institution name |Sample interpretation
-Name |Email address and/or phone number | Institution name |Sample interpretation
-Name |Email address and/or phone number | Institution name |etc.
+    Name | Contact | Institution | Role for data collection
+    -----|---------|-------------|--------------------------
+    Name |Email address and/or phone number | Institution name |Coordinator
+    Name |Email address and/or phone number | Institution name |Trainer
+    Name |Email address and/or phone number | Institution name |Sample interpretation
+    Name |Email address and/or phone number | Institution name |Sample interpretation
+    Name |Email address and/or phone number | Institution name |etc.
 
-	1. And a worked example:
+1. And a worked example:
 
-Name | Contact | Institution | Role for data collection
------|---------|-------------|--------------------------
-Phạm Tuân | example@example.org | Institute for Collecting Data | Coordinator
-Sally Ride | example@example.org | Training Specialists Institution|Trainer
-Rodolfo Vela | example@example.org | Institute for Collecting Data| Sample interpretation
-Yuri Gagarin | example@example.org | Institute for Collecting Data|Sample interpretation
+    Name | Contact | Institution | Role for data collection
+    -----|---------|-------------|--------------------------
+    Phạm Tuân | example@example.org | Institute for Collecting Data | Coordinator
+    Sally Ride | example@example.org | Training Specialists Institution|Trainer
+    Rodolfo Vela | example@example.org | Institute for Collecting Data| Sample interpretation
+    Yuri Gagarin | example@example.org | Institute for Collecting Data|Sample interpretation
 
 
 3. Based on this information, you will decide on the format and modality for the data collection and on a timeline.
@@ -1521,7 +1519,7 @@ Yuri Gagarin | example@example.org | Institute for Collecting Data|Sample interp
 	1. Quality management practices.
 2. Knowing what you do now, consider a-d above and briefly fill in details for each topic in another document. Write this as if you were planning a training event before collecting verification data for your forest/non-forest classification. What other topics do you think should be in the training?
 
-	The trainer should then implement the training event following these basic principles:
+The trainer should then implement the training event following these basic principles:
 
 1. Create an environment for active participation, where participants can share questions and opinions
 2. encourage communication between the interpreters
@@ -1574,7 +1572,7 @@ In general, data collection should include the following steps:
 
 1. To collect data in CEO, navigate to the project you created in Exercise 4.1 Part 2. Your screen should look like this:
 
-![The data collection interface in CEO](images/data_collection_CEO.JPG)
+    ![The data collection interface in CEO](images/data_collection_CEO.JPG)
 
 
 2. Click **Go to first plot.** This will take you to your first plot.
@@ -1582,14 +1580,14 @@ In general, data collection should include the following steps:
 	1. If you created multiple questions, you can navigate between questions using the numbers above your question text.
 	1. Click on **Save** to save your answers and move on to the next plot.
 
-![The data collection process in CEO](images/data_collection_process_CEO.JPG)
+    ![The data collection process in CEO](images/data_collection_process_CEO.JPG)
 
 
 4. Continue answering questions until you reach the last plot.
 5. When you have finished answering all of the questions, navigate to your Institution’s page.
 6. Your project name should now be green, indicating that all plots have been completed. If it is yellow, click on the project name and answer the remaining questions.
 
-![](images/ceo_sepal_menu.JPG)
+    ![partly completed project](images/ceo_sepal_manual.JPG)
 
 
 7. Click on the S next to the project.
@@ -1597,11 +1595,11 @@ In general, data collection should include the following steps:
 
 **Data collection in CEO-SEPAL bridge**
 
-1. For this example, navigate to the web address associated with your CEO-SEPAL bridge project. It should look something like this: [https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf]( https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf). Note that you must be logged out of CEO for this link to work.
+1. For this example, navigate to the web address associated with your CEO-SEPAL bridge project. It should look something like this: [https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf]( https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf). You must be logged out of CEO for this link to work.
 2. Answer all questions associated with your project using.
 3. Your screen should look like this:
 
-![The project overview screen in CEO](images/project_overview_ceo.JPG)
+    ![The project overview screen in CEO](images/project_overview_ceo.JPG)
 
 
 3. Click Go to first plot. This will take you to your first plot.
@@ -1621,7 +1619,7 @@ Data assembly is required ONLY when you have multiple data interpreters, each wo
 3. In CEO, this is handled through the Institution’s Project interface.
 
 
-Congratulations, you have successfully completed the first steps to collecting data with quality management in mind. In the following parts we will discuss how to incorporate these quality practices in detail and techniques to control for potential errors.
+**Congratulations, you have successfully completed the first steps to collecting data with quality management in mind. In the following parts we will discuss how to incorporate these quality practices in detail and techniques to control for potential errors.**
 
 ### Part 4: Quality management and archiving - Quality Assurance
 
@@ -1647,11 +1645,12 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
 		* What other information could you gain from examining how the interpreters are performing?
 	* Cold checks can be created in CEO by creating multiple projects with the same sample plots. Multiple interpreters can each complete one of these projects, allowing for comparison.
 
-Interpreter | Plot 1 (Forest) | Plot 2(Forest) | Plot 3 (Water)
------------|-----------------|-----------------|------------------
-Sally Ride | Non Forest Vegetation | Non Forest Vegetation | Water
-Rodolfo Vela | Forest | Forest | Built Up
-Yuri Gagarin | Forest | Forest | Water
+    Interpreter | Plot 1 (Forest) | Plot 2(Forest) | Plot 3 (Water)
+    -----------|-----------------|-----------------|------------------
+    Sally Ride | Non Forest Vegetation | Non Forest Vegetation | Water
+    Rodolfo Vela | Forest | Forest | Built Up
+    Yuri Gagarin | Forest | Forest | Water
+
 
 * Hot checks: sample units that are flagged as low confidence. These marked sample units should be further reviewed by the coordinator or group of interpreters meeting together. Once reviewed, labels that are deemed to be incorrect on these sample units should be adjusted by the interpreter.
 	* If you’re conducting this training with others, ask your colleagues about sample units that you’re unsure about.
@@ -1670,34 +1669,33 @@ Quality control refers to the quality of interpretation through cross-validation
 2. Calculate agreement for each interpreter based on the reference interpretation.
 	1. For each pair of interpreters, create a confusion matrix and include it in your project documentation.
 
-    | Class 1 (reference)| Class 2 (reference) | Class k (reference)
-____|--------------------|---------------------|---------------------
-Class 1 (interpreter)|Counts of sample points |Counts of sample points |Counts of sample points
-Class 2 (interpreter) |Counts of sample points |Counts of sample points |Counts of sample points
-Class k (interpreter) |Counts of sample points |Counts of sample points |Counts of sample points
+        | Class 1 (reference)| Class 2 (reference) | Class k (reference)
+    ____|--------------------|---------------------|---------------------
+    Class 1 (interpreter)|Counts of sample points |Counts of sample points |Counts of sample points
+    Class 2 (interpreter) |Counts of sample points |Counts of sample points |Counts of sample points
+    Class k (interpreter) |Counts of sample points |Counts of sample points |Counts of sample points
 
 3. To work an example, pretend that you and another interpreter have both collected data on a set of sample units on this Amazon land cover classification. Here are the results:
 
-Point number | Interpreter 1 (Interpreter) | Reference
----------|-------------------|-----------------
-1|Forest|Forest
-2|Forest|Forest
-3|Forest|Non-forest
-4|Non-forest|Non-forest
-5|Non-forest|Forest
-6|Forest|Forest
-7|Non-forest|Non-forest
-8|Non-forest|Non-forest
-9|Non-forest|Forest
-10|Forest|Forest
-
+    Point number | Interpreter 1 (Interpreter) | Reference
+    ---------|-------------------|-----------------
+    1|Forest|Forest
+    2|Forest|Forest
+    3|Forest|Non-forest
+    4|Non-forest|Non-forest
+    5|Non-forest|Forest
+    6|Forest|Forest
+    7|Non-forest|Non-forest
+    8|Non-forest|Non-forest
+    9|Non-forest|Forest
+    10|Forest|Forest
 
 4. Calculate the confusion matrix below:
 
-   |Forest (reference)|Non-forest (reference)
------|----------------|---------------
-Forest (interpreter)|    |    
-Non-forest (interpreter)|    |     
+       |Forest (reference)|Non-forest (reference)
+    -----|----------------|---------------
+    Forest (interpreter)|    |    
+    Non-forest (interpreter)|    |     
 
 5. Based on the confusion matrices, for each interpreter, overall agreement with the reference is to be calculated as follows:
 
@@ -1705,59 +1703,60 @@ Non-forest (interpreter)|    |
 
 6. The overall agreement per interpreter can be reported as below:
 
-Interpreter| Overall agreement
-------|---------------
-Interpreter 1 | Sum of counts in all of the diagonal cells/ Sum of all counts
-Interpreter 2 | Sum of counts in all of the diagonal cells/ Sum of all counts
-Interpreter n |Sum of counts in all of the diagonal cells/ Sum of all counts
+    Interpreter| Overall agreement
+    ------|---------------
+    Interpreter 1 | Sum of counts in all of the diagonal cells/ Sum of all counts
+    Interpreter 2 | Sum of counts in all of the diagonal cells/ Sum of all counts
+    Interpreter n |Sum of counts in all of the diagonal cells/ Sum of all counts
 
 
 7. Using the table below, calculate the agreement between interpreters:
 
-  | Class 1 (reference) | Class 2 (reference) | Class 3 (reference)
---|---------------------|-------------------|---------------
-Class 1 (Sally Ride)| 90|8|2
-Class 2 (Rodolfo Vela)| 12|88|0
-Class 3 (Yuri Gagarin)|1|4|95
+      | Class 1 (reference) | Class 2 (reference) | Class 3 (reference)
+    --|---------------------|-------------------|---------------
+    Class 1 (Sally Ride)| 90|8|2
+    Class 2 (Rodolfo Vela)| 12|88|0
+    Class 3 (Yuri Gagarin)|1|4|95
 
-Interpreter|Overall agreement
-----------|---------------------
-Sally Ride|Sum of counts in all of the diagonal cells/ Sum of all counts
-Rodolfo Vela|Sum of counts in all of the diagonal cells/ Sum of all counts
-Yuri Gagarin|Sum of counts in all of the diagonal cells/ Sum of all counts
+.
+
+    Interpreter  Overall agreement
+    ----------|---------------------
+    Sally Ride | Sum of counts in all of the diagonal cells/ Sum of all counts
+    Rodolfo Vela | Sum of counts in all of the diagonal cells/ Sum of all counts
+    Yuri Gagarin | Sum of counts in all of the diagonal cells/ Sum of all counts
 
 8. Per-class agreement amongst interpreters should be analyzed and reported as follows:
 
-…| All interpreters agreeing| One interpreter disagreeing | Two interpreters disagreeing | etc.
----|-------------------|-------------------|-------------|---------
-Class 1 (reference)| Percent| Percent |Percent |Percent
-Class 2 (reference) |Percent |Percent |Percent |Percent
-Class 3 (reference) |Percent |Percent |Percent |Percent
-Total |Percent |Percent |Percent |Percent
+    …| All interpreters agreeing| One interpreter disagreeing | Two interpreters disagreeing | etc.
+    ---|-------------------|-------------------|-------------|---------
+    Class 1 (reference)| Percent| Percent |Percent |Percent
+    Class 2 (reference) |Percent |Percent |Percent |Percent
+    Class 3 (reference) |Percent |Percent |Percent |Percent
+    Total |Percent |Percent |Percent |Percent
 
 9. For this example, consider the following case:
 
-Point number|Interpreter 1|	Interpreter 2|Interpreter 3|Reference
------|------|------|-----|------
-1|Forest|Forest|Forest|Forest
-2|Forest|Forest|Non-forest|Forest
-3|Forest|Non-forest|Non-forest|Non-forest
-4|Non-forest|Non-forest|Non-forest|Non-forest
-5|Non-forest|Forest|Forest|Forest
-6|Forest|Forest|Non-forest|Forest
-7|Non-forest|Non-forest|Non-forest|Non-forest
-8|Non-forest|Non-forest|Non-forest|Non-forest
-9|Non-forest|Forest|Non-forest	Forest
-10|Forest|Forest|Forest|Forest
-
+    Point number|Interpreter 1|	Interpreter 2|Interpreter 3|Reference
+    -----|------|------|-----|------
+    1|Forest|Forest|Forest|Forest
+    2|Forest|Forest|Non-forest|Forest
+    3|Forest|Non-forest|Non-forest|Non-forest
+    4|Non-forest|Non-forest|Non-forest|Non-forest
+    5|Non-forest|Forest|Forest|Forest
+    6|Forest|Forest|Non-forest|Forest
+    7|Non-forest|Non-forest|Non-forest|Non-forest
+    8|Non-forest|Non-forest|Non-forest|Non-forest
+    9|Non-forest|Forest|Non-forest	Forest
+    10|Forest|Forest|Forest|Forest
 
 10. Calculate the per-class agreement. Note that percent should be calculated by #/10 points for this example.
 
-     | All interpreters agreeing | One interpreter disagreeing |Two interpreters disagreeing |Three interpreters disagreeing
-------|--------|----------|-----------|----------
-Forest (reference) |Percent |Percent |Percent |Percent
-Non-forest (reference) |Percent |Percent |Percent	 |Percent
-Total |Percent |Percent |Percent |Percent
+         ...| All interpreters agreeing | One interpreter disagreeing |Two interpreters disagreeing |Three interpreters disagreeing
+    ------|--------|----------|-----------|----------
+    Forest (reference) |Percent |Percent |Percent |Percent
+    Non-forest (reference) |Percent |Percent |Percent	 |Percent
+    Total |Percent |Percent |Percent |Percent
 
 ## Exercise 4.3: Area and uncertainty estimation
 
@@ -1776,7 +1775,7 @@ Create uncertainty/error estimates for your classification | Map areas generated
 
 A common tool to quantify agreement is the error matrix (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm assigned) map category labels to the (human assigned) reference category labels (your validation classification). The count for each pairwise combination are included in the blue and yellow cells in the following example.
 
-![A confusion matrix example.](images/confusion_matrix_example.JPG)
+    ![A confusion matrix example.](images/confusion_matrix_example.JPG)
 
 
 * The main diagonal of the error matrix (blue cells) includes the count of the number of correct classifications.
@@ -1787,15 +1786,12 @@ A common tool to quantify agreement is the error matrix (sometimes called a conf
 
 For your own data, calculate an error matrix following the above guidelines:
 
-![An example error matrix](images/example_error_matrix.JPG)
-
+    ![An example error matrix](images/example_error_matrix.JPG)
 
 
 Here’s a completed example for a project using 4 classes:
 
-![Example error matrix for a 4 class project.](images/example_error_matrix_4class.JPG)
-
-
+    ![Example error matrix for a 4 class project.](images/example_error_matrix_4class.JPG)
 
 
 In this example, the user’s accuracy for Forest is 94.7%; so the error of commission is 5.3%. The user’s accuracy for water is 90%, which means the error of commission is 10%. What this means is that according to the reference data, the map creator mapped 5.3% of Forest land cover in the wrong class and 10% of water in the wrong class. The producer’s accuracy for Forest is 75%, meaning the error of omission is 25%. The producer’s accuracy for water is 90%, so the error of omission is 10%. This means that 25% of the forest reference samples were mapped in the wrong land cover class, while only 10% of water was mapped in the wrong class. Calculate the errors of omission and commission for Other and Cloud land cover classes.
@@ -1821,10 +1817,10 @@ At the heart of the analysis is the implementation of an unbiased area estimator
 		1. Press enter. You should now see either a 1 or a 2 populate the column. Double check that it is the correct value.
 	1. Fill the entire column.
 
-![An example dataset](images/example_dataset.JPG)
+    ![An example dataset](images/example_dataset.JPG){:width="450px"}
 
-	1. Save your .csv file.
-5. Upload your .csv file to SEPAL using the directions in Part 0: Uploading files to SEPAL of this Module.
+5. Save your .csv file.
+6. Upload your .csv file to SEPAL using the directions in Part 0: Uploading files to SEPAL of this Module.
 
 
 ### Part 3: Using the stratified estimator in SEPAL
@@ -1839,7 +1835,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
 		1. You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that Reference and Documents are in the same place as the Design tool.
 		1. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
-![The stratified estimator analysis tool.](images/stratified_estimator_analysis_tool.JPG)
+    ![The stratified estimator analysis tool.](images/stratified_estimator_analysis_tool.JPG)
 
 
 
@@ -1858,25 +1854,24 @@ The concept is derived from map accuracy assessment principles: characterized fr
 			1. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification).
 			1. Within this folder, select **area_rast.csv** (see image below).
 
-![Adding the classification](images/add_classification.JPG)
+    ![Adding the classification](images/add_classification.JPG){:width="450px"}
 
 
+1. Next, you will need to adjust some parameters so that the tool recognizes the column names for your reference data and area data that contain the necessary information for your accuracy assessment. You should now see a populated **Required input** panel on the right side of the screen.
+	1. Choose the column with the reference data information—
+		1. For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here it is COLLECTED_CLASS following the directions in Part 2.
+		1. For projects completed in CEO-SEPAL: ref_code?? Class???
+	1. Choose the column with the map data information
+		1. For projects completed in CEO: PL_MAP_CLASS;
+		1. For projects completed in CEO-SEPAL: ref_code?? ERROR: Missing a column for CEO-SEPAL bridge
+	1. Choose the map area column from the area file—map_area
+	1. Choose the class column from the area file—map_code or map_edited_class
+		1. The map_edited_class has the names you entered manually during the design phase, while the map_code has the numeric class codes.
+		1. For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class you must make sure that capitalization.
+		1. For projects completed in CEO-SEPAL, use map_code.
+	1. You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column)
 
-	1. Next, you will need to adjust some parameters so that the tool recognizes the column names for your reference data and area data that contain the necessary information for your accuracy assessment. You should now see a populated **Required input** panel on the right side of the screen.
-		1. Choose the column with the reference data information—
-			1. For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here it is COLLECTED_CLASS following the directions in Part 2.
-			1. For projects completed in CEO-SEPAL: ref_code?? Class???
-		1. Choose the column with the map data information
-			1. For projects completed in CEO: PL_MAP_CLASS;
-			1. For projects completed in CEO-SEPAL: ref_code?? ERROR: Missing a column for CEO-SEPAL bridge
-		1. Choose the map area column from the area file—map_area
-		1. Choose the class column from the area file—map_code or map_edited_class
-			1. The map_edited_class has the names you entered manually during the design phase, while the map_code has the numeric class codes.
-			1. For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class you must make sure that capitalization.
-			1. For projects completed in CEO-SEPAL, use map_code.
-		1. You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column)
-
-![The required input fields.](images/required_input_fields.JPG)
+    ![The required input fields.](images/required_input_fields.JPG){:width="450px"}
 
 
 
@@ -1890,19 +1885,19 @@ The concept is derived from map accuracy assessment principles: characterized fr
 		1. The rows represent your assignments while the columns represent the map classifier’s.
 		1. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
 
-![The confusion matrix output by SEPAL](images/confusion_matrix_output_sepal.JPG)
+    ![The confusion matrix output by SEPAL](images/confusion_matrix_output_sepal.JPG){:width="450px"}
 
-		1. Typically you would have to create the confusion table yourself and calculate the accuracies, however, the SAE-Analysis tool does this for you.
-		1. If you completed Part 1, how does the SAE-Analysis tool’s calculations compare with your own?
-		1. You can download confusion matrix as tabular data (.csv) using the button.
-	1. Under **Area estimates,** the table shows you the area estimates, and producer’s and user’s accuracies, all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing.
-		1. Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval.
-		1. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
-		1. Note that all area estimates are in map units.
-		1. You can change your desired **confidence interval** using the slider at the top of the panel.
-		1. You can Download area estimates as tabular data (.csv) using the button.
+1. Typically you would have to create the confusion table yourself and calculate the accuracies, however, the SAE-Analysis tool does this for you.
+	1. If you completed Part 1, how does the SAE-Analysis tool’s calculations compare with your own?
+	1. You can download confusion matrix as tabular data (.csv) using the button.
+1. Under **Area estimates,** the table shows you the area estimates, and producer’s and user’s accuracies, all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing.
+	1. Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval.
+	1. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
+	1. Note that all area estimates are in map units.
+	1. You can change your desired **confidence interval** using the slider at the top of the panel.
+	1. You can Download area estimates as tabular data (.csv) using the button.
 
-![The area estimates screen in SEPAL](images/area_estimate.JPG)
+    ![The area estimates screen in SEPAL](images/area_estimate.JPG)
 
 
 	1. The **Graph** plots area estimates based on: map pixel count, stratified random sample, simple random sample, unbiased stratified random and direct estimate stratified random.
@@ -1910,7 +1905,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
 		1. Need to define unbiased stratified random and direct estimate stratified random.
 		1. Note that the Map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
 
-![A graph of the area estimates based on different sample design](images/area_estimate_graph.JPG)
+    ![A graph of the area estimates based on different sample design](images/area_estimate_graph.JPG){:width="450px"}
 
 
 **Congratulations! You successfully completed this exercise. You now know how to perform an accuracy assessment and generate area estimates in SEPAL.**
@@ -2086,7 +2081,7 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 
 >“We’ll start by exploring how version control can be used to keep track of what one person did and when. Even if you aren’t collaborating with other people, automated version control is much better than this situation:
 >
->![“Piled Higher and Deeper” by Jorge Cham, http://www.phdcomics.com](images/piled_higher_deeper.JPG)
+>    ![“Piled Higher and Deeper” by Jorge Cham, http://www.phdcomics.com](images/piled_higher_deeper.JPG)
 
 
 >“Piled Higher and Deeper” by Jorge Cham, http://www.phdcomics.com
@@ -2095,11 +2090,11 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 >
 >Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
 >
->![Figure showing how version control systems work](images/version_control_system.JPG)
+>    ![Figure showing how version control systems work](images/version_control_system.JPG)
 
 >Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
 >
-> ![Version control with multiple contributors](images/version_control_multiple_contributors.JPG)
+>     ![Version control with multiple contributors](images/version_control_multiple_contributors.JPG)
 
 >A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a [commit](http://swcarpentry.github.io/git-novice/reference.html#commit), and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a [repository](http://swcarpentry.github.io/git-novice/reference.html#repository). Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
 
@@ -2121,12 +2116,12 @@ This is also a great way to share or collaborate on code. You can easily send a 
 
 Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.
 
-![The GEE scripts tab](images/gee_scripts.JPG)
+    ![The GEE scripts tab](images/gee_scripts.JPG){:width="450px"}
 
 
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: [https://developers.google.com/earth-engine/guides/playground]( https://developers.google.com/earth-engine/guides/playground)
 
-![Earth engine code editor](images/earth_engine_code_editor.JPG)
+    ![Earth engine code editor](images/earth_engine_code_editor.JPG){:width="450px"}
 
 
 
@@ -2169,12 +2164,18 @@ Methods for cloud removal |
 Assess RS results |                   
 Assumptions (Note: Need to archive outputs before proceeding with analysis) |                        
 
+.
+
+
 Creating Band Ratios, Indices and Image Transformations for use in Classification and Change Detection Analysis |         
 -----|-----------------
 Software used |                      
 Description of indices |     
 Assess RS results |               
 Assumptions (Note: Need to archive outputs before proceeding with analysis) |                           
+
+.
+
 
 Image Classification Scheme |   
 -------------| ----------------
@@ -2183,6 +2184,9 @@ Have you identified any categories as “Key Categories”? How is the analysis 
 Assess RS results |            
 Assumptions (Note: Need to archive outputs before proceeding with analysis) |                
 
+.
+
+
 Collect Reference Data |          
 ---------------------|-----------------
 What type of reference data are you using? |              
@@ -2190,6 +2194,7 @@ What is your sampling scheme and what is the logic for its design?|
 Assess RS results |               
 Assumptions (Note: Need to archive outputs before proceeding with analysis)|                     
 
+.
 
 Perform Land Cover Classification or Land Cover Change Analysis |      
 ---------------|--------------------
@@ -2198,6 +2203,7 @@ Analysis technique|
 Assess RS results|             
 Assumptions (Note: Need to archive outputs before proceeding with analysis)|                  
 
+.
 
 Perform Accuracy Assessment |           
 ---------------|----------------
