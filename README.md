@@ -17,12 +17,12 @@ In this manual, you will find four modules covering methods, and one module cove
 
 These exercises include step-by-step directions and are built to facilitate learning through reading and by doing. This manual will be accompanied by short videos, which will visually illustrate the steps described in the text.
 
-Para ver este manual en español, vaya aquí: (add links; if using pages will need to be separate repositories)
-Pour voir ce manuel dans français, allez ici:
+* Para ver este manual en español, vaya aquí: (add links; if using pages will need to be separate repositories)
+* Pour voir ce manuel dans français, allez ici:
 
 To visualize the flow of this manual, see below:
 
-![Visualization of manual content](images/manual_content.JPG)
+![Visualization of manual content](images/manual_content.JPG | width = 250)
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
