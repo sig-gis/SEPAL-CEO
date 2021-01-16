@@ -1,7 +1,4 @@
-# A Step-by-Step Manual for Area Estimation using SEPAL and CEO
-
 # Welcome to area estimation with SEPAL and CEO!
-
 
 Welcome to area estimation with SEPAL and CEO. In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors. For example, maps derived from land cover land use classifications may have errors due to pixel mixing, or noise in the input data. Using pixel-counting methods will produce biased estimates of area, and you cannot tell whether these are overestimates or underestimates. Sample based approaches create unbiased estimates of area and the error associated with your map.
 
@@ -22,7 +19,7 @@ These exercises include step-by-step directions and are built to facilitate lear
 
 To visualize the flow of this manual, see below:
 
-![Visualization of manual content](images/manual_content.JPG | width = 250)
+  ![Visualization of manual content](images/manual_content.JPG){:width="250px"}
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
@@ -44,13 +41,13 @@ You can find more information here:
 
 ## Getting started
 
-![Sepal splash page](images/sepal_splash_page.JPG)
+  ![Sepal splash page](images/sepal_splash_page.JPG)
 
 ### Sign Up to SEPAL
 
 You can request an account by visiting [sepal.io](sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-![Request access to sepal.io](images/request_sepal.JPG)
+  ![Request access to sepal.io](images/request_sepal.JPG)
 
 1. If you do not have a SEPAL account, you can request access [here](http://tinyurl.com/fao-sepal ).
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
@@ -112,7 +109,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 1. Navigate to [https://sepal.io/](https://sepal.io/) to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login.**
 
-![SEPAL login page](images/sepal_login.JPG)
+  ![SEPAL login page](images/sepal_login.JPG)
 
 *When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.*
 
@@ -120,7 +117,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 
 1. Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
-![SEPAL home screen](images/sepal_home.JPG)
+  ![SEPAL home screen](images/sepal_home.JPG)
 
 2. There are four main navigation tabs in the dock on the left side of the screen.
 	1. **Process:** select imagery and create mosaics.
@@ -128,21 +125,26 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 	1. **Terminal:** access to the command line for the LINUX server.
 	1. **Apps:** links to a variety of pre-loaded tools.
 3. At the lower left is the red **Tasks** tab. Clicking on this brings up a list of currently running tasks.
-4. **Account Information* can be found in the bottom right of the webpage by clicking the button that shows your username. This opens an overlay that displays important user account information.
+4. **Account Information** can be found in the bottom right of the webpage by clicking the button that shows your username. This opens an overlay that displays important user account information.
 5. You can edit your user account info, including Name, Password, Email and Organization here. Click **Save** to make those changes permanent. However, you cannot edit your Username in this interface.
 	1. Change the Google Account associated with your SEPAL account by clicking **Use my own Google Account** and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.
 
+
 > **Note: Be sure to connect your Google Account in order to be able to Retrieve Mosaics in the next Exercise 1.2. You should use the same account you used to sign up for Google Earth Engine.**
+
 
 6. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
-![User Report panel](images/user_report_panel.JPG)  
+  ![User Report panel](images/user_report_panel.JPG)  
+
 
 ### Part 3: Process Tab
 
+
 1. Click the **Process** tab on the left side of the window.
 
-![Arrow pointing out the process tab location](images/process_tab_location.JPG)  
+    ![Arrow pointing out the process tab location](images/process_tab_location.JPG)  
+
 
 2. You should now see four options in the center of the screen.
 	1. **Optical Mosaic** allows you to create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
@@ -151,7 +153,7 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 	1. **Time Series** allows you to download time series information to your SEPAL storage.
 3. When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options.
 
-###Part 4: Files Tab
+### Part 4: Files Tab
 
 1. Click the green **Files** tab on the left side of the window. This will display all of your files in SEPAL.
 2. For example, click the **downloads** folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.
@@ -219,14 +221,16 @@ Create a cloud-free mosaic for 2016 |
 
 ![The Area of Interest menu](images/area_of_interest.JPG)  
 
-	1. We will use the **Select a country/province** option.
-		1. In the list of countries that pops up, scroll down until you see the available options for **Congo, Dem Republic of.** Note there is also the Republic of Congo, which is not what we’re looking for.
-		1. Under Province/Area, notice that there are many different options.
-		1. Select **Mai-Ndombe,** then click **Next.**
+
+5. We will use the **Select a country/province** option.
+	1. In the list of countries that pops up, scroll down until you see the available options for **Congo, Dem Republic of.** Note there is also the Republic of Congo, which is not what we’re looking for.
+	1. Under Province/Area, notice that there are many different options.
+	1. Select **Mai-Ndombe,** then click **Next.**
 
 ![The Country or Province selection screen](images/country_province.JPG)  
 
-5. In the **Date** menu you can select the **Year** you are interested in or click on **More.**
+
+6. In the **Date** menu you can select the **Year** you are interested in or click on **More.**
 	1. This interface allows you to refine the dates or seasons you are interested in.
 	1. You can select a **target date** (The date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.
 	1. You can also include additional seasons from the past or the future by adjusting the **Past Seasons** and **Future Seasons** slider. This will include additional years’ data of the same dates specified. For example, if you’re interested in August 2015, including one future season will also include data from August 2016. This is useful if you’re interested in a specific time of year but there is significant cloud cover.
@@ -237,28 +241,29 @@ Create a cloud-free mosaic for 2016 |
 ![The date menu.](images/date_menu.JPG)
 
 
-6. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected.
+7. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected.
 	1. **L8** began operating in 2012 and is continuing to collect data;
 	1. **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present; and
 	1. **L4-5 TM,** which collected data from July 1982-May 2012.
 	1. **Sentinel 2 A+B** began operating in June 2015.
 	1. Click **Done.**
-7. Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
+8. Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
 	1. When it is done, examine the preview to see how much data is available. For this example, coverage is good. However, in the future when you are creating your own mosaic, if there is not enough coverage of your area of interest, you will need to adjust your parameters.
 	1. To do so, notice the five tabs in the lower left. You can adjust the initial search parameters using the first three of these tabs. For example, Click on **Dat** to expand the date range if you would like.
 	1. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
+
 ![A preview of your mosaic](images/mosaic_preview.JPG)
 
 
-8. We’re now going to go through the **scene selection process.** This allows you to change which specific images to include in your mosaic.
+9. We’re now going to go through the **scene selection process.** This allows you to change which specific images to include in your mosaic.
 	1. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply.**
 	1. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
 ![Selecting scenes for your mosaic](images/scene_selection.JPG)
 
 
-9. Click Apply. The result should look like the below image.
+10. Click Apply. The result should look like the below image.
   1. Notice the collection of circles over the Mai Ndombe study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven’t selected the scenes yet.
   1. Click the Auto-Select button to auto-select some scenes.
 
@@ -267,23 +272,23 @@ Create a cloud-free mosaic for 2016 |
 ![Arrow showing the button for auto selecting scenes](images/auto_select_scenes.JPG)
 
 
-10. You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click **Select Scenes.** If there is only one scene for an area, that will be the only one selected despite the minimum.
+11. You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click **Select Scenes.** If there is only one scene for an area, that will be the only one selected despite the minimum.
 
 ![Menu for auto selecting scenes](images/auto_select_scenes_menu.JPG)
 
 
-11. You should now see imagery overlain with circles indicating how many scenes are selected.
+12. You should now see imagery overlain with circles indicating how many scenes are selected.
 
 ![Example of the imagery with the number of scenes selected](images/imagery_number_scenes.JPG)
 
 
-12. You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
+13. You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
 	1. Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
 
 ![The select scenes interface showing 0 available and 4 selected scenes](images/select_scenes_interface.JPG)
 
 
-13. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
+14. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
 	1. Satellite (e.g. L8, L7, L5 or L4)
 	1. Percent cloud cover !
 	1. Number of days from the target date
@@ -294,14 +299,14 @@ Create a cloud-free mosaic for 2016 |
 ![scene preview screen](images/scene_preview.JPG)
 
 
-14. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
+15. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
 	1. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
   1. You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
 ![Select scenes screen showing one available scene and 3 selected scenes](images/select_scenes_1.JPG)
 
 
-15. You can also change the composing method using the **CMP** button on the lower right.
+16. You can also change the composing method using the **CMP** button on the lower right.
 	1. Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.
 	1. For this exercise, we will leave these at their default settings.
 	1. If you make changes, click Apply after you’re done.
@@ -309,13 +314,13 @@ Create a cloud-free mosaic for 2016 |
 ![The composite menu](images/composite.JPG)
 
 
-16. Now we’ll explore the **Bands** dropdown.
+17. Now we’ll explore the **Bands** dropdown.
 	1. Click on the **Red Green Blue** at the bottom of the page.
 
 ![Arrow pointing at the red, green, blue bands](images/arrow_bands.JPG)
 
 
-17. The below dropdown menu will appear.
+18. The below dropdown menu will appear.
 1. Select the **NIR, RED, GREEN** band combination. This band combination displays vegetation as red, with darker reds indicating dense vegetation. Bare ground and urban areas appear grey or tan, while water appears black. NIR stands for near infrared.
 1. Once selected, the preview will automatically show what the composite will look like.
 1. Use the scroll wheel on your mouse to zoom in to the mosaic and then click and drag to pan around the image. This will help you assess the quality of the mosaic.
@@ -323,14 +328,15 @@ Create a cloud-free mosaic for 2016 |
 ![The band combinations menu](images/bands_menu.JPG)
 
 
-18. The map now shows the complete mosaic that incorporates all of the user-defined settings.
+19. The map now shows the complete mosaic that incorporates all of the user-defined settings.
 
 ![The imagery preview with the completed mosaic shown](images/completed_mosaic.JPG)
 
 
-19. Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
+20. Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
 	1. For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.
 	1. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
+
 
 ### Part 2 Name and Save your Recipe and Mosaic
 
@@ -346,22 +352,21 @@ Create a cloud-free mosaic for 2016 |
 ![Save, duplicate, export recipe menu](images/save_duplicate_export_recipe.JPG)
 
 
-	1. Now if you click on the three lines icon, you should see an additional option: **Revert to old revision…**
+2. Now if you click on the three lines icon, you should see an additional option: **Revert to old revision…**
 
 ![After saving the menu adds a revert to old revision option](images/revert_to_old_revision.JPG)
 
 
-	1. Clicking on this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.
-
-![Revisions menu dropdown](images/revisions_menu.JPG)
-
-
+3. Clicking on this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.
 	1. Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
-2. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery.
+
+  ![Revisions menu dropdown](images/revisions_menu.JPG)
+
+
+4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery.
 	1. To download this imagery mosaic to your SEPAL account, click the **Retrieve** button.
 
 ![The retrieve button](images/retrieve.JPG)
-
 
 ![The retrieve menu](images/retrieve_menu.JPG)
 
