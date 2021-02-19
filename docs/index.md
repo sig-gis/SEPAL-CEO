@@ -45,7 +45,7 @@ You can find more information here:
 
 ### Sign Up to SEPAL
 
-You can request an account by visiting [sepal.io](sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
+You can request an account by visiting [http://sepal.io](http://sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
     ![Request access to sepal.io](images/request_sepal.JPG){:width="350px"}
 
@@ -1104,7 +1104,7 @@ From TimeSync’s Introduction materials, here is an example output:
 
     ![An example from TimeSync](images/TimeSync_example.JPG)
 
-For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to:[ timesync.forestry.oregonstate.edu/tutorial.html]( timesync.forestry.oregonstate.edu/tutorial.html). There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here:[ http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf]( http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf), and an introductory presentation here: [https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf).
+For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to: [http://timesync.forestry.oregonstate.edu/tutorial.html](http://timesync.forestry.oregonstate.edu/tutorial.html). There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here:[ http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf]( http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf), and an introductory presentation here: [https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf).
 
 
 **LandTrendr**
