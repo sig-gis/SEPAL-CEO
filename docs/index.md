@@ -19,7 +19,7 @@ These exercises include step-by-step directions and are built to facilitate lear
 
 To visualize the flow of this manual, see below:
 
-    ![Visualization of manual content](images/manual_content.JPG){:width="350px"}
+![Visualization of manual content](images/manual_content.JPG){:width="350px"}
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
@@ -41,13 +41,13 @@ You can find more information here:
 
 ## Getting started
 
-    ![Sepal splash page](images/sepal_splash_page.JPG)
+![Sepal splash page](images/sepal_splash_page.JPG)
 
 ### Sign Up to SEPAL
 
-You can request an account by visiting [sepal.io](sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
+You can request an account by visiting [http://sepal.io](http://sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-    ![Request access to sepal.io](images/request_sepal.JPG){:width="350px"}
+![Request access to sepal.io](images/request_sepal.JPG){:width="350px"}
 
 1. If you do not have a SEPAL account, you can request access [here](http://tinyurl.com/fao-sepal ).
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
@@ -73,9 +73,9 @@ Signing up for Google Earth Engine is required in order to properly export image
 Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this Manual, in the future you may use these techniques for your own projects. We encourage you to think about the following items to ensure your resulting products will be relevant, and that your chosen methods are well documented and transparent.
 
 1. Descriptions and Objectives of the Project (State issues and information needs).
-	1. Are you trying to conform to an IPCC Tier?
+	* Are you trying to conform to an IPCC Tier?
 2. Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).
-	1. What type of information do you need? A map? An inventory? A change product? (e.g. do you need to know where different land cover types exist or do you just need an inventory of how much there is?)
+	* What type of information do you need? A map? An inventory? A change product? That is, do you need to know where different land cover types exist or do you just need an inventory of how much there is?
 3. How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?
 4. Description of the project area / extent (national/subnational/specific forest/etc.)
 5. Description of the features/classes to be modeled or mapped.
@@ -109,9 +109,9 @@ Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started�
 1. Navigate to [https://sepal.io/](https://sepal.io/) to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login.**
 
-    ![SEPAL login page](images/sepal_login.JPG)
+![SEPAL login page](images/sepal_login.JPG)
 
-  *When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.*
+    *When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.*
 
 ### Part 2: SEPAL Interface Home
 
@@ -253,40 +253,38 @@ Create a cloud-free mosaic for 2016 |
 	1. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
 
-    ![A preview of your mosaic](images/mosaic_preview.JPG){:width="350px"}
+![A preview of your mosaic](images/mosaic_preview.JPG){:width="350px"}
 
 
 9. We’re now going to go through the **scene selection process.** This allows you to change which specific images to include in your mosaic.
 	1. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply.**
 	1. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
-    ![Selecting scenes for your mosaic](images/scene_selection.JPG){:width="350px"}
+![Selecting scenes for your mosaic](images/scene_selection.JPG){:width="350px"}
 
 
 10. Click Apply. The result should look like the below image.
   1. Notice the collection of circles over the Mai Ndombe study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven’t selected the scenes yet.
   1. Click the Auto-Select button to auto-select some scenes.
 
-    ![Scene selection process showing zeros before selection](images/scene_selection_zeros.JPG){:width="550px"}
+![Scene selection process showing zeros before selection](images/scene_selection_zeros.JPG){:width="550px"}
 
-    ![Arrow showing the button for auto selecting scenes](images/auto_select_scenes.JPG){:width="550px"}
+![Arrow showing the button for auto selecting scenes](images/auto_select_scenes.JPG){:width="550px"}
 
 
 11. You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click **Select Scenes.** If there is only one scene for an area, that will be the only one selected despite the minimum.
 
-    ![Menu for auto selecting scenes](images/auto_select_scenes_menu.JPG){:width="350px"}
+![Menu for auto selecting scenes](images/auto_select_scenes_menu.JPG){:width="350px"}
 
 
 12. You should now see imagery overlain with circles indicating how many scenes are selected.
 
-    ![Example of the imagery with the number of scenes selected](images/imagery_number_scenes.JPG){:width="450px"}
-
+![Example of the imagery with the number of scenes selected](images/imagery_number_scenes.JPG){:width="450px"}
 
 13. You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
 	1. Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
 
-    ![The select scenes interface showing 0 available and 4 selected scenes](images/select_scenes_interface.JPG)
-
+![The select scenes interface showing 0 available and 4 selected scenes](images/select_scenes_interface.JPG)
 
 14. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
 	1. Satellite (e.g. L8, L7, L5 or L4)
@@ -295,17 +293,15 @@ Create a cloud-free mosaic for 2016 |
 	1. To expand the Landsat image, hover over one of the images and click **Preview.** Click on the image to close the zoomed in graphic and return to the list of scenes.
 	1. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
 
-    ![Removing or previewing selected scenes](images/remove_preview_scenes.JPG){:width="350px"}
+![Removing or previewing selected scenes](images/remove_preview_scenes.JPG){:width="350px"}
 
-    ![scene preview screen](images/scene_preview.JPG){:width="350px"}
-
+![scene preview screen](images/scene_preview.JPG){:width="350px"}
 
 15. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
 	1. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
   1. You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
-    ![Select scenes screen showing one available scene and 3 selected scenes](images/select_scenes_1.JPG){:width="450px"}
-
+![Select scenes screen showing one available scene and 3 selected scenes](images/select_scenes_1.JPG){:width="450px"}
 
 16. You can also change the composing method using the **CMP** button on the lower right.
 	1. Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.
@@ -1104,7 +1100,7 @@ From TimeSync’s Introduction materials, here is an example output:
 
     ![An example from TimeSync](images/TimeSync_example.JPG)
 
-For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to:[ timesync.forestry.oregonstate.edu/tutorial.html]( timesync.forestry.oregonstate.edu/tutorial.html). There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here:[ http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf]( http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf), and an introductory presentation here: [https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf).
+For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to: [http://timesync.forestry.oregonstate.edu/tutorial.html](http://timesync.forestry.oregonstate.edu/tutorial.html). There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here:[ http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf]( http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf), and an introductory presentation here: [https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf).
 
 
 **LandTrendr**
