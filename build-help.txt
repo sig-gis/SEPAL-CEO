@@ -1,0 +1,23 @@
+This assumes you're using a Windows machine. If you're using Linux you already know this. If you're on mac and don't know linux ¯\_ (ツ)_/¯ good luck
+
+I use git bash. run as adminstrator.
+
+use pip (comes with git bash) to install sphinx and any additional packages you want. 
+
+python commands need to be prefaced with $python -m
+
+cd to change directory
+dir to see what's in the directory
+
+to use the quickstart function, navigate to your project docs directory then use $python -m sphinx.cmd.quickstart 
+
+to build, use $python -m sphinx.cmd.build . ~/<path to your docs folder>_build    from the project docs directory. the "." says "this folder". note the ~. You should get an output at the end that says "The HTML pages are in _build". very annoying but you do need to be explicit about the folder. if you get an output that says "The HTML pages are in ../../../_build" it means that it is putting the build in a higher directory (../ means go up a directory)
+
+If this doesnt work right away, you may need to check windows' path. google how-to for this and don't mess it up.
+
+
+
+
+
+
+

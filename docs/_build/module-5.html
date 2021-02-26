@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>``` &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="module-4.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p># Module 5: Documentation and archiving</p>
+<p>Documentation of your area estimate and archiving this information for future reference are critical in order to replicate your estimation process. Examples where you would want to repeat your analysis include different areas (states, provinces, ecological regions) or time periods (months, years).</p>
+<p>We have built in documentation steps into other Modules of this Manual, however here we bring this information together. We discuss key documentation steps, including logging decision points (Exercise 5.1), Reporting (Exercise 5.2), Commenting in code (Exercise 5.3), and Version control (Exercise 5.4), as well as archiving steps (Exercise 5.5).</p>
+<p>This module should take approximately 1 hour to read. The time taken to complete this module for your specific situation will vary depending on the size and scope of your project.</p>
+<p>## Exercise 5.1: Logging decision points</p>
+<p>Logging decision points is a critical part of documenting your area estimation process and being able to recreate your estimation process.</p>
+<p>A decision point is anywhere where you make a decision about your project that can change the outcome. For example, “We decided that pixels with over 75% tree cover should be classified as Forest cover” is a decision point.</p>
+<p>In the previous Modules, we have suggested that you document these types of decision points as you go along. This includes:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Module 2:</dt><dd><ul>
+<li><p>Logging your land use decision tree (Exercise 2.1).</p></li>
+<li><p>Logging your land use classification definitions (Exercise 2.1).</p></li>
+<li><p>Settings used for classification, along with any refinements (Exercise 2.4).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Module 3:</dt><dd><ul>
+<li><p>Logging two date change detection decisions, including what classes can change and imagery and processes used in the classification (Exercise 3.1)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Module 4:</dt><dd><ul>
+<li><p>Stratification choices (Exercise 4.1).</p></li>
+<li><p>Data collection procedures (Exercise 4.2).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>You may also choose to follow your organization’s Standard Operating Procedures. For example [<a class="reference external" href="https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing">https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing</a>]( <a class="reference external" href="https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing">https://drive.google.com/file/d/1u4sXx6Y8qPKvbIYJFide5EI6L_ygpS5p/view?usp=sharing</a>).</p>
+<p>## Exercise 5.2: Reporting</p>
+<p>Writing a report summarizing your findings is a critical part of your area estimation. If you are conducting an area estimation for internal use, this report will provide you with a blueprint for future estimations. If you are conducting an area estimation for another organization, this report will convey your results and the quality of your analysis.</p>
+<p>Here we provide a rough outline of what you should include in your reporting.</p>
+<p>In your report, you should include:
+* An introduction, describing why the project was completed and any goals of the project.
+* Your project’s methods, that is how your project was completed.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All tools used in your analysis.</p></li>
+<li><p>All decision points (Exercise 5.1)</p></li>
+<li><p>Any other information needed to recreate your project.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Your project results.</dt><dd><ul>
+<li><p>Your area estimation (Exercise 4.3).</p></li>
+<li><p>The error associated with your classification (Exercise 4.3).</p></li>
+<li><p>A comparison of any self checks (one interpreter) and cross checks (between interpreters) with the main sets of plots.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Any actions or next steps arising from your analysis.</p></li>
+</ul>
+<p>Writing your report will take time and attention. Documenting your steps along the way, as discussed in Modules 1-4 and Exercise 5.1 will help you write your report more efficiently.</p>
+<p><strong>Always follow your organization’s reporting guidelines.</strong> For example, if your estimation is developed to support a National Forest Monitoring System, you will need to comply with UN reporting standards.</p>
+<p>As another example, FAO’s Standard Operating Procedure requires reports include at least the following information about the data collection process:
+1. A brief narrative on the modalities for data collection
+2. The interpreters, their contact information, institutions and roles
+3. Overview of sample unit allocation to interpreters and any subsequent revisions made to the allocation
+4. A summary of the training conducted that details the topics covered
+5. A list of attendees for the training and their attendance record
+6. Challenges and limitations during the data collection
+7. Potential sources of bias during the data collection
+8. Impossible transitions excluded from data collection
+9. The results of the assessment of interpretation quality
+10. External appraisal of interpretation quality contact information and narrative report from the appraiser</p>
+<p>## Exercise 5.3: Commenting in scripts</p>
+<p>While none of the steps involved in this manual require writing code, more complex classification projects may use programming environments such as Google Earth Engine. This Exercise discusses best practices for commenting your code if you use tools such as Google Earth Engine.</p>
+<p>Leaving comments in your code can be a helpful way to describe information of what a particular function does, leave warnings or considerations to other programmers (including your future self!), provide key information on licensing, or save information on what you still want to complete while coding. In this section we will briefly demonstrate both good and bad commenting techniques.</p>
+<p>When commenting your code you should take into account your target audience. Is your code going to be used for a workshop? Will it be read by other scientists or programmers? Or will you lose access to it after submitting it to a publication or project partner? Answering these questions will help you determine what approach to take when commenting your code.</p>
+<p>Many of these tips are derived from the suggestions laid out in Robert C. Martins’ book _Clean Code,_ which would be a good reference if you would like to learn more about coding cleanly and commenting:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Keep comments short.</dt><dd><p>1. Keeping your comments short is helpful to both the writer of the comment and the reader
+1. Having multiple long comments in your code can lead to readers skipping over them and thus making them inefficient.
+1. Long comments can start to clutter your code.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>It is best to use comments sparingly and when possible rename variables or use functions to reflect what you would like to have commented.</dt><dd><p>1. Comments can quickly become outdated and are less of a priority to update.
+1. Comments are a representation of what your code does, but can sometimes be misleading.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Using comments to add some informative content or explain the intent behind your code, but don’t be redundant.</dt><dd><p>1. Informative comments are little snippets of information that aid in reading through your code
+1. A comment explaining your intent can be useful where the processing you have done is slightly complicated to read through</p>
+</dd>
+</dl>
+</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><dl class="simple">
+<dt>Don’t leave in commented out code.</dt><dd><p>1. Leaving in commented out code quickly becomes confusing.
+1. Is the commented out code something new that is to be implemented? Is it something that was broken and the other code fixed?         1. Should it be uncommented to provide a different result?
+1. It is best to use a form of version control so you can safely delete these lines and go back to them if you need to later.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Try to not be redundant with comments.</dt><dd><p>1. Comments that simply reiterate what the code is doing often are not helpful and will add to clutter.
+1. Use comments to clarify what the code is doing.
+1. This is nice for when you are using code in a workshop, or perhaps in a final version which is released with a publication that will not be changed later.</p>
+</dd>
+</dl>
+</li>
+<li><p>Do be careful as just like with other comments, errors in them are just as bad as in your code!</p></li>
+</ol>
+<p>Here are three examples of comment types:</p>
+<p>Comments that clarify:</p>
+<div class="section" id="id5">
+<h1><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="user-defined-variables">
+<h1>// User defined variables               ///<a class="headerlink" href="#user-defined-variables" title="Permalink to this headline">¶</a></h1>
+<p>// Main variables for defining region of interest,
+// start and end period, and sensors to include</p>
+<p>//Available sensors are : Landsat, Sentinel2, Sentinel1,
+var sensor = ‘Landsat’
+<a href="#id6"><span class="problematic" id="id7">``</span></a><a href="#id8"><span class="problematic" id="id9">`</span></a></p>
+<p>Comments that are informative:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">//</span> <span class="pre">returns</span> <span class="pre">most</span> <span class="pre">recent</span> <span class="pre">image</span> <span class="pre">with</span> <span class="pre">time</span> <span class="pre">series</span> <span class="pre">of</span> <span class="pre">images</span> <span class="pre">as</span> <span class="pre">property</span>
+<span class="pre">Return</span> <span class="pre">ee.Image(latestImagery)</span>
+<span class="pre">`</span></code></p>
+<p>Comments that describe intent:</p>
+<p><a href="#id10"><span class="problematic" id="id11">``</span></a>`
+// This is the best way I found to add images to the target image as a property
+var processMetaData = imageCollection.map(function f (img){</p>
+<blockquote>
+<div><p>var imageDate = img.get(‘system:time_start’)
+var previousImages = otherImageCollection.filterDate(imageDate.advance(-1,’month’) , imageDate).filterBounds(img.geometry().bounds())
+return img.set(‘images’, previousImages.toList() )</p>
+</div></blockquote>
+<div class="section" id="id12">
+<h2>});<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>And here is an example where comments (A) can be replaced by variables (B).</p>
+<ol class="upperalpha simple">
+<li></li>
+</ol>
+<p><a href="#id13"><span class="problematic" id="id14">``</span></a>`
+// Did the user pass in a year range that is within the valid range for
+// the selected satellite?</p>
+<dl class="simple">
+<dt>if(dateInputBox.getValue().includes(sensorDateRangeDict[sensorInputBox.getValue()]){</dt><dd><p>// run analysis for date range
+var results = myAnalysis(dateInputBox.getValue(),sensorInputBox.getValue())</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id15">
+<h2>}<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha simple" start="2">
+<li></li>
+</ol>
+<p><a href="#id16"><span class="problematic" id="id17">``</span></a>`
+var selectedDateRange = dateInputBox.getValue()
+var selectedSensor = sensorInputBox.getValue()
+var selectedSensorDateRange = sensorDateRangeDict[selectedSensor]</p>
+<dl class="simple">
+<dt>if( selectedDateRange.includes(selectedSensorDateRange)) {</dt><dd><p>var results = myAnalysis(selectedDateRange, selectedSensor)</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id18">
+<h2>}<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p>In this example above you can see that you write roughly the same number of lines of code with and without comments. However, by adding descriptive variable names, the code itself becomes simpler to understand.</p>
+<p>Finally, note that reading the actual code will always be truer than reading the comments. In the first example it poses the question: “Did the user pass in a year range that is within the valid range for the selected satellite?“ But what if you choose to include aerial imagery or UAV data sources at some point? Chances are you won’t feel compelled to go back and update your comment.</p>
+<p>## Exercise 5.4: Transparent coding: github and saving GEE scripts</p>
+<p>In addition to commenting your code so that future users can understand what is being done, saving your code is another important part of project documentation. As in Exercise 5.3, this exercise is only relevant if you have implemented code in your area estimation, such as through Python or Google Earth Engine.</p>
+<p>In this exercise we will touch upon how to be transparent with your code and save your code. Any time you are writing a script or some code, it is probably a good idea to have a version control system in place so you can track your changes, and have a backup in case a mistake happens to your code. We discuss this in two contexts: Git for local code, and Google Earth Engine’s approach to version control.</p>
+<p>### Part 1: Version Control and Git</p>
+<p>Version control is “a system that records changes to a file or set of files over time so that you can recall specific versions later” (Git 2020; Online at: <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</a>). Version control can be applied to many different file types, but is most commonly used with text based code, such as Python and R scripts.</p>
+<p>The following explanation is adapted from the Software Carpentry Git lesson.</p>
+<p>&gt;“We’ll start by exploring how version control can be used to keep track of what one person did and when. Even if you aren’t collaborating with other people, automated version control is much better than this situation:
+&gt;
+&gt;    ![“Piled Higher and Deeper” by Jorge Cham, <a class="reference external" href="http://www.phdcomics.com](images/piled_higher_deeper.JPG">http://www.phdcomics.com](images/piled_higher_deeper.JPG</a>)</p>
+<p>&gt;“Piled Higher and Deeper” by Jorge Cham, <a class="reference external" href="http://www.phdcomics.com">http://www.phdcomics.com</a>
+&gt;
+&gt;We’ve all been in this situation before: it seems ridiculous to have multiple nearly-identical versions of the same document. Some word processors let us deal with this a little better, such as Microsoft Word’s Track Changes, Google Docs’ version history, or LibreOffice’s Recording and Displaying Changes.
+&gt;
+&gt;Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
+&gt;
+&gt;    ![Figure showing how version control systems work](images/version_control_system.JPG)</p>
+<p>&gt;Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
+&gt;
+&gt;     ![Version control with multiple contributors](images/version_control_multiple_contributors.JPG)</p>
+<p>&gt;A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a [commit](<a class="reference external" href="http://swcarpentry.github.io/git-novice/reference.html#commit">http://swcarpentry.github.io/git-novice/reference.html#commit</a>), and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a [repository](<a class="reference external" href="http://swcarpentry.github.io/git-novice/reference.html#repository">http://swcarpentry.github.io/git-novice/reference.html#repository</a>). Repositories can be kept in sync across different computers, facilitating collaboration among different people.”</p>
+<p>Of version control systems, Git (and implementation GitHub that includes a GUI Desktop version) is perhaps the most widely used. Here we provide a very basic overview of Git and links to additional resources.</p>
+<p>Git is a popular free and open source software for a distributed version control system and is the basis of GitHub. With a GitHub account, you can create repositories to hold your code and track the changes you make to it as you develop it. GitHub stores all your code, which means that even if something happens to your computer, your code will be saved.</p>
+<p>This is also a great way to share or collaborate on code. You can easily send a link to your repository to whomever you want, and you could have other scientists working on one portion of the code on their home computer while you do as well.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>If you would like to learn more about git or version control, you can work through the Software Carpentry workshop at your own pace here: [<a class="reference external" href="http://swcarpentry.github.io/git-novice/](http://swcarpentry.github.io/git-novice/">http://swcarpentry.github.io/git-novice/](http://swcarpentry.github.io/git-novice/</a>).</dt><dd><ul>
+<li><p>You can work through how to set up a git repository system for yourself or your organization (unpaid but must run locally or on your own servers).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Information on Git can be found here: [<a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a>]( <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a>)</p></li>
+<li><dl class="simple">
+<dt>Information on GitHub, including how to sign up, can be found here: [<a class="reference external" href="https://github.com/](https://github.com/">https://github.com/](https://github.com/</a>)</dt><dd><ul>
+<li><p>GitHub has free and paid service tiers.</p></li>
+<li><p>With [<a class="reference external" href="https://zenodo.org/](https://zenodo.org/">https://zenodo.org/](https://zenodo.org/</a>) and GitHub together, you can create DOI numbers for versions of your code for publication.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>### Part 2: Google Earth Engine version control</p>
+<p>Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.</p>
+<blockquote>
+<div><p>![The GEE scripts tab](images/gee_scripts.JPG){:width=”450px”}</p>
+</div></blockquote>
+<p>Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: [<a class="reference external" href="https://developers.google.com/earth-engine/guides/playground">https://developers.google.com/earth-engine/guides/playground</a>]( <a class="reference external" href="https://developers.google.com/earth-engine/guides/playground">https://developers.google.com/earth-engine/guides/playground</a>)</p>
+<blockquote>
+<div><p>![Earth engine code editor](images/earth_engine_code_editor.JPG){:width=”450px”}</p>
+</div></blockquote>
+<p>## Exercise 5.5: Data archiving and creating metadata</p>
+<p>Finally, we will discuss the information needed for proper data archiving, which overlaps significantly with creating metadata for your area estimation. Metadata is a set of data that provides information about other data, such as your classification and area estimation data.</p>
+<p>### Part 1: Data archiving</p>
+<p>For data archiving, the following information needs to be compiled:
+1. A database of the sample data collected by the interpreters including:</p>
+<blockquote>
+<div><p>1. The geographical coordinates in define coordinate or projection system
+1. The unique identification code for each sample unit
+1. The interpretation of all sample units including the previous interpretation(s) of the sample unit in the case this was revised or corrected</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>The interpretation of sample units conducted by the coordinator</p></li>
+<li><p>Metadata regarding the interpreter that collected the sample data, when the data was collected, which data sources were used.</p></li>
+</ol>
+<p>Think about the work you did in completing Modules 1-4. What other data do you think should be archived? What would be helpful to your colleagues or yourself in the future looking to replicate your work?</p>
+<p>You should store the data collection report, your data tables, any metadata, etc. in a standard format. When naming files you should follow a naming convention such as Data collection_data_date[year/month/day]_version number (FAO SOP). When writing your documentation report, you should include links to your data storage locations.</p>
+<p>### Part 2: Creating metadata</p>
+<p>This worksheet is designed to assist you in becoming more efficient and informed about documenting and archiving information relating to the planning, preparation, and management of remote sensing datasets and analysis, such as analyses conducted for forest inventory monitoring (e.g. REDD+ activities).</p>
+<p>Documentation and archiving remote sensing analysis methods ensures there is transparency and makes it easier to replicate or improve methods as programs increase in complexity and robustness. For more information on the good practice recommendations for documentation, archiving and reporting please refer to the 2006 IPCC Guidelines Vol. 1 Chp. 6 Section 11.</p>
+<p>Below we have provided you with headings and some questions for each step in the metadata creation process, that is, where you should provide information about your workflow in order to ensure transparency about your data and processing steps and comply with best practices. The information you provide below should be sufficient and clear enough so that someone else can understand how the analysis was conducted and would be able to replicate it.</p>
+<p>When completing this exercise, think about the work you have completed in Modules 1-4. When you conduct your own classification and area estimation processes in the future, take the time to customize and add additional sections to this document. This exercise is designed to get you started in this practice and moving down the right path.</p>
+<p>Preparing and Downloading Cloud-free Composite Using Google Earth |
+——-<a href="#id19"><span class="problematic" id="id20">|</span></a>———————
+Data used |
+Time frame for composite |
+Software used |
+Preprocessing methods |
+Methods for cloud removal |
+Assess RS results |
+Assumptions (Note: Need to archive outputs before proceeding with analysis) |</p>
+<p>.</p>
+<p>Creating Band Ratios, Indices and Image Transformations for use in Classification and Change Detection Analysis |
+—–<a href="#id21"><span class="problematic" id="id22">|</span></a>—————–
+Software used |
+Description of indices |
+Assess RS results |
+Assumptions (Note: Need to archive outputs before proceeding with analysis) |</p>
+<p>.</p>
+<p>Image Classification Scheme |
+————-| —————-
+Document Clear definitions for classes or categories (i.e., land use categories defined by the IPCC as: Forest Land, Cropland, Grassland, Wetlands, Settlements, and Other Land): |
+Have you identified any categories as “Key Categories”? How is the analysis different?  Please refer to Volume 1, Chapter 4 of the 2006 IPCC Guidelines on what defines a “Key Category”. |
+Assess RS results |
+Assumptions (Note: Need to archive outputs before proceeding with analysis) |</p>
+<p>.</p>
+<p>Collect Reference Data |
+———————<a href="#id23"><span class="problematic" id="id24">|-----------------
+What type of reference data are you using? |
+What is your sampling scheme and what is the logic for its design?|</span></a>
+Assess RS results |
+Assumptions (Note: Need to archive outputs before proceeding with analysis)|</p>
+<p>.</p>
+<p>Perform Land Cover Classification or Land Cover Change Analysis |
+—————<a href="#id25"><span class="problematic" id="id26">|--------------------
+Software|</span></a>
+Analysis technique|
+Assess RS results|
+Assumptions (Note: Need to archive outputs before proceeding with analysis)|</p>
+<p>.</p>
+<p>Perform Accuracy Assessment |
+—————<a href="#id27"><span class="problematic" id="id28">|----------------
+Sampling approach|</span></a>
+Analysis technique|
+Assess results|
+Assumptions (Note: Need to archive outputs before proceeding with analysis) |</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SEPAL-CEO Area Estimation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">```</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#user-defined-variables">// User defined variables               ///</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id12">});</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">}</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="module-4.html" title="previous chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Karen Dyson, Karis Tenneson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/module-5.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="module-4.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="module-2.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p># Module 3: Image change detection</p>
+<p>Image change detection allows us to understand differences in the landscape–or more correctly, in the satellite images taken of the landscape–over time. There are many questions that change detection methods can help answer, including “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past 5 years?”</p>
+<p>Most methods for change detection use algorithms backed by statistical methods to extract and compare information in the satellite images. To conduct change detection then, we need multiple mosaics or images, each one representing a point in time. Here, we will describe how to detect change between two dates using a simple model, however this theory can be expanded to include more dates. In addition, we’ll describe time series analysis, which generally looks at longer periods of time.</p>
+<p>The objective of this module is to become associated with methods of detecting change for an area of interest using the SEPAL platform. This will build upon and incorporate what we have covered in the previous modules including: creating mosaics, creating training samples, and classifying imagery. This module is split into two exercises. The first addresses change detection using two dates, and the second more advanced methods using time series analysis with the BFAST algorithm and Landtrendr. At the end of this module you will know how to conduct a two-date change detection in SEPAL, have a basic understanding of the BFAST tool in SEPAL, and be familiar with TimeSYnc and LandTrendr.</p>
+<p>This module should take you approximately 3 hours.</p>
+<p>## Exercise 3.1: Two date change detection</p>
+<p>In this Exercise, you will learn how to conduct a two-date change detection in SEPAL. The algorithm SEPAL uses …</p>
+<p>To use this algorithm, you will first need to have two imagery derived classifications, one for each point in time. In this example, you will create optical mosaics and classify them, building on skills learned in Modules 1 and 2. Alternatively, you may also use two classifications from your own research area.</p>
+<p>Objectives | Prerequisites
+———- | ————-
+Learn how to conduct a two-date change detection | SEPAL account
+Build on skills learned in Modules 1 &amp; 2 | Complete Modules 1 &amp; 2 or be familiar with the skills covered</p>
+<p>### Part 1: Create Mosaics for Change Detection</p>
+<p>Before we can identify change, we first need to have images to compare. We will create two mosaics of Myanmar, generate some training data, and then classify the mosaics. This is discussed in detail in Module 1 &amp; 2.</p>
+<ol class="arabic simple">
+<li><p>Open the <strong>Process</strong> menu</p></li>
+<li><dl class="simple">
+<dt>Click on <strong>Optical Mosaic,</strong> or click the <strong>green plus symbol</strong> to open the <strong>Create Recipe</strong> menu and then click on <strong>Optical Mosaic.</strong></dt><dd><p>1. Choose <strong>Sri Lanka</strong> for the Area of interest (AOI).
+1. Select 2015 for the Date (DAT).
+1. Select Landsat 8 (L8) as the source (SRC).
+1. In the Composite (CMP) menu, ensure the surface reflectance <strong>(SR) correction</strong> is selected and median is the compositing method.</p>
+</dd>
+</dl>
+</li>
+<li><p>Click <strong>Retrieve Mosaic</strong> and select <strong>Blue, Green, Red, NIR, SWIR1, SWIR2,</strong> then select Google Earth Engine Asset, and lastly click retrieve.</p></li>
+</ol>
+<p><em>If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.</em></p>
+<blockquote>
+<div><p>![The retrieval screen for mosaics.](images/retrieval_mosaic.JPG){:width=”450px”}</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Repeat steps 2 &amp; 3 but change the <strong>Date</strong> parameter to 2018.</p></li>
+</ol>
+<p>&gt; NOTE: It may take a significant amount of time before your mosaics finish exporting.</p>
+<p>### Part 2: Create &amp; Collect Change Classification Training Data</p>
+<p>Now that we have the mosaics created, we will collect change training data. Though more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2018: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2018 there are four pathways: a pixel can be forest in 2015 and in 2018 (stable forest); a pixel can be non-forest in 2015 and in 2018 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.</p>
+<blockquote>
+<div><p>![A land cover change flow chart.](images/land_cover_flow_chart.JPG){:width=”450px”}</p>
+</div></blockquote>
+<ol class="arabic">
+<li><dl>
+<dt>First, we’ll create training data.</dt><dd><p>1. In the Process menu, click the green plus symbol and select Classification.
+1. Add the 2015 and 2018 mosaics for classification:</p>
+<blockquote>
+<div><p>1. Click <strong>Add</strong> and choose <strong>Earth Engine Asset</strong>
+1. Enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/srilanka2018”</p>
+<blockquote>
+<div><p>1. Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine’s Asset tab.
+1. For a refresher, see Module 2.</p>
+</div></blockquote>
+<p>1. Select bands: Blue, Green, Red, NIR, SWIR1, &amp; SWIR2
+1. Click <strong>Apply</strong> and then repeat steps the previous steps for the 2018 mosaic.
+1. After adding both mosaics, click <strong>Next.</strong></p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ol>
+<ol class="arabic">
+<li><dl>
+<dt>Click <strong>Open training data collection tool.</strong> This will open a new window/tab.</dt><dd><blockquote>
+<div><p>1. Click <strong>Add project.</strong>
+1. Create new project title “Sri Lanka Training Data” with <strong>TRAINING DATA</strong> as the <strong>Type</strong> and a <strong>scale</strong> of 30m.
+1. Add “Stable Forest”, “Stable Non-Forest”, and “Change” questions to the Code List</p>
+</div></blockquote>
+<p>![The Training Data menu where you can open a training data collection](images/training_data_menu_3.JPG){:width=”450px”}</p>
+<p>![Setting up the training data project.](images/training_data_project_setup_2.JPG){:width=”450px”}</p>
+</dd>
+</dl>
+</li>
+</ol>
+<ol class="arabic">
+<li><dl>
+<dt>Add imagery to the CEO project</dt><dd><blockquote>
+<div><p>1. Add your Earth Engine Asset mosaics for both years.
+1. You can also add more than one band combination. See the example below.</p>
+</div></blockquote>
+<p>![Adding GEE Assets to the project.](images/add_GEE_assets.JPG)</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>1. Add Hansen Forest Loss layers (loss, yearloss). These are found here: UMD/hansen/global_forest_change_2019_v1_7
+1. When you’ve set up the project, click on the Submit button.</p>
+<blockquote>
+<div><p>![Adding the Hansen Forest Loss layer](images/hansen_forest_loss_layer.JPG)</p>
+</div></blockquote>
+<ol class="arabic">
+<li><dl class="simple">
+<dt>Collect and upload sample data</dt><dd><p>1. Click on Collect.
+1. Collect sample data for each land cover class. Switch between your layers in 2015 and 2018 to see differences. You can also use the Hansen Forest Loss layer.
+1. When you’re done, download the <strong>CSV.</strong>
+1. Upload your .csv to GEE Asset.
+1. For more detailed directions, please refer back to Module 2.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Add training data to the classification recipe</dt><dd><blockquote>
+<div><ol class="arabic simple">
+<li><p>Now you can add your GEE Asset Table in the main SEPAL window. Return to the classification recipe and enter the path to your training data in the EE Table field</p></li>
+</ol>
+</div></blockquote>
+<p>![Add your GEE Asset Table as training data.](images/GEE_asset_table_training_data.JPG)</p>
+</dd>
+</dl>
+</li>
+<li><p>In the <strong>Class Column</strong> field select the column name that holds your class values. If you used SEPAL’s CEO extension this should automatically be filled as <strong>‘class’.</strong></p></li>
+<li><p><strong>Click Done.</strong></p></li>
+</ol>
+<p><em>If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).</em></p>
+<blockquote>
+<div><p>![Error with GEE asset from an incorrect upload.](images/GEE_asset_error.JPG){:width=”450px”}</p>
+</div></blockquote>
+<ol class="arabic" start="5">
+<li><p>SEPAL will then load a preview of your classification.</p>
+<blockquote>
+<div><p>![A preview of the change detection model output.](images/change_detection_model_preview.JPG){:width=”450px”}</p>
+</div></blockquote>
+</li>
+<li><dl>
+<dt>In addition to the input features from the Landsat 8 composite, it is possible to add <strong>Auxiliary Sources (AUX)</strong> for the classification. There are three additional sources available:</dt><dd><blockquote>
+<div><p>1. Latitude - Includes the latitude of each pixel.
+1. Terrain - Includes elevation of each pixel from SRTM data.
+1. Water - Includes information from the JRC Global Surface water Mapping layers.
+1. Select <strong>Terrain</strong> and <strong>Water.</strong>
+1. Click <strong>Apply.</strong></p>
+</div></blockquote>
+<p>![Auxiliary sources of data](images/auxiliary_sources.JPG){:width=”450px”}</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p><em>Note: If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.</em></p>
+<p>### Part 3: Two Date Image Processing</p>
+<p>Now that the hard work of setting up the mosaics and creating and adding the training data is complete, all that is left to do is run and retrieve the classification.</p>
+<ol class="arabic">
+<li><dl>
+<dt>Retrieve your classification as an EE asset</dt><dd><blockquote>
+<div><p>1. Click the cloud icon in the upper right to open the <strong>Retrieve</strong> panel.
+1. Select <strong>Google Earth Engine Asset</strong> or <strong>SEPAL Workspace.</strong> Select GEE Asset if you would like to share your map or if you would like to use it for further analysis. Select SEPAL Workspace if you would like to use the map internally only.
+1. Click <strong>Retrieve.</strong></p>
+</div></blockquote>
+<p>![Retrieving the change detection map.](images/retrieve_change_detection_map.JPG)</p>
+<p>![Numbered instructions to retrieve.](images/retrieve_numbered.JPG){:width=”450px”}</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>### Part 4: QA/QC</p>
+<p>Quality assurance and quality control, commonly referred to as QA/QC, is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area are described in Module 4. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications. Here we’ll discuss one approach to informal QA/QC.</p>
+<p>Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. We’ll do this by adding your classification to the SEPAL-CEO project we created in Part 2. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in Google Earth Engine or in another program, such as QGIS or ArcMAP.</p>
+<ol class="arabic">
+<li><dl>
+<dt>Navigate back to your SEPAL-CEO project.</dt><dd><blockquote>
+<div><p>1. Navigate to <a class="reference external" href="https://sepal.io/ceo/">https://sepal.io/ceo/</a>.
+1. Next to your Sri Lanka project, click on <strong>Edit.</strong>
+1. Add a new layer, title it Classification, and add the information from your Google Earth Engine classification asset.
+1. Click Submit.</p>
+</div></blockquote>
+<p>![Examining your change detection map](images/examine_change_detection_map.JPG)</p>
+</dd>
+</dl>
+</li>
+<li><p>Now click Collect for your Sri Lanka project.</p></li>
+<li><p>Switch the imagery to your Classification and pan and zoom around the map. Black will be ‘stable forest,’ grey is ‘stable non forest,’ and white is ‘change’ pixels.</p></li>
+<li><p>Compare your Classification map to the 2015 and 2018 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?</p></li>
+<li><p>If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in Module 4.</p></li>
+<li><p>However, if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-run the classification following the steps in Parts 2 and 3.</p>
+<blockquote>
+<div><p>![High resolution image.](images/high_resolution_image.JPG){:width=”450px”}</p>
+<p>![2015 imagery.](images/2015_imagery.JPG){:width=”450px”}</p>
+<p>![2018 imagery.](images/2018_imagery.JPG){:width=”450px”}</p>
+<p>![The change detection map.](images/change_detection_map.JPG){:width=”450px”}</p>
+</div></blockquote>
+</li>
+</ol>
+<p>## Exercise 3.2: Time series analysis</p>
+<p>In this exercise, you will learn more about time series analysis. SEPAL has the BFAST option, described first. We also provide information on TimeSync and LandTrendr, products currently only available outside of SEPAL and CEO.</p>
+<blockquote>
+<div><p>&gt; NOTE: TimeSync integration is coming to CEO in late 2020 or 2021.</p>
+</div></blockquote>
+<p>Objectives | Prerequisites
+———-<a href="#id1"><span class="problematic" id="id2">|</span></a>————-
+Learn the basics of BFAST explorer in SEPAL | SEPAL account.
+Learn about time series analysis options outside of SEPAL |</p>
+<p>### Part 1: BFAST Explorer</p>
+<p>Breaks For Additive Seasonal and Trend (BFAST) is a change detection algorithm for time series which detects and characterizes changes. BFAST integrates the decomposition of time series into trend, seasonal, and remainder components with methods for detecting change within time series. BFAST iteratively estimates the time and number of changes, and characterizes change by its magnitude and direction (Verbesselt et al. 2009).</p>
+<p>BFAST Explorer is a Shiny app, developed using R and Python, designed for the analysis of Landsat Surface Reflectance time series pixel data. Three change detection algorithms - bfastmonitor, bfast01 and bfast - are used in order to investigate temporal changes in trend and seasonal components, via breakpoint detection. If you encounter any bugs, please send a message to <a class="reference external" href="mailto:almeida&#46;xan&#37;&#52;&#48;gmail&#46;com">almeida<span>&#46;</span>xan<span>&#64;</span>gmail<span>&#46;</span>com</a>, or create an issue on the GitHub page.</p>
+<p>More information can be found online at [<a class="reference external" href="http://bfast.r-forge.r-project.org/](http://bfast.r-forge.r-project.org/">http://bfast.r-forge.r-project.org/](http://bfast.r-forge.r-project.org/</a>).</p>
+<ol class="arabic simple">
+<li><p>Navigate to the <strong>Apps</strong> menu by clicking on the wrench icon</p></li>
+<li><p>Type “BFAST” into the search field and select BFAST Explorer</p></li>
+<li><dl class="simple">
+<dt>Find a location on the map that you would like to run BFAST on</dt><dd><p>1. Click a location to drop a marker, and then click the marker to select it
+1. Select <strong>Landsat 8 SR</strong> from the select satellite products dropdown.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Click <strong>Get Data.</strong> It may take a moment to download all the data for the point</p></li>
+</ol>
+<blockquote>
+<div><p>![The BFAST Explorer interface.](images/BFAST_explorer.JPG)</p>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic" start="4">
+<li><p>Click the <strong>Analysis</strong> button at the top next to the <strong>Map</strong> button</p>
+<blockquote>
+<div><p>![Numbered directions for using the BFAST explorer interface](images/BFAST_explorer_numbered.JPG)</p>
+</div></blockquote>
+</li>
+<li><dl>
+<dt><strong>Satellite product:</strong> Add your satellite data by selecting them from the satellite products dropdown menu.</dt><dd><p>1. <strong>Data:</strong> The data to apply the BFAST algorithm to and plot. There are options for each band available as well as indices such as NDVI, EVI, and NDMI. Here select <strong>ndvi.</strong>
+1. <strong>Change detection algorithm:</strong> Holds three options of BFAST to calculate for the data series.</p>
+<blockquote>
+<div><p>1. <strong>Bfastmonitor</strong> - Monitoring the first break at the end of the time series
+1. <strong>Bfast01</strong> - Checking for one major break in the time series.
+1. <strong>Bfast</strong> - Time series decomposition and multiple breakpoint detection in tend and seasonal components</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ol>
+<p>&gt; NOTE: Each BFSAT algorithm methodology has characteristics which affect when and why you may choose one over the other. For instance, if the goal of an analysis is to monitor when the last time change occurred in a forest then “Bfastmonitor” would be an appropriate choice. Bfast01 may be a good selection when trying to identify if a large disturbance event has occurred, and the full Bfast algorithm may be a good choice if there are multiple times in the time series when change has occurred.*</p>
+<ol class="arabic" start="6">
+<li><p>Select bfastmonitor as the algorithm.</p>
+<blockquote>
+<div><p>![The BFAST Explorer interface.](images/BFAST_explorer_interface.JPG)</p>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic">
+<li><p>You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.</p>
+<blockquote>
+<div><p>![Additional BFAST visualization](images/BFAST_visualization.JPG)</p>
+</div></blockquote>
+</li>
+</ol>
+<p>1. You can also download all the time series data by clicking the blue <strong>Data</strong> button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
+1. You can also download the time series plot as an image, by pressing the blue <strong>Plot</strong> button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.</p>
+<p>&gt; NOTE: The black and white flashing is normal.</p>
+<p>### Part 2: TimeSync and LandTrendr</p>
+<p>Here we will briefly review TimeSync and LandTrendr, two options available outside of SEPAL that may be useful to you in the future. It is outside of the scope of this manual to cover them in detail but if you’re interested in learning more we’ve provided links to additional resources.</p>
+<p><strong>TimeSync</strong></p>
+<p>TimeSync was created by Oregon State University, Pacific Northwest Research Station, the Forest Service Department of Agriculture, and the USFS Remote Sensing Applications Center.</p>
+<p>From the TimeSync User manual version 3:</p>
+<p>&gt; “TimeSync is an application that allows researchers and managers to characterize and quantify disturbance and landscape change by facilitating plot-level interpretation of Landsat time series stacks of imagery (a plot is commonly one Landsat pixel). TimeSync was created in response to research and management needs for time series visualization tools, fueled by rapid global change affecting ecosystems, major advances in remote sensing technologies and theory, and increased availability and use of remotely sensed imagery and data products (Cohen et al., 2010).</p>
+<p>TimeSync is a Landsat time series visualization tool (both as a web application and for desktops) that can be used to:</p>
+<ul class="simple">
+<li><p>Characterize the quality of land cover map products derived from Landsat time series.</p></li>
+<li><p>Derive independent plot-based estimates of change, including viewing change over time and estimating rates of change.</p></li>
+<li><p>Validate change maps.</p></li>
+<li><p>Explore the value of Landsat time series for understanding and visualizing change on the earth’s surface.</p></li>
+</ul>
+<p>TimeSync is a tool that researchers and managers can use to validate remotely sensed change data products and generate independent estimates of change and disturbance rates from remotely sensed imagery. TimeSync requires basic visual interpretation skills, such as aerial photo interpretation and Landsat satellite image interpretation.”</p>
+<p>From TimeSync’s Introduction materials, here is an example output:</p>
+<blockquote>
+<div><p>![An example from TimeSync](images/TimeSync_example.JPG)</p>
+</div></blockquote>
+<p>For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to:[ timesync.forestry.oregonstate.edu/tutorial.html]( timesync.forestry.oregonstate.edu/tutorial.html). There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here:[ <a class="reference external" href="http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf">http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf</a>]( <a class="reference external" href="http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf">http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf</a>), and an introductory presentation here: [<a class="reference external" href="https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf">https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf](https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf</a>).</p>
+<p><strong>LandTrendr</strong></p>
+<p>LandTrendr has much the same functionality as TimeSync, but runs in Google Earth Engine. It was created by [Dr. Robert Kennedy]( <a class="reference external" href="https://ceoas.oregonstate.edu/people/robert-kennedy">https://ceoas.oregonstate.edu/people/robert-kennedy</a>)’s lab with funding from the US Forest Service Landscape Change Monitoring System, the NASA Carbon Monitoring System, a Google Foundation Grant, and U.S. National Park Service Cooperative Agreement. Recent contributors include David Miller, Jamie Perkins, Tara Larrue, Sam Pecoraro, and Bahareh Sanaie (Department of Earth and Environment, Boston University). Foundational contributors include Zhiqiang Yang and Justin Braaten in the Laboratory for Applications of Remote Sensing in Ecology located at Oregon State University and the USDA Forest Service’s Pacific Northwest Research Station.</p>
+<p>From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, W.B., Healey, S. (2018). Implementation of the LandTrendr Algorithm on Google Earth Engine. Remote Sensing. 10, 691.:</p>
+<p>&gt; “LandTrendr (LT) is a set of spectral-temporal segmentation algorithms that are useful for change detection in a time series of moderate resolution satellite imagery (primarily Landsat) and for generating trajectory-based spectral time series data largely absent of inter-annual signal noise. LT was originally implemented in IDL (Interactive Data Language), but with the help of engineers at Google, it has been ported to the GEE platform. The GEE framework nearly eliminates the onerous data management and image-preprocessing aspects of the IDL implementation. It is also light-years faster than the IDL implementation, where computing time is measured in minutes instead of days.”</p>
+<p>From LandTrendr’s documentation, here’s an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: [<a class="reference external" href="https://emapr.github.io/LT-GEE/landtrendr.html">https://emapr.github.io/LT-GEE/landtrendr.html</a>]( <a class="reference external" href="https://emapr.github.io/LT-GEE/landtrendr.html">https://emapr.github.io/LT-GEE/landtrendr.html</a>).</p>
+<blockquote>
+<div><p>![The LandTrendr interface](images/LandTrendr.JPG)</p>
+</div></blockquote>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SEPAL-CEO Area Estimation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="module-5.html">```</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module-5.html#user-defined-variables">// User defined variables               ///</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="module-2.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Next: <a href="module-4.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Karen Dyson, Karis Tenneson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/module-3.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
