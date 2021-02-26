@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1. Mosaic image generation &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="module-2.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-1-mosaic-image-generation">
+<h1>Module 1. Mosaic image generation<a class="headerlink" href="#module-1-mosaic-image-generation" title="Permalink to this headline">¶</a></h1>
+<p>Generating mosaics of remote sensing data from satellite data is the first step in our classifications. In this Module, you will learn how to navigate SEPAL and how to create mosaics using imagery from the Landsat or Sentinel satellites. At the end of this section, you will be able to create the satellite imagery mosaics you will need for Modules 2 &amp; 3.</p>
+<p>This module should take you approximately 1-2 hours.</p>
+<div class="section" id="exercise-1-1-an-introduction-to-sepal">
+<h2>Exercise 1.1.  An introduction to SEPAL<a class="headerlink" href="#exercise-1-1-an-introduction-to-sepal" title="Permalink to this headline">¶</a></h2>
+<p>In this exercise, you will be introduced to the SEPAL interface. You will learn how to access SEPAL’s features to facilitate the remote sensing exercises in later modules.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Objectives</p></th>
+<th class="head"><p>Prerequisites</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Navigate the SEPAL interface</p></td>
+<td><p>Internet access</p></td>
+</tr>
+<tr class="row-odd"><td><p>Learn about the functionality
+of SEPAL</p></td>
+<td><p>SEPAL account (see ‘Getting Started’)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="part-1-open-sepal">
+<h3>Part 1. Open SEPAL<a class="headerlink" href="#part-1-open-sepal" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to <a class="reference external" href="https://sepal.io/">https://sepal.io/</a> to open SEPAL.</p></li>
+<li><p>Type in your <strong>Username</strong> and <strong>Password</strong> and click <strong>Login.</strong></p></li>
+</ol>
+<img alt="SEPAL login page" class="align-center" src="_images/sepal_login.JPG" />
+<p><strong>When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.</strong></p>
+</div>
+<div class="section" id="part-2-sepal-interface-home">
+<h3>Part 2. SEPAL Interface Home<a class="headerlink" href="#part-2-sepal-interface-home" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.</p></li>
+</ol>
+<img alt="SEPAL home screen" class="align-center" src="_images/sepal_home.JPG" />
+<ol class="arabic" start="2">
+<li><p>There are four main navigation tabs in the dock on the left side of the screen.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><strong>Process:</strong> select imagery and create mosaics.</p></li>
+<li><p><strong>Files:</strong> navigate through your personal SEPAL folders. This is where you can download or delete data, as well as visualize it using the Data Visualization link.</p></li>
+<li><p><strong>Terminal:</strong> access to the command line for the LINUX server.</p></li>
+<li><p><strong>Apps:</strong> links to a variety of pre-loaded tools.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>At the lower left is the red <strong>Tasks</strong> tab. Clicking on this brings up a list of currently running tasks.</p></li>
+<li><p><strong>Account Information</strong> can be found in the bottom right of the webpage by clicking the button that shows your username. This opens an overlay that displays important user account information.</p></li>
+<li><p>You can edit your user account info, including Name, Password, Email and Organization here.</p>
+<p>Click <strong>Save</strong> to make those changes permanent. However, you cannot edit your Username in this interface.</p>
+<p>Change the Google Account associated with your SEPAL account by clicking <strong>Use my own Google Account</strong> and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.</p>
+</li>
+</ol>
+<p><strong>Be sure to connect your Google Account in order to be able to Retrieve Mosaics in the next Exercise 1.2. You should use the same account you used to sign up for Google Earth Engine.</strong></p>
+<ol class="arabic simple" start="6">
+<li><p>Next to your <strong>Account Information</strong> is a section called <strong>User Report</strong>, represented by the <strong>$ X/h</strong>. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/user_report_panel.JPG"><img alt="User Report panel." class="align-center" src="_images/user_report_panel.JPG" style="width: 350px;" /></a>
+</div>
+<div class="section" id="part-3-process-tab">
+<h3>Part 3. Process Tab<a class="headerlink" href="#part-3-process-tab" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Process</strong> tab on the left side of the window.</p></li>
+</ol>
+<img alt="Arrow pointing out the process tab location" class="align-center" src="_images/process_tab_location.JPG" />
+<ol class="arabic" start="2">
+<li><p>You should now see four options in the center of the screen.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><strong>Optical Mosaic</strong> allows you to create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.</p></li>
+<li><p><strong>Radar Mosaic</strong> allows you to create a mosaic using Sentinel 1 data.</p></li>
+<li><p><strong>Classification</strong> allows you to use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2.</p></li>
+<li><p><strong>Time Series</strong> allows you to download time series information to your SEPAL storage.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options.</p></li>
+</ol>
+</div>
+<div class="section" id="part-4-files-tab">
+<h3>Part 4. Files Tab<a class="headerlink" href="#part-4-files-tab" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the green <strong>Files</strong> tab on the left side of the window. This will display all of your files in SEPAL.</p></li>
+<li><p>For example, click the <strong>downloads</strong> folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/files_menu.JPG"><img alt="The files menu" class="align-center" src="_images/files_menu.JPG" style="width: 350px;" /></a>
+<ol class="arabic" start="3">
+<li><p>Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The left button will show hidden files (files and folder names starting with ‘.’).</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>The second button will download selected data to your local computer.</p></li>
+<li><p>The third button will delete the selected folder or file.</p></li>
+<li><p>The last button will clear your selection.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="part-5-terminal-tab">
+<h3>Part 5. Terminal Tab<a class="headerlink" href="#part-5-terminal-tab" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Click the <strong>Terminal</strong> tab on the left side of the screen.</p></li>
+<li><p>This links you to the Linux command line that you can use in a variety of ways to manage data, load data from an outside location or process data using a series of commands.</p></li>
+<li><p>When you initially load the Terminal, you will see information about your usage and the available types of instances you can initialize.</p></li>
+<li><p>One of the most important features of the Terminal is the ability to increase your instance size. The default instance is not sufficient for analyzing large amounts of data, for example running a classification on a large area.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>To increase the size of your instance, first examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below.</p></li>
+<li><p>Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost effective.</p></li>
+<li><p>Next to the “Select (t1):” text, type in ‘t2’ or your chosen instance type.</p></li>
+<li><p>Press Enter on your keyboard.</p></li>
+<li><p>Wait for the new instance to start. This will take several minutes.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<a class="reference internal image-reference" href="_images/terminal.JPG"><img alt="The terminal page, including an example of changing the instance" class="align-center" src="_images/terminal.JPG" style="width: 450px;" /></a>
+</div>
+<div class="section" id="part-6-apps-tab">
+<h3>Part 6. Apps Tab<a class="headerlink" href="#part-6-apps-tab" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Apps</strong> tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.</p></li>
+</ol>
+<img alt="The Apps interface" class="align-center" src="_images/apps_interface.JPG" />
+<ol class="arabic" start="2">
+<li><p>This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>R Studio:</strong> provides access to R environment where you can run processing scripts and upload data to your SEPAL folder.</p></li>
+<li><p><strong>Stratified Area Estimator- Design:</strong> tool for creating stratified designs to estimate areas. We will use this tool in Module 4.</p></li>
+<li><p><strong>Stratified Area Estimator- Analysis:</strong> tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4.</p></li>
+<li><p><strong>Geo Processing- Beta:</strong> offers a selection of easy-to-use change detection and segmentation tools.</p></li>
+<li><p><strong>BFAST Explorer:</strong> tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p><strong>Congratulations! You have successfully completed this exercise. You now know how to navigate the SEPAL interface and access its many tools and functions.</strong></p>
+</div>
+</div>
+<div class="section" id="exercise-1-2-mosaic-generation-landsat-sentinel-2">
+<h2>Exercise 1.2. Mosaic generation (Landsat &amp; Sentinel 2)<a class="headerlink" href="#exercise-1-2-mosaic-generation-landsat-sentinel-2" title="Permalink to this headline">¶</a></h2>
+<p>SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. Mosaic creation is the first step for the image classification and two date change detection processes covered in Modules 2 and 3 respectively. These mosaics can be downloaded locally or to your Google Drive.</p>
+<p>In this exercise, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Objectives</p></th>
+<th class="head"><p>Prerequisites</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Learn how to create an image mosaic</p></td>
+<td><p>SEPAL account</p></td>
+</tr>
+<tr class="row-odd"><td><p>Become familiar with a variety of options
+for selecting dates, sensors, mosaicking
+and download options.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Create a cloud-free mosaic for 2016</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="part-1-create-a-landsat-mosaic">
+<h3>Part 1. Create a Landsat Mosaic<a class="headerlink" href="#part-1-create-a-landsat-mosaic" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>If SEPAL is not already open, click to open SEPAL in your browser: <a class="reference external" href="https://sepal.io/">https://sepal.io/</a> and login.</p></li>
+<li><p>Click on the <strong>Processing</strong> tab.</p></li>
+<li><p>Then, click on <strong>Optical Mosaic.</strong></p></li>
+<li><p>When the Optical Mosaic tab opens, you will see an <strong>Area of Interest</strong> window in the lower right hand corner of your screen.</p>
+<p>There are three ways to choose your area of interest. Bring up the menu by clicking the carrot to the right of the window label.</p>
+</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Select Country/Province (the default).</p></li>
+<li><p>Select from EE table</p></li>
+<li><p>Draw a polygon.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/area_of_interest.JPG"><img alt="The Area of Interest menu" class="align-center" src="_images/area_of_interest.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>We will use the <strong>Select a country/province</strong> option.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>In the list of countries that pops up, scroll down until you see the available options for <strong>Congo, Dem Republic of.</strong> Note there is also the Republic of Congo, which is not what we’re looking for.</p></li>
+<li><p>Under Province/Area, notice that there are many different options.</p></li>
+<li><p>Select <strong>Mai-Ndombe,</strong> then click <strong>Next.</strong></p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/country_province.JPG"><img alt="The Country or Province selection screen." class="align-center" src="_images/country_province.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="6">
+<li><p>In the <strong>Date</strong> menu you can select the <strong>Year</strong> you are interested in or click on <strong>More.</strong></p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>This interface allows you to refine the dates or seasons you are interested in.</p></li>
+<li><p>You can select a <strong>target date</strong> (The date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.</p></li>
+<li><p>You can also include additional seasons from the past or the future by adjusting the <strong>Past Seasons</strong> and <strong>Future Seasons</strong> slider. This will include additional years’ data of the same dates specified. For example, if you’re interested in August 2015, including one future season will also include data from August 2016. This is useful if you’re interested in a specific time of year but there is significant cloud cover.</p></li>
+<li><p>For this exercise, let’s create imagery for the dry season of 2019.</p></li>
+</ol>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.</p></li>
+<li><p>Click <strong>Apply.</strong></p></li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+<img alt="The date menu." class="align-center" src="_images/date_menu.JPG" />
+<ol class="arabic simple" start="7">
+<li><p>Now select the <strong>Data Sources (SRC)</strong> you’d like. Here, select the <strong>Landsat L8 &amp; L8 T2</strong> option. The color of the label turns brown once it has been selected.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><strong>L8</strong> began operating in 2012 and is continuing to collect data;</p></li>
+<li><p><strong>L7</strong> began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present; and</p></li>
+<li><p><strong>L4-5 TM,</strong> which collected data from July 1982-May 2012.</p></li>
+<li><p><strong>Sentinel 2 A+B</strong> began operating in June 2015.</p></li>
+<li><p>Click <strong>Done.</strong></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p>Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>When it is done, examine the preview to see how much data is available. For this example, coverage is good. However, in the future when you are creating your own mosaic, if there is not enough coverage of your area of interest, you will need to adjust your parameters.</p></li>
+<li><p>To do so, notice the five tabs in the lower left. You can adjust the initial search parameters using the first three of these tabs. For example, Click on <strong>Dat</strong> to expand the date range if you would like.</p></li>
+<li><p>The last two tabs are for <strong>scene selection</strong> and <strong>composite,</strong> which are more advanced filtering steps. We’ll cover those now.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/mosaic_preview.JPG"><img alt="A preview of your mosaic" class="align-center" src="_images/mosaic_preview.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="9">
+<li><p>We’re now going to go through the <strong>scene selection process.</strong> This allows you to change which specific images to include in your mosaic.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>You can change the scenes that are selected using the <strong>SCN</strong> button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on <strong>Use All Scenes</strong> and then <strong>Apply.</strong></p></li>
+<li><p>Change the <strong>Scenes</strong> by selecting <strong>Select Scenes</strong> with Priority: <strong>Target Date</strong></p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/scene_selection.JPG"><img alt="Selecting scenes for your mosaic." class="align-center" src="_images/scene_selection.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="10">
+<li><p>Click Apply. The result should look like the below image.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Notice the collection of circles over the Mai Ndombe study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven’t selected the scenes yet.</p></li>
+<li><p>Click the Auto-Select button to auto-select some scenes.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/scene_selection_zeros.JPG"><img alt="Scene selection process showing zeros before selection." class="align-center" src="_images/scene_selection_zeros.JPG" style="width: 550px;" /></a>
+<a class="reference internal image-reference" href="_images/auto_select_scenes.JPG"><img alt="Arrow showing the button for auto selecting scenes." class="align-center" src="_images/auto_select_scenes.JPG" style="width: 550px;" /></a>
+<ol class="arabic simple" start="11">
+<li><p>You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click <strong>Select Scenes.</strong> If there is only one scene for an area, that will be the only one selected despite the minimum.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/auto_select_scenes_menu.JPG"><img alt="Menu for auto selecting scenes." class="align-center" src="_images/auto_select_scenes_menu.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="12">
+<li><p>You should now see imagery overlain with circles indicating how many scenes are selected.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/imagery_number_scenes.JPG"><img alt="Example of the imagery with the number of scenes selected" class="align-center" src="_images/imagery_number_scenes.JPG" style="width: 450px;" /></a>
+<ol class="arabic" start="13">
+<li><p>You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.</p>
+<p>Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.</p>
+</li>
+</ol>
+<img alt="The select scenes interface showing 0 available and 4 selected scenes" class="align-center" src="_images/select_scenes_interface.JPG" />
+<ol class="arabic" start="14">
+<li><p>In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Satellite (e.g. L8, L7, L5 or L4)</p></li>
+<li><p>Percent cloud cover</p></li>
+<li><p>Number of days from the target date</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>To expand the Landsat image, hover over one of the images and click <strong>Preview.</strong> Click on the image to close the zoomed in graphic and return to the list of scenes.</p></li>
+<li><p>To remove a scene from the composite, click the <strong>Remove</strong> button when you hover over the selected scene.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/remove_preview_scenes.JPG"><img alt="Removing or previewing selected scenes" class="align-center" src="_images/remove_preview_scenes.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="15">
+<li><p>On the left hand side, you will see <strong>Available Scenes,</strong> which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click <strong>Add.</strong></p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Once you are satisfied with the selected imagery for a given area, click <strong>Close</strong> in the bottom right corner.</p></li>
+<li><p>You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/select_scenes_1.JPG"><img alt="Select scenes screen showing one available scene and 3 selected scenes" class="align-center" src="_images/select_scenes_1.JPG" style="width: 450px;" /></a>
+<ol class="arabic simple" start="16">
+<li><p>You can also change the composing method using the <strong>CMP</strong> button on the lower right.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.</p></li>
+<li><p>For this exercise, we will leave these at their default settings.</p></li>
+<li><p>If you make changes, click Apply after you’re done.</p></li>
+</ol>
+</div></blockquote>
+<img alt="The composite menu." class="align-center" src="_images/composite.JPG" />
+<ol class="arabic simple" start="17">
+<li><p>Now we’ll explore the <strong>Bands</strong> dropdown. Click on the <strong>Red Green Blue</strong> at the bottom of the page.</p></li>
+</ol>
+<img alt="Arrow pointing at the red, green, blue bands" class="align-center" src="_images/arrow_bands.JPG" />
+<ol class="arabic simple" start="18">
+<li><p>The below dropdown menu will appear.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Select the <strong>NIR, RED, GREEN</strong> band combination. This band combination displays vegetation as red, with darker reds indicating dense vegetation. Bare ground and urban areas appear grey or tan, while water appears black. NIR stands for near infrared.</p></li>
+<li><p>Once selected, the preview will automatically show what the composite will look like.</p></li>
+<li><p>Use the scroll wheel on your mouse to zoom in to the mosaic and then click and drag to pan around the image. This will help you assess the quality of the mosaic.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/bands_menu.JPG"><img alt="The band combinations menu" class="align-center" src="_images/bands_menu.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="19">
+<li><p>The map now shows the complete mosaic that incorporates all of the user-defined settings.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/completed_mosaic.JPG"><img alt="The imagery preview with the completed mosaic shown" class="align-center" src="_images/completed_mosaic.JPG" style="width: 450px;" /></a>
+<ol class="arabic simple" start="20">
+<li><p>Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.</p></li>
+<li><p>The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="part-2-name-and-save-your-recipe-and-mosaic">
+<h3>Part 2. Name and Save your Recipe and Mosaic<a class="headerlink" href="#part-2-name-and-save-your-recipe-and-mosaic" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Now, we will name the ‘recipe’ for creating the mosaic and explore options for the recipe.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>You will use this recipe when working with the classification or change detection tools, as well as when loading SEPAL mosaics into SEPAL’s Collect Earth Online.</p></li>
+<li><p>You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name. For this example use <em>MiaNdombe_LS8_2019_Dry.</em></p></li>
+<li><p>Now let’s explore options for the recipe. Click on the three lines in the upper right hand corner.</p></li>
+</ol>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>You can save the recipe (SEPAL will do this automatically on retrieval) so that it is available later.</p></li>
+<li><p>You can also <a href="#id1"><span class="problematic" id="id2">**</span></a>Duplicate the recipe.**This is useful for creating two years of data, as we will do in Module 3.</p></li>
+<li><p>Finally you can Export the recipe. This downloads a zip file with a JSON of your mosaic specifications.</p></li>
+</ol>
+</div></blockquote>
+<ol class="loweralpha simple" start="4">
+<li><p>Click on <strong>Save recipe….</strong> This will also let you rename the mosaic if you choose.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/save_duplicate_export_recipe.JPG"><img alt="Save, duplicate, export recipe menu." class="align-center" src="_images/save_duplicate_export_recipe.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Now if you click on the three lines icon, you should see an additional option: <strong>Revert to old revision…</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/revert_to_old_revision.JPG"><img alt="After saving the menu adds a revert to old revision option." class="align-center" src="_images/revert_to_old_revision.JPG" style="width: 350px;" /></a>
+<ol class="arabic" start="3">
+<li><p>Clicking on this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.</p>
+<p>Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.</p>
+</li>
+</ol>
+<img alt="Revisions menu dropdown." class="align-center" src="_images/revisions_menu.JPG" />
+<ol class="arabic" start="4">
+<li><p>Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery.</p>
+<p>To download this imagery mosaic to your SEPAL account, click the <strong>Retrieve</strong> button.</p>
+</li>
+</ol>
+<a class="reference internal image-reference" href="_images/retrieve.JPG"><img alt="The retrieve button." class="align-center" src="_images/retrieve.JPG" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="_images/retrieve_menu.JPG"><img alt="The retrieve menu" class="align-center" src="_images/retrieve_menu.JPG" style="width: 350px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>A window will appear with the following options:</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><strong>Bands to Retrieve:</strong> select the desired bands you would like to include in the download.</p></li>
+</ol>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>Select the <strong>Blue, Green, Red, NIR, SWIR 1 and SWIR 2</strong> bands. These are visible spectrum and infrared data collected by Landsat.</p></li>
+<li><p>Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: <a class="reference external" href="https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/">https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/</a>.</p></li>
+<li><p>Metadata on Date, Day of Year, and Days from Target can also be selected.</p></li>
+</ol>
+</div></blockquote>
+<ol class="loweralpha simple" start="2">
+<li><p><strong>Scale:</strong> the resolution of the mosaic. Landsat data is collected at 30m resolution, so we will leave the slider there.</p></li>
+<li><p><strong>Retrieve to:</strong> Sepal Workspace is the default option. Other options may appear depending on your permissions.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>When you have the desired bands selected, click <strong>Retrieve.</strong></p></li>
+<li><p>You will notice the <strong>Tasks</strong> icon is now spinning. If you click on it, you will see the data retrieval is in process. This step will take some time.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/retrieval_task.JPG"><img alt="Retrieval task being carried out" class="align-center" src="_images/retrieval_task.JPG" style="width: 350px;" /></a>
+<p><strong>This will take 25 minutes or more to finish downloading, however, you can move on to the next exercise without waiting for the download to finish.</strong></p>
+<p><strong>Congratulations! You have successfully completed this exercise. You now know how to create a Landsat mosaic using the many customizable parameters in SEPAL.</strong></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SEPAL-CEO Area Estimation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Module 1. Mosaic image generation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-1-1-an-introduction-to-sepal">Exercise 1.1.  An introduction to SEPAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-1-2-mosaic-generation-landsat-sentinel-2">Exercise 1.2. Mosaic generation (Landsat &amp; Sentinel 2)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="module-5.html">```</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module-5.html#user-defined-variables">// User defined variables               ///</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="intro.html" title="previous chapter">Introduction</a></li>
+      <li>Next: <a href="module-2.html" title="next chapter">&lt;no title&gt;</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Karen Dyson, Karis Tenneson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/module-1.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

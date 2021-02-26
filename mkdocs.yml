@@ -1,5 +1,0 @@
-site_name: SEPAL-CEO Area Estimation
-theme: readthedocs
-markdown_extensions:
-    - toc:
-        baselevel: 1
