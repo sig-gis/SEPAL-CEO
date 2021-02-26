@@ -8,11 +8,9 @@ Welcome to SEPAL-CEO Area Estimation's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
-   :caption: Contents:
 
    Introduction <intro>
-   Module 1 Mosaic image generation <module-1>
+   Module 1. Mosaic image generation <module-1>
    Module 2 <module-2>
    Module 3 <module-3>
    Module 4 <module-4>
