@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Introduction &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
+    <title>Introduction &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,7 +14,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="2. Mosaic image generation (Module 1)" href="module-1.html" />
+    <link rel="next" title="Module 1. Mosaic image generation" href="module-1.html" />
     <link rel="prev" title="Welcome to SEPAL-CEO Area Estimation’s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -33,7 +33,7 @@
           <div class="body" role="main">
             
   <div class="section" id="introduction">
-<h1><span class="section-number">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <p>Welcome to area estimation with SEPAL and CEO!</p>
 <p>In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors. For example, maps derived from land cover land use classifications may have errors due to pixel mixing, or noise in the input data. Using pixel-counting methods will produce biased estimates of area, and you cannot tell whether these are overestimates or underestimates. Sample based approaches create unbiased estimates of area and the error associated with your map.</p>
 <p>The goal of this manual is to teach you how to perform these tasks such that you can conduct your own area estimation for land use/land cover or change detection classifications.</p>
@@ -66,9 +66,9 @@
 <li><p>Reporting and Verification: <a class="reference external" href="https://reddcompass.org/reporting-verification">Reporting and Verification - GFOI</a></p></li>
 </ul>
 <div class="section" id="getting-started">
-<h2><span class="section-number">1.1. </span>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="sign-up-to-sepal">
-<h3><span class="section-number">1.1.1. </span>Sign Up to SEPAL<a class="headerlink" href="#sign-up-to-sepal" title="Permalink to this headline">¶</a></h3>
+<h3>Sign Up to SEPAL<a class="headerlink" href="#sign-up-to-sepal" title="Permalink to this headline">¶</a></h3>
 <img alt="Sepal splash page." class="align-center" src="_images/sepal_splash_page.JPG" />
 <p>You can request an account by visiting <a class="reference external" href="sepal.io">sepal.io</a> and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.</p>
 <a class="reference internal image-reference" href="_images/request_sepal.JPG"><img alt="Request access to sepal.io" class="align-center" src="_images/request_sepal.JPG" style="width: 400px;" /></a>
@@ -78,7 +78,7 @@
 </ol>
 </div>
 <div class="section" id="sign-up-to-ceo">
-<h3><span class="section-number">1.1.2. </span>Sign Up to CEO<a class="headerlink" href="#sign-up-to-ceo" title="Permalink to this headline">¶</a></h3>
+<h3>Sign Up to CEO<a class="headerlink" href="#sign-up-to-ceo" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>In your browser window, navigate to <a class="reference external" href="https://collect.earth">https://collect.earth/</a>. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.</p></li>
 <li><p>Click <strong>Login/Register</strong> on the upper right.</p></li>
@@ -88,7 +88,7 @@
 </ol>
 </div>
 <div class="section" id="sign-up-to-gee">
-<h3><span class="section-number">1.1.3. </span>Sign up to GEE<a class="headerlink" href="#sign-up-to-gee" title="Permalink to this headline">¶</a></h3>
+<h3>Sign up to GEE<a class="headerlink" href="#sign-up-to-gee" title="Permalink to this headline">¶</a></h3>
 <p>Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL.</p>
 <ol class="arabic simple">
 <li><p>You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up <a class="reference external" href="http://mail.google.com/mail/signup">here</a>.</p></li>
@@ -98,31 +98,33 @@
 </div>
 </div>
 <div class="section" id="project-planning-information">
-<h2><span class="section-number">1.2. </span>Project Planning Information<a class="headerlink" href="#project-planning-information" title="Permalink to this headline">¶</a></h2>
+<h2>Project Planning Information<a class="headerlink" href="#project-planning-information" title="Permalink to this headline">¶</a></h2>
 <p>Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this Manual, in the future you may use these techniques for your own projects. We encourage you to think about the following items to ensure your resulting products will be relevant, and that your chosen methods are well documented and transparent.</p>
 <ol class="arabic simple">
 <li><p>Descriptions and Objectives of the Project (State issues and information needs). Are you trying to conform to an IPCC Tier?</p></li>
 <li><p>Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  What type of information do you need? A map? An inventory? A change product? That is, do you need to know where different land cover types exist or do you just need an inventory of how much there is?</p></li>
 <li><p>How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?</p></li>
 <li><p>Description of the project area / extent (national/subnational/specific forest/etc.)</p></li>
-<li><dl class="simple">
-<dt>Description of the features/classes to be modeled or mapped.</dt><dd><ol class="loweralpha simple">
+<li><p>Description of the features/classes to be modeled or mapped.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Do you have a national definition of “forest”?</p></li>
 <li><p>Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?</p></li>
 <li><p>Do you have key categories that will drive different analysis techniques?</p></li>
 </ol>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Considerations for measuring, reporting, and verifying your data.</dt><dd><ol class="loweralpha simple">
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Considerations for measuring, reporting, and verifying your data.</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Do you have a strategy; do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path (who are the decision makers that will inform these strategies?)</p></li>
 <li><p>What field data will be required for classification and accuracy assessment?</p></li>
 <li><p>Do you have an existing National Forest Monitoring System (NFMS) in place?</p></li>
 </ol>
-</dd>
-</dl>
-</li>
+</div></blockquote>
+<ol class="arabic simple" start="7">
 <li><p>Will you supplement your remote sensing project with existing data (local data on forest type, management intent, records of natural disturbance…)?</p></li>
 <li><p>Partnerships (vendors, agencies, bureaus, etc.)</p></li>
 </ol>
@@ -146,16 +148,20 @@
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-started">1.1. Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#project-planning-information">1.2. Project Planning Information</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sign-up-to-sepal">Sign Up to SEPAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sign-up-to-ceo">Sign Up to CEO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sign-up-to-gee">Sign up to GEE</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="module-1.html">2. Module 1 Mosaic image generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module-5.html">3. ```</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module-5.html#user-defined-variables">4. // User defined variables               ///</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-planning-information">Project Planning Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="module-1.html">Module 1. Mosaic image generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module-5.html">```</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module-5.html#user-defined-variables">// User defined variables               ///</a></li>
 </ul>
 
 <div class="relations">
@@ -163,7 +169,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="previous chapter">Welcome to SEPAL-CEO Area Estimation’s documentation!</a></li>
-      <li>Next: <a href="module-1.html" title="next chapter"><span class="section-number">2. </span>Mosaic image generation (Module 1)</a></li>
+      <li>Next: <a href="module-1.html" title="next chapter">Module 1. Mosaic image generation</a></li>
   </ul></li>
 </ul>
 </div>

@@ -65,15 +65,20 @@ You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Si
    :align: center
 
 1. If you do not have a SEPAL account, you can request access `here <http://tinyurl.com/fao-sepal>`_.
+
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
 
 Sign Up to CEO
 ---------------
 
 1. In your browser window, navigate to `https://collect.earth/ <https://collect.earth>`_. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
+
 2. Click **Login/Register** on the upper right.
+
 3. To set up a new account, click on **Register a new account** and follow the instructions.
+
 4. When you have an account, login with your email and password.
+
 5. If you forget your password, click on **Forgot your password?** and follow the instructions.
 
 Sign up to GEE
@@ -82,7 +87,9 @@ Sign up to GEE
 Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL.
 
 1. You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up `here <http://mail.google.com/mail/signup>`_.
+
 2. To request a GEE account, please visit `https://earthengine.google.com/new_signup/ <https://earthengine.google.com/new_signup/>`_.
+
 3. Once you have a Google Earth Engine account, you can access GEE here: `https://code.earthengine.google.com/ <https://code.earthengine.google.com/>`_.
 
 -----------------------------
@@ -96,16 +103,21 @@ Project planning and methods documentation play a key role in any remote sensing
 2. Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  What type of information do you need? A map? An inventory? A change product? That is, do you need to know where different land cover types exist or do you just need an inventory of how much there is?
 
 3. How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?
+
 4. Description of the project area / extent (national/subnational/specific forest/etc.)
+
 5. Description of the features/classes to be modeled or mapped.
-	a. Do you have a national definition of “forest”?
-	b. Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?
-	c. Do you have key categories that will drive different analysis techniques?
+
+  a. Do you have a national definition of “forest”?
+  b. Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?
+  c. Do you have key categories that will drive different analysis techniques?
 
 6. Considerations for measuring, reporting, and verifying your data.
-	a. Do you have a strategy; do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path (who are the decision makers that will inform these strategies?)
-	b. What field data will be required for classification and accuracy assessment?
-	c. Do you have an existing National Forest Monitoring System (NFMS) in place?
+
+  a. Do you have a strategy; do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path (who are the decision makers that will inform these strategies?)
+  b. What field data will be required for classification and accuracy assessment?
+  c. Do you have an existing National Forest Monitoring System (NFMS) in place?
 
 7. Will you supplement your remote sensing project with existing data (local data on forest type, management intent, records of natural disturbance…)?
+
 8. Partnerships (vendors, agencies, bureaus, etc.)

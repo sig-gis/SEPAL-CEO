@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. ``` &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
+    <title>``` &#8212; SEPAL-CEO Area Estimation 3-1-2021 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -150,10 +150,10 @@
 <p>Here are three examples of comment types:</p>
 <p>Comments that clarify:</p>
 <div class="section" id="id5">
-<h1><span class="section-number">3. </span><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<h1><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="section" id="user-defined-variables">
-<h1><span class="section-number">4. </span>// User defined variables               ///<a class="headerlink" href="#user-defined-variables" title="Permalink to this headline">¶</a></h1>
+<h1>// User defined variables               ///<a class="headerlink" href="#user-defined-variables" title="Permalink to this headline">¶</a></h1>
 <p>// Main variables for defining region of interest,
 // start and end period, and sensors to include</p>
 <p>//Available sensors are : Landsat, Sentinel2, Sentinel1,
@@ -174,7 +174,7 @@ var previousImages = otherImageCollection.filterDate(imageDate.advance(-1,’mon
 return img.set(‘images’, previousImages.toList() )</p>
 </div></blockquote>
 <div class="section" id="id12">
-<h2><span class="section-number">4.1. </span>});<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<h2>});<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>And here is an example where comments (A) can be replaced by variables (B).</p>
 <ol class="upperalpha simple">
 <li></li>
@@ -189,7 +189,7 @@ var results = myAnalysis(dateInputBox.getValue(),sensorInputBox.getValue())</p>
 </dl>
 </div>
 <div class="section" id="id15">
-<h2><span class="section-number">4.2. </span>}<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<h2>}<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <ol class="upperalpha simple" start="2">
 <li></li>
 </ol>
@@ -203,7 +203,7 @@ var selectedSensorDateRange = sensorDateRangeDict[selectedSensor]</p>
 </dl>
 </div>
 <div class="section" id="id18">
-<h2><span class="section-number">4.3. </span>}<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<h2>}<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <p>In this example above you can see that you write roughly the same number of lines of code with and without comments. However, by adding descriptive variable names, the code itself becomes simpler to understand.</p>
 <p>Finally, note that reading the actual code will always be truer than reading the comments. In the first example it poses the question: “Did the user pass in a year range that is within the valid range for the selected satellite?“ But what if you choose to include aerial imagery or UAV data sources at some point? Chances are you won’t feel compelled to go back and update your comment.</p>
 <p>## Exercise 5.4: Transparent coding: github and saving GEE scripts</p>
@@ -341,15 +341,14 @@ Assumptions (Note: Need to archive outputs before proceeding with analysis) |</p
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module-1.html">2. Module 1 Mosaic image generation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. ```</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#user-defined-variables">4. // User defined variables               ///</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id12">4.1. });</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id15">4.2. }</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id18">4.3. }</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module-1.html">Module 1. Mosaic image generation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">```</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#user-defined-variables">// User defined variables               ///</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id12">});</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">}</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">}</a></li>
 </ul>
 </li>
 </ul>

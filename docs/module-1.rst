@@ -101,9 +101,9 @@ Part 4. Files Tab
 3. Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.
 
 	a. The left button will show hidden files (files and folder names starting with ‘.’).
-	b. The second button will download selected data to your local computer.
+  b. The second button will download selected data to your local computer.
   c. The third button will delete the selected folder or file.
-	d. The last button will clear your selection.
+  d. The last button will clear your selection.
 
 Part 5. Terminal Tab
 ---------------------
@@ -179,9 +179,9 @@ Part 1. Create a Landsat Mosaic
 
    There are three ways to choose your area of interest. Bring up the menu by clicking the carrot to the right of the window label.
 
-		a. Select Country/Province (the default).
-		b. Select from EE table
-		c. Draw a polygon.
+  a. Select Country/Province (the default).
+  b. Select from EE table
+  c. Draw a polygon.
 
 .. image:: images/area_of_interest.JPG
    :alt: The Area of Interest menu
@@ -190,9 +190,9 @@ Part 1. Create a Landsat Mosaic
 
 5. We will use the **Select a country/province** option.
 
-	a. In the list of countries that pops up, scroll down until you see the available options for **Congo, Dem Republic of.** Note there is also the Republic of Congo, which is not what we’re looking for.
-	b. Under Province/Area, notice that there are many different options.
-	c. Select **Mai-Ndombe,** then click **Next.**
+  a. In the list of countries that pops up, scroll down until you see the available options for **Congo, Dem Republic of.** Note there is also the Republic of Congo, which is not what we’re looking for.
+  b. Under Province/Area, notice that there are many different options.
+  c. Select **Mai-Ndombe,** then click **Next.**
 
 .. image:: images/country_province.JPG
    :alt: The Country or Province selection screen.
@@ -201,13 +201,12 @@ Part 1. Create a Landsat Mosaic
 
 6. In the **Date** menu you can select the **Year** you are interested in or click on **More.**
 
-	a. This interface allows you to refine the dates or seasons you are interested in.
-	b. You can select a **target date** (The date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.
-	c. You can also include additional seasons from the past or the future by adjusting the **Past Seasons** and **Future Seasons** slider. This will include additional years’ data of the same dates specified. For example, if you’re interested in August 2015, including one future season will also include data from August 2016. This is useful if you’re interested in a specific time of year but there is significant cloud cover.
-	d. For this exercise, let’s create imagery for the dry season of 2019.
-
-		i. Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.
-		ii. Click **Apply.**
+  a. This interface allows you to refine the dates or seasons you are interested in.
+  b. You can select a **target date** (The date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.
+  c. You can also include additional seasons from the past or the future by adjusting the **Past Seasons** and **Future Seasons** slider. This will include additional years’ data of the same dates specified. For example, if you’re interested in August 2015, including one future season will also include data from August 2016. This is useful if you’re interested in a specific time of year but there is significant cloud cover.
+  d. For this exercise, let’s create imagery for the dry season of 2019.
+    i. Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.
+    ii. Click **Apply.**
 
 .. image:: images/date_menu.JPG
    :alt: The date menu.
@@ -215,17 +214,17 @@ Part 1. Create a Landsat Mosaic
 
 7. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected.
 
-	a. **L8** began operating in 2012 and is continuing to collect data;
-	b. **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present; and
-	c. **L4-5 TM,** which collected data from July 1982-May 2012.
-	d. **Sentinel 2 A+B** began operating in June 2015.
-	e. Click **Done.**
+  a. **L8** began operating in 2012 and is continuing to collect data;
+  b. **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present; and
+  c. **L4-5 TM,** which collected data from July 1982-May 2012.
+  d. **Sentinel 2 A+B** began operating in June 2015.
+  e. Click **Done.**
 
 8. Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
 
   a. When it is done, examine the preview to see how much data is available. For this example, coverage is good. However, in the future when you are creating your own mosaic, if there is not enough coverage of your area of interest, you will need to adjust your parameters.
   b. To do so, notice the five tabs in the lower left. You can adjust the initial search parameters using the first three of these tabs. For example, Click on **Dat** to expand the date range if you would like.
-	c. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
+  c. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
 .. image:: images/mosaic_preview.JPG
    :alt: A preview of your mosaic
@@ -234,8 +233,8 @@ Part 1. Create a Landsat Mosaic
 
 9. We’re now going to go through the **scene selection process.** This allows you to change which specific images to include in your mosaic.
 
-	a. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply.**
-	b. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
+  a. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply.**
+  b. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
 .. image:: images/scene_selection.JPG
    :alt: Selecting scenes for your mosaic.
@@ -285,8 +284,8 @@ Part 1. Create a Landsat Mosaic
 	  * Percent cloud cover
 	  * Number of days from the target date
 
-	a. To expand the Landsat image, hover over one of the images and click **Preview.** Click on the image to close the zoomed in graphic and return to the list of scenes.
-	b. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
+  a. To expand the Landsat image, hover over one of the images and click **Preview.** Click on the image to close the zoomed in graphic and return to the list of scenes.
+  b. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
 
 .. image:: images/remove_preview_scenes.JPG
    :alt: Removing or previewing selected scenes
@@ -300,7 +299,7 @@ Part 1. Create a Landsat Mosaic
 
 15. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
 
-	a. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
+  a. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
   b. You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
 .. image:: images/select_scenes_1.JPG
@@ -310,9 +309,9 @@ Part 1. Create a Landsat Mosaic
 
 16. You can also change the composing method using the **CMP** button on the lower right.
 
-	a. Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.
-	b. For this exercise, we will leave these at their default settings.
-	c. If you make changes, click Apply after you’re done.
+  a. Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.
+  b. For this exercise, we will leave these at their default settings.
+  c. If you make changes, click Apply after you’re done.
 
 .. image:: images/composite.JPG
    :alt: The composite menu.
@@ -344,8 +343,8 @@ Part 1. Create a Landsat Mosaic
 
 20. Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
 
-	a. For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.
-	b. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
+  a. For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.
+  b. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
 
 
 Part 2. Name and Save your Recipe and Mosaic
@@ -353,15 +352,13 @@ Part 2. Name and Save your Recipe and Mosaic
 
 1. Now, we will name the ‘recipe’ for creating the mosaic and explore options for the recipe.
 
-	a. You will use this recipe when working with the classification or change detection tools, as well as when loading SEPAL mosaics into SEPAL’s Collect Earth Online.
-	b. You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name. For this example use *MiaNdombe_LS8_2019_Dry.*
-	c. Now let's explore options for the recipe. Click on the three lines in the upper right hand corner.
-
-		i. You can save the recipe (SEPAL will do this automatically on retrieval) so that it is available later.
-		ii. You can also **Duplicate the recipe.**This is useful for creating two years of data, as we will do in Module 3.
-		iii. Finally you can Export the recipe. This downloads a zip file with a JSON of your mosaic specifications.
-
-	d. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
+  a. You will use this recipe when working with the classification or change detection tools, as well as when loading SEPAL mosaics into SEPAL’s Collect Earth Online.
+  b. You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name. For this example use *MiaNdombe_LS8_2019_Dry.*
+  c. Now let's explore options for the recipe. Click on the three lines in the upper right hand corner.
+    i. You can save the recipe (SEPAL will do this automatically on retrieval) so that it is available later.
+    ii. You can also **Duplicate the recipe.**This is useful for creating two years of data, as we will do in Module 3.
+    iii. Finally you can Export the recipe. This downloads a zip file with a JSON of your mosaic specifications.
+  d. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
 
 .. image:: images/save_duplicate_export_recipe.JPG
    :alt: Save, duplicate, export recipe menu.
@@ -399,14 +396,12 @@ Part 2. Name and Save your Recipe and Mosaic
 
 5. A window will appear with the following options:
 
-	a. **Bands to Retrieve:** select the desired bands you would like to include in the download.
-
-		i. Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. These are visible spectrum and infrared data collected by Landsat.
-		ii. Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
-		iii. Metadata on Date, Day of Year, and Days from Target can also be selected.
-
-	b. **Scale:** the resolution of the mosaic. Landsat data is collected at 30m resolution, so we will leave the slider there.
-	c. **Retrieve to:** Sepal Workspace is the default option. Other options may appear depending on your permissions.
+  a. **Bands to Retrieve:** select the desired bands you would like to include in the download.
+    i. Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. These are visible spectrum and infrared data collected by Landsat.
+    ii. Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
+    iii. Metadata on Date, Day of Year, and Days from Target can also be selected.
+  b. **Scale:** the resolution of the mosaic. Landsat data is collected at 30m resolution, so we will leave the slider there.
+  c. **Retrieve to:** Sepal Workspace is the default option. Other options may appear depending on your permissions.
 
 6. When you have the desired bands selected, click **Retrieve.**
 
