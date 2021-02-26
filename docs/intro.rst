@@ -1,6 +1,10 @@
-# Welcome to area estimation with SEPAL and CEO!
+=============
+Introduction
+=============
 
-Welcome to area estimation with SEPAL and CEO. In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors. For example, maps derived from land cover land use classifications may have errors due to pixel mixing, or noise in the input data. Using pixel-counting methods will produce biased estimates of area, and you cannot tell whether these are overestimates or underestimates. Sample based approaches create unbiased estimates of area and the error associated with your map.
+Welcome to area estimation with SEPAL and CEO!
+
+In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors. For example, maps derived from land cover land use classifications may have errors due to pixel mixing, or noise in the input data. Using pixel-counting methods will produce biased estimates of area, and you cannot tell whether these are overestimates or underestimates. Sample based approaches create unbiased estimates of area and the error associated with your map.
 
 The goal of this manual is to teach you how to perform these tasks such that you can conduct your own area estimation for land use/land cover or change detection classifications.
 
@@ -14,12 +18,15 @@ In this manual, you will find four modules covering methods, and one module cove
 
 These exercises include step-by-step directions and are built to facilitate learning through reading and by doing. This manual will be accompanied by short videos, which will visually illustrate the steps described in the text.
 
-* Para ver este manual en español, vaya aquí: (add links; if using pages will need to be separate repositories)
+* Para ver este manual en español, vaya aquí:
 * Pour voir ce manuel dans français, allez ici:
 
 To visualize the flow of this manual, see below:
 
-    ![Visualization of manual content](images/manual_content.JPG){:width="350px"}
+.. image:: images/manual_content.JPG
+   :alt: Visualization of manual content
+   :width: 300
+   :align: center
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
@@ -31,60 +38,74 @@ Google Earth Engine (GEE) combines a multi-petabyte catalog of satellite imagery
 
 You can find more information here:
 
-* An older forest change detection manual for SEPAL: [Forest Cover Change Detection with SEPAL](https://drive.google.com/file/d/1kPE2wFNDqNpXycqTJfNUtZf9iWsQHcab/view?usp=sharing)
-* Olofsson et al 2014: [FAO - SFM Tool Detail: Good practices for estimating area and assessing accuracy of land change](http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/)
-* CEO documentation: [https://collect.earth/support](https://collect.earth/support)
-* GEE documentation: [ Earth Engine Code Editor from Google Earth Engine](https://developers.google.com/earth-engine/guides/playground)
-* REDD Compass: [Front Page - GFOI](https://reddcompass.org/frontpage)
-* Reporting and Verification: [Reporting and Verification - GFOI](https://reddcompass.org/reporting-verification)
+* An older forest change detection manual for SEPAL: `Forest Cover Change Detection with SEPAL <https://drive.google.com/file/d/1kPE2wFNDqNpXycqTJfNUtZf9iWsQHcab/view?usp=sharing>`_
+* Olofsson et al 2014: `FAO - SFM Tool Detail: Good practices for estimating area and assessing accuracy of land change <http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/>`_
+* CEO documentation: `https://collect.earth/support <https://collect.earth/support>`_
+* GEE documentation: `Earth Engine Code Editor from Google Earth Engine <https://developers.google.com/earth-engine/guides/playground>`_
+* REDD Compass: `Front Page - GFOI <https://reddcompass.org/frontpage>`_
+* Reporting and Verification: `Reporting and Verification - GFOI <https://reddcompass.org/reporting-verification>`_
 
 
-## Getting started
+----------------
+Getting started
+----------------
 
-    ![Sepal splash page](images/sepal_splash_page.JPG)
+Sign Up to SEPAL
+-----------------
 
-### Sign Up to SEPAL
+.. image:: images/sepal_splash_page.JPG
+   :alt: Sepal splash page.
+   :align: center
 
-You can request an account by visiting [sepal.io](sepal.io) and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
+You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-    ![Request access to sepal.io](images/request_sepal.JPG){:width="350px"}
+.. image:: images/request_sepal.JPG
+   :width: 400
+   :alt: Request access to sepal.io
+   :align: center
 
-1. If you do not have a SEPAL account, you can request access [here](http://tinyurl.com/fao-sepal ).
+1. If you do not have a SEPAL account, you can request access `here <http://tinyurl.com/fao-sepal>`_.
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
 
-### Sign Up to CEO
+Sign Up to CEO
+---------------
 
-1. In your browser window, navigate to [https://collect.earth/](https://collect.earth). CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
+1. In your browser window, navigate to `https://collect.earth/ <https://collect.earth>`_. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
 2. Click **Login/Register** on the upper right.
 3. To set up a new account, click on **Register a new account** and follow the instructions.
 4. When you have an account, login with your email and password.
 5. If you forget your password, click on **Forgot your password?** and follow the instructions.
 
-### Sign up to GEE
+Sign up to GEE
+---------------
 
 Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL.
 
-1. You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up [here](http://mail.google.com/mail/signup).
-2. To request a GEE account, please visit [https://earthengine.google.com/new_signup/](https://earthengine.google.com/new_signup/).
-3. Once you have a Google Earth Engine account, you can access GEE here: [https://code.earthengine.google.com/](https://code.earthengine.google.com/)
+1. You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up `here <http://mail.google.com/mail/signup>`_.
+2. To request a GEE account, please visit `https://earthengine.google.com/new_signup/ <https://earthengine.google.com/new_signup/>`_.
+3. Once you have a Google Earth Engine account, you can access GEE here: `https://code.earthengine.google.com/ <https://code.earthengine.google.com/>`_.
 
-## Project Planning Information
+-----------------------------
+Project Planning Information
+-----------------------------
 
 Project planning and methods documentation play a key role in any remote sensing analysis project. While we use example projects in this Manual, in the future you may use these techniques for your own projects. We encourage you to think about the following items to ensure your resulting products will be relevant, and that your chosen methods are well documented and transparent.
 
-1. Descriptions and Objectives of the Project (State issues and information needs).
-	1. Are you trying to conform to an IPCC Tier?
-2. Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).
-	1. What type of information do you need? A map? An inventory? A change product? (e.g. do you need to know where different land cover types exist or do you just need an inventory of how much there is?)
+1. Descriptions and Objectives of the Project (State issues and information needs). Are you trying to conform to an IPCC Tier?
+
+2. Descriptions of the end user product (data, information, monitoring system or map that will be created by the project).  What type of information do you need? A map? An inventory? A change product? That is, do you need to know where different land cover types exist or do you just need an inventory of how much there is?
+
 3. How will success be defined for this project? Do you require specific accuracy or a certain level of detail in the final map product?
 4. Description of the project area / extent (national/subnational/specific forest/etc.)
 5. Description of the features/classes to be modeled or mapped.
-	1. Do you have a national definition of “forest”?
-	1. Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?
-	1. Do you have key categories that will drive different analysis techniques?
-6. Considerations for measuring, reporting, and verifying:
-	1. Do you have a strategy; do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path (who are the decision makers that will inform these strategies?)
-	1. What field data will be required for classification and accuracy assessment?
-	1. Do you have an existing National Forest Monitoring System (NFMS) in place?
+	a. Do you have a national definition of “forest”?
+	b. Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?
+	c. Do you have key categories that will drive different analysis techniques?
+
+6. Considerations for measuring, reporting, and verifying your data.
+	a. Do you have a strategy; do you know what is required? Do you know where to get the required information? Looking ahead, are you on the right path (who are the decision makers that will inform these strategies?)
+	b. What field data will be required for classification and accuracy assessment?
+	c. Do you have an existing National Forest Monitoring System (NFMS) in place?
+
 7. Will you supplement your remote sensing project with existing data (local data on forest type, management intent, records of natural disturbance…)?
 8. Partnerships (vendors, agencies, bureaus, etc.)

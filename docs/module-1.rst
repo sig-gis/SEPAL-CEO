@@ -1,10 +1,13 @@
-# Module 1: Mosaic image generation
+==================================
+Mosaic image generation (Module 1)
+==================================
 
 Generating mosaics of remote sensing data from satellite data is the first step in our classifications. In this Module, you will learn how to navigate SEPAL and how to create mosaics using imagery from the Landsat or Sentinel satellites. At the end of this section, you will be able to create the satellite imagery mosaics you will need for Modules 2 & 3.
 
 This module should take you approximately 1-2 hours.
 
-## Exercise 1.1: An introduction to SEPAL
+Exercise 1.1  An introduction to SEPAL
+--------------------------------------
 
 In this exercise, you will be introduced to the SEPAL interface. You will learn how to access SEPAL’s features to facilitate the remote sensing exercises in later modules.
 
@@ -13,7 +16,9 @@ Objectives | Prerequisites
 Navigate the SEPAL interface | Internet access
 Learn about the functionality of SEPAL | SEPAL account (see ‘Getting Started’)
 
-### Part 1: Open SEPAL
+Part 1: Open SEPAL
+-----------------
+
 
 1. Navigate to [https://sepal.io/](https://sepal.io/) to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login.**
