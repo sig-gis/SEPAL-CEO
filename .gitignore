@@ -3,6 +3,7 @@ images/desktop.ini
 .Rhistory
 **/archive
 **/docs/_static
+**/docs/_build
 *.html
 *.doctree
 *.html

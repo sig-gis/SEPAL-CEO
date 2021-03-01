@@ -144,7 +144,7 @@ For Exercise 2.3, you will need to know how to find your Earth Engine Asset.
    :align: center
 
 ----------------------------------------------------
-Exercise 2.3: Training data collection in CEO-SEPAL
+Exercise 2.3. Training data collection in CEO-SEPAL
 ----------------------------------------------------
 
 In this exercise, we will learn how to collect training data using the CEO-SEPAL tool. These training data points will become the foundation of our classification in Exercise 2.4. High quality training data is necessary to get good land cover map results. In the most ideal situation, training data is collected in the field by visiting each of the land cover types to be mapped and collecting attributes. When field collection is not an option, the second best choice is to digitize training data from high resolution imagery, or at the very least from the imagery to be classified.
