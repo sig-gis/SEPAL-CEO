@@ -13,7 +13,7 @@ Welcome to SEPAL-CEO Area Estimation's documentation!
    Module 1. Mosaic image generation <module-1>
    Module 2. Image classification <module-2>
    Module 3. Image change detection <module-3>
-   Module 4 <module-4>
+   Module 4. Sample-based estimation of area and accuracy <module-4>
    Module 5 <module-5>
 
 

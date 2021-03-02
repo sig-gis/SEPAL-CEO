@@ -45,12 +45,14 @@ Before we can identify change, we first need to have images to compare. We will 
 
 *If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.*
 
+..
+
 .. image:: images/retrieval_mosaic.JPG
 	 :alt: The retrieval screen for mosaics.
 	 :width: 450
    :align: center
 
-.. this image isn't working for some reason...
+**this image isn't working for some reason...**
 
 4. Repeat steps 2 & 3 but change the **Date** parameter to 2018.
 
@@ -168,11 +170,15 @@ Part 3. Two date image processing
 
 Now that the hard work of setting up the mosaics and creating and adding the training data is complete, all that is left to do is run and retrieve the classification.
 
+..
+
 .. image::images/retrieve_change_detection_map.JPEG
 	 :alt: Retrieving the change detection map.
 	 :align: center
 
-.. this image also isn't working
+..
+
+**missing retrieve change detection map.JPG here--not sure why**
 
 1. To retrieve your classification as an EE asset, click the cloud icon in the upper right to open the **Retrieve** panel.
 2. Select **Google Earth Engine Asset** or **SEPAL Workspace.** Select GEE Asset if you would like to share your map or if you would like to use it for further analysis. Select SEPAL Workspace if you would like to use the map internally only.
