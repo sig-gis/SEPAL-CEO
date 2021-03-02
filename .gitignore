@@ -1,9 +1,10 @@
 
 images/desktop.ini
 .Rhistory
-archive
-docs/_build
-docs/_static
+**/archive
+**/docs/_static
+**/docs/_build
 *.html
 *.doctree
 *.html
+*.pickle
