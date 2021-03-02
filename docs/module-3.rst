@@ -48,8 +48,8 @@ Before we can identify change, we first need to have images to compare. We will 
 ..
 
 .. image:: images/retrieval_mosaic.JPG
-	 :alt: The retrieval screen for mosaics.
-	 :width: 450
+   :alt: The retrieval screen for mosaics.
+   :width: 450
    :align: center
 
 **this image isn't working for some reason...**
@@ -64,9 +64,9 @@ Part 2: Create and collect change classification training data
 Now that we have the mosaics created, we will collect change training data. Though more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2018: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2018 there are four pathways: a pixel can be forest in 2015 and in 2018 (stable forest); a pixel can be non-forest in 2015 and in 2018 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
 .. image:: images/land_cover_flow_chart.JPG
-	 :alt: A land cover change flow chart.
-	 :width: 450
-	 :align: center
+   :alt: A land cover change flow chart.
+   :width: 450
+   :align: center
 
 1. First, we’ll create training data.
 
@@ -88,16 +88,16 @@ Now that we have the mosaics created, we will collect change training data. Thou
   b. Create new project title “Sri Lanka Training Data” with **TRAINING DATA** as the **Type** and a **scale** of 30m.
 
 .. image:: images/training_data_menu_3.JPG
-	 :alt: The Training Data menu where you can open a training data collection.
-	 :width: 450
-	 :align: center
+   :alt: The Training Data menu where you can open a training data collection.
+   :width: 450
+   :align: center
 
   c. Add “Stable Forest”, “Stable Non-Forest”, and “Change” questions to the Code List
 
 .. image:: images/training_data_project_setup_2.JPG
-	 :alt: Setting up the training data project.
-	 :width: 450
-	 :align: center
+   :alt: Setting up the training data project.
+   :width: 450
+   :align: center
 
 3. Add imagery to the CEO project.
 
@@ -105,14 +105,14 @@ Now that we have the mosaics created, we will collect change training data. Thou
   b. You can also add more than one band combination. See the example below.
 
 .. image:: images/add_GEE_assets.JPG
-	 :alt: Adding GEE Assets to the project.
-	 :align: center
+   :alt: Adding GEE Assets to the project.
+   :align: center
 
 4. Add Hansen Forest Loss layers (loss, yearloss). These are found here: UMD/hansen/global_forest_change_2019_v1_7
 
 .. image:: images/hansen_forest_loss_layer.JPG
-	 :alt: Adding the Hansen Forest Loss layer.
-	 :align: center
+   :alt: Adding the Hansen Forest Loss layer.
+   :align: center
 
 5. When you’ve set up the project, click on the Submit button.
 6. Collect and upload sample data.
@@ -128,9 +128,9 @@ Now that we have the mosaics created, we will collect change training data. Thou
    Now you can add your GEE Asset Table in the main SEPAL window. Return to the classification recipe and enter the path to your training data in the EE Table field.
 
 .. image:: images/GEE_asset_table_training_data.JPG
-	 :alt: Add your GEE Asset Table as training data.
-	 :width: 400
-	 :align: center
+   :alt: Add your GEE Asset Table as training data.
+   :width: 400
+   :align: center
 
   a. In the **Class Column** field select the column name that holds your class values. If you used SEPAL’s CEO extension this should automatically be filled as **‘class’.**
   b. **Click Done.**
@@ -138,16 +138,16 @@ Now that we have the mosaics created, we will collect change training data. Thou
      *If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).*
 
 .. image:: images/GEE_asset_error.JPG
-	 :alt: Error with GEE asset from an incorrect upload.
-	 :width: 450
-	 :align: center
+   :alt: Error with GEE asset from an incorrect upload.
+   :width: 450
+   :align: center
 
 8. SEPAL will then load a preview of your classification.
 
 .. image:: images/change_detection_model_preview.JPG
-	 :alt: A preview of the change detection model output.
-	 :width: 450
-	 :align: center
+   :alt: A preview of the change detection model output.
+   :width: 450
+   :align: center
 
 9. In addition to the input features from the Landsat 8 composite, it is possible to add **Auxiliary Sources (AUX)** for the classification. There are three additional sources available:
 
@@ -159,9 +159,9 @@ Now that we have the mosaics created, we will collect change training data. Thou
 11. Click **Apply.**
 
 .. image:: images/auxiliary_sources.JPG
-	 :alt: Auxiliary sources of data
-	 :width: 450
-	 :align: center
+   :alt: Auxiliary sources of data
+   :width: 450
+   :align: center
 
     *If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.*
 
@@ -173,8 +173,8 @@ Now that the hard work of setting up the mosaics and creating and adding the tra
 ..
 
 .. image::images/retrieve_change_detection_map.JPEG
-	 :alt: Retrieving the change detection map.
-	 :align: center
+   :alt: Retrieving the change detection map.
+   :align: center
 
 ..
 
@@ -185,9 +185,9 @@ Now that the hard work of setting up the mosaics and creating and adding the tra
 3. Click **Retrieve.**
 
 .. image:: images/retrieve_numbered.JPG
-	 :alt: Numbered instructions to retrieve.
-	 :width: 450
-	 :align: center
+   :alt: Numbered instructions to retrieve.
+   :width: 450
+   :align: center
 
 
 Part 4: Quality assurance and quality control
@@ -205,8 +205,8 @@ Following analysis you should spend some time looking at your change detection i
   d. Click Submit.
 
 .. image:: images/examine_change_detection_map.JPG
-	 :alt: Examining your change detection map
-	 :align: center
+   :alt: Examining your change detection map
+   :align: center
 
 2. Now click Collect for your Sri Lanka project.
 3. Switch the imagery to your Classification and pan and zoom around the map. Black will be ‘stable forest,’ grey is ‘stable non forest,’ and white is ‘change’ pixels.
@@ -219,30 +219,32 @@ Here is an example.
 High resolution image:
 
 .. image:: images/high_resolution_image.JPG
-	 :alt: High resolution image.
-	 :width: 450
-	 :align: center
+   :alt: High resolution image.
+   :width: 450
+   :align: center
 
 2015 imagery:
 
 .. image:: images/2015_imagery.JPG
-	 :alt: 2015 imagery.
-	 :width: 450
-	 :align: center
+   :alt: 2015 imagery.
+   :width: 450
+   :align: center
 
 2018 imagery:
 
 .. image:: images/2018_imagery.JPG
-	 :alt: 2018 imagery.
-	 :width: 450
-	 :align: center
+   :alt: 2018 imagery.
+   :width: 450
+   :align: center
 
 Change detection map:
 
 .. image:: images/change_detection_map.JPG
-	 :alt: The change detection map.
-	 :width: 450
-	 :align: center
+   :alt: The change detection map.
+   :width: 450
+   :align: center
+
+**Congratulations! You have learned how to conduct a two-date change detection classification in SEPAL.**
 
 -----------------------------------
 Exercise 3.2. Time series analysis
@@ -280,8 +282,8 @@ More information can be found online at http://bfast.r-forge.r-project.org/.
   c. Click **Get Data.** It may take a moment to download all the data for the point
 
 .. image:: images/BFAST_explorer.JPG
-	 :alt: The BFAST Explorer interface.
-	 :align: center
+   :alt: The BFAST Explorer interface.
+   :align: center
 
 4. Click the **Analysis** button at the top next to the **Map** button.
 5. **Satellite product:** Add your satellite data by selecting them from the satellite products dropdown menu.
@@ -297,14 +299,14 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 7. Select bfastmonitor as the algorithm.
 
 .. image:: images/BFAST_explorer_interface.JPG
-	 :alt: The BFAST Explorer interface.
-	 :align: center
+   :alt: The BFAST Explorer interface.
+   :align: center
 
 8. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
 
 .. image:: images/BFAST_visualization.JPG
-	 :alt: Additional BFAST visualization.
-	 :align: center
+   :alt: Additional BFAST visualization.
+   :align: center
 
 9. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
 10. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
@@ -337,8 +339,8 @@ TimeSync is a tool that researchers and managers can use to validate remotely se
 From TimeSync’s Introduction materials, here is an example output:
 
 .. image:: images/TimeSync_example.JPG
-	 :alt: An example from TimeSync.
-	 :align: center
+   :alt: An example from TimeSync.
+   :align: center
 
 For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to: https://www.timesync.forestry.oregonstate.edu/tutorial.html. There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here: http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf, and an introductory presentation here: https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf.
 
@@ -354,5 +356,7 @@ From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, 
 From LandTrendr’s documentation, here’s an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: https://emapr.github.io/LT-GEE/landtrendr.html.
 
 .. image:: images/LandTrendr.JPG
-	 :alt: The LandTrendr interface
-	 :align: center
+   :alt: The LandTrendr interface
+   :align: center
+
+**Congratulations! You have completed this introduction to time-series analysis tools.**

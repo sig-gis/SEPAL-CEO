@@ -44,10 +44,10 @@ Part 2. SEPAL Interface Home
 
 2. There are four main navigation tabs in the dock on the left side of the screen.
 
-	a. **Process:** select imagery and create mosaics.
-	b. **Files:** navigate through your personal SEPAL folders. This is where you can download or delete data, as well as visualize it using the Data Visualization link.
-	c. **Terminal:** access to the command line for the LINUX server.
-	d. **Apps:** links to a variety of pre-loaded tools.
+  a. **Process:** select imagery and create mosaics.
+  b. **Files:** navigate through your personal SEPAL folders. This is where you can download or delete data, as well as visualize it using the Data Visualization link.
+  c. **Terminal:** access to the command line for the LINUX server.
+  d. **Apps:** links to a variety of pre-loaded tools.
 
 3. At the lower left is the red **Tasks** tab. Clicking on this brings up a list of currently running tasks.
 
@@ -79,10 +79,10 @@ Part 3. Process Tab
 
 2. You should now see four options in the center of the screen.
 
-	a. **Optical Mosaic** allows you to create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
-	b. **Radar Mosaic** allows you to create a mosaic using Sentinel 1 data.
-	c. **Classification** allows you to use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2.
-	d. **Time Series** allows you to download time series information to your SEPAL storage.
+  a. **Optical Mosaic** allows you to create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
+  b. **Radar Mosaic** allows you to create a mosaic using Sentinel 1 data.
+  c. **Classification** allows you to use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2.
+  d. **Time Series** allows you to download time series information to your SEPAL storage.
 
 3. When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options.
 
@@ -100,7 +100,7 @@ Part 4. Files Tab
 
 3. Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.
 
-	a. The left button will show hidden files (files and folder names starting with ‘.’).
+  a. The left button will show hidden files (files and folder names starting with ‘.’).
   b. The second button will download selected data to your local computer.
   c. The third button will delete the selected folder or file.
   d. The last button will clear your selection.
@@ -116,11 +116,11 @@ Part 5. Terminal Tab
 
 4. One of the most important features of the Terminal is the ability to increase your instance size. The default instance is not sufficient for analyzing large amounts of data, for example running a classification on a large area.
 
-	a. To increase the size of your instance, first examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below.
-	b. Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost effective.
-	c. Next to the “Select (t1):” text, type in ‘t2’ or your chosen instance type.
-	d. Press Enter on your keyboard.
-	e. Wait for the new instance to start. This will take several minutes.
+  a. To increase the size of your instance, first examine the “Available instance types” table. This is updated periodically but an example from September of 2020 is shown below.
+  b. Choose an instance Type that fits your needs. Frequently a t2 or m2 is sufficient and cost effective.
+  c. Next to the “Select (t1):” text, type in ‘t2’ or your chosen instance type.
+  d. Press Enter on your keyboard.
+  e. Wait for the new instance to start. This will take several minutes.
 
 .. image:: images/terminal.JPG
    :alt: The terminal page, including an example of changing the instance
@@ -138,11 +138,11 @@ Part 6. Apps Tab
 
 2. This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
-	* **R Studio:** provides access to R environment where you can run processing scripts and upload data to your SEPAL folder.
-	* **Stratified Area Estimator- Design:** tool for creating stratified designs to estimate areas. We will use this tool in Module 4.
-	* **Stratified Area Estimator- Analysis:** tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4.
-	* **Geo Processing- Beta:** offers a selection of easy-to-use change detection and segmentation tools.
-	* **BFAST Explorer:** tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.
+  * **R Studio:** provides access to R environment where you can run processing scripts and upload data to your SEPAL folder.
+  * **Stratified Area Estimator- Design:** tool for creating stratified designs to estimate areas. We will use this tool in Module 4.
+  * **Stratified Area Estimator- Analysis:** tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4.
+  * **Geo Processing- Beta:** offers a selection of easy-to-use change detection and segmentation tools.
+  * **BFAST Explorer:** tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.
 
 **Congratulations! You have successfully completed this exercise. You now know how to navigate the SEPAL interface and access its many tools and functions.**
 
@@ -280,9 +280,9 @@ Part 1. Create a Landsat Mosaic
 
 14. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
 
-	  * Satellite (e.g. L8, L7, L5 or L4)
-	  * Percent cloud cover
-	  * Number of days from the target date
+    * Satellite (e.g. L8, L7, L5 or L4)
+    * Percent cloud cover
+    * Number of days from the target date
 
   a. To expand the Landsat image, hover over one of the images and click **Preview.** Click on the image to close the zoomed in graphic and return to the list of scenes.
   b. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
