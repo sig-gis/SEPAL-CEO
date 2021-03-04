@@ -35,8 +35,8 @@ In this exercise, you will build a decision tree for your classification along w
 +-------------------------------------+-----------------------------+
 
 
-Part 1 Specify the classification scheme
------------------------------------------
+Part 1. Specify the classification scheme
+------------------------------------------
 
 “Classification scheme” is the name used to describe the land cover and land use classes adopted. It should cover all of the possible classes that occur in the area of interest. Here, you will create a classification scheme with detailed definitions of the land cover and land use classes to share with interpreters.
 
@@ -50,11 +50,14 @@ Part 1 Specify the classification scheme
    :width: 450
    :align: center
 
+|
+
 .. image:: images/classification_scheme.JPG
    :alt: The classification scheme we will use for this exercise, with two classes forest and non-forest
    :width: 450
    :align: center
 
+|
 
 2. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land-use categories, CLC, or LUCAS.
 
@@ -112,15 +115,19 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
   a. Select **Draw Polygon** from the dropdown list.
 
 .. image:: images/aoi_dropdown.JPG
-   :alt: Area of interest dropdown menu
-   :width: 450
+   :alt: Area of interest dropdown menu.
+   :width: 450px
    :align: center
 
-  b. Navigate using the map to the State of Rondônia and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
+|
+
+  b. Navigate using the map to the State of Rondonia and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
 .. image:: images/rondonia.JPG
-   :alt: A polygon drawn around the State of Rondônia
+   :alt: A polygon drawn around the State of Rondonia.
    :align: center
+
+|
 
 3. Now use what you have learned in Module 1 to create a mosaic with imagery from the year 2019 (whole year or part of year, your choice). Don’t forget to consider which satellites you would like to include and which scenes you would like to include (all, some).
 4. Your preview should include imagery data across your entire area of interest. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
@@ -143,6 +150,8 @@ For Exercise 2.3, you will need to know how to find your Earth Engine Asset.
    :alt: Your mosaic’s information pane.
    :align: center
 
+|
+
 ----------------------------------------------------
 Exercise 2.3. Training data collection in CEO-SEPAL
 ----------------------------------------------------
@@ -154,6 +163,8 @@ In this assignment, you will create training data points using a combination of 
 .. image:: images/ceo_sepal_interface.JPG
    :alt: The CEO SEPAL interface
    :align: center
+
+|
 
 +--------------------------------------+---------------------------------+
 | Objectives                           | Prerequisites                   |
@@ -186,11 +197,13 @@ However, you can also navigate to https://sepal.io/ceo, log in, and add a projec
   c. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as well if you included them in your mosaic.
   d. Click **Apply,** then click **Next.**
 
-3. In the Training Data menu, click **Open training data collection tool.**This will open a new window/tab.
+3. In the Training Data menu, click **Open training data collection tool.** This will open a new window/tab.
 
 .. image:: images/training_data_menu.JPG
    :alt: Training data menu.
    :align: center
+
+|
 
 4. Click **Add project.**
 5. Type in a unique name for your training dataset, such as “Amazon training data”.
@@ -209,15 +222,18 @@ However, you can also navigate to https://sepal.io/ceo, log in, and add a projec
    :width: 450
    :align: center
 
+|
 
 9. Add imagery to the CEO project by clicking on **Add a layer.** This is where you can select the background imagery you will use to collect the training data. You can add multiple different types of imagery, as well as different band combinations of the same imagery.
-  a. Select Google Earth Engine (Assets) from the drop down menu.
+
+   Select Google Earth Engine (Assets) from the drop down menu.
 
 .. image:: images/add_imagery_layers.JPG
    :alt: Adding imagery layers.
    :width: 450
    :align: center
 
+|
 
 10. Add your Earth Engine Asset mosaic. We will add a true-color set of bands first.
 
@@ -236,6 +252,8 @@ However, you can also navigate to https://sepal.io/ceo, log in, and add a projec
    :alt: Google Earth Engine Asset setup
    :width: 450
    :align: center
+
+|
 
 14. When you’ve set up the project, click on the **Submit** button.
 
@@ -260,6 +278,8 @@ Second, not all pixels in the same classes have the exact same values—there is
    :width: 450
    :align: center
 
+|
+
 2. In the upper left corner of the map, the **SEPAL** option is the default dark grey map. You can switch this to **SATELLITE** for satellite imagery.
 
   a. In the upper right corner of the map, click the drop down menu that currently reads **Default.**
@@ -275,6 +295,8 @@ Second, not all pixels in the same classes have the exact same values—there is
   :alt: Mid resolution Landsat data and high resolution google imagery.
   :align: center
 
+|
+
 3. Start collecting forest training data.
 
   a. Next, zoom into an area that is clearly forested. When you find an area that is completely forested, click it once. Notice the information on the right side of the screen that popped up.
@@ -287,6 +309,8 @@ Second, not all pixels in the same classes have the exact same values—there is
 .. image:: images/ceo_sepal_collecting_data.JPG
    :alt: Collecting data in the CEO SEPAL interface.
    :align: center
+
+|
 
 4. The information on the screen is then minimized and added to a row on the right side of the screen.
 
@@ -319,6 +343,7 @@ Second, not all pixels in the same classes have the exact same values—there is
    :alt: NDVI time series information.
    :align: center
 
+|
 
 6. Explore some of the other vegetation or water indices using the Charts drop down.
 
@@ -338,6 +363,7 @@ Second, not all pixels in the same classes have the exact same values—there is
    :alt: Collecting training data in the CEO SEPAL interface.
    :align: center
 
+|
 
 8. Collect about 25 points for the **Forest** land cover class.
 
@@ -358,6 +384,8 @@ Second, not all pixels in the same classes have the exact same values—there is
    :alt: Collecting data points in water.
    :align: center
 
+|
+
 10. Let’s now collect some building and road non-forest Training Data.
 
   a. There are not very many residential areas in the region. However, if you look you can find homes with dirt roads, and there are some airports as well.
@@ -365,9 +393,11 @@ Second, not all pixels in the same classes have the exact same values—there is
   c. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
 .. image:: images/data_points_residential.JPG
-   :alt: Collecting residential and other human settlement area datapoints.
+   :alt: Collecting residential and other human settlement area data points.
    :width: 450px
    :align: center
+
+|
 
 11. Next, place several points in grassland/pasture, shrub, and agricultural areas around the study area.
 
@@ -380,10 +410,14 @@ Second, not all pixels in the same classes have the exact same values—there is
    :width: 450
    :align: center
 
+|
+
 .. image:: images/low_vegetation_data_2.JPG
    :alt: Collecting low vegetation data.
    :width: 450
    :align: center
+
+|
 
 12. Now collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds.
 
@@ -397,6 +431,8 @@ Second, not all pixels in the same classes have the exact same values—there is
    :alt: Collecting cloud data.
    :width: 450
    :align: center
+
+|
 
 13. Continue collecting Non-forest points. Again, be sure to spread the points out across the study area.
 14. Once again when you are done collecting data for these categories, zoom out to the full extent of the study region (Amazon Landsat 8 RGB data layer).
@@ -423,6 +459,8 @@ Now we will download the training data we have collected.
    :width: 450
    :align: center
 
+|
+
 2. Click the CSV button to download the reference data as a comma separated values format.
 
   a. You will either be prompted by your browser to choose a location to save the data to.
@@ -441,6 +479,7 @@ Now we will download the training data we have collected.
    :width: 450
    :align: center
 
+|
 
 Part 4. Uploading your CSV to Google Earth Engine
 --------------------------------------------------
@@ -459,6 +498,8 @@ With all your training data points collected, you will now need to upload the da
    :width: 450
    :align: center
 
+|
+
 2. In the new window that pops up, fill in the requested information.
 
   a. Select your **CSV file** from your local machine.
@@ -467,8 +508,10 @@ With all your training data points collected, you will now need to upload the da
   d. Add XCoordinate and YCoordinate to the Advanced options **X column and Y columns.**
 
 .. image:: images/X_Y_fields.JPG
-   :at: Filling out the X and Y column fields.
+   :alt: Filling out the X and Y column fields.
    :width: 450
+
+|
 
 3. Click Upload to initiate the upload.
 
@@ -485,15 +528,21 @@ With all your training data points collected, you will now need to upload the da
    :width: 450
    :align: center
 
+|
+
 **Congratulations! You have successfully completed this exercise. You now know how to use SEPAL’s version of Collect Earth Online to create training data for a supervised classification.**
 
 -----------------------------------------------------------------------------------------
 Exercise 2.4. Classification using machine learning algorithms (Random Forests) in SEPAL
 -----------------------------------------------------------------------------------------
 
+|
+
 .. image:: images/random_forest_model_outcome.JPG
    :alt: The outcome of a random forest model.
    :align: center
+
+|
 
 As mentioned in the Module introduction, the classification algorithm you will be using today is called random forest.  The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on what the pixel should be classified as. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
 
@@ -529,10 +578,14 @@ To get a more accurate training dataset, consider combining multiple training da
    :width: 450
    :align: center
 
+|
+
 .. image:: images/share_asset_table.JPG
    :alt: The sharing interface for your asset table
    :width: 450
    :align: center
+
+|
 
 3. Fill in your neighbor’s email address, set them as a **Reader** or **Writer,** and click **Add.**
 4. Now copy the link and email it to your neighbor. Ask them to send you the link to their table.
@@ -573,6 +626,8 @@ Part 1. Run supervised classification in SEPAL
    :width: 450
    :align: center
 
+|
+
 4. Now a preview will load.
 5. Click on **AUX** to examine the auxiliary data sources available for the classification.
 
@@ -590,6 +645,8 @@ Part 1. Run supervised classification in SEPAL
    :alt: The classification preview screen.
    :align: center
 
+|
+
 7. Now we’ll save our classification output.
 
   a. First, rename your classification by typing a new name in the tab.
@@ -604,6 +661,7 @@ Part 1. Run supervised classification in SEPAL
    :width: 450
    :align: center
 
+|
 
 Part 2. QA/QC considerations and methods
 -----------------------------------------
@@ -623,6 +681,8 @@ Following analysis you should spend some time looking at your change detection i
    :alt: The Google Earth Engine Asset.
    :width: 450
    :align: center
+
+|
 
 3. Now click Collect for your Amazon project.
 4. Switch the imagery to your Classification and pan and zoom around the map. Black will be ‘Forest,’ and white is ‘Non-forest’ pixels.

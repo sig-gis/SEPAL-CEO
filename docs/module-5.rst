@@ -1,5 +1,5 @@
 ======================================
-Module 5: Documentation and archiving
+Module 5. Documentation and archiving
 ======================================
 
 Documentation of your area estimate and archiving this information for future reference are critical in order to replicate your estimation process. Examples where you would want to repeat your analysis include different areas (states, provinces, ecological regions) or time periods (months, years).
@@ -208,14 +208,7 @@ Version control is “a system that records changes to a file or set of files ov
 
 The following explanation is adapted from the Software Carpentry Git lesson.
 
-  “We’ll start by exploring how version control can be used to keep track of what one person did and when. Even if you aren’t collaborating with other people, automated version control is much better than this situation:
-
-.. image:: images/piled_higher_deeper.JPG
-   :alt: “Piled Higher and Deeper” by Jorge Cham, http://www.phdcomics.com
-   :align: center
-
-
-  “Piled Higher and Deeper” by Jorge Cham, http://www.phdcomics.com
+  “We’ll start by exploring how version control can be used to keep track of what one person did and when.
 
   We’ve all been in this situation before: it seems ridiculous to have multiple nearly-identical versions of the same document. Some word processors let us deal with this a little better, such as Microsoft Word’s Track Changes, Google Docs’ version history, or LibreOffice’s Recording and Displaying Changes.
 
@@ -224,13 +217,19 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 .. image:: images/version_control_system.JPG
    :alt: Figure showing how version control systems work.
 
+|
+
   Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
+
 
 .. image:: images/version_control_multiple_contributors.JPG
    :alt: Version control with multiple contributors
 
+|
+
   A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.github.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.github.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
 
+|
 
 Of version control systems, Git (and implementation GitHub that includes a GUI Desktop version) is perhaps the most widely used. Here we provide a very basic overview of Git and links to additional resources.
 
@@ -258,12 +257,16 @@ Google Earth Engine has implemented version control and version history for all 
    :width: 450
    :align: center
 
+|
+
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
 .. image:: images/earth_engine_code_editor.JPG
    :alt: Earth engine code editor
    :width: 450
    :align: center
+
+|
 
 **Congratulations, you have learned about version control options for your project!**
 
@@ -322,7 +325,8 @@ When completing this exercise, think about the work you have completed in Module
 | outputs before proceeding with          |                                      |
 | analysis)                               |                                      |
 +-----------------------------------------+--------------------------------------+
-.
+
+|
 
 +-------------------------------------------+-------------------------------------+
 | Creating Band Ratios, Indices and Image   |                                     |
@@ -340,7 +344,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                                 |                                     |
 +-------------------------------------------+-------------------------------------+
 
-.
+|
 
 +------------------------------------+-----------------------------------------------+
 | Image Classification Scheme        |                                               |
@@ -366,7 +370,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-.
+|
 
 +------------------------------------+-----------------------------------------------+
 | Collect Reference Data             |                                               |
@@ -384,7 +388,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-.
+|
 
 +------------------------------------+-----------------------------------------------+
 | Perform Land Cover Classification  |                                               |
@@ -401,7 +405,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-.
+|
 
 +------------------------------------+-----------------------------------------------+
 | Perform Accuracy Assessment        |                                               |
@@ -416,5 +420,7 @@ When completing this exercise, think about the work you have completed in Module
 | outputs before proceeding with     |                                               |
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
+
+|
 
 **Congratulations! You have completed the SEPAL-CEO Area Estimation workbook!**
