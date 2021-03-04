@@ -18,15 +18,19 @@ In this manual, you will find four modules covering methods, and one module cove
 
 These exercises include step-by-step directions and are built to facilitate learning through reading and by doing. This manual will be accompanied by short videos, which will visually illustrate the steps described in the text.
 
-* Para ver este manual en español, vaya aquí:
-* Pour voir ce manuel dans français, allez ici:
+.. * Para ver este manual en español, vaya aquí:
+.. * Pour voir ce manuel dans français, allez ici:
 
 To visualize the flow of this manual, see below:
+
+|
 
 .. image:: images/manual_content.JPG
    :alt: Visualization of manual content
    :width: 300
    :align: center
+
+|
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
@@ -36,7 +40,7 @@ We will also use two other tools that SEPAL integrates with: CEO and GEE. Collec
 
 Google Earth Engine (GEE) combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers, and developers to detect changes, map trends, and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the Earth Engine JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: JavaScript code editor; a map display for visualizing geospatial datasets; an API reference documentation (Docs tab); Git-based Script Manager (Scripts tab); Console output (Console tab); Task Manager (Tasks tab) to handle long-running queries; Interactive map query (Inspector tab); search of the data archive or saved scripts; and geometry drawing tools.
 
-You can find more information here:
+You can find more information at these sites, among others:
 
 * An older forest change detection manual for SEPAL: `Forest Cover Change Detection with SEPAL <https://drive.google.com/file/d/1kPE2wFNDqNpXycqTJfNUtZf9iWsQHcab/view?usp=sharing>`_
 * Olofsson et al 2014: `FAO - SFM Tool Detail: Good practices for estimating area and assessing accuracy of land change <http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/>`_
@@ -53,9 +57,13 @@ Getting started
 Sign Up to SEPAL
 -----------------
 
+|
+
 .. image:: images/sepal_splash_page.JPG
    :alt: Sepal splash page.
    :align: center
+
+|
 
 You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
@@ -64,14 +72,16 @@ You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Si
    :alt: Request access to sepal.io
    :align: center
 
-1. If you do not have a SEPAL account, you can request access `here <http://tinyurl.com/fao-sepal>`_.
+|
+
+1. If you do not have a SEPAL account, you can request access here: http://tinyurl.com/fao-sepal.
 
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
 
 Sign Up to CEO
 ---------------
 
-1. In your browser window, navigate to `https://collect.earth/ <https://collect.earth>`_. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
+1. In your browser window, navigate to https://collect.earth/. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
 
 2. Click **Login/Register** on the upper right.
 
@@ -86,11 +96,11 @@ Sign up to GEE
 
 Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL.
 
-1. You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up `here <http://mail.google.com/mail/signup>`_.
+1. You will need to have a Google email in order to sign up. If you don’t have one already, you can set one up here: http://mail.google.com/mail/signup.
 
-2. To request a GEE account, please visit `https://earthengine.google.com/new_signup/ <https://earthengine.google.com/new_signup/>`_.
+2. To request a GEE account, please visit https://earthengine.google.com/new_signup/.
 
-3. Once you have a Google Earth Engine account, you can access GEE here: `https://code.earthengine.google.com/ <https://code.earthengine.google.com/>`_.
+3. Once you have a Google Earth Engine account, you can access GEE here: https://code.earthengine.google.com/.
 
 -----------------------------
 Project Planning Information
