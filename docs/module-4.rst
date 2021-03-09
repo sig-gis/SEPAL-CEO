@@ -1016,8 +1016,8 @@ The concept is derived from map accuracy assessment principles: characterized fr
     ii. For projects completed in CEO-SEPAL bridge:
 
       1. Check that you are logged out of the Collect Earth Online website.
-      2. Paste the URL from your CEO-SEPAL bridge project into the field marked **CEO url.**
-      3. Click Import CEO project.
+      2. Paste the URL from your CEO-SEPAL bridge project into the field marked **CEO url.** You can also click the **Paste CEO url from clipboard** button.
+      3. Click **Import CEO project.**
       4. This will populate the input file for the Reference data as well as the column names.
 
   b. **Area data** this is a CSV that was automatically created during the Stratified Area Estimator--Design workflow. It contains area values for each mapped land cover class.
@@ -1039,12 +1039,12 @@ The concept is derived from map accuracy assessment principles: characterized fr
   a. Choose the column with the reference data information.
 
     i. For projects completed in CEO: This will either be your question name or the new column name you created in Part 2 above. Here it is COLLECTED_CLASS following the directions in Part 2.
-    ii. For projects completed in CEO-SEPAL: **ref_code?? Class?? Column names not clear**
+    ii. For projects completed in CEO-SEPAL: ref_code
 
   b. Choose the column with the map data information
 
     i. For projects completed in CEO: PL_MAP_CLASS
-    ii. For projects completed in CEO-SEPAL: ref_code?? **ERROR: Missing a column for CEO-SEPAL bridge**
+    ii. For projects completed in CEO-SEPAL: map_code
 
   c. Choose the map area column from the area file—map_area
   d. Choose the class column from the area file—map_code or map_edited_class
