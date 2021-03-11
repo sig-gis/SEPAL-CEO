@@ -402,9 +402,9 @@ Part 2. Name and Save your Recipe and Mosaic
   b. You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name. For this example use *MiaNdombe_LS8_2019_Dry.*
   c. Now let's explore options for the recipe. Click on the three lines in the upper right hand corner.
 
-    i. You can save the recipe (SEPAL will do this automatically on retrieval) so that it is available later.
+    i. You can **Save the recipe** (SEPAL will do this automatically on retrieval) so that it is available later.
     ii. You can also **Duplicate the recipe.** This is useful for creating two years of data, as we will do in Module 3.
-    iii. Finally you can Export the recipe. This downloads a zip file with a JSON of your mosaic specifications.
+    iii. Finally you can **Export the recipe**. This downloads a zip file with a JSON of your mosaic specifications.
 
   d. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
 
