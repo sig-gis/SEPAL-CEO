@@ -354,7 +354,7 @@ When completing this exercise, think about the work you have completed in Module
 | land use categories defined by     |                                               |
 | the IPCC as: Forest Land,          |                                               |
 | Cropland, Grassland, Wetlands,     |                                               |
-| Settlements, and Other Land):      |                                               |
+| Settlements, and Other Land)       |                                               |
 +------------------------------------+-----------------------------------------------+
 | Have you identified any categories |                                               |
 | as “Key Categories”? How is the    |                                               |
