@@ -241,7 +241,7 @@ Part 1. Create a Landsat Mosaic
 8. Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
 
   a. When it is done, examine the preview to see how much data is available. For this example, coverage is good. However, in the future when you are creating your own mosaic, if there is not enough coverage of your area of interest, you will need to adjust your parameters.
-  b. To do so, notice the five tabs in the lower left. You can adjust the initial search parameters using the first three of these tabs. For example, Click on **Dat** to expand the date range if you would like.
+  b. To do so, notice the five tabs in the lower right. You can adjust the initial search parameters using the first three of these tabs. For example, Click on **Dat** to expand the date range if you would like.
   c. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
 .. image:: images/mosaic_preview.JPG
