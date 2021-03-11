@@ -380,7 +380,7 @@ Part 1. Create a Landsat Mosaic
 |
 
 19. The map now shows the complete mosaic that incorporates all of the user-defined settings.
-
+?????Either change the screenshot or add a step to click SCN and Use All Scenes?????
 .. image:: images/completed_mosaic.JPG
    :alt: The imagery preview with the completed mosaic shown.
    :width: 450
