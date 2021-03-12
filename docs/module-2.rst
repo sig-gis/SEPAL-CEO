@@ -10,7 +10,7 @@ There are a number of supervised classification algorithms that can be used to a
 
 In this module, we will create a land cover map using supervised classification in SEPAL. We will train a random forest machine learning algorithm to predict land cover with a user generated reference data set. This data set is collected either in the field or manually through examination of remotely sensed data sources such as aerial imagery. The resulting model is then applied across the landscape. You will complete an accuracy assessment of the map output in Module 4.
 
-Before starting your classification, you will need to create a response design with details about each of the land covers/land uses that you want to classify (Exercise 2.1), create mosaics for your area of interest (in Exercise 2.2 we will use a region of Brazil), and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4 we will run the classification and examine our results.
+Before starting your classification, you will need to create a response design with details about each of the land covers / land uses that you want to classify (Exercise 2.1); create mosaics for your area of interest (in Exercise 2.2 we will use a region of Brazil); and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4 we will run the classification and examine our results.
 
 The workflow in this module has been adapted from exercises and material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University. To learn more about their materials and their work, visit their github site at https://github.com/beeoda.
 
