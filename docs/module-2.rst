@@ -59,7 +59,7 @@ Part 1. Specify the classification scheme
 
 |
 
-2. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC land-use categories, CLC, or LUCAS.
+2. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC (Intergovernmental Panel on Climate Change) land-use categories, CLC (CORINE land cover), or LUCAS (land cover and land use, landscape).
 
   a. If applicable, your classification scheme should be consistent with the national land cover and land use definitions.
   b. In cases where the classification scheme definition is different from the national definition, you will need to provide a reason.
