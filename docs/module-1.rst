@@ -381,7 +381,7 @@ Part 1. Create a Landsat Mosaic
 
 |
 
-19. The map now shows the complete mosaic that incorporates all of the user-defined settings.
+19. The map now shows the complete mosaic that incorporates all of the user-defined settings. Here is an example, yours may look different depending on which scenes you chose.
 
 .. image:: images/completed_mosaic.png
    :alt: The imagery preview with the completed mosaic shown.
