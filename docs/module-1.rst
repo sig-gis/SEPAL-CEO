@@ -33,7 +33,8 @@ Part 1. Open SEPAL
 
 |
 
-**When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.**
+.. note::
+   When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
 
 Part 2. SEPAL Interface Home
 -----------------------------
@@ -63,11 +64,12 @@ Part 2. SEPAL Interface Home
 
    Change the Google Account associated with your SEPAL account by clicking **Use my own Google Account** and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.
 
-**Be sure to connect your Google Account in order to be able to Retrieve Mosaics in the next Exercise 1.2. You should use the same account you used to sign up for Google Earth Engine.**
+.. note::
+   Be sure to connect your Google Account in order to be able to Retrieve Mosaics in the next Exercise 1.2. You should use the same account you used to sign up for Google Earth Engine.
 
 6. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
-.. image:: images/user_report_panel.JPG
+.. image:: images/user_report_panel.png
    :alt: User Report panel.
    :width: 350px
    :align: center
@@ -211,7 +213,6 @@ Part 1. Create a Landsat Mosaic
 
 .. image:: images/country_province.png
    :alt: The Country or Province selection screen.
-   :width: 350
    :align: center
 
 |
@@ -247,7 +248,6 @@ Part 1. Create a Landsat Mosaic
 
 .. image:: images/mosaic_preview.png
    :alt: A preview of your mosaic.
-   :width: 350
    :align: center
 
 |
@@ -259,7 +259,6 @@ Part 1. Create a Landsat Mosaic
 
 .. image:: images/scene_selection.png
    :alt: Selecting scenes for your mosaic.
-   :width: 350
    :align: center
 
 |
@@ -270,7 +269,6 @@ Part 1. Create a Landsat Mosaic
 
   .. image:: images/scene_selection_zeros.png
      :alt: Scene selection process showing zeros before selection.
-     :width: 550
      :align: center
 
 |
@@ -323,14 +321,12 @@ Part 1. Create a Landsat Mosaic
 
 .. image:: images/remove_preview_scenes.png
    :alt: Removing or previewing selected scenes.
-   :width: 350
    :align: center
 
 |
 
 .. image::images/scene_preview.png
    :alt: Scene preview screen.
-   :width: 350
    :align: center
 
 |
@@ -355,6 +351,7 @@ Part 1. Create a Landsat Mosaic
 
 .. image:: images/composite.png
    :alt: The composite menu.
+   :width: 350px
    :align: center
 
 |
@@ -411,7 +408,6 @@ Part 2. Name and Save your Recipe and Mosaic
 
 .. image:: images/save_duplicate_export_recipe.png
    :alt: Save, duplicate, export recipe menu.
-   :width: 350
    :align: center
 
 |
@@ -420,7 +416,6 @@ Part 2. Name and Save your Recipe and Mosaic
 
 .. image:: images/revert_to_old_revision.png
    :alt: After saving the menu adds a revert to old revision option.
-   :width: 350
    :align: center
 
 |
@@ -441,14 +436,12 @@ Part 2. Name and Save your Recipe and Mosaic
 
 .. image:: images/retrieve.png
    :alt: The retrieve button.
-   :width: 350
    :align: center
 
 |
 
 .. image:: images/retrieve_menu.png
    :alt: The retrieve menu
-   :width: 350
    :align: center
 
 |
@@ -470,11 +463,11 @@ Part 2. Name and Save your Recipe and Mosaic
 
 .. image:: images/retrieval_task.png
    :alt: Retrieval task being carried out
-   :width: 350
    :align: center
 
 |
 
-**This will take 25 minutes or more to finish downloading, however, you can move on to the next exercise without waiting for the download to finish.**
+.. note::
+   This will take 25 minutes or more to finish downloading, however, you can move on to the next exercise without waiting for the download to finish.
 
 **Congratulations! You have successfully completed this exercise. You now know how to create a Landsat mosaic using the many customizable parameters in SEPAL.**

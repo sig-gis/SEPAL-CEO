@@ -45,14 +45,14 @@ Part 1. Specify the classification scheme
   a. This example includes a hierarchical component. For example, the green and red categories have multiple sub-categories, which might be multiple types of forest or crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
   b. For this Exercise, we’ll use a simplified land cover and land use classification as in the second image:
 
-.. image:: images/land_cover_decision_tree.JPG
+.. image:: images/land_cover_decision_tree.png
    :alt: Decision tree for land cover
    :width: 450
    :align: center
 
 |
 
-.. image:: images/classification_scheme.JPG
+.. image:: images/classification_scheme.png
    :alt: The classification scheme we will use for this exercise, with two classes forest and non-forest
    :width: 450
    :align: center
@@ -114,7 +114,7 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 
   a. Select **Draw Polygon** from the dropdown list.
 
-.. image:: images/aoi_dropdown.JPG
+.. image:: images/aoi_dropdown.png
    :alt: Area of interest dropdown menu.
    :width: 450px
    :align: center
@@ -123,7 +123,7 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 
   b. Navigate using the map to the State of Rondonia and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
-.. image:: images/rondonia.JPG
+.. image:: images/rondonia.png
    :alt: A polygon drawn around the State of Rondonia.
    :align: center
 
@@ -137,7 +137,7 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 Part 2. Finding your Earth Engine Asset
 ----------------------------------------
 
-For Exercise 2.3, you will need to know how to find your Earth Engine Asset.
+For future exercises, you may need to know how to find your Earth Engine Asset.
 
 1. Navigate to https://code.earthengine.google.com/ and login.
 2. Navigate to your **Assets** tab in the left hand column.
@@ -146,7 +146,7 @@ For Exercise 2.3, you will need to know how to find your Earth Engine Asset.
 5. You will see a window with information about your mosaic pop up.
 6. Click on the two overlapping box icon to copy your asset’s location.
 
-.. image:: images/mosaic_information.JPG
+.. image:: images/mosaic_information.png
    :alt: Your mosaic’s information pane.
    :align: center
 
@@ -160,7 +160,7 @@ In this exercise, we will learn how to collect training data using the CEO-SEPAL
 
 In this assignment, you will create training data points using a combination of high-resolution imagery and the Landsat composite. These will be used to train the classifier in a supervised classification using SEPAL’s random forests algorithm. The goal of training the classifier is to provide examples of the variety of spectral signatures associated with each class in the map.
 
-.. image:: images/ceo_sepal_interface.JPG
+.. image:: images/ceo_sepal_interface.png
    :alt: The CEO SEPAL interface
    :align: center
 
@@ -182,80 +182,57 @@ In this assignment, you will create training data points using a combination of 
 Part 1. Setting up a training project
 --------------------------------------
 
-To collect training data, we will need to create a ceo-sepal project from within SEPAL. There are two ways to do this. The easier way is to begin the classification and follow a link when prompted. This is the approach we will use here.
+1. Navigate to https://sepal.io/ceo. You may need to log into SEPAL.
+2. Click **Add project.**
+3. Type in a unique name for your training dataset, such as “Amazon training data”.
+4. Use **TRAINING DATA** as the **Type.**
 
-However, you can also navigate to https://sepal.io/ceo, log in, and add a project directly through this interface (starting at Step 3a, below). If you use this route, you will need to create the classification later, using steps 1-3 below.
+  * The **Training Data** option enables you to create a project from scratch. To use this method, you will need to identify a set of land cover classes to classify (code list) and you will need to add imagery that will be used to identify the types of land cover. You will then manually place your training data on the map and classify them.
+  * **CEP** stands for Collect Earth Project and it contains a collection of training data points that have already been generated and just need to be classified based on the classes defined within the project. It typically contains a customized method for classifying training data that incorporates % cover.
 
-1. In the **Process** menu, click the green plus symbol and select **Classification.**
-2. Add the Amazon optical mosaic for classification:
-
-  a. Click **+Add** and choose **Earth Engine Asset.**
-  b. Enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/Module2_Amazon”.
-
-     Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine’s Asset tab (see Exercise 2.2 Part 2).
-
-  c. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as well if you included them in your mosaic.
-  d. Click **Apply,** then click **Next.**
-
-3. In the Training Data menu, click **Open training data collection tool.** This will open a new window/tab.
-
-.. image:: images/training_data_menu.JPG
-   :alt: Training data menu.
-   :align: center
-
-|
-
-4. Click **Add project.**
-5. Type in a unique name for your training dataset, such as “Amazon training data”.
-6. Use **TRAINING DATA** as the **Type.**
-
-  a. The **Training Data** option enables you to create a project from scratch. To use this method, you will need to identify a set of land cover classes to classify (code list) and you will need to add imagery that will be used to identify the types of land cover. You will then manually place your training data on the map and classify them.
-  b. **CEP** stands for Collect Earth Project and it contains a collection of training data points that have already been generated and just need to be classified based on the classes defined within the project. It typically contains a customized method for classifying training data that incorporates % cover.
-
-7. Once you select the training data option, you will notice a new parameter: **Scale (m).** This scale refers to the spatial resolution of the imagery you will be classifying to create your map product. Type in 30, as that is the spatial resolution of Landsat. This will create a plot that is 30 m by 30 m.
-8. Click the **\+** button to the right of the section that says **Code List.** When you click the **\+** button, an empty row is added to the Code List. You need two rows.
+5. Once you select the training data option, you will notice a new parameter: **Scale (m).** This scale refers to the spatial resolution of the imagery you will be classifying to create your map product. Type in 30, as that is the spatial resolution of Landsat. This will create a plot that is 30 m by 30 m.
+6. Click the **\+** button to the right of the section that says **Code List.** When you click the **\+** button, an empty row is added to the Code List. You need two rows.
 
    Add “Forest” and “Non Forest” to the Code List.
 
-.. image:: images/training_data_project_setup.JPG
+.. image:: images/training_data_project_setup.png
    :alt: Training data project setup.
-   :width: 450
    :align: center
 
 |
 
-9. Add imagery to the CEO project by clicking on **Add a layer.** This is where you can select the background imagery you will use to collect the training data. You can add multiple different types of imagery, as well as different band combinations of the same imagery.
+7. Add imagery to the CEO project by clicking on **Add a layer.** This is where you can select the background imagery you will use to collect the training data. You can add multiple different types of imagery, as well as different band combinations of the same imagery.
 
    Select Google Earth Engine (Assets) from the drop down menu.
 
-.. image:: images/add_imagery_layers.JPG
+.. image:: images/add_imagery_layers.png
    :alt: Adding imagery layers.
-   :width: 450
+   :width: 400
    :align: center
 
 |
 
-10. Add your Earth Engine Asset mosaic. We will add a true-color set of bands first.
+8. Add your Earth Engine Asset mosaic. We will add a true-color set of bands first.
 
   a. Name your layer. Try ‘Landsat 8 RGB.’
   b. Paste the link to your mosaic in GEE (see Part 2 in Exercise 2.2).
   c. Type in ‘red, blue, and green’ for bands.
   d. Use 0 and 3000 for min and max. You can alter these values slightly based on band min/max in the Landsat 8 satellite.
 
-11. Add your Earth Engine Asset mosaic, but type in ‘swir1,nir,red’ to get SWIR, NIR, and red bands. Use a min and max of 300 and 3200.
-12. You can also add additional band combinations. If you would like to add other versions of this mosaic with different band combinations, repeat steps 5-6, but use different bands and adjust the name according to the bands. For example, try NIR, red, green.
-13. There are a number of other imagery options in the **Add a layer** drop down menu. Feel free to experiment with these.
+9. Add your Earth Engine Asset mosaic, but type in ‘swir1,nir,red’ to get SWIR, NIR, and red bands. Use a min and max of 300 and 3200.
+10. You can also add additional band combinations. If you would like to add other versions of this mosaic with different band combinations, repeat steps 5-6, but use different bands and adjust the name according to the bands. For example, try NIR, red, green.
+11. There are a number of other imagery options in the **Add a layer** drop down menu. Feel free to experiment with these.
 
-    **Digital Globe imagery no longer exists.**
+.. note::
+   Digital Globe imagery no longer exists.
 
-.. image:: images/GEE_asset_setup.JPG
+.. image:: images/GEE_asset_setup.png
    :alt: Google Earth Engine Asset setup
-   :width: 450
    :align: center
 
 |
 
-14. When you’ve set up the project, click on the **Submit** button.
+12. When you’ve set up the project, click on the **Submit** button.
 
     Notice that the project is now listed. You can click edit if you want to adjust any of the settings for the project.
 
@@ -273,9 +250,8 @@ Second, not all pixels in the same classes have the exact same values—there is
   a. Click the blue **collect** button for the **Amazon training data** project.
   b. You will immediately notice that a black and grey map appears on the screen. There are two drop down menus at the upper left and upper right of the map.
 
-.. image:: images/ceo_sepal_data_collection.JPG
+.. image:: images/ceo_sepal_data_collection.png
    :alt: The CEO SEPAL data collection interface.
-   :width: 450
    :align: center
 
 |
@@ -291,7 +267,7 @@ Second, not all pixels in the same classes have the exact same values—there is
   d. Zoom in close to the imagery (until you can see individual pixels) so that you can see the amount of detail in this Landsat mosaic.
   e. While zoomed in, click the image layer drop down and select **Default.** You should see a clear difference in spatial resolution between the 30-meter Landsat and the high-resolution (sub-meter) default Satellite imagery from Google (see below).
 
-.. image:: images/landsat_google_imagery.JPG
+.. image:: images/landsat_google_imagery.png
   :alt: Mid resolution Landsat data and high resolution google imagery.
   :align: center
 
@@ -306,7 +282,7 @@ Second, not all pixels in the same classes have the exact same values—there is
 
      If you haven’t classified the point yet, then you can just click somewhere else on the map instead of deleting the record.
 
-.. image:: images/ceo_sepal_collecting_data.JPG
+.. image:: images/ceo_sepal_collecting_data.png
    :alt: Collecting data in the CEO SEPAL interface.
    :align: center
 
@@ -321,11 +297,11 @@ Second, not all pixels in the same classes have the exact same values—there is
 
    There is a **Charts** drop down menu that allows you to look at the changes in spectral values over time at this point using a variety of spectral indices.
 
-  a. **Enhanced Vegetation Index (EVI):** highlights areas of high biomass and is particularly responsive to variations in vegetation structure (as opposed to NDVI’s sensitivity to chlorophyll content).
-  b. **EVI2:** a 2-band version of EVI.
-  c. **The Normalized Differenced Moisture Index (NDMI):** estimates the amount of moisture in vegetation.
-  d. **The Normalized Differenced Vegetation Index (NDVI):** a common vegetation index used to measure the amount of healthy, green vegetation in a given area. Forested pixels will typically have a NDVI value between 0.7 and 1.
-  e. **The Normalized Differenced Water Index (NDWI):** highlights plant water content and is most commonly used to gauge plant water stress.
+  * **Enhanced Vegetation Index (EVI):** highlights areas of high biomass and is particularly responsive to variations in vegetation structure (as opposed to NDVI’s sensitivity to chlorophyll content).
+  * **EVI2:** a 2-band version of EVI.
+  * **The Normalized Differenced Moisture Index (NDMI):** estimates the amount of moisture in vegetation.
+  * **The Normalized Differenced Vegetation Index (NDVI):** a common vegetation index used to measure the amount of healthy, green vegetation in a given area. Forested pixels will typically have a NDVI value between 0.7 and 1.
+  * **The Normalized Differenced Water Index (NDWI):** highlights plant water content and is most commonly used to gauge plant water stress.
 
 6. Click the **Charts** drop down menu and select **NDVI.** You should see a chart that looks similar to the below image.
 
@@ -339,7 +315,7 @@ Second, not all pixels in the same classes have the exact same values—there is
     ii. Click the **Reset zoom** button to return to the full time series view.
     iii. To close the chart, click anywhere outside of the chart.
 
-.. image:: images/NDVI.JPG
+.. image:: images/NDVI.png
    :alt: NDVI time series information.
    :align: center
 
@@ -359,7 +335,7 @@ Second, not all pixels in the same classes have the exact same values—there is
 
   c. You will notice that the quality of the base **Satellite** imagery varies. This is where the charts can come in particularly handy. You may also find it useful to zoom out and zoom back in, as the imagery changes based on your zoom scale. The images below show the same general area, but at slightly different zoom scales.
 
-.. image:: images/collect_training_data.JPG
+.. image:: images/collect_training_data.png
    :alt: Collecting training data in the CEO SEPAL interface.
    :align: center
 
@@ -380,7 +356,7 @@ Second, not all pixels in the same classes have the exact same values—there is
     iv. The spectral signature for water will be relatively low (0-0.4) when looking at the NDVI chart.
     v. Some wetland areas may have varying amounts of water throughout the year, so it is important to check the time series charts. If you encounter areas that look like water but have seasonally high NDVI, place your point in a different area that has a more distinct water signature. It is ideal to give the classifier points that are homogenous and unambiguous.
 
-.. image:: images/data_points_water.JPG
+.. image:: images/data_points_water.png
    :alt: Collecting data points in water.
    :align: center
 
@@ -392,7 +368,14 @@ Second, not all pixels in the same classes have the exact same values—there is
   b. Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
   c. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
-.. image:: images/data_points_residential.JPG
+.. image:: images/data_points_airport.png
+   :alt: Collecting residential and other human settlement area data points.
+   :width: 450px
+   :align: center
+
+|
+
+.. image:: images/data_points_residential.png
    :alt: Collecting residential and other human settlement area data points.
    :width: 450px
    :align: center
@@ -405,14 +388,14 @@ Second, not all pixels in the same classes have the exact same values—there is
   b. Shrubs or small, non-forest vegetation can sometimes be hard to identify, even with high-resolution imagery. Do your best to find vegetation that is clearly not forest. The NDVI signature of shrubs may be relatively high (0.6-0.8).
   c. The texture of the vegetation is one of the best ways to differentiate between trees and grasses/shrubs. Look at the below image and notice the clear contrast between the area where the points are placed and the other areas in the image that have rougher textures and that create shadows.
 
-.. image:: images/low_vegetation_data.JPG
+.. image:: images/low_vegetation_data.png
    :alt: Collecting low vegetation data
    :width: 450
    :align: center
 
 |
 
-.. image:: images/low_vegetation_data_2.JPG
+.. image:: images/low_vegetation_data_2.png
    :alt: Collecting low vegetation data.
    :width: 450
    :align: center
@@ -427,7 +410,7 @@ Second, not all pixels in the same classes have the exact same values—there is
   d. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain.
   e. Note that you may not have any clouds in your Landsat imagery.
 
-.. image:: images/cloud_data.JPG
+.. image:: images/cloud_data.png
    :alt: Collecting cloud data.
    :width: 450
    :align: center
@@ -454,7 +437,7 @@ Now we will download the training data we have collected.
 
 1. Above your training data points you will see a blue Download CSV button.
 
-.. image:: images/training_data_points.JPG
+.. image:: images/training_data_points.png
    :alt: Training data points.
    :width: 450
    :align: center
@@ -474,26 +457,25 @@ Now we will download the training data we have collected.
   b. YCoordinate and XCoordinate—locational information for all of the training data (in the WGS 84, EPSG 4326, coordinate reference system).
   c. class—land cover class in integer form. Again, 1=Forest and 2=Non-Forest.
 
-.. image:: images/sample_training_data.JPG
+.. image:: images/sample_training_data.png
    :alt: A sample training data file.
    :width: 450
    :align: center
 
 |
 
-Part 4. Uploading your CSV to Google Earth Engine
+Part 4. [Optional] Uploading your CSV to Google Earth Engine
 --------------------------------------------------
 
-With all your training data points collected, you will now need to upload the data into Google Earth Engine to use it for classification.
+For classification, you can either use the CSV we just downloaded or upload your CSV to  Google Earth Engine. To upload it into Google Earth Engine:
 
-1. To use this data in SEPAL, you need to first upload it into Google Earth Engine.
+1. Navigate to https://code.earthengine.google.com/.
 
-  a. Navigate to https://code.earthengine.google.com/.
-  b. Log into GEE using your account and then navigate to the Assets tab.
-  c. Click **New.**
-  d. Select **CSV file (.csv)** under the **Table Upload** section.
+  a. Log into GEE using your account and then navigate to the Assets tab.
+  b. Click **New.**
+  c. Select **CSV file (.csv)** under the **Table Upload** section.
 
-.. image:: images/GEE_asset_upload.JPG
+.. image:: images/GEE_asset_upload.png
    :alt: The Google Earth Engine interface for uploading assets.
    :width: 450
    :align: center
@@ -507,7 +489,7 @@ With all your training data points collected, you will now need to upload the da
   c. Choose the **asset id path.** This is the where the asset will be saved once uploaded
   d. Add XCoordinate and YCoordinate to the Advanced options **X column and Y columns.**
 
-.. image:: images/X_Y_fields.JPG
+.. image:: images/X_Y_fields.png
    :alt: Filling out the X and Y column fields.
    :width: 450
 
@@ -523,7 +505,7 @@ With all your training data points collected, you will now need to upload the da
   b. Click on the file name.
   c. Make note of your **TableID,** which you will need for Exercise 2.4.
 
-.. image:: images/info_page_table_id.JPG
+.. image:: images/info_page_table_id.png
    :alt: The information page with your table id.
    :width: 450
    :align: center
@@ -538,7 +520,7 @@ Exercise 2.4. Classification using machine learning algorithms (Random Forests) 
 
 |
 
-.. image:: images/random_forest_model_outcome.JPG
+.. image:: images/random_forest_model_outcome.png
    :alt: The outcome of a random forest model.
    :align: center
 
@@ -565,22 +547,23 @@ After we create the map, you might find that there are some areas that are not c
 +-----------------------------------------+------------------------------------+
 
 
-Part 0. Merging Asset Tables (Optional)
+Part 0. [Optional] Merging Asset Tables
 ----------------------------------------
 
 To get a more accurate training dataset, consider combining multiple training datasets. For example, if you’re completing these exercises as part of a group training, try combining your training data set with your neighbors’. We will show you how to do this using your .csv files, however if you are more familiar with GEE you can also combine files using code in GEE.
 
 1. Navigate to your GEE table information as in Exercise 2.3 Part 4.
-2. Click on Share.
 
-.. image:: images/info_page_table_id.JPG
+.. image:: images/info_page_table_id.png
    :alt: The GEE table information where you can find your asset table id.
    :width: 450
    :align: center
 
 |
 
-.. image:: images/share_asset_table.JPG
+2. Click on Share.
+
+.. image:: images/share_asset_table.png
    :alt: The sharing interface for your asset table
    :width: 450
    :align: center
@@ -603,60 +586,86 @@ To get a more accurate training dataset, consider combining multiple training da
 Part 1. Run supervised classification in SEPAL
 -----------------------------------------------
 
-1. Ideally, your original classification output is still open in a separate tab. If so, navigate back to it and skip to Step 3.
-2. If your window is not still open, navigate to SEPAL by clicking this link https://sepal.io/.
+1. In the **Process** menu, click the green plus symbol and select **Classification.**
+2. Add the Amazon optical mosaic for classification:
 
-  a. In the **Process** menu, click the green plus symbol and select Classification.
-  b. Add the Amazon optical mosaic for classification:
+  a. Click **+Add** and choose either **Saved Sepal Recipe** or **Earth Engine Asset.**
 
-    i. Click **Add** and choose **Earth Engine Asset**
-    ii. Enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/Module2_Amazon”
-    iii. Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine’s Asset tab (see Exercise 2.2 Part 2).
-    iv. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as well if you included them in your mosaic.
-    v. Click **Apply,** then click **Next.**
+    i. If you choose **Saved Sepal Recipe**, simply select your Module 2 Amazon recipe.
+    ii. If you choose **Earth Engine Asset**, enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/Module2_Amazon”.
 
-3. Now, we’ll add the Training Data we collected in Exercise 2.3 in the **TRN tab.**
+        Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine’s Asset tab (see Exercise 2.2 Part 2).
 
-  a. Enter the path to your Earth Engine asset in the EE Table ID field.
-  b. In the **Class Column** field select the column name that is associated with the class. In our example this should be ‘class’.
-  c. Click **Done.**
+  c. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as well if you included them in your mosaic.
+  d. You can also include **Derived bands** by clicking on the green button on the lower left.
+  e. Click **Apply,** then click **Next.**
 
-.. image:: images/training_data_menu_2.JPG
+3. In the Legend menu, click **Add** This will add a place for you to write your class label.
+
+  a. You will need two legend entries.
+  b. The first should have the number 1 and a Class label of Forest.
+  c. The second should have the number 2 and a Class  label of Non-forest.
+  d. Choose colors for each class as you see fit.
+  e. Click **Done**.
+
+.. image:: images/classification_legend.png
+   :alt: Classification legend.
+   :align: center
+
+|
+
+4. Now, we’ll add the Training Data we collected in Exercise 2.3 in the **TRN tab.**
+
+  a. Click on the green **Add** button.
+
+    i You can upload your CSV file.
+    ii. Or you can select Earth Engine Table and enter the path to your Earth Engine asset in the EE Table ID field.
+
+  b. Click **Next**.
+  c. For **Location Type**, select GEOJSON column. Select ".geo" in the dropdown menu for **GEOJSON Column** and click **Next**.
+  d. Leave the **Row filter expression** blank. For Class format, select **Single Column**.
+  e. In the **Class Column** field select the column name that is associated with the class. In our example this should be "class".
+  f. Click **Next**.
+
+.. image:: images/training_data_menu.png
    :alt: The training data menu.
    :width: 450
    :align: center
 
 |
 
-4. Now a preview will load.
-5. Click on **AUX** to examine the auxiliary data sources available for the classification.
+5. Now you will be asked to confirm the link between the legend you input in step 3. and your classification. You should see a screen as follows. If you need to change anything, click the green plus buttons. Otherwise, clifck **Done**, then click **Close**.
+
+.. image:: images/link.png
+   :alt: link between legend and classification
+   :align: center
+
+|
+
+6. Click on **AUX** to examine the auxiliary data sources available for the classification.
 
   a. Auxiliary inputs are optional layers which can be added to help aid the classification. There are three additional sources available: Latitude - Includes the latitude of each pixel; Terrain - Includes elevation of each pixel from SRTM data; Water - Includes information from the JRC Global Surface water Mapping layers.
   b. Click on **Water.**
   c. Click **Apply.**
 
-6. Again, after a few seconds, a preview of the classification will load.
+7. Click on **CLS** to examine the classifier being used.
 
-  a. Your classified map may look different than the example land cover map shown below.
-  b. Depending on the training data you collected, your classes may be substantially different.
-  c. The quality of the output map is also dependent on the quality of the mosaic.
+  a. The default is a random forest with 25 trees.
+  b. Other options include classification and regression trees (CART), Naive Bayes, support vector machine (SVM), minimum distance, and decision trees (requires a CSV).
+  c. Additional parameters for each of these can be specified by clicking on the **More** button in the lower left.
+  d. For this example, we will use the default random forest.
 
-.. image:: images/classification_preview.JPG
-   :alt: The classification preview screen.
-   :align: center
-
-|
-
-7. Now we’ll save our classification output.
+8. Now we’ll save our classification output.
 
   a. First, rename your classification by typing a new name in the tab.
   b. Click **Retrieve classification** in the upper right hand corner (cloud icon).
   c. Choose 30 m resolution.
+  d. Select the Class, Class probability, Forest % and Non-forest % bands.
   d. Retrieve as either a **Google Earth Engine Asset** or to your **SEPAL Workspace.** Choose to export to a GEE Asset if you would like to be able to share your results or perform additional analysis in GEE. Otherwise, export to your SEPAL workspace (recommended here for ease of use).
   e. Once the download begins, you will see the spinning wheel in the bottom left of the webpage in **Tasks.** Click the spinning wheel to observe the progress of your download.
   f. When complete, if you chose GEE Asset the file will be in your GEE Assets. If you chose SEPAL workspace, the file will be in your SEPAL downloads folder. (Browse > downloads > classification folder).
 
-.. image:: images/retrieval_interface.JPG
+.. image:: images/retrieval_interface.png
    :alt: The retrieval interface.
    :width: 450
    :align: center
@@ -677,9 +686,8 @@ Following analysis you should spend some time looking at your change detection i
   b. Add a **new layer,** title it **Classification,** and add the information from your Google Earth Engine classification asset. You have two classes, so your Min should be 1, Max 2, and Bands ‘class’.
   c. Click **Submit.**
 
-.. image:: images/GEE_asset.JPG
+.. image:: images/GEE_asset.png
    :alt: The Google Earth Engine Asset.
-   :width: 450
    :align: center
 
 |

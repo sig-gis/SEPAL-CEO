@@ -23,11 +23,8 @@ These exercises include step-by-step directions and are built to facilitate lear
 
 To visualize the flow of this manual, see below:
 
-|
-
-.. image:: images/manual_content.JPG
+.. image:: images/manual_content.png
    :alt: Visualization of manual content
-   :width: 300
    :align: center
 
 |
@@ -59,7 +56,7 @@ Sign Up to SEPAL
 
 |
 
-.. image:: images/sepal_splash_page.JPG
+.. image:: images/sepal_splash_page.png
    :alt: Sepal splash page.
    :align: center
 
@@ -67,8 +64,7 @@ Sign Up to SEPAL
 
 You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-.. image:: images/request_sepal.JPG
-   :width: 400
+.. image:: images/request_sepal.png
    :alt: Request access to sepal.io
    :align: center
 

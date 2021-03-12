@@ -43,11 +43,12 @@ Before we can identify change, we first need to have images to compare. We will 
 
 3. Click **Retrieve Mosaic** and select **Blue, Green, Red, NIR, SWIR1, SWIR2,** then select Google Earth Engine Asset, and lastly click retrieve.
 
-*If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.*
+.. note::
+   If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.
 
 |
 
-.. image:: images/retrieval_mosaic.JPG
+.. image:: images/retrieval_mosaic.png
    :alt: The retrieval screen for mosaics.
    :width: 450
    :align: center
@@ -56,14 +57,15 @@ Before we can identify change, we first need to have images to compare. We will 
 
 4. Repeat steps 2 & 3 but change the **Date** parameter to 2018.
 
-**It may take a significant amount of time before your mosaics finish exporting.**
+.. note::
+   It may take a significant amount of time before your mosaics finish exporting.
 
 Part 2. Create and collect change classification training data
 ---------------------------------------------------------------
 
 Now that we have the mosaics created, we will collect change training data. Though more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2018: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2018 there are four pathways: a pixel can be forest in 2015 and in 2018 (stable forest); a pixel can be non-forest in 2015 and in 2018 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
-.. image:: images/land_cover_flow_chart.JPG
+.. image:: images/land_cover_flow_chart.png
    :alt: A land cover change flow chart.
    :width: 450
    :align: center
@@ -90,7 +92,7 @@ Now that we have the mosaics created, we will collect change training data. Thou
   b. Create new project title “Sri Lanka Training Data” with **TRAINING DATA** as the **Type** and a **scale** of 30m.
   c. Add "Stable Forest", "Stable Non-Forest", and "Change" questions to the Code List
 
-.. image:: images/training_data_menu_3.JPG
+.. image:: images/training_data_menu_3.png
    :alt: The Training Data menu where you can open a training data collection.
    :width: 450
    :align: center
