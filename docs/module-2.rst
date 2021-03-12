@@ -182,6 +182,8 @@ In this assignment, you will create training data points using a combination of 
 Part 1. Setting up a training project
 --------------------------------------
 
+**UPDATES starting at 5**
+
 To collect training data, we will need to create a ceo-sepal project from within SEPAL. There are two ways to do this. The easier way is to begin the classification and follow a link when prompted. This is the approach we will use here.
 
 However, you can also navigate to https://sepal.io/ceo, log in, and add a project directly through this interface (starting at Step 3a, below). If you use this route, you will need to create the classification later, using steps 1-3 below.
