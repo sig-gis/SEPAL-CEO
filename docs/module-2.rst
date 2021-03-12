@@ -197,7 +197,6 @@ Part 1. Setting up a training project
 
 .. image:: images/training_data_project_setup.png
    :alt: Training data project setup.
-   :width: 450
    :align: center
 
 |
@@ -208,7 +207,7 @@ Part 1. Setting up a training project
 
 .. image:: images/add_imagery_layers.png
    :alt: Adding imagery layers.
-   :width: 450
+   :width: 400
    :align: center
 
 |
@@ -229,7 +228,6 @@ Part 1. Setting up a training project
 
 .. image:: images/GEE_asset_setup.png
    :alt: Google Earth Engine Asset setup
-   :width: 450
    :align: center
 
 |
@@ -254,7 +252,6 @@ Second, not all pixels in the same classes have the exact same values—there is
 
 .. image:: images/ceo_sepal_data_collection.png
    :alt: The CEO SEPAL data collection interface.
-   :width: 450
    :align: center
 
 |
@@ -371,10 +368,10 @@ Second, not all pixels in the same classes have the exact same values—there is
   b. Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
   c. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
-  .. image:: images/data_points_airport.png
-     :alt: Collecting residential and other human settlement area data points.
-     :width: 450px
-     :align: center
+.. image:: images/data_points_airport.png
+   :alt: Collecting residential and other human settlement area data points.
+   :width: 450px
+   :align: center
 
 |
 
@@ -556,7 +553,6 @@ Part 0. [Optional] Merging Asset Tables
 To get a more accurate training dataset, consider combining multiple training datasets. For example, if you’re completing these exercises as part of a group training, try combining your training data set with your neighbors’. We will show you how to do this using your .csv files, however if you are more familiar with GEE you can also combine files using code in GEE.
 
 1. Navigate to your GEE table information as in Exercise 2.3 Part 4.
-2. Click on Share.
 
 .. image:: images/info_page_table_id.png
    :alt: The GEE table information where you can find your asset table id.
@@ -564,6 +560,8 @@ To get a more accurate training dataset, consider combining multiple training da
    :align: center
 
 |
+
+2. Click on Share.
 
 .. image:: images/share_asset_table.png
    :alt: The sharing interface for your asset table
@@ -690,7 +688,6 @@ Following analysis you should spend some time looking at your change detection i
 
 .. image:: images/GEE_asset.png
    :alt: The Google Earth Engine Asset.
-   :width: 450
    :align: center
 
 |
