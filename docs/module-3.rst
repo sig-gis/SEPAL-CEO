@@ -72,6 +72,8 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 |
 
+**THIS HAS CHANGED**
+
 1. First, we’ll create training data.
 
   a. In the Process menu, click the green plus symbol and select Classification.
@@ -111,7 +113,7 @@ Now that we have the mosaics created, we will collect change training data. Thou
   a. Add your Earth Engine Asset mosaics for both years.
   b. You can also add more than one band combination. See the example below.
 
-.. image:: images/add_GEE_assets.JPG
+.. image:: images/add_GEE_assets.png
    :alt: Adding GEE Assets to the project.
    :align: center
 
@@ -119,7 +121,7 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 4. Add Hansen Forest Loss layers (loss, yearloss). These are found here: UMD/hansen/global_forest_change_2019_v1_7
 
-.. image:: images/hansen_forest_loss_layer.JPG
+.. image:: images/hansen_forest_loss_layer.png
    :alt: Adding the Hansen Forest Loss layer.
    :align: center
 
@@ -147,12 +149,13 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 |
 
-*If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).*
+.. note::
+   If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).
 
-.. image:: images/GEE_asset_error.JPG
-   :alt: Error with GEE asset from an incorrect upload.
-   :width: 450
-   :align: center
+   .. image:: images/GEE_asset_error.JPG
+      :alt: Error with GEE asset from an incorrect upload.
+      :width: 450
+      :align: center
 
 |
 
@@ -181,7 +184,8 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 |
 
-*If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.*
+.. note::
+   If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.
 
 Part 3. Two date image processing
 ----------------------------------
