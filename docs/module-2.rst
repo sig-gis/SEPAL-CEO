@@ -182,7 +182,7 @@ In this assignment, you will create training data points using a combination of 
 Part 1. Setting up a training project
 --------------------------------------
 
-1. Navigate to https://sepal.io/ceo. You may need to log into SEPAL.
+1. Navigate to https://sepal.io/ceo. You may need to log into SEPAL. This is not the same web page you have been using thus far in the tutorial.
 2. Click **Add project.**
 3. Type in a unique name for your training dataset, such as “Amazon training data”.
 4. Use **TRAINING DATA** as the **Type.**
