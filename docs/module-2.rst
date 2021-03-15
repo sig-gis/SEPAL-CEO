@@ -634,7 +634,7 @@ Part 1. Run supervised classification in SEPAL
 
 |
 
-5. Now you will be asked to confirm the link between the legend you input in step 3. and your classification. You should see a screen as follows. If you need to change anything, click the green plus buttons. Otherwise, clifck **Done**, then click **Close**.
+5. Now you will be asked to confirm the link between the legend you input in step 3 and your classification. You should see a screen as follows. If you need to change anything, click the green plus buttons. Otherwise, clifck **Done**, then click **Close**.
 
 .. image:: images/link.png
    :alt: link between legend and classification
