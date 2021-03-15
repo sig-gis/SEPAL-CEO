@@ -619,7 +619,7 @@ Part 1. Run supervised classification in SEPAL
   a. Click on the green **Add** button.
 
     i You can upload your CSV file.
-    ii. Or you can select Earth Engine Table and enter the path to your Earth Engine asset in the EE Table ID field.
+    ii. Or you can select Earth Engine Table and enter the path to your Earth Engine asset in the EE Table ID field. <<<<Need more????
 
   b. Click **Next**.
   c. For **Location Type**, select GEOJSON column. Select ".geo" in the dropdown menu for **GEOJSON Column** and click **Next**.
