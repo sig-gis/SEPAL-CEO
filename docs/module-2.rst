@@ -277,10 +277,9 @@ Second, not all pixels in the same classes have the exact same values—there is
 
   a. Next, zoom into an area that is clearly forested. When you find an area that is completely forested, click it once. Notice the information on the right side of the screen that popped up.
   b. You have just placed a training data point!
-  c. Now you should switch back to the Landsat mosaic to make sure that this forested area is not covered with a cloud. This is a key step that you should do for every point you collect. If you mistakenly classify a cloudy pixel as Forest, then the results will be impacted negatively if your Landsat mosaic does have cloud-covered areas.
+  c. Now you should switch back to the Landsat mosaic to make sure that this forested area is not covered with a cloud. This is a key step that you should do for every point you collect. If you mistakenly classify a cloudy pixel as Forest, then the results will be impacted negatively if your Landsat mosaic does have cloud-covered areas. --- Note: If you made a mistake and you haven’t classified the point yet, then you can just click somewhere else on the map instead of deleting the record. If you also already classified the point, then delete it and try again.
   d. Once you are satisfied with your training point, click the **Forest** button on the right side of the screen to classify the point.
 
-     If you haven’t classified the point yet, then you can just click somewhere else on the map instead of deleting the record.
 
 .. image:: images/ceo_sepal_collecting_data.png
    :alt: Collecting data in the CEO SEPAL interface.
