@@ -330,10 +330,10 @@ Second, not all pixels in the same classes have the exact same values—there is
   a. The study area contains an abundance of forested land, so it should be pretty easy to identify places that can be confidently classified as forest. If you’d like, use the charts function to ensure that there is a relatively high NDVI value for the point.
   b. Continue to switch back and forth between the Landsat mosaic and the base **Satellite** imagery to ensure that:
 
-    i. you are placing data points within the extent of the mosaic and
-    ii. that you aren’t placing a point over a cloud in the mosaic.
+    i. you are placing data points within the extent of the mosaic
+    ii. you aren’t placing a point over a cloud in the mosaic
 
-  c. You will notice that the quality of the base **Satellite** imagery varies. This is where the charts can come in particularly handy. You may also find it useful to zoom out and zoom back in, as the imagery changes based on your zoom scale. The images below show the same general area, but at slightly different zoom scales.
+  c. You will notice that the quality of the base **Satellite** imagery varies. This is where the charts can come in particularly handy. You may also find it useful to zoom out and zoom back in, as the imagery changes based on your zoom scale. The images below show the same general area, but at slightly different zoom scales. ?????Missing an image????
 
 .. image:: images/collect_training_data.png
    :alt: Collecting training data in the CEO SEPAL interface.
