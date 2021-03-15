@@ -216,8 +216,8 @@ Part 1. Setting up a training project
 
   a. Name your layer. Try ‘Landsat 8 RGB.’
   b. Paste the link to your mosaic in GEE (see Part 2 in Exercise 2.2).
-  c. Type in ‘red, blue, and green’ for bands.
-  d. Use 0 and 3000 for min and max. You can alter these values slightly based on band min/max in the Landsat 8 satellite.
+  c. Use 0 and 3000 for min and max. You can alter these values slightly based on band min/max in the Landsat 8 satellite.
+  d. Type in ‘red, blue, and green’ for bands.
 
 9. Add your Earth Engine Asset mosaic, but type in ‘swir1,nir,red’ to get SWIR, NIR, and red bands. Use a min and max of 300 and 3200.
 10. You can also add additional band combinations. If you would like to add other versions of this mosaic with different band combinations, repeat steps 5-6, but use different bands and adjust the name according to the bands. For example, try NIR, red, green.
