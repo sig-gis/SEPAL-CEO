@@ -28,49 +28,58 @@ Stratified random sampling is an easy to use, easy to understand, and well suppo
 
 We will use the SEPAL SAE-Design tool. You will upload your classified map and set some basic parameters, then the SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map will depend on your expected overall accuracy. Be sure to log these choices as part of your documentation (Module 5).
 
-+-------------------------------------+----------------------------------+
-| Objectives                          | Prerequisites                    |
-+=====================================+==================================+
-| Generate a stratified random sample |                                  |
-| based on your image classification. | Classification from Module 2.    |
-+-------------------------------------+----------------------------------+
-| Optional: Upload your               | Optional: you can also use your  |
-| stratification to SEPAL.            |  classification from Module 3.   |
-+-------------------------------------+----------------------------------+
++-------------------------------------+-----------------------------------+
+| Objectives                          | Prerequisites                     |
++=====================================+===================================+
+| Generate a stratified random sample |                                   |
+| based on your image classification. | Classification from Module 2.     |
++-------------------------------------+-----------------------------------+
+| Optional: Upload your               | Optional: advanced users can use  |
+| stratification to SEPAL.            | the classification from Module 3. |
++-------------------------------------+-----------------------------------+
 
 Part 0. Uploading files to SEPAL (optional)
 --------------------------------------------
 
 If your classification is not stored in SEPAL (for example, a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL’s stratified random sample tool.
 
-1. Login to SEPAL.
-2. Select the purple wrench **Apps** button. If you have an existing tab open, you may need to click the **plus** sign in the top right.
-3. Choose the **R Studio** application. You may be prompted to enter your SEPAL username and password to enter R Studio.
+There are two tools that can be used to upload files. The first is RStudio, and the second is the File transfer Management app.
 
-.. image:: images/apps_rstudio.JPG
+1. For either approach, first select the purple wrench **Apps** button. If you have an existing tab open, you may need to click the **plus** sign in the top right.
+2. To use RStudio, choose the **R Studio** application. You may be prompted to enter your SEPAL username and password to enter R Studio.
+
+.. image:: images/apps_rstudio.png
    :alt: The apps screen, with RStudio shown.
    :align: center
 
 |
 
-4. This will open an instance of RStudio, an IDE for the R programming language.
-5. You should see a ‘Files’ tab in the lower right window.
+  a. This will open an instance of RStudio, an IDE for the R programming language.
+  b. You should see a ‘Files’ tab in the lower right window.
 
-   If not, you may need to adjust the window layout. To do this, move your mouse to the right-hand side of the window where a four-way arrow will appear. Click and drag your mouse to the left to reveal the right pane.
+     If not, you may need to adjust the window layout. To do this, move your mouse to the right-hand side of the window where a four-way arrow will appear. Click and drag your mouse to the left to reveal the right pane.
 
-6. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
+  c. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
 
-.. image:: images/rstudio_interface.JPG
+.. image:: images/rstudio_interface.png
    :alt: The RStudio interface in SEPAL.
    :align: center
 
 |
 
-7. In the **Upload Files** window, click **Choose File.**
-8. Navigate to the correct location on your drive and add . click Open.
-9. Once you’ve selected this file, click **OK** to complete the upload (see below).
-10. You will see your file appear in the list of files in the lower right-hand pane.
-11. You may now close the RStudio instance by clicking the tab’s **x.**
+  d. In the **Upload Files** window, click **Choose File.**
+  e. Navigate to the correct location on your drive, select your map and click Open.
+  f. Once you’ve selected this file, click **OK** to complete the upload (see below).
+  g. You will see your file appear in the list of files in the lower right-hand pane.
+  h. You may now close the RStudio instance by clicking the tab’s **x.**
+
+2. To use the File transfer manager, select the **File transfer management** application.
+
+  a. Under Upload to Sepal, click on the drop down **Select table type** menu. Click on the correct file type for your map.
+  b. Click on the paperclip icon.
+  c. Navigate to the correct location of your map on your drive, select your map and click Open.
+  d. Click **Import**
+
 
 Part 1. Creating a stratified random sample
 --------------------------------------------
@@ -88,27 +97,28 @@ These directions will provide a stratified random sample of the proper sampling 
 3. Type ‘stratified’ into the search bar or scroll through the different process apps to find “Stratified Area Estimator--Design”
 4. Select **Stratified Area Estimator-Design.** Note that loading the tool takes a few minutes.
 
-.. image:: images/stratified_area_estimator_design.JPG
+.. image:: images/stratified_area_estimator_design.png
    :alt: Stratified Area Estimator-Design tool.
    :align: center
 
 |
 
-*Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.*
+.. note::
+   Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.*
 
-.. image:: images/fail_stratified_estimator_tool.JPG
-   :alt: Failure of the stratified area estimator tool.
-   :align: center
+   .. image:: images/fail_stratified_estimator_tool.png
+      :alt: Failure of the stratified area estimator tool.
+      :align: center
 
 |
 
 5. When the tool loads properly, it will look like the image below. Read some of the information on the **Introduction** page to acquaint yourself with the tool.
 
   a. On the **Introduction** page, you can change the language from English to French or Spanish.
-  b. The Description, Background, and ‘How to use the tool” panels provide more information about the tool.
+  b. The Description, Background, and "How to use the tool" panels provide more information about the tool.
   c. The Reference and Documents panel provides links to other information about stratified sampling, such as REDD Compass.
 
-.. image:: images/stratified_estimator_interface.JPG
+.. image:: images/stratified_estimator_interface.png
    :alt: The stratified estimator interface.
    :align: center
 
@@ -117,33 +127,19 @@ These directions will provide a stratified random sample of the proper sampling 
 6. The steps necessary to design the stratified area estimator are located on the left side of the screen and they need to be completed sequentially from top to bottom.
 7. Select **Map input** on the left side of the screen.
 
-  a. For this exercise, we’ll use the classification from Module 2. However, you can substitute another classification, such as the two date detection classification created in Module 3 if you would like.
+  a. For this exercise, we’ll use the classification from Module 2. However, you can substitute another classification, such as the change detection classification created in Module 3 if you would like.
   b. In the **Data type** section, click **Input.**
-  c. In the **Browse** window that opens, navigate to the test dataset and select it.
+  c. In the **Browse** window that opens, navigate to the Module 2 dataset and select it.
   d. Then click **Select.**
   e. Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this Exercise will be saved.
   f. Optionally, you can use a csv with your raster areas instead. We won’t discuss that here.
 
-.. image:: images/add_files_stratified_estimator.JPG
-   :alt: Adding files to the stratified area estimator tool
-   :width: 450
-   :align: center
-
-|
-
 8. Next, click **Strata areas** on the left side of the screen.
-
-.. image:: images/stratified_estimator_area_calculation.JPG
-   :alt: Stratified estimator area calculation screen.
-   :align: center
-
-|
-
 9. In the **Area calculation** section, select **OFT.** OFT stands for the Open Foris Geospatial Toolkit. R is slower but avoids some errors that arise with OFT.
 
    If you choose to use OFT, it will return values for the map that are incorrect if your map stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
 
-.. image:: images/stratified_estimator_map_legend.JPG
+.. image:: images/stratified_estimator_map_legend.png
    :alt: Stratified estimator tool showing the display map and legend and areas filled out.
    :align: center
 
@@ -183,9 +179,11 @@ These directions will provide a stratified random sample of the proper sampling 
   b. Click on the box under **“high confidence”** and assign your high confidence class(es). **For this exercise, please assign both Forest & Non-forest to the high confidence class. If you assign either to the low confidence class, you will not be able to use the CEO-SEPAL bridge in Exercise 4.2.**
   c. Then, click on the box under **“low confidence”** that appears and assign the corresponding class(es).
   d. If you make a mistake, there’s no way to remove the classes. However, just change one of the sliders slightly, move it back, and the class assignments will have been reset.
-  e. **DO NOT assign your No Data class to either high or low confidence.**
 
-.. image:: images/high_low_expected_user_accuracy.JPG
+.. warning::
+   DO NOT assign your No Data class to either high or low confidence.
+
+.. image:: images/high_low_expected_user_accuracy.png
    :alt: High and low expected user accuracy.
    :align: center
 
@@ -204,7 +202,7 @@ These directions will provide a stratified random sample of the proper sampling 
   e. You can also check the “Do you want to modify the sampling size” box.
   f. If you would like, you can edit the name of the file & download a csv with the sample design. The file contains the table shown above with some additional calculations. However, SEPAL will automatically save this file.
 
-.. image:: images/stratified_estimator_sampling.JPG
+.. image:: images/stratified_estimator_sampling.png
    :alt: The stratified estimator sampling size and distribution of samples screen.
    :align: center
 
@@ -218,7 +216,7 @@ These directions will provide a stratified random sample of the proper sampling 
     i. The resulting **distribution of samples** should look similar to the below image. These values will vary depending on your map and the standard error of expected overall accuracy you set.
     ii. Sometimes this step fails, no download button will appear, and you will need to refresh the page and restart the process.
 
-.. image:: images/stratified_estimator_sample.JPG
+.. image:: images/stratified_estimator_map.png
    :alt: The stratified estimator tool's sample allocation screen.
    :align: center
 
@@ -230,9 +228,9 @@ These directions will provide a stratified random sample of the proper sampling 
   b. Specify the **number of operators,** or people who will be doing the classification. Here, leave it set to 1. For CEO, this might be the number of users you think your project will have.
   c. The **size of the interpretation box** depends on your data and corresponds to CEO’s sample plot. This value should be set to the spatial resolution of the imagery you classified (Landsat= 30 meters). Here, leave it at 30 m.
 
-   When should you use CEO, and when should you use the CEO-SEPAL bridge? In general, **the CEO-SEPAL bridge should only be used for very simple use cases.** More specifically, CEO-SEPAL is a great option when you have only high-confidence categories, have a relatively small number of points, when you will collect the data yourself, and when the built in questions about your data points suffice. Most often, you will want to create a CEO project. Creating a CEO project through the collect.earth website is a better option when you have low-confidence categories, a larger number of points in your sample, when you want to use specific validation imagery, when multiple people will collect data and you need to track who is collecting data, and when you need more complex or custom questions about your data points.
+   When should you use CEO, and when should you use the CEO-SEPAL bridge? In general, **the CEO-SEPAL bridge should only be used for fairly simple use cases.** More specifically, CEO-SEPAL is a great option when you have only high-confidence categories, have a relatively small number of points, when you will collect the data yourself, and when the built in questions about your data points suffice. For other situations, you will want to create a CEO project. Creating a CEO project through the collect.earth website is a better option when you have low-confidence categories, a larger number of points in your sample, when you want to use specific validation imagery, when multiple people will collect data and you need to track who is collecting data, and when you need more complex or custom questions about your data points.
 
-   CEO-SEPAL does not ask about low confidence categories--this is a problem for creating an error matrix if you have low-confidence categories.
+.. CEO-SEPAL does not ask about low confidence categories--this is a problem for creating an error matrix if you have low-confidence categories. I think this was fixed
 
 18. If you would like to create a project via CEO, click on **Download .csv** and follow the steps in Part 2 below. After following the directions in Part 2, you will proceed to Exercise 4.2. We highly recommend using this approach, and we will demonstrate it in this manual.
 19. To create a project via the CEO-SEPAL bridge, click on **Create CEO project.**
@@ -240,11 +238,12 @@ These directions will provide a stratified random sample of the proper sampling 
   a. This will create a CEO project via the CEO-SEPAL bridge.
   b. This process will take a few minutes and you should see text and completion bars in the lower right as calculations happen.
   c. Copy-paste the link into your browser window when it appears.
-  d. Be sure to save this link somewhere so you can reference it later.
+  d. **Be sure to save this link somewhere so you can reference it later.**
 
-**You MUST be logged out of CEO for this pathway to work.**
+.. note::
+   You MUST be logged out of CEO for this pathway to work.
 
-.. image:: images/ceo_project_sepal.JPG
+.. image:: images/ceo_project_sepal.png
    :alt: Creating a CEO project through SEPAL.
    :width: 450
    :align: center
@@ -263,7 +262,7 @@ For projects with large sample sizes, where you want to have multiple people col
 2. Open your downloaded .csv file in Excel or the spreadsheet program of your choice.
 3. First, make sure that your data doesn’t contain a strata of ‘no data’. This can occur if your classification isn’t a perfect rectangle, as seen in this example of Nepal (the red circles are samples that the tool created in the ‘no data’ area). **If you have ‘no data’ rows, return to the SEPAL stratified estimator, and be sure to not include your no data class in the strata selection step.**
 
-.. image:: images/example_data_sepal_classification.JPG
+.. image:: images/example_data_sepal_classification.png
    :alt: Example data from the SEPAL classification.
    :align: center
 
@@ -273,7 +272,7 @@ For projects with large sample sizes, where you want to have multiple people col
 
    To do this, click the **Sort & Filter** button in Excel
 
-.. image:: images/sort_filter_excel.JPG
+.. image:: images/sort_filter_excel.png
    :alt: Using the Sort and Filter features in Excel.
    :align: center
 
@@ -281,7 +280,7 @@ For projects with large sample sizes, where you want to have multiple people col
 
 5. Next, Sort on the ‘id’ field by value, either smallest to largest or largest to smallest.
 
-.. image:: images/custom_sort_excel.JPG
+.. image:: images/custom_filter_excel.png
    :alt: A custom sort in Excel.
    :width: 450
    :align: center
@@ -361,7 +360,7 @@ For projects with large sample sizes, where you want to have multiple people col
     xii. Note that the Stratified Area Estimator--Analysis only accepts numeric values for the land use types. If you would like to use human-readable text values (e.g. Forest instead of 1), **you MUST follow the directions in Exercise 4.3 Part 2.**
     xiii. You can add additional survey questions if you’d like to experiment. An example of two survey cards is shown below.
 
-.. image:: images/example_survey_card.JPG
+.. image:: images/example_survey_card.png
    :alt: An example survey card setup
    :width: 450
    :align: center
@@ -441,7 +440,7 @@ If you have not created a response design for the classification you are now eva
 
 As a reminder, our classification used to classify our Forest/Non-forest land cover map was as follows:
 
-.. image:: images/classification_tree.JPG
+.. image:: images/classification_tree.png
    :alt: The classification tree.
    :width: 450
    :align: center
@@ -469,7 +468,7 @@ In CEO, these are the additional data sources that you have added to your CEO pr
 
 Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation (see Module 5).
 
-.. image:: images/data_source_recording_doc.JPG
+.. image:: images/data_source_recording_doc.png
    :alt: A data source recording document.
    :align: center
 
@@ -617,7 +616,7 @@ In general, data collection should include the following steps:
 
 1. To collect data in CEO, navigate to the project you created in Exercise 4.1 Part 2. Your screen should look like this:
 
-.. image:: images/data_collection_CEO.JPG
+.. image:: images/data_collection_CEO.png
    :alt: The data collection interface in CEO
    :align: center
 
@@ -629,7 +628,7 @@ In general, data collection should include the following steps:
   a. If you created multiple questions, you can navigate between questions using the numbers above your question text.
   b. Click on **Save** to save your answers and move on to the next plot.
 
-.. image:: images/data_collection_process_CEO.JPG
+.. image:: images/data_collection_process_CEO.png
    :alt: The data collection process in CEO
    :align: center
 
@@ -639,7 +638,7 @@ In general, data collection should include the following steps:
 5. When you have finished answering all of the questions, navigate to your Institution’s page.
 6. Your project name should now be green, indicating that all plots have been completed. If it is yellow, click on the project name and answer the remaining questions.
 
-.. image:: images/ceo_sepal_manual.JPG
+.. image:: images/ceo_sepal_manual.png
    :alt: A partly completed project.
    :align: center
 
@@ -651,22 +650,13 @@ In general, data collection should include the following steps:
 **Data collection in CEO-SEPAL bridge**
 
 1. For this example, navigate to the web address associated with your CEO-SEPAL bridge project. It should look something like this: https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf. You must be logged out of CEO for this link to work.
-2. Answer all questions associated with your project using.
-3. Your screen should look like this:
-
-.. image:: images/project_overview_ceo.JPG
-   :alt: The project overview screen in CEO.
-   :align: center
-
-|
-
-3. Click Go to first plot. This will take you to your first plot.
-4. With the CEO-SEPAL bridge, there is only one question. It is “CLASS”, where you must assign the appropriate value to your point.
+2. Click **Go to first plot**. This will take you to your first plot.
+3. With the CEO-SEPAL bridge, there is only one question. It is “CLASS”, where you must assign the appropriate value to your point.
 
   a. The CEO-SEPAL bridge uses the names you typed in during the legend labelling stage of the Sample Design.
   b. Click on Save to save your answers and move on to the next plot.
 
-5. Continue answering questions until you reach the last plot.
+4. Continue answering questions until you reach the last plot.
 
 **Data assembly**
 
@@ -915,12 +905,12 @@ Please note that you will need to upload your collected data from CEO to Sepal u
 | estimates for your classification | sampling design (Exercise 4.1)    |
 +-----------------------------------+-----------------------------------+
 
-Part 1. Understanding the error matrix (optional)
+Part 1. [Optional] Understanding the error matrix
 --------------------------------------------------
 
 A common tool to quantify agreement is the error matrix (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm assigned) map category labels to the (human assigned) reference category labels (your validation classification). The count for each pairwise combination are included in the blue and yellow cells in the following example.
 
-.. image:: images/confusion_matrix_example.JPG
+.. image:: images/confusion_matrix_example.png
    :alt: A confusion matrix example.
    :align: center
 
@@ -934,7 +924,7 @@ A common tool to quantify agreement is the error matrix (sometimes called a conf
 
 For your own data, calculate an error matrix following the above guidelines:
 
-.. image:: images/example_error_matrix.JPG
+.. image:: images/example_error_matrix.png
    :alt: An example error matrix.
    :align: center
 
@@ -942,7 +932,7 @@ For your own data, calculate an error matrix following the above guidelines:
 
 Here’s a completed example for a project using 4 classes:
 
-.. image:: images/example_error_matrix_4class.JPG
+.. image:: images/example_error_matrix_4class.png
    :alt: Example error matrix for a 4 class project.
    :align: center
 
@@ -954,7 +944,7 @@ Once the error matrix is created, the area estimation becomes straightforward. E
 
 At the heart of the analysis is the implementation of an unbiased area estimator. Different estimators can be implemented to assess accuracy. In the next part, you will use a stratified estimation since you have a sample stratified by the discrete map classes.
 
-Part 2. Preparing your CEO collected data for analysis in SEPAL (optional)
+Part 2. [Optional] Preparing your CEO collected data for analysis in SEPAL
 ---------------------------------------------------------------------------
 
 1. Open the .csv file you downloaded from Collect Earth Online in Exercise 4.2 Part 3. It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”.
@@ -977,7 +967,7 @@ Part 2. Preparing your CEO collected data for analysis in SEPAL (optional)
 
   d. Fill the entire column.
 
-.. image:: images/example_dataset.JPG
+.. image:: images/example_dataset.png
    :alt: An example dataset
    :width: 400
    :align: center
@@ -1002,7 +992,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
     i. You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that Reference and Documents are in the same place as the Design tool.
     ii. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
-.. image:: images/stratified_estimator_analysis_tool.JPG
+.. image:: images/stratified_estimator_analysis_tool.png
    :alt: The stratified estimator analysis tool.
    :align: center
 
@@ -1027,7 +1017,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
     iii. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification).
     iv. Within this folder, select **area_rast.csv** (see image below).
 
-.. image:: images/add_classification.JPG
+.. image:: images/add_classification.png
    :alt: Adding the classification
    :width: 450
    :align: center
@@ -1053,9 +1043,9 @@ The concept is derived from map accuracy assessment principles: characterized fr
     ii. For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class you must make sure that capitalization.
     iii. For projects completed in CEO-SEPAL, use map_code.
 
-  e. You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column)
+  e. You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column). This example uses a CEO project.
 
-.. image:: images/required_input_fields.JPG
+.. image:: images/required_input_fields.png
    :alt: The required input fields.
    :width: 450
    :align: center
@@ -1076,7 +1066,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
     i. The rows represent your assignments while the columns represent the map classifier’s.
     ii. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
 
-.. image:: images/confusion_matrix_output_sepal.JPG
+.. image:: images/confusion_matrix_output_sepal.png
    :alt: The confusion matrix output by SEPAL.
    :width: 450
    :align: center
@@ -1096,7 +1086,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
   d. You can change your desired **confidence interval** using the slider at the top of the panel.
   e. You can Download area estimates as tabular data (.csv) using the button.
 
-.. image:: images/area_estimate.JPG
+.. image:: images/area_estimate.png
    :alt: The area estimates screen in SEPAL.
    :align: center
 
@@ -1108,7 +1098,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
   b. Need to define unbiased stratified random and direct estimate stratified random.
   c. Note that the Map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
 
-.. image:: images/area_estimate_graph.JPG
+.. image:: images/area_estimate_graph.png
    :alt: A graph of the area estimates based on different sample design.
    :width: 450
    :align: center
