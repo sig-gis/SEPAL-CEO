@@ -26,13 +26,13 @@ Creating consistent labelling protocols is necessary for creating accurate train
 
 In this exercise, you will build a decision tree for your classification along with much of the other documentation and decision points (for more on decision points, please see Module 5, Exercise 5.1).
 
-+-------------------------------------+-----------------------------+
-| Objectives                          | Prerequisites               |
-+=====================================+=============================+
-|Learn how to create a classification | None                        |
-| scheme for land cover land use      |                             |
-| classification mapping.             |                             |
-+-------------------------------------+-----------------------------+
++--------------------------------------+-----------------------------+
+| Objectives                           | Prerequisites               |
++======================================+=============================+
+| Learn how to create a classification | None                        |
+| scheme for land cover land use       |                             |
+| classification mapping.              |                             |
++--------------------------------------+-----------------------------+
 
 
 Part 1. Specify the classification scheme
@@ -283,6 +283,7 @@ Second, not all pixels in the same classes have the exact same values—there is
 
 .. image:: images/classification_overlay.png
    :alt: Disabling the classification overlay.
+   :width: 450
    :align: center
 
 11. Once you are satisfied with your forested training data points, move on to the **Non-Forest** training points.
@@ -380,7 +381,7 @@ Part 0. [Optional] Add training data collected outside of sepal
     ii. Or you can select Earth Engine Table and enter the path to your Earth Engine asset in the EE Table ID field.
 
   b. Click **Next**.
-  c. For **Location Type**, select "X/Y" coordinate columns" or "GEOJSON Column" depending on your data source. GEE assets will need the GEOJSON column option
+  c. For **Location Type**, select "X/Y" coordinate columns" or "GEOJSON Column" depending on your data source. GEE assets will need the GEOJSON column option.
   d. Click **Next**.
   e. Leave the **Row filter expression** blank. For **Class format**, select "Single Column" or "Column per class" as your data dictates.
   f. In the **Class Column** field select the column name that is associated with the class.
@@ -449,7 +450,7 @@ Following analysis you should spend some time looking at your change detection i
 
 1. Stay in the classification
 
-. Navigate back to your SEPAL-CEO project at https://sepal.io/ceo/.
+2. Navigate back to your SEPAL-CEO project at https://sepal.io/ceo/.
 
   a. Next to your Amazon project, click on **Edit.**
   b. Add a **new layer,** title it **Classification,** and add the information from your Google Earth Engine classification asset. You have two classes, so your Min should be 1, Max 2, and Bands ‘class’.

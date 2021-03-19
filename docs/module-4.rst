@@ -38,7 +38,7 @@ We will use the SEPAL SAE-Design tool. You will upload your classified map and s
 | stratification to SEPAL.            | the classification from Module 3. |
 +-------------------------------------+-----------------------------------+
 
-Part 0. Uploading files to SEPAL (optional)
+Part 0. [Optional] Uploading files to SEPAL
 --------------------------------------------
 
 If your classification is not stored in SEPAL (for example, a classification in GEE or a classification created through CODED), you will need to upload it to SEPAL in order to use SEPAL’s stratified random sample tool.
@@ -104,7 +104,7 @@ These directions will provide a stratified random sample of the proper sampling 
 |
 
 .. note::
-   Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.*
+   Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.
 
    .. image:: images/fail_stratified_estimator_tool.png
       :alt: Failure of the stratified area estimator tool.
@@ -245,7 +245,6 @@ These directions will provide a stratified random sample of the proper sampling 
 
 .. image:: images/ceo_project_sepal.png
    :alt: Creating a CEO project through SEPAL.
-   :width: 450
    :align: center
 
 |
@@ -440,7 +439,7 @@ If you have not created a response design for the classification you are now eva
 
 As a reminder, our classification used to classify our Forest/Non-forest land cover map was as follows:
 
-.. image:: images/classification_tree.png
+.. image:: images/classification_scheme.png
    :alt: The classification tree.
    :width: 450
    :align: center
@@ -468,7 +467,7 @@ In CEO, these are the additional data sources that you have added to your CEO pr
 
 Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation (see Module 5).
 
-.. image:: images/data_source_recording_doc.png
+.. image:: images/data_source_recording.png
    :alt: A data source recording document.
    :align: center
 
@@ -628,7 +627,7 @@ In general, data collection should include the following steps:
   a. If you created multiple questions, you can navigate between questions using the numbers above your question text.
   b. Click on **Save** to save your answers and move on to the next plot.
 
-.. image:: images/data_collection_process_CEO.png
+.. image:: images/data_collection_process.png
    :alt: The data collection process in CEO
    :align: center
 

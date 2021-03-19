@@ -252,7 +252,7 @@ Part 2: Google Earth Engine version control
 
 Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.
 
-.. image:: images/gee_scripts.JPG
+.. image:: images/gee_scripts.png
    :alt: The GEE scripts tab.
    :width: 450
    :align: center
@@ -263,7 +263,6 @@ Detailed information can be found under “Development Environments: Earth Engin
 
 .. image:: images/earth_engine_code_editor.png
    :alt: Earth engine code editor
-   :width: 450
    :align: center
 
 |
