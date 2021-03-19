@@ -4,6 +4,8 @@ Welcome to area estimation with SEPAL and CEO!
 
 In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation. This approach is preferred over pixel-counting methods because all maps have errors. For example, maps derived from land cover land use classifications may have errors due to pixel mixing, or noise in the input data. Using pixel-counting methods will produce biased estimates of area, and you cannot tell whether these are overestimates or underestimates. Sample based approaches create unbiased estimates of area and the error associated with your map.
 
+The manual is available on Read the Docs at: https://sepal-ceo.readthedocs.io/en/latest/intro.html
+
 The goal of this manual is to teach you how to perform these tasks such that you can conduct your own area estimation for land use/land cover or change detection classifications.
 
 In this manual, you will find four modules covering methods, and one module covering the documentation needed for replicating these methods. The modules are as follows:
