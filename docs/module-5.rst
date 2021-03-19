@@ -214,7 +214,7 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 
   Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
 
-.. image:: images/version_control_system.JPG
+.. image:: images/version_control_system.png
    :alt: Figure showing how version control systems work.
 
 |
@@ -222,7 +222,7 @@ The following explanation is adapted from the Software Carpentry Git lesson.
   Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
 
 
-.. image:: images/version_control_multiple_contributors.JPG
+.. image:: images/version_control_multiple_contributors.png
    :alt: Version control with multiple contributors
 
 |
@@ -252,7 +252,7 @@ Part 2: Google Earth Engine version control
 
 Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.
 
-.. image:: images/gee_scripts.JPG
+.. image:: images/gee_scripts.png
    :alt: The GEE scripts tab.
    :width: 450
    :align: center
@@ -261,9 +261,8 @@ Google Earth Engine has implemented version control and version history for all 
 
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
-.. image:: images/earth_engine_code_editor.JPG
+.. image:: images/earth_engine_code_editor.png
    :alt: Earth engine code editor
-   :width: 450
    :align: center
 
 |

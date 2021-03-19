@@ -2,6 +2,11 @@
 Module 3. Image change detection
 =================================
 
+.. warning::
+   THIS MODULE IS UNDER CONSTRUCTION.
+
+   Recent changes to SEPAL mean that exiting new content is coming soon! Watch this space.
+
 Image change detection allows us to understand differences in the landscape--or more correctly, in the satellite images taken of the landscape--over time. There are many questions that change detection methods can help answer, including “When did deforestation take place?” and “How much forest area has been converted to agriculture in the past 5 years?”
 
 Most methods for change detection use algorithms backed by statistical methods to extract and compare information in the satellite images. To conduct change detection then, we need multiple mosaics or images, each one representing a point in time. Here, we will describe how to detect change between two dates using a simple model, however this theory can be expanded to include more dates. In addition, we’ll describe time series analysis, which generally looks at longer periods of time.
@@ -72,6 +77,8 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 |
 
+**THIS HAS CHANGED**
+
 1. First, we’ll create training data.
 
   a. In the Process menu, click the green plus symbol and select Classification.
@@ -111,7 +118,7 @@ Now that we have the mosaics created, we will collect change training data. Thou
   a. Add your Earth Engine Asset mosaics for both years.
   b. You can also add more than one band combination. See the example below.
 
-.. image:: images/add_GEE_assets.JPG
+.. image:: images/add_GEE_assets.png
    :alt: Adding GEE Assets to the project.
    :align: center
 
@@ -119,7 +126,7 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 4. Add Hansen Forest Loss layers (loss, yearloss). These are found here: UMD/hansen/global_forest_change_2019_v1_7
 
-.. image:: images/hansen_forest_loss_layer.JPG
+.. image:: images/hansen_forest_loss_layer.png
    :alt: Adding the Hansen Forest Loss layer.
    :align: center
 
@@ -147,12 +154,13 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 |
 
-*If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).*
+.. note::
+   If you get the following error, you need to re-upload your training data to Google Earth Engine and be sure to specify the X and Y coordinates (XCoordinate and YCoordinate columns).
 
-.. image:: images/GEE_asset_error.JPG
-   :alt: Error with GEE asset from an incorrect upload.
-   :width: 450
-   :align: center
+   .. image:: images/GEE_asset_error.JPG
+      :alt: Error with GEE asset from an incorrect upload.
+      :width: 450
+      :align: center
 
 |
 
@@ -181,7 +189,8 @@ Now that we have the mosaics created, we will collect change training data. Thou
 
 |
 
-*If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.*
+.. note::
+   If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.
 
 Part 3. Two date image processing
 ----------------------------------
@@ -265,9 +274,9 @@ Change detection map:
 
 **Congratulations! You have learned how to conduct a two-date change detection classification in SEPAL.**
 
------------------------------------
-Exercise 3.2. Time series analysis
------------------------------------
+-------------------------------------------------------
+Exercise 3.2. Other approaches to time series analysis
+-------------------------------------------------------
 
 In this exercise, you will learn more about time series analysis. SEPAL has the BFAST option, described first. We also provide information on TimeSync and LandTrendr, products currently only available outside of SEPAL and CEO.
 
@@ -300,7 +309,7 @@ More information can be found online at http://bfast.r-forge.r-project.org/.
   b. Select **Landsat 8 SR** from the select satellite products dropdown.
   c. Click **Get Data.** It may take a moment to download all the data for the point
 
-.. image:: images/BFAST_explorer.JPG
+.. image:: images/BFAST_explorer.png
    :alt: The BFAST Explorer interface.
    :align: center
 
@@ -319,7 +328,7 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 
 7. Select bfastmonitor as the algorithm.
 
-.. image:: images/BFAST_explorer_interface.JPG
+.. image:: images/BFAST_explorer_interface.png
    :alt: The BFAST Explorer interface.
    :align: center
 
@@ -327,7 +336,7 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 
 8. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
 
-.. image:: images/BFAST_visualization.JPG
+.. image:: images/BFAST_visualization.png
    :alt: Additional BFAST visualization.
    :align: center
 
@@ -336,7 +345,8 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 9. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
 10. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
 
-*The black and white flashing is normal.*
+.. note::
+   The black and white flashing is normal.
 
 
 Part 2. TimeSync and LandTrendr
@@ -382,7 +392,7 @@ From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, 
 
 From LandTrendr’s documentation, here’s an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: https://emapr.github.io/LT-GEE/landtrendr.html.
 
-.. image:: images/LandTrendr.JPG
+.. image:: images/LandTrendr.png
    :alt: The LandTrendr interface
    :align: center
 

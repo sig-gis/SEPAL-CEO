@@ -424,7 +424,7 @@ Part 2. Name and Save your Recipe and Mosaic
 
    Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
 
-.. image:: images/revisions_menu.png
+.. image:: images/revision_menu.png
    :alt: Revisions menu dropdown.
    :align: center
 
