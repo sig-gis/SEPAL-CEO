@@ -134,7 +134,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
   d. You will need to switch between this Dec 2015 data and the Dec 2020 data to find stable areas and changed areas.
 
 .. note::
-   If you have collected data in QGIS, CEO, or another program, you can skip the following steps. Simply click on **TRN** in the lower right. Click **+ Add** then upload your data to SEPAL. Then skip ahead to ??????????
+   If you have collected data in QGIS, CEO, or another program, you can skip the following steps. Simply click on **TRN** in the lower right. Click **+ Add** then upload your data to SEPAL. Then skip ahead to Step 12.
 
 3. Now click on the point icon. When you mouse over this icon, it says "Enable reference data collection."
 4. With reference data collection enabled, you can start adding points to your map.
