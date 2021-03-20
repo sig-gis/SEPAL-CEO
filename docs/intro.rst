@@ -127,3 +127,11 @@ Project planning and methods documentation play a key role in any remote sensing
 7. Will you supplement your remote sensing project with existing data (local data on forest type, management intent, records of natural disturbance…)?
 
 8. Partnerships (vendors, agencies, bureaus, etc.)
+
+|
+
+.. image:: images/copyright.png
+   :alt: CC-BY-ShareAlike
+   :align: center
+
+This work is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>`_.

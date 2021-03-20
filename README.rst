@@ -20,7 +20,7 @@ These exercises include step-by-step directions and are built to facilitate lear
 
 To visualize the flow of this manual, see below:
 
-.. image:: images/manual_content.png
+.. image:: docs/images/manual_content.png
    :alt: Visualization of manual content
    :align: center
 
