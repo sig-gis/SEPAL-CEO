@@ -1,10 +1,9 @@
 .. SEPAL-CEO Area Estimation documentation master file, created by
    sphinx-quickstart on Thu Feb 25 16:09:53 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to SEPAL-CEO Area Estimation's documentation!
-=====================================================
+
+Welcome to Area Estimation with SEPAL and CEO!
+==============================================
 
 .. toctree::
    :maxdepth: 3
@@ -23,3 +22,10 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Metadata
+=========
+
+.. meta::
+   :description: In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation.
+   :keywords: openMRV, area estimation, error, image classification, change detection, sampling design, quality assurance, quality control, QAQC, documentation, land use, land cover, forestry, carbon
