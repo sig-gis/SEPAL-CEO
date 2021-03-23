@@ -23,8 +23,8 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Metadata
-=========
+
+.. Metadata
 
 .. meta::
    :description: In this manual, you will learn how to perform area estimation for land use/land cover and two date change detection classifications. We will use sample-based approaches to area estimation.
