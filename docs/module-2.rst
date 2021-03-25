@@ -448,32 +448,19 @@ Part 2. QA/QC considerations and methods
 
 Quality assurance and quality control, commonly referred to as QA/QC, is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area are described in Module 4. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications. Here we’ll discuss one approach to informal QA/QC.
 
-Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. We’ll do this in the analysis window. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in Google Earth Engine or in another program, such as QGIS or ArcMAP.
+Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. We’ll do this in the classification window. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in Google Earth Engine or in another program, such as QGIS or ArcMAP.
 
-1. Stay in the classification
+With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-2. Navigate back to your SEPAL-CEO project at https://sepal.io/ceo/.
-
-  a. Next to your Amazon project, click on **Edit.**
-  b. Add a **new layer,** title it **Classification,** and add the information from your Google Earth Engine classification asset. You have two classes, so your Min should be 1, Max 2, and Bands ‘class’.
-  c. Click **Submit.**
-
-.. image:: images/GEE_asset.png
-   :alt: The Google Earth Engine Asset.
+.. image:: images/examine_classification_map.png
+   :alt: Examining your change detection map
    :align: center
 
 |
 
-3. Now click Collect for your Amazon project.
-4. Switch the imagery to your Classification and pan and zoom around the map. Black will be ‘Forest,’ and white is ‘Non-forest’ pixels.
-5. Compare your Classification map to Landsat 8 imagery.
-
-  a. What land cover was classified correctly?
-  b. Where do you see errors on the map?
-  c. What classes seem to have the most error?
-  d. What do you think may have caused one class to be classified more accurately than another?
-
-6. If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in Module 4.
-7. However if you are not satisfied, collect additional points of training data where you see inaccuracies following the same process as in Exercise 2.3. Then re-run the classification following the steps in Part 1.
+1. Turn on the imagery for your Classification and pan and zoom around the map.
+2. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
+3. If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in Module 4.
+4. However, if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-export the classification following the steps in Part 3.
 
 **Congratulations! You now know how to produce map classifications in SEPAL.**
