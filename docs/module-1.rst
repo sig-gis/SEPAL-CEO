@@ -58,16 +58,14 @@ Part 2. SEPAL Interface Home
 
 4. **Account Information** can be found in the bottom right of the webpage by clicking the button that shows your username. This opens an overlay that displays important user account information.
 
-5. You can edit your user account info, including Name, Password, Email and Organization here.
-
-   Click **Save** to make those changes permanent. However, you cannot edit your Username in this interface.
-
-   Change the Google Account associated with your SEPAL account by clicking **Use my own Google Account** and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.
+  i. You can edit your user account info, including Name, Password, Email and Organization here.
+  ii. Click **Save** to make any changes permanent. However, you cannot edit your Username in this interface.
+  iii. Change the Google Account associated with your SEPAL account by clicking **Use my own Google Account** and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.
 
 .. note::
    Be sure to connect your Google Account in order to be able to Retrieve Mosaics in the next Exercise 1.2. You should use the same account you used to sign up for Google Earth Engine.
 
-6. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
+5. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
 .. image:: images/user_report_panel.png
    :alt: User Report panel.
@@ -207,7 +205,7 @@ Part 1. Create a Landsat Mosaic
 
   a. In the list of countries that pops up, scroll down until you see the available options for **Congo, Dem Republic of**. Note there is also the Republic of Congo, which is not what we’re looking for.
   b. Under Province/Area, notice that there are many different options.
-  c. Select **Mai-Ndombe.**
+  c. Select **Mai-Ndombe.** There is also a Mai Ndombe without a hyphe, this is not what you want.
   d. [Optional] You can add a **Buffer** to your mosaic. This will include an area around the province of the specified size in your mosaic.
   e. Click **Next.**
 
@@ -225,7 +223,7 @@ Part 1. Create a Landsat Mosaic
   d. For this exercise, let’s create imagery for the dry season of 2019.
 
     i. Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.
-    ii. Click **Apply**.
+    ii. Click **Next**.
 
 .. image:: images/date_menu.png
    :alt: The date menu.

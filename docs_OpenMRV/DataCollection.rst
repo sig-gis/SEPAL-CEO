@@ -258,7 +258,8 @@ In general, data collection should include the following steps:
 3. Answer all of the questions for your first plot by clicking on the appropriate answers.
 
   a. If you created multiple questions, you can navigate between questions using the numbers above your question text.
-  b. Click on **Save** to save your answers and move on to the next plot.
+  b. Scroll in and out with your mouse wheel (or press the +/- buttons) to view the landscape context and see your plots properly.
+  c. Click on **Save** to save your answers and move on to the next plot.
 
 .. image:: images/data_collection_process.png
    :alt: The data collection process in CEO
