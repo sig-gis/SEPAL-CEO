@@ -51,7 +51,7 @@ Most methods for change detection use algorithms backed by statistical methods t
 * A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 * A GEE account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 
-----------------------------------------
+
 3. Tutorial: Two date change detection
 ----------------------------------------
 
@@ -88,6 +88,8 @@ Before we can identify change, we first need to have images to compare. We will 
 .. note::
    It may take a significant amount of time before your mosaics finish exporting.
 
+|
+
 3.2 Start the classification
 =============================
 
@@ -98,7 +100,7 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
 1. In the **Process** menu, click the green plus symbol and select **Classification.**
 2. Add the two Sri Lanka optical mosaics for classification:
 
-  a. Click **+ Add** and choose either **Saved Sepal Recipe** or **Earth Engine Asset** (recommended).
+  a. Click **Add** and choose either **Saved Sepal Recipe** or **Earth Engine Asset** (recommended).
 
     i. If you choose **Saved Sepal Recipe**, simply select your 2015 recipe.
     ii. If you choose **Earth Engine Asset**, enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/SriLanka2015”.
@@ -224,7 +226,6 @@ With SEPAL you can examine your classification and collect additional training d
 2. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
 3. If your results make sense, and you are happy with them, great!
 4. However, if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-export the classification following the steps above.
-
 
 4. Frequently Asked Questions (FAQs)
 -------------------------------------
