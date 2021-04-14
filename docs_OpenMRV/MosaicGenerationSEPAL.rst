@@ -1,4 +1,27 @@
-.. Andrea, add metadata here
+---
+title: Mosaic generation with SEPAL
+summary: In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway. You will also create mosaics for the State of Rondonia (Brazil).
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- Cloud cover
+- Composite
+- Mosaic
+
+group:
+- category: SEPAL
+  stage: Composite creation/Pre-process
+---
 
 -----------------------------
 Mosaic generation with SEPAL
@@ -9,7 +32,7 @@ Mosaic generation with SEPAL
 
 SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. These mosaics can be downloaded locally or to your Google Drive.
 
-Creating mosaics is a critical first step for creating classification maps (see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification) and change detection maps (see the tutorial on OpenMRV named "Two date change detection" under Change detection).
+Creating mosaics is a critical first step for creating classification maps (see tutorials here on OpenMRV under process "Classification", specifically under tool "SEPAL" but also tool "GEE") and change detection maps (see tutorials here on OpenMRV under process "Change detection", specifically under tool "SEPAL" but also tools "CCDC", "CODED", and "LandTrendr").
 
 
 2. Learning Objectives
@@ -24,7 +47,7 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
+* A SEPAL account. Please check under tool "SEPAL" here on OpenMRV for an introduction to SEPAL.
 
 
 3. Tutorial: Mosaic generation in SEPAL
@@ -276,7 +299,7 @@ We will create a mosaic for an area in the Amazon basin.
 
 1. Now, we will name the ‘recipe’ for creating the mosaic and explore options for the recipe.
 
-  a. You can use this recipe when working with the classification or change detection tools (see e.g. the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification).
+  a. You can use this recipe when working with the classification or change detection tools (see e.g. the tutorials here on OpenMRV under processes "Classification" and "Change Detection", and tool "SEPAL").
   b. You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name.
   c. Now let's explore options for the recipe. Click on the three lines in the upper right hand corner.
 
@@ -310,7 +333,7 @@ We will create a mosaic for an area in the Amazon basin.
 
 |
 
-4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery (e.g. see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification).
+4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery (e.g. see the tutorials here on OpenMRV under process "Classification" and tool "SEPAL").
 
    To download this imagery mosaic to your SEPAL account, click the **Retrieve** button.
 
@@ -373,4 +396,19 @@ More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat
 
 ==========================================
 
-.. Andrea, add footer information here!
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Mosaic generation with SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|
