@@ -1,29 +1,40 @@
+.. Andrea, add metadata here!
+
 ---------------------------------------
 An introduction to SEPAL
 ---------------------------------------
 
-System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL) is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
+1. Background
+--------------
+
+The System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL) is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
 SEPAL provides a platform for users to access satellite imagery (Landsat and Sentinel-2) and perform change detection and land cover classifications using a set of easy-to-use tools. SEPAL was designed to be used in developing countries where internet access is limited and computers are often outdated and, thus, inefficient for processing satellite imagery. It achieves this by drawing on a cloud-based supercomputer, which enables users to process, store, and interpret large amounts of data. Many more advanced functions than what we will cover here are available in SEPAL for more advanced users.
 
-SEPAL integrates with CEO and GEE. Collect Earth Online (CEO), is a free and open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from Google Earth Engine, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online, no desktop installation is necessary. CEO allows institutions to create projects and leverage their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
+SEPAL integrates with CEO and GEE. CEO, is a free and open-source image viewing and interpretation tool, suitable for projects requiring information about land cover and/or land use. CEO enables simultaneous visual interpretations of satellite imagery, providing global coverage from MapBox and Bing Maps, a variety of satellite data sources from Google Earth Engine, and the ability to connect to your own Web Map Service (WMS) or Web Map Tile Service (WMTS). The full functionality is implemented online, no desktop installation is necessary. CEO allows institutions to create projects and leverage their teams to collect spatial data using remote sensing imagery. Use cases include historical and near-real-time interpretation of satellite imagery and data collection for land cover/land use model validation.
 
-Google Earth Engine (GEE) combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers, and developers to detect changes, map trends, and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the Earth Engine JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: JavaScript code editor; a map display for visualizing geospatial datasets; an API reference documentation (Docs tab); Git-based Script Manager (Scripts tab); Console output (Console tab); Task Manager (Tasks tab) to handle long-running queries; Interactive map query (Inspector tab); search of the data archive or saved scripts; and geometry drawing tools.
+GEE combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers, and developers to detect changes, map trends, and quantify differences on the Earth's surface. The code portion of GEE (called Code Editor) is a web-based IDE for the Earth Engine JavaScript API. Code Editor features are designed to make developing complex geospatial workflows fast and easy. The Code Editor has the following elements: JavaScript code editor; a map display for visualizing geospatial datasets; an API reference documentation (Docs tab); Git-based Script Manager (Scripts tab); Console output (Console tab); Task Manager (Tasks tab) to handle long-running queries; Interactive map query (Inspector tab); search of the data archive or saved scripts; and geometry drawing tools.
 
-Below, you will be introduced to the SEPAL interface. You will learn how to access SEPAL’s features to facilitate the remote sensing exercises in later modules.
+2. Learning objectives
+-----------------------
 
-+-------------------------------+---------------------------------------+
-|         Objectives            |            Prerequisites              |
-+===============================+=======================================+
-| Navigate the SEPAL interface  | Internet access                       |
-+-------------------------------+---------------------------------------+
-| Learn about the functionality | SEPAL account  |
-| of SEPAL                      |                                       |
-+-------------------------------+---------------------------------------+
+In this tutorial, you will be introduced to the SEPAL interface. You will learn how to access SEPAL’s features to facilitate the remote sensing tasks.
+
+* Navigate the SEPAL interface
+* Learn about the functionality of SEPAL
+* Set up accounts for SEPAL, CEO, and GEE
+
+2.1 Pre-requisites
+===================
+
+* Internet access
 
 
-Sign Up to SEPAL
------------------
+3. Tutorial: An introduction to SEPAL
+--------------------------------------
+
+3.1 Sign up to SEPAL
+=====================
 
 |
 
@@ -45,8 +56,8 @@ You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Si
 
 2. To request access to SEPAL, you will simply need to enter your email address, name, institution or country and a brief explanation of why you want to use SEPAL.
 
-Sign Up to CEO
----------------
+3.2 Sign up to CEO
+===================
 
 1. In your browser window, navigate to https://collect.earth/. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge.
 
@@ -58,8 +69,8 @@ Sign Up to CEO
 
 5. If you forget your password, click on **Forgot your password?** and follow the instructions.
 
-Sign up to GEE
----------------
+3.3 Sign up to GEE
+===================
 
 Signing up for Google Earth Engine is required in order to properly export images and data products from SEPAL.
 
@@ -69,11 +80,8 @@ Signing up for Google Earth Engine is required in order to properly export image
 
 3. Once you have a Google Earth Engine account, you can access GEE here: https://code.earthengine.google.com/.
 
-
-
-
-Part 1. Open SEPAL
--------------------
+3.4. Open SEPAL
+================
 
 1. Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login**.
@@ -87,8 +95,8 @@ Part 1. Open SEPAL
 .. note::
    When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
 
-Part 2. SEPAL Interface Home
------------------------------
+3.5 SEPAL interface
+====================
 
 1. Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
@@ -116,7 +124,7 @@ Part 2. SEPAL Interface Home
    Change the Google Account associated with your SEPAL account by clicking **Use my own Google Account** and following the instructions. SEPAL relies on Google Drive as a storage space for data accessed through the platform. Any imagery tiles or mosaics that you “retrieve” will first be saved to a Google Drive account before you can visualize and process them in SEPAL.
 
 .. note::
-   Be sure to connect your Google Account in order to be able to Retrieve Mosaics in the next Exercise 1.2. You should use the same account you used to sign up for Google Earth Engine.
+   Be sure to connect your Google Account in order to be able to Retrieve Mosaics. You should use the same account you used to sign up for Google Earth Engine.
 
 6. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
@@ -127,8 +135,8 @@ Part 2. SEPAL Interface Home
 
 |
 
-Part 3. Process Tab
---------------------
+3.6 The Process tab
+====================
 
 1. Click the **Process** tab on the left side of the window.
 
@@ -140,15 +148,15 @@ Part 3. Process Tab
 
 2. You should now see four options in the center of the screen.
 
-  a. **Optical Mosaic** allows you to create a mosaic using Landsat and/or Sentinel 2 data. This is what we will do in Exercise 1.2.
+  a. **Optical Mosaic** allows you to create a mosaic using Landsat and/or Sentinel 2 data.
   b. **Radar Mosaic** allows you to create a mosaic using Sentinel 1 data.
-  c. **Classification** allows you to use a random forest model to classify images from SEPAL or GEE. This will be the focus of Module 2.
+  c. **Classification** allows you to use a random forest model to classify images from SEPAL or GEE.
   d. **Time Series** allows you to download time series information to your SEPAL storage.
 
 3. When you click on one of these options, it will open a new tab with the GUI interface that allows you to specify your desired options.
 
-Part 4. Files Tab
-------------------
+3.7 The Files tab
+==================
 
 1. Click the green **Files** tab on the left side of the window. This will display all of your files in SEPAL.
 
@@ -168,8 +176,8 @@ Part 4. Files Tab
   c. The third button will delete the selected folder or file.
   d. The last button will clear your selection.
 
-Part 5. Terminal Tab
----------------------
+3.8 The Terminal tab
+=====================
 
 1. Click the **Terminal** tab on the left side of the screen.
 
@@ -192,7 +200,7 @@ Part 5. Terminal Tab
 
 |
 
-Part 6. Apps Tab
+3.9 The Apps tab
 -----------------
 
 1. Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.
@@ -206,9 +214,18 @@ Part 6. Apps Tab
 2. This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
   * **R Studio:** provides access to R environment where you can run processing scripts and upload data to your SEPAL folder.
-  * **Stratified Area Estimator- Design:** tool for creating stratified designs to estimate areas. We will use this tool in Module 4.
-  * **Stratified Area Estimator- Analysis:** tool for analyzing the results of your stratified design sampling to estimate areas. We will use this tool in Module 4.
+  * **Stratified Area Estimator- Design:** tool for creating stratified designs to estimate areas.
+  * **Stratified Area Estimator- Analysis:** tool for analyzing the results of your stratified design sampling to estimate areas.
   * **Geo Processing- Beta:** offers a selection of easy-to-use change detection and segmentation tools.
   * **BFAST Explorer:** tool for performing pixel-based time series analysis of Landsat Surface Reflectance data.
 
-**Congratulations! You have successfully completed this exercise. You now know how to navigate the SEPAL interface and access its many tools and functions.**
+
+4. References
+--------------
+
+* The SEPAL wiki, found online at https://github.com/openforis/sepal/wiki
+* Gomes, V.C., Queiroz, G.R. and Ferreira, K.R., 2020. An overview of platforms for big earth observation data management and analysis. Remote Sensing, 12(8), p.1253.
+
+=======================
+
+.. Andrea, insert footer information here!

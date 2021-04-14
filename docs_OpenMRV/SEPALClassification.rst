@@ -1,71 +1,66 @@
-===============================
-Module 2. Image classification
-===============================
+.. Andrea, insert metadata here
 
-The main goal of this Module is to construct a single-date land cover map by classification of a Landsat composite generated from Landsat images. Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water, impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities, wilderness). Learning to do image classification well is extremely important and requires experience. So here is your chance to build some experience. You will first consider the types of land cover classes you would like to map and the amount of variability within each class.
 
-There are both supervised (uses human guidance including training data) and unsupervised (no human guidance) classification methods. The random forest approach used here uses training data and is thus a supervised classification method.
 
-There are a number of supervised classification algorithms that can be used to assign the pixels in the image to the various map classes. One way of performing a supervised classification is to utilize a Machine Learning algorithm. Machine Learning algorithms utilize training data combined with image values to learn how to classify pixels. Using manually collected training data, these algorithms can train a classifier, and then use the relationships identified in the training process to classify the rest of the pixels in the map. The selection of image values (e.g., NDVI, elevation, etc.) used to train any statistical model should be well thought out and informed by your knowledge of the phenomenon of interest to classify your data (e.g., into forest, water, other, and clouds).
+---------------------------------------------------------------------
+Creating a classification using machine learning algorithms in SEPAL
+---------------------------------------------------------------------
 
-In this module, we will create a land cover map using supervised classification in SEPAL. We will train a random forest machine learning algorithm to predict land cover with a user generated reference data set. This data set is collected either in the field or manually through examination of remotely sensed data sources such as aerial imagery. The resulting model is then applied across the landscape. You will complete an accuracy assessment of the map output in Module 4.
+1. Background
+--------------
 
-Before starting your classification, you will need to create a response design with details about each of the land covers / land uses that you want to classify (Exercise 2.1); create mosaics for your area of interest (in Exercise 2.2 we will use a region of Brazil); and collect training data for the model (Exercise 2.3). Then, in Exercise 2.4 we will run the classification and examine our results.
+Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water, impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities, wilderness). Learning to do image classification well requires experience.
 
-The workflow in this module has been adapted from exercises and material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University. To learn more about their materials and their work, visit their github site at https://github.com/beeoda.
 
-At the end of this module you will have a classified land use land cover map.
-
-This module takes approximately 4 hours to complete.
-
--------------------------------------------------------------------
-Exercise 2.3. Creating a classification & training data collection
--------------------------------------------------------------------
-
-In this exercise, we will learn how to start a classification process and collect training data. These training data points will become the foundation of the classification in Exercise 2.4. High quality training data is necessary to get good land cover map results. In the most ideal situation, training data is collected in the field by visiting each of the land cover types to be mapped and collecting attributes. When field collection is not an option, the second best choice is to digitize training data from high resolution imagery, or at the very least for the imagery to be classified.
-
-In general, there are multiple pathways for collecting training data. Using desktop GIS, including QGIS and ArcGIS, to create a layer of points is one common approach. Using GEE is another approach. You can also use CEO to create a project of random points to identify (see detailed directions in Module 4.1 Part 2). All of these pathways will create .csv or an GEE table that you can import into SEPAL to use as your training data set.
-
-However, SEPAL has a built-in reference data collection tool in the classifier. In this exercise, we will use this tool to collect training data. Even if you use a .csv or GEE table in the future, this is a helpful feature to collect additional training data points to help refine your model.
-
-In this assignment, you will create training data points using high-resolution imagery, including Planet NICFI data. These will be used to train the classifier in a supervised classification using SEPAL’s random forests algorithm. The goal of training the classifier is to provide examples of the variety of spectral signatures associated with each class in the map.
-
-+--------------------------------------+---------------------------------+
-| Objectives                           | Prerequisites                   |
-+======================================+=================================+
-| Create training data for your        | SEPAL account                   |
-| classes that can be used to train a  |                                 |
-| machine learning algorithm.          |                                 |
-+--------------------------------------+---------------------------------+
-|                                      | Land cover categories defined   |
-|                                      | in Exercise 2.1.                |
-+--------------------------------------+---------------------------------+
-|                                      | Mosaic created in Exercise 2.2. |
-+--------------------------------------+---------------------------------+
+.. image:: images/random_forest_model_outcome.png
+   :alt: The outcome of a random forest model.
+   :align: center
 
 |
 
+There are both supervised (uses human guidance including training data) and unsupervised (no human guidance) classification methods. The random forest approach used here uses training data and is thus a supervised classification method. The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on how each pixel should be classified. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
 
+2. Learning objectives
+-----------------------
 
-Part 1. Set up your classification
------------------------------------
+In SEPAL you can run a classification on either a mosaic recipe or on a GEE asset. It is best practice to run a classification using an asset rather than on-the-fly with a recipe. This will improve how quickly your classification will export and avoid computational limitations.
+
+To complete the classification of our mosaicked image you are going to use a random forests classifier contained within the easy-to-use Classification tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives, if selected.
+
+After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, or explore object based approaches opposed to pixel based approaches. The possibilities are many and should relate back to the nature of the classes you hope to map. Last but certainly not least is to improve the quality of your training data.
+
+* Construct a single-date land cover map by classifying a Landsat composite generated from Landsat images.
+* Collect training data using SEPAL's built in tools.
+
+2.1 Pre-requisites
+===================
+
+* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
+* Land cover categories. Please see the tutorial on OpenMRV named "Response design for classification" under Training data collect.
+* Landsat mosaic. Please see the tutorial on OpenMRV named "Mosaic generation with SEPAL" under Pre-processing.
+
+3. Tutorial: Creating a classification using machine learning algorithms in SEPAL
+----------------------------------------------------------------------------------
+
+3.1 Set up your classification
+===============================
 
 1. In the **Process** menu, click the green plus symbol and select **Classification.**
-2. Add the Amazon optical mosaic for classification:
+2. Add the Amazon optical mosaic for classification (see the tutorial on OpenMRV named "Mosaic generation with SEPAL" under Pre-processing).
 
   a. Click **+ Add** and choose either **Saved Sepal Recipe** or **Earth Engine Asset** (recommended).
 
-    i. If you choose **Saved Sepal Recipe**, simply select your Module 2 Amazon recipe.
-    ii. If you choose **Earth Engine Asset**, enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/Module2_Amazon”.
+    i. If you choose **Saved Sepal Recipe**, simply select your Amazon recipe. This approach is not recommended as it can lead to processing errors.
+    ii. If you choose **Earth Engine Asset**, enter the Earth Engine Asset ID for the mosaic. The ID should look like “users/username/Amazon”.
 
-        Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine’s Asset tab (see Exercise 2.2 Part 2).
+        Remember that you can find the link to your Earth Engine Asset ID via Google Earth Engine’s Asset tab.
 
   b. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as well if you included them in your mosaic.
   c. You can also include **Derived bands** by clicking on the green button on the lower left.
   d. Click **Apply,** then click **Next.**
 
 .. warning::
-   Selecting **Saved Sepal Recipe** may cause an error stating "Google Earth Engine error: Failed to create preview" at the final stage of your classification. This occurs because GEE gets overloaded. If you encounter this error, please retrieve your classification as described in Exercise 2.2.
+   Selecting **Saved Sepal Recipe** may cause an error stating "Google Earth Engine error: Failed to create preview" at the final stage of your classification. This occurs because GEE gets overloaded.
 
 3. In the Legend menu, click **+ Add** This will add a place for you to write your first class label.
 
@@ -81,14 +76,12 @@ Part 1. Set up your classification
 
 |
 
-Part 2. Collect training data points
--------------------------------------
+3.2 Collect training data points
+---------------------------------
 
 Now that you have created your classification, you are ready to begin collecting data points for each land cover class.
 
-In most cases, it is ideal to collect a large amount of training data points for each class that capture the variability within each class and cover the different areas of the study area. However, for this exercise, you will only collect a small number of points: around 25 per class. When collecting data points, make sure that your plot contains only the land cover class of interest (no plots with a mixture of your land cover categories).
-
-.. To help you understand why the random forest algorithm might get some categories you are trying to map confused with others, you will use spectral signatures charts in CEO-SEPAL to look at the NDVI signature of your different land cover classes. You should notice a few things when exploring the spectral signatures of your land cover classes. First, some classes are more spectrally distinct than others. For example, water is consistently dark in the NIR and MIR wavelengths, and much darker than the other classes. This means that it shouldn’t be difficult to separate water from the other land cover classes with high accuracy.
+In most cases, it is ideal to collect a large amount of training data points for each class that capture the variability within each class and cover the different areas of the study area. However, for this tutorial, you will only collect a small number of points: around 25 per class. When collecting data points, make sure that the point contains only the land cover class of interest (no plots with a mixture of your land cover categories).
 
 Not all pixels in the same classes have the exact same values—there is some natural variability! Capturing this variation will strongly influence the results of your classification.
 
@@ -154,11 +147,11 @@ Not all pixels in the same classes have the exact same values—there is some na
 
 11. Once you are satisfied with your forested training data points, move on to the **Non-Forest** training points.
 
-  a. Since we are using a very basic set of land cover classes for this exercise, this should include agricultural areas, water, and buildings and roads. Therefore, it will be important that you focus on collecting a variety of points from different types of land cover throughout the study area.
+  a. Since we are using a very basic set of land cover classes for this tutorial, this should include agricultural areas, water, and buildings and roads. Therefore, it will be important that you focus on collecting a variety of points from different types of land cover throughout the study area.
   b. **Water** is one of the easiest classes to identify and the easiest to model, due to the distinct spectral signature of water.
 
     i. Look for water bodies within Rondonia.
-    ii. Collect 10-15 data points for Water and be sure to spread them throughout Lake Mai Ndombe, the water sources feeding into it, and a couple of the water bodies/rivers to the eastern side of the mosaic. Be sure to put 2-3 points on rivers.
+    ii. Collect 10-15 data points for Water and be sure to spread them throughout the region, including lakes and rivers.
     v. Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019. (Jun 2019 and Dec 2019).
 
 .. image:: images/data_points_water.png
@@ -202,44 +195,10 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Are all points clustered in the same area?
   c. It’s best to make sure you have data points covering the full spatial extent of the study region, add more points in areas that are sparsely represented if needed.
 
-**Congratulations! You have learned how to collect training data in SEPAL's classification interface.**
+3.3 [Optional] Add training data collected outside of SEPAL
+------------------------------------------------------------
 
------------------------------------------------------------------------------------------
-Exercise 2.4. Classification using machine learning algorithms (Random Forests) in SEPAL
------------------------------------------------------------------------------------------
-
-|
-
-.. image:: images/random_forest_model_outcome.png
-   :alt: The outcome of a random forest model.
-   :align: center
-
-|
-
-As mentioned in the Module introduction, the classification algorithm you will be using today is called random forest.  The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on what the pixel should be classified as. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
-
-To complete the classification of our mosaicked image you are going to use a random forests classifier contained within the easy-to-use Classification tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives, if selected (such as NDVI). There are likely additional data sets that can be used to help differentiate land cover classes, such as elevation data.
-
-After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, or explore object based approaches opposed to pixel based approaches. The possibilities are many and should relate back to the nature of the classes you hope to map. Last but certainly not least is to improve the quality of your training data. Be sure to log all of these decision points in order to recreate your analysis in the future.
-
-+-----------------------------------------+------------------------------------+
-| Objectives                              | Prerequisites                      |
-+=========================================+====================================+
-| Run SEPAL’s classification tool.        | SEPAL account                      |
-+-----------------------------------------+------------------------------------+
-|                                         | Land cover categories defined in   |
-|                                         | Exercise 2.1.                      |
-+-----------------------------------------+------------------------------------+
-|                                         | Mosaic created in Exercise 2.2.    |
-+-----------------------------------------+------------------------------------+
-|                                         | Training data created in Exercise  |
-|                                         | 2.3.                               |
-+-----------------------------------------+------------------------------------+
-
-Part 0. [Optional] Add training data collected outside of sepal
-------------------------------------------------------------------
-
-1. If you collected training data using QGIS, CEO, or another pathway, you will need to add the Training Data we collected in Exercise 2.3 in the **TRN tab.**
+1. If you collected training data using QGIS, CEO, or another pathway, you will need to add the Training Data in the **TRN tab.**
 
   a. Click on the green **Add** button.
 
@@ -261,8 +220,8 @@ Part 0. [Optional] Add training data collected outside of sepal
 
 |
 
-Part 1. Review additional classification options
--------------------------------------------------
+3.4 Review additional classification options
+---------------------------------------------
 
 1. Click on **AUX** to examine the auxiliary data sources available for the classification.
 
@@ -289,7 +248,10 @@ Part 1. Review additional classification options
    :alt: A preview of a classification.
    :align: center
 
-4. Now we’ll save our classification output.
+3.5 Save your classification output
+------------------------------------
+
+1. Now we’ll save our classification output.
 
   a. First, rename your classification by typing a new name in the tab.
   b. Click **Retrieve classification** in the upper right hand corner (cloud icon).
@@ -309,12 +271,10 @@ Part 1. Review additional classification options
 
 |
 
-Part 2. QA/QC considerations and methods
------------------------------------------
+3.6 Examine and modify your classification
+-------------------------------------------
 
-Quality assurance and quality control, commonly referred to as QA/QC, is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area are described in Module 4. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications. Here we’ll discuss one approach to informal QA/QC.
-
-Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. We’ll do this in the classification window. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in Google Earth Engine or in another program, such as QGIS or ArcMAP.
+Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. We’ll do this in the classification window. This allows us to visualize the data and collect additional training points if we find areas of poor classification.
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
@@ -325,8 +285,20 @@ With SEPAL you can examine your classification and collect additional training d
 |
 
 1. Turn on the imagery for your Classification and pan and zoom around the map.
-2. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
-3. If your results make sense, and you are happy with them, great! Go on to the formal QA/QC in Module 4.
-4. However, if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-export the classification following the steps in Part 3.
+2. Compare your Classification map to the imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
+3. If your results make sense, and you are happy with them, great!
+4. However, if you are not satisfied, collect additional points of training data where you see inaccuracies. Then re-export the classification following the steps above.
 
-**Congratulations! You now know how to produce map classifications in SEPAL.**
+4. Frequently Asked Questions (FAQs)
+-------------------------------------
+
+
+
+5. References
+--------------
+
+The workflow in this tutorial has been adapted from material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University.
+
+=======================
+
+.. Andrea, place footer content here
