@@ -1,4 +1,28 @@
-.. Andrea, add metadata information here
+---
+title: Two date change detection
+summary: In this tutorial you will create optical mosaics for change detection using SEPAL, become associated with methods of detecting change for an area of interest using the SEPAL platform, and conduct a two-date change detection.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- Planet Labs
+- Change detection
+- Deforestation mapping
+- Degradation mapping
+
+group:
+- category: SEPAL
+  stage: Change Detection
+---
 
 --------------------------
 Two date change detection
@@ -21,7 +45,7 @@ Most methods for change detection use algorithms backed by statistical methods t
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
+* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 
 ----------------------------------------
 3. Tutorial: Two date change detection
@@ -211,4 +235,19 @@ If you don’t see the Google Earth Engine asset option, you’ll need to connec
 
 ===================================
 
-.. Andrea, insert footer information here
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Two date change detection. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|
