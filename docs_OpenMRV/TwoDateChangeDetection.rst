@@ -47,7 +47,6 @@ Most methods for change detection use algorithms backed by statistical methods t
 
 * A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 
-----------------------------------------
 3. Tutorial: Two date change detection
 ----------------------------------------
 
