@@ -24,7 +24,7 @@ Exercise 2.1. Response design for classification
 
 Creating consistent labelling protocols is necessary for creating accurate training data and later, accurate sample based estimates (see Module 4). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover / land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection. The response design lays out an objective procedure that interpreters can follow and that reduces interpreter bias.
 
-In this exercise, you will build a decision tree for your classification along with much of the other documentation and decision points (for more on decision points, please see Module 5, Exercise 5.1).
+In this exercise, you will build a decision tree for your classification along with much of the other documentation and decision points that will support the metadata for your classification (for more on decision points, please see Module 5, Exercise 5.1).
 
 +--------------------------------------+-----------------------------+
 | Objectives                           | Prerequisites               |
@@ -207,7 +207,7 @@ Part 1. Set up your classification
   b. The first should have the number 1 and a Class label of Forest.
   c. The second should have the number 2 and a Class  label of Non-forest.
   d. Choose colors for each class as you see fit.
-  e. Click **Close**.
+  e. Click **Done**.
 
 .. image:: images/classification_legend.png
    :alt: Classification legend.
@@ -222,12 +222,10 @@ Now that you have created your classification, you are ready to begin collecting
 
 In most cases, it is ideal to collect a large amount of training data points for each class that capture the variability within each class and cover the different areas of the study area. However, for this exercise, you will only collect a small number of points: around 25 per class. When collecting data points, make sure that your plot contains only the land cover class of interest (no plots with a mixture of your land cover categories).
 
-.. To help you understand why the random forest algorithm might get some categories you are trying to map confused with others, you will use spectral signatures charts in CEO-SEPAL to look at the NDVI signature of your different land cover classes. You should notice a few things when exploring the spectral signatures of your land cover classes. First, some classes are more spectrally distinct than others. For example, water is consistently dark in the NIR and MIR wavelengths, and much darker than the other classes. This means that it shouldn’t be difficult to separate water from the other land cover classes with high accuracy.
-
 Not all pixels in the same classes have the exact same values—there is some natural variability! Capturing this variation will strongly influence the results of your classification.
 
 1. First, let’s become familiar with the SEPAL Interface.
-2. In the upper right corner of the map is a stack of three rectangles. If you mouse over this icon, it says "Select layers to view."
+2. In the upper right corner of the map is a stack of three rectangles. If you mouse over this icon, it says "Select layers to show."
 
    Available base layers include SEPAL (Minimal dark Sepal default layer), Google Satellite, and Planet NICFI composites.
 
@@ -292,8 +290,8 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. **Water** is one of the easiest classes to identify and the easiest to model, due to the distinct spectral signature of water.
 
     i. Look for water bodies within Rondonia.
-    ii. Collect 10-15 data points for Water and be sure to spread them throughout Lake Mai Ndombe, the water sources feeding into it, and a couple of the water bodies/rivers to the eastern side of the mosaic. Be sure to put 2-3 points on rivers.
-    v. Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019. (Jun 2019 and Dec 2019).
+    ii. Collect 10-15 data points for Water and be sure to spread them throughout the lakes and rivers of Rondonia.
+    iii. Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019. (Jun 2019 and Dec 2019).
 
 .. image:: images/data_points_water.png
    :alt: Collecting data points in water.
@@ -336,7 +334,7 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Are all points clustered in the same area?
   c. It’s best to make sure you have data points covering the full spatial extent of the study region, add more points in areas that are sparsely represented if needed.
 
-**Congratulations! You have learned how to collect training data in SEPAL's classification interface.**
+**Congratulations! You have learned how to collect training data in SEPAL's classification interface. Stay on this screen for the next Exercise.**
 
 -----------------------------------------------------------------------------------------
 Exercise 2.4. Classification using machine learning algorithms (Random Forests) in SEPAL
@@ -443,12 +441,15 @@ Part 1. Review additional classification options
 
 |
 
+.. note::
+   For some users, the classification preview may only appear after clicking on the 'Retrieve' button.
+
 Part 2. QA/QC considerations and methods
 -----------------------------------------
 
 Quality assurance and quality control, commonly referred to as QA/QC, is a critical part of any analysis. There are two approaches to QA/QC: formal and informal. Formal QA/QC, specifically sample-based estimates of error and area are described in Module 4. Informal QA/QC involves qualitative approaches to identifying problems with your analysis and classifications to iterate and create improved classifications. Here we’ll discuss one approach to informal QA/QC.
 
-Following analysis you should spend some time looking at your change detection in order to understand if the results make sense. We’ll do this in the classification window. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in Google Earth Engine or in another program, such as QGIS or ArcMAP.
+Following analysis you should spend some time looking at your land cover classification map in order to understand if the results make sense. We’ll do this in the classification window. This allows us to visualize the data and collect additional training points if we find areas of poor classification. Other approaches not covered here include visualizing the data in Google Earth Engine or in another program, such as QGIS or ArcMAP.
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 

@@ -116,7 +116,7 @@ Project planning and methods documentation play a key role in any remote sensing
 
   a. Do you have a national definition of “forest”?
   b. Are you aware of the IPCC guidelines for the recommended land use classes and how they will relate to mapping land cover?
-  c. Do you have key categories that will drive different analysis techniques?
+  c. Do you have key categories that will drive different analysis techniques? For example, forest land cover as a key category.
 
 6. Considerations for measuring, reporting, and verifying your data.
 

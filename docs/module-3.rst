@@ -62,6 +62,9 @@ Before we can identify change, we first need to have images to compare. We will 
 
 4. Repeat steps 2 & 3 but change the **Date** parameter to 2020.
 
+.. warning::
+   Be sure to retrieve your mosaics using different names. If you do not change the name between retrieving the 2015 and 2020 mosaics, the export may fail since both mosaics have the same name.
+
 .. note::
    It may take a significant amount of time before your mosaics finish exporting.
 
@@ -88,7 +91,7 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
   b. Select bands: Blue, Green, Red, NIR, SWIR1, & SWIR2. You can add other bands as well if you included them in your mosaic.
   c. You can also include **Derived bands** by clicking on the green button on the lower left.
   d. Click **Apply**.
-  e. Repeat steps a-d above for your 2020 optical mosaic.
+  e. Repeat steps a-d above for your 2020 optical mosaic and click **Next**.
 
 .. image:: images/two_assets.png
    :alt: Two assets ready for classification.
@@ -114,8 +117,8 @@ Now that we have the mosaics created, we will collect change training data. Whil
 1. In the Legend menu, click **+ Add** This will add a place for you to write your first class label.
 
   a. You will need three legend entries.
-  b. The first should have the number 1 and a Class label of Forest.
-  c. The second should have the number 2 and a Class  label of Non-forest.
+  b. The first should have the number 1 and a Class label of Stable Forest.
+  c. The second should have the number 2 and a Class  label of Stable Non-forest.
   d. The third should have the number 3 and a Class label of Change.
   d. Choose colors for each class as you see fit.
   e. Click **Close**.
@@ -126,7 +129,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 
 |
 
-2. Now, we’ll create training data. First, let's pull up the correct imagery. Click on "Select layers to view." As a reminder, available base layers include SEPAL (Minimal dark Sepal default layer), Google Satellite, and Planet NICFI composites.
+2. Now, we’ll create training data. First, let's pull up the correct imagery. Click on "Select layers to show." As a reminder, available base layers include SEPAL (Minimal dark Sepal default layer), Google Satellite, and Planet NICFI composites.
 
   a. We will use the Planet NICFI composites for this example. The composites are available in either RGB or false color infrared (CIR). Composites are available monthly after September 2020 and for every 6 months prior back till 2015.
   b. Select Dec 2015 (6 months). Both RGB and CIR will be useful, so choose whichever you prefer.
@@ -257,7 +260,7 @@ More information can be found online at http://bfast.r-forge.r-project.org/.
   b. Select **Landsat 8 SR** from the select satellite products dropdown.
   c. Click **Get Data.** It may take a moment to download all the data for the point
 
-.. image:: images/BFAST_explorer.png
+.. image:: images/BFAST_explorer_interface.png
    :alt: The BFAST Explorer interface.
    :align: center
 
@@ -274,15 +277,8 @@ More information can be found online at http://bfast.r-forge.r-project.org/.
 
 Each BFSAT algorithm methodology has characteristics which affect when and why you may choose one over the other. For instance, if the goal of an analysis is to monitor when the last time change occurred in a forest then “Bfastmonitor” would be an appropriate choice. Bfast01 may be a good selection when trying to identify if a large disturbance event has occurred, and the full Bfast algorithm may be a good choice if there are multiple times in the time series when change has occurred.
 
-7. Select bfastmonitor as the algorithm.
-
-.. image:: images/BFAST_explorer_interface.png
-   :alt: The BFAST Explorer interface.
-   :align: center
-
-|
-
-8. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
+8. Select bfastmonitor as the algorithm.
+9. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
 
 .. image:: images/BFAST_visualization.png
    :alt: Additional BFAST visualization.
@@ -290,8 +286,8 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 
 |
 
-9. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
-10. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
+10. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
+11. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
 
 .. note::
    The black and white flashing is normal.

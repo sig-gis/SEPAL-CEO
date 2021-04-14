@@ -16,7 +16,7 @@ Sample-based estimations of area and error create estimations of errors in pixel
 
 There are four steps to sample-based estimation of area and accuracy. First, you will use the different classes in your LULC or change detection map to create a stratified sampling design in SEPAL using the Stratified Area Estimator (SAE) - Design tool (Exercise 4.1). Then you will revisit your response design and labelling protocols to use with data collection in CEO (Exercise 4.2). Finally, you will use data generated in CEO (Exercise 4.3) to calculate the sample-based estimates in SEPAL, using the Stratified Area Estimator- Analysis tool (Exercise 4.4). This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted by the Random forest classifier.
 
-This process will provide two important outputs. First, you will have estimates of the area for each LULC or change type. Second, you will have a table that describes the accuracy for each LUC or change type. This is often called a confusion matrix. These may be final products for your projects. However, if you decide that your map is not accurate enough, this information can be fed back into the classification or change detection algorithms to improve your model.
+This process will provide two important outputs. First, you will have estimates of the area for each LULC or change type. Second, you will have a table that describes the accuracy for each LULC or change type. This is often called a confusion matrix. These may be final products for your projects. However, if you decide that your map is not accurate enough, this information can be fed back into the classification or change detection algorithms to improve your model.
 
 This Module takes approximately 3 hours to complete.
 
@@ -24,7 +24,7 @@ This Module takes approximately 3 hours to complete.
 Exercise 4.1. Sample design and stratification
 -----------------------------------------------
 
-Stratified random sampling is an easy to use, easy to understand, and well supported sampling design (for more information, see Olofsson et al. 2014. Good practices for assessing accuracy and estimating area of land change, Remote Sensing of Environment 148, 42-57). With stratified random sampling, each class (e.g. land use, land cover, change type) is treated as a strata. Then, a sample is randomly taken from each sample, either in proportion to area, in proportion to expected variance, or in equal numbers across strata.
+Stratified random sampling is an easy to use, easy to understand, and well supported sampling design (for more information, see Olofsson et al. 2014. Good practices for assessing accuracy and estimating area of land change, Remote Sensing of Environment 148, 42-57). With stratified random sampling, each class (e.g. land use, land cover, change type) is treated as a strata. Then, a sample is randomly taken from each strata, either in proportion to area, in proportion to expected variance, or in equal numbers across strata.
 
 We will use the SEPAL SAE-Design tool. You will upload your classified map and set some basic parameters, then the SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map will depend on your expected overall accuracy. Be sure to log these choices as part of your documentation (Module 5).
 
@@ -129,7 +129,7 @@ These directions will provide a stratified random sample of the proper sampling 
 
   a. For this exercise, we’ll use the classification from Module 2. However, you can substitute another classification, such as the change detection classification created in Module 3 if you would like.
   b. In the **Data type** section, click **Input.**
-  c. In the **Browse** window that opens, navigate to the Module 2 dataset and select it.
+  c. In the **Browse** window that opens, navigate to the Module 2 dataset and select it. This may be in your "downloads" folder for retrieved classifications. Select the .tif file.
   d. Then click **Select.**
   e. Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this Exercise will be saved.
   f. Optionally, you can use a csv with your raster areas instead. We won’t discuss that here.
@@ -137,7 +137,7 @@ These directions will provide a stratified random sample of the proper sampling 
 8. Next, click **Strata areas** on the left side of the screen.
 9. In the **Area calculation** section, select **OFT.** OFT stands for the Open Foris Geospatial Toolkit. R is slower but avoids some errors that arise with OFT.
 
-   If you choose to use OFT, it will return values for the map that are incorrect if your map stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
+   If you choose to use OFT, it will return values for the map that are incorrect if your map was stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
 
 .. image:: images/stratified_estimator_map_legend.png
    :alt: Stratified estimator tool showing the display map and legend and areas filled out.
@@ -195,7 +195,7 @@ These directions will provide a stratified random sample of the proper sampling 
   b. You can click on the “+” button to get more information.
   c. First we need to set the **standard error of the expected overall accuracy.** It is 0.01 by default, however for this exercise we will set it to 0.05.
 
-    i. This value affects the number of samples placed in each map class. The lower the value, the more points there are in the sample design. Test this by changing the error from 0.05 to 0.01, and then change it back to point 0.05. Alternatively, you can click the up/down button to the right of the number.
+    i. This value affects the number of samples placed in each map class. The lower the value, the more points there are in the sample design. Test this by changing the error from 0.05 to 0.01, and then change it back to point 0.05.
     ii. Note that you can adjust this incrementally with the up/down arrows on the right side of the parameter.
 
   d. Then determine the **minimum sample size per strata.** By default it is 100. For the purposes of this test we will set it to 20, **but in practice this should be higher.**
@@ -232,7 +232,7 @@ These directions will provide a stratified random sample of the proper sampling 
 
 .. CEO-SEPAL does not ask about low confidence categories--this is a problem for creating an error matrix if you have low-confidence categories. I think this was fixed
 
-18. If you would like to create a project via CEO, click on **Download .csv** and follow the steps in Part 2 below. After following the directions in Part 2, you will proceed to Exercise 4.2. We highly recommend using this approach, and we will demonstrate it in this manual.
+18. If you would like to create a project via CEO, click on **Download as tabular data (.csv)** and follow the steps in Part 2 below. After following the directions in Part 2, you will proceed to Exercise 4.2. We highly recommend using this approach, and we will demonstrate it in this manual.
 19. To create a project via the CEO-SEPAL bridge, click on **Create CEO project.**
 
   a. This will create a CEO project via the CEO-SEPAL bridge.
@@ -267,7 +267,7 @@ For projects with large sample sizes, where you want to have multiple people col
 
 |
 
-4. Right now, your stratification is grouped by land cover type (**map_class** column). To reduce the human tendency to use the order of the plots to help identify them (i.e. knowing the first 100 plots were classified forest, so being more likely to verify them as forest instead of determining if that is correct) we suggest first randomizing the order of the rows.
+4. Right now, your stratification is grouped by land cover type (**map_class** column). To reduce the human tendency to use the order of the plots to help identify them (i.e. knowing the first 100 plots were classified forest, so being more likely to verify them as forest instead of determining if that is correct) we suggest first randomizing the order of the rows. This is optional.
 
    To do this, click the **Sort & Filter** button in Excel
 
@@ -289,12 +289,12 @@ For projects with large sample sizes, where you want to have multiple people col
 6. Now we need to add the correct columns for CEO. Remember that Latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
 
   a. Rename ‘id’ to PLOTID. You can also add a new PLOTID field by creating a new column labeled PLOTID, and fill it with values 1-(number of rows).
-  b. Rename the ‘XCoordinate’ column to ‘LAT’ or ‘LATITUDE’.
-  c. Rename the ‘YCoordinate’ column to ‘LONG’ or ‘LONGITUDE’.
+  b. Rename the ‘XCoordinate’ column to ‘LONG’ or ‘LONGITUDE’.
+  c. Rename the ‘YCoordinate’ column to ‘LAT’ or ‘LATITUDE’.
   d. Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns, in that order.
 
 7. Save your updated .csv, making sure you save it as a .csv and not as an .xlsx file.
-8. Navigate to collect.earth.
+8. Navigate to https://collect.earth.
 
   a. Creating a project in CEO requires you to be the administrator of an institution.
   b. Login to your CEO account. If you’re already the administrator of an institution, navigate to your institution’s landing page by typing in the institution’s name and then clicking on the Visit button.
@@ -302,39 +302,40 @@ For projects with large sample sizes, where you want to have multiple people col
   d. Click on create new institution from the homepage, then fill out the form & click create institution.
 
 9. When you’re on the institution’s page, click on the “Create New Project” button.
-10. This will go to the Create Project interface. We’ll now talk about what each of the sections on this page does. For more information, please see the Institutional Manual available on the collect.earth Support page https://collect.earth/support.
+10. This will go to the Create Project interface. We’ll now talk about what each of the sections in the wizard does. For more information, please see the Institutional Manual available on the CEO Support page https://collect.earth/support.
 
   a. **TEMPLATE:** This section is used to copy all the information—including project info, area, and sampling design—from an existing published project to a new project.
 
     i. This is useful if you have an existing project you want to duplicate for another year or location, or if you’re iterating through project design. You can use a published or closed project from your institution or another institutions’ public project.
     ii. The project id is found in the URL when you’re on the data collection page for the project.
 
-  b. **PROJECT INFO:** Under Project Info, enter the project’s **Name** and **Description.**
+  b. Enter the project’s **Name** and **Description.**
 
     i. The **Name** should be short and will be displayed on the Home page as well as the project’s Data Collection page.
     ii. You should keep the **Description** short but informative.
     iii. The **Privacy Level** radio button changes who can view your project, contribute to data collection, and whether admins from your institution or others creating new projects can use your project as a template.
+    iv. Click on any **Project Options** you would like.
 
-  c. **AOI:** The project area of interest (AOI) determines where sample plots will be drawn from for your project. This is the first step in specifying a sampling design for your project. There are two main approaches for specifying an AOI and sampling design.
+  c. **Imagery Selection** allows you to select any of the public or your institutional imagery. The default public imagery includes MapBox and Planet NICFI data.
+
+  d. **AOI:** Under **Plot design**, The project area of interest (AOI) determines where sample plots will be drawn from for your project. This is the first step in specifying a sampling design for your project. There are two main approaches for specifying an AOI and sampling design.
 
     i. First, using CEO’s built in system.
-    ii. Second, creating a sample in another program and importing it into CEO. **This is what we have done.** You will specify the AOI in the Sample Design step instead.
-    iii. You should choose your Basemap source, which will be the default imagery that the user sees.
-    iv. (Optional) Check the box for any additional imagery you would like to add.
+    ii. Second, creating a sample in another program and importing it into CEO. **This is what we have done.**
 
-  d. **Sample Plot Design:** Here, click the radio button next to .csv.
+  e. **Sample Plot Design:** Here, click the radio button next to .csv.
 
     i. Click on **Upload,** and upload the .csv of your stratified random sample. Note that the number of plots you want to sample must be 5000 or less.
     ii. Select if you would like round or square plots, and specify the size. For example, you might specify square plots of 30m width in order to match Landsat grid size.
 
-  e. **Sample Point Design:** Under the Sample Design header is really determining the sample point design within each sample plot.
+  f. **Sample Point Design:** Under the Sample Design header is really determining the sample point design within each sample plot.
 
     i. You can choose Random or Gridded, and how many samples per plot or the sample resolution respectively. You can also choose to have one central point.
-    ii. Using CEO's built in system, the maximum number of sample points per plot is 200. The maximum total number of sample points for the project across all plots is 50000.
+    ii. Using *CEO's built in system*, the maximum number of sample points per plot is 200. The maximum total number of sample points for the project across all plots is 50,000.
 
-  f. **Survey Design:** This is where you design the questions that your data collectors/photo interpreters will answer for each of your survey plots. Each question creates a column of data. This raw data facilitates calculating key metrics and indicators and contributes to fulfilling your project goals.
+  g. **Survey Design:** This is where you design the questions that your data collectors/photo interpreters will answer for each of your survey plots. Each question creates a column of data. This raw data facilitates calculating key metrics and indicators and contributes to fulfilling your project goals.
 
-    i. **Survey Cards** are the basic unit of organization. Each survey card creates a page of questions on the Data Collection interface.
+    i. **Survey Cards** are the basic unit of organization. Each survey card creates a page of questions on the Data Collection interface. You can preview your survey questions in the right hand pane.
     ii. The basic workflow is: Create new top-level question (new survey card) THEN populate answers THEN create any child questions & answers THEN move to next top-level question (new survey card) & repeat until all questions have been asked.
     iii. You can ask multiple types of questions (including the button—text questions from the Simple interface). You can also add survey rules in the Survey Rules Design panel.
     iv. Broadly, there are four question types and three data types. They are combined into 10 different component types.
@@ -388,7 +389,7 @@ For projects with large sample sizes, where you want to have multiple people col
     ii. Select your basemap imagery.
     iii. Now you’ll see the data dropdown menu. Select NDVI in this menu.
     iv. Now you’ll see the Title--give your widget a title that describes the data.
-    v. Select the date range using the calendar widgets or by typing it in.
+    v. Select the date range using the calendar widgets or by typing it in. Be sure to include 2015-2020.
     vi. When you’re done, click Create.
 
   f. You can now move the widget by clicking and dragging from the center and resize it by clicking and dragging the lower right-hand corner.
@@ -453,9 +454,9 @@ Part 2. Planning data collection
 
 Now that we have the framework for the procedure for data collection with quality in mind we can work through what it would be like setting up the process for a team. Data collection efforts require planning, particularly for large efforts with many interpreters involved. We will discuss these planning aspects here.
 
-In this part, you will assume the role of a _coordinator_ and an interpreter for a small team working to validate the land cover classification from Module 2. A coordinator is responsible for organizing the team and tracking compliance information. An interpreter is responsible for collecting data.
+In this part, you will assume the role of a coordinator and an interpreter for a small team working to validate the land cover classification from Module 2. A coordinator is responsible for organizing the team and tracking compliance information. An interpreter is responsible for collecting data.
 
-Identify the reference data sources.
+**Identify the reference data sources.**
 
 Ideally, you would have plots revisited in the field. However, this is rarely attainable given limited resources. An alternative is to collect reference observations through careful examination of the sample units using high resolution satellite data, or moderate resolution if high resolution is not available. The more data you have at your disposal the better.
 
@@ -600,7 +601,7 @@ In CEO, multiple interpreters can work on the same project at the same time. Thi
 Part 3. Collecting data
 ------------------------
 
-After training and sample allocation, it is time to collect data. This can occur in the CEO-SEPAL interface (for smaller projects) or via CEO for larger or multi-user projects. Here, we will demonstrate collecting data in CEO to ensure compliance with SOP and oversight requiring interpreter names be collected for the points they collect, however the directions are largely the same for the CEO-SEPAL bridge.  How to set up a CEO project is discussed in Exercise 4.1 Part 2. How to set up a CEO-SEPAL project is discussed at the end of Exercise 4.1 Part 1.
+After training and sample allocation, it is time to collect data. This can occur in the CEO-SEPAL interface (for smaller projects) or via CEO for larger or multi-user projects. Here, we will demonstrate collecting data in CEO to ensure compliance with Standard Operating Procedures (SOP) and oversight requiring interpreter names be collected for the points they collect, however the directions are largely the same for the CEO-SEPAL bridge.  How to set up a CEO project is discussed in Exercise 4.1 Part 2. How to set up a CEO-SEPAL project is discussed at the end of Exercise 4.1 Part 1. More information can be found in the CEO manual located at https://collect.earth/support.
 
 **Data collection by interpreters.**
 
@@ -625,7 +626,8 @@ In general, data collection should include the following steps:
 3. Answer all of the questions for your first plot by clicking on the appropriate answers.
 
   a. If you created multiple questions, you can navigate between questions using the numbers above your question text.
-  b. Click on **Save** to save your answers and move on to the next plot.
+  b. Scroll in and out with your mouse wheel (or press the +/- buttons) to view the landscape context and see your plots properly.
+  c. Click on **Save** to save your answers and move on to the next plot.
 
 .. image:: images/data_collection_process.png
    :alt: The data collection process in CEO
@@ -1081,7 +1083,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
 
   a. Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval.
   b. In this exercise we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
-  c. Note that all area estimates are in map units.
+  c. Note that all area estimates are in map units. For our map, this is meters.
   d. You can change your desired **confidence interval** using the slider at the top of the panel.
   e. You can Download area estimates as tabular data (.csv) using the button.
 

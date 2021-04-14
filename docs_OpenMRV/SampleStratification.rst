@@ -45,7 +45,7 @@ Sample design and stratification
 1. Background
 --------------
 
-Stratified random sampling is an easy to use, easy to understand, and well supported sampling design (for more information, see Olofsson et al. 2014.). With stratified random sampling, each class (e.g. land use, land cover, change type) is treated as a strata. Then, a sample is randomly taken from each sample, either in proportion to area, in proportion to expected variance, or in equal numbers across strata.
+Stratified random sampling is an easy to use, easy to understand, and well supported sampling design (for more information, see Olofsson et al. 2014.). With stratified random sampling, each class (e.g. land use, land cover, change type) is treated as a strata. Then, a sample is randomly taken from each strata, either in proportion to area, in proportion to expected variance, or in equal numbers across strata.
 
 2. Learning objectives
 -----------------------
@@ -273,8 +273,8 @@ For projects with large sample sizes, where you want to have multiple people col
 4. Now we need to add the correct columns for CEO. Remember that Latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
 
   a. Rename ‘id’ to PLOTID. You can also add a new PLOTID field by creating a new column labeled PLOTID, and fill it with values 1-(number of rows).
-  b. Rename the ‘XCoordinate’ column to ‘LAT’ or ‘LATITUDE’.
-  c. Rename the ‘YCoordinate’ column to ‘LONG’ or ‘LONGITUDE’.
+  b. Rename the ‘XCoordinate’ column to ‘LONG’ or ‘LONGITUDE’.
+  c. Rename the ‘YCoordinate’ column to ‘LAT’ or ‘LATITUDE’.
   d. Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns, in that order.
 
 5. Save your updated .csv, making sure you save it as a .csv and not as an .xlsx file.
@@ -297,32 +297,33 @@ For projects with large sample sizes, where you want to have multiple people col
     i. This is useful if you have an existing project you want to duplicate for another year or location, or if you’re iterating through project design. You can use a published or closed project from your institution or another institutions’ public project.
     ii. The project id is found in the URL when you’re on the data collection page for the project.
 
-  b. **PROJECT INFO:** Under Project Info, enter the project’s **Name** and **Description.**
+  b. Enter the project’s **Name** and **Description.**
 
     i. The **Name** should be short and will be displayed on the Home page as well as the project’s Data Collection page.
     ii. You should keep the **Description** short but informative.
     iii. The **Privacy Level** radio button changes who can view your project, contribute to data collection, and whether admins from your institution or others creating new projects can use your project as a template.
+    iv. Click on any **Project Options** you would like.
 
-  c. **AOI:** The project area of interest (AOI) determines where sample plots will be drawn from for your project. This is the first step in specifying a sampling design for your project. There are two main approaches for specifying an AOI and sampling design.
+  c. **Imagery Selection** allows you to select any of the public or your institutional imagery. The default public imagery includes MapBox and Planet NICFI data.
+
+  d. **AOI:** Under **Plot design**, The project area of interest (AOI) determines where sample plots will be drawn from for your project. This is the first step in specifying a sampling design for your project. There are two main approaches for specifying an AOI and sampling design.
 
     i. First, using CEO’s built in system.
-    ii. Second, creating a sample in another program and importing it into CEO. **This is what we have done.** You will specify the AOI in the Sample Design step instead.
-    iii. You should choose your Basemap source, which will be the default imagery that the user sees.
-    iv. (Optional) Check the box for any additional imagery you would like to add.
+    ii. Second, creating a sample in another program and importing it into CEO. **This is what we have done.**
 
-  d. **Sample Plot Design:** Here, click the radio button next to .csv.
+  e. **Sample Plot Design:** Here, click the radio button next to .csv.
 
     i. Click on **Upload,** and upload the .csv of your stratified random sample. Note that the number of plots you want to sample must be 5000 or less.
     ii. Select if you would like round or square plots, and specify the size. For example, you might specify square plots of 30m width in order to match Landsat grid size.
 
-  e. **Sample Point Design:** Under the Sample Design header is really determining the sample point design within each sample plot.
+  f. **Sample Point Design:** Under the Sample Design header is really determining the sample point design within each sample plot.
 
     i. You can choose Random or Gridded, and how many samples per plot or the sample resolution respectively. You can also choose to have one central point.
     ii. Using CEO's built in system, the maximum number of sample points per plot is 200. The maximum total number of sample points for the project across all plots is 50000.
 
-  f. **Survey Design:** This is where you design the questions that your data collectors/photo interpreters will answer for each of your survey plots. Each question creates a column of data. This raw data facilitates calculating key metrics and indicators and contributes to fulfilling your project goals.
+  g. **Survey Design:** This is where you design the questions that your data collectors/photo interpreters will answer for each of your survey plots. Each question creates a column of data. This raw data facilitates calculating key metrics and indicators and contributes to fulfilling your project goals.
 
-    i. **Survey Cards** are the basic unit of organization. Each survey card creates a page of questions on the Data Collection interface.
+    i. **Survey Cards** are the basic unit of organization. Each survey card creates a page of questions on the Data Collection interface. You can preview your survey questions in the right hand pane.
     ii. The basic workflow is: Create new top-level question (new survey card) THEN populate answers THEN create any child questions & answers THEN move to next top-level question (new survey card) & repeat until all questions have been asked.
     iii. You can ask multiple types of questions (including the button—text questions from the Simple interface). You can also add survey rules in the Survey Rules Design panel.
     iv. Broadly, there are four question types and three data types. They are combined into 10 different component types.

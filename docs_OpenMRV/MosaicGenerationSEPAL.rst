@@ -370,6 +370,11 @@ We will create a mosaic for an area in the Amazon basin.
 
 |
 
+.. warning::
+   If you are retrieving multiple mosaics, be sure to retrieve your mosaics using different names. If you do not change the recipe name between retrieving mosaics, the export may fail since both mosaics have the same name.
+
+
+
 3.4 Finding your Earth Engine Asset
 ====================================
 
