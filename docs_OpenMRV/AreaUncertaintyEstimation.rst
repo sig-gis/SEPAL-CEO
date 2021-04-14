@@ -65,7 +65,7 @@ At the heart of the analysis is the implementation of an unbiased area estimator
 2. Learning Objectives
 -----------------------
 
- In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
+In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
 
 * Create area estimates for your classification
 * Create uncertainty/error estimates for your classification
