@@ -1039,7 +1039,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
   d. Choose the class column from the area file—map_code or map_edited_class
 
     i. The map_edited_class has the names you entered manually during the design phase, while the map_code has the numeric class codes.
-    ii. For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class you must make sure that capitalization.
+    ii. For projects completed in CEO: Use map_code if you have a column in your reference data. If you use map_edited_class you must make sure that capitalization is correct.
     iii. For projects completed in CEO-SEPAL, use map_code.
 
   e. You can add a **Display data** column to enable validation on the fly. You can choose any column from your CEO or CEO-SEPAL project. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column). This example uses a CEO project.

@@ -1,38 +1,45 @@
-----------------------------------------------------------------------
-Exercise 4.2. Data collection with data quality management approaches
-----------------------------------------------------------------------
+.. Andrea, add metadata here?
 
-Once you have created a stratified random sample, you will use CEO (or optionally the CEO-SEPAL tool) to visually interpret the land cover at the sample locations using a suitable source of reference data, often remote sensing data. These visual interpretations will then inform the area and error estimation (Exercise 4.3). However, to ensure accurate human interpretation of land cover, you will need to adopt data quality management approaches. Thus in this exercise, you will check your classification design (Part 1), plan your data collection (Part 2), collect your data (Part 3) and set up quality management (Parts 4 & 5).
+--------------------------------------------------------
+Data collection with data quality management approaches
+--------------------------------------------------------
 
-The reason for this focus on data quality is simple: area and error estimates are based on the human interpreter’s labelling of the sample; therefore, it is important that the labels are correct. Some recommend that three interpreters examine each unit independently, while other projects just have a subsample of the data points cross checked by another interpreter. In parts 4 & 5, you will consider this and design a quality assurance plan that meets the needs and budgets of your specific mapping projects and management needs.
+1. Background
+--------------
 
-Much of this information is based on Standard Operating Procedures developed by Till Neeff at FAO for global application. Working these exercises will help you abide by these guidelines and meet these standards of quality for the data collected.
+This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations.
 
-+---------------------------------------+-------------------------------------+
-| Objectives                            | Prerequisites                       |
-+=======================================+=====================================+
-| Understand how to set up a successful | Stratified random sample based on   |
-| verification project.                 | your image classification from      |
-|                                       | Exercise 4.1.                       |
-+---------------------------------------+-------------------------------------+
-| Collect land cover verification data  | CEO-SEPAL project initiated         |
-| about each of your sample points.     | in Exercise 4.1.                    |
-+---------------------------------------+-------------------------------------+
-| Create quality management protocols   |                                     |
-| for your verification project.        |                                     |
-+---------------------------------------+-------------------------------------+
+However, to ensure accurate human interpretation of land cover, you will need to adopt data quality management approaches. Adopting data quality management approaches is important for ensuring that each sample location is assigned an accurate label. Examples include: three interpreters examine each sample location independently, or a subsample of the data points are cross checked by another interpreter.
+
+2. Learning objectives
+-----------------------
+
+* Collect reference data by visually interpreting land cover.
+* Create a data quality assurance plan that meets the needs and budgets of your specific mapping projects and management needs.
+
+Much of this information is based on Standard Operating Procedures developed by Till Neeff at FAO for global application. Using this tutorial will help you abide by these guidelines and meet these standards of quality for the data collected.
+
+2.1 Pre-requisites
+
+* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
+* A previously generated map. Please see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification.
+* A classification scheme. Please see the tutorial on OpenMRV named "Response design for classification" under Training data collection.
+* A sampling design and corresponding CEO project. Please see the tutorial on OpenMRV named "Sample design and stratification" under Sampling design.
 
 
-Part 1. Specify a classification scheme
-----------------------------------------
+3. Tutorial: Data collection with data quality management approaches
+---------------------------------------------------------------------
 
-“Classification scheme” is the name used to describe the land cover / land use classes adopted. It should cover all the possible classes that occur in interest. Just as when you are creating training data for your classification, you will need to have a response design with consistent labelling protocols when collecting data for your area and error estimates.
+3.1 Review your classification scheme
+======================================
 
-If you have already created a response design in Module 2, you should use that.
+“Classification scheme” is the name used to describe the land cover / land use classes adopted. It should cover all the possible classes that occur in interest. You will need to have a response design with consistent labelling protocols when collecting data for your area and error estimates.
 
-If you have not created a response design for the classification you are now evaluating, please refer to Exercise 2.1 to create a classification scheme. Note that if your classification was trained using training points that differ substantially from your classification scheme, you may need to collect new training data and re-run your classification.
+Your classification scheme should be consistent between your stratification of a map and your data collection.
 
-As a reminder, our classification used to classify our Forest/Non-forest land cover map was as follows:
+If you have not already done so, please create a response design using the tutorial on OpenMRV named "Response design for classification" under Training data collection. If your classification was trained using training points that differ substantially from your classification scheme, you may need to collect new training data and re-run your classification (see "Creating a classification using machine learning algorithms in SEPAL" under Classification).
+
+As a reminder, your classification used to classify our Forest/Non-forest land cover map was as follows:
 
 .. image:: images/classification_scheme.png
    :alt: The classification tree.
@@ -43,24 +50,22 @@ As a reminder, our classification used to classify our Forest/Non-forest land co
 
 We defined Forest as an area with over 70% tree cover. We defined Non-forest as areas with less than 70% tree cover. This captured land covers including urban areas, water, and agricultural fields.
 
-Part 2. Planning data collection
----------------------------------
+3.2 Planning data collection
+=============================
 
-Now that we have the framework for the procedure for data collection with quality in mind we can work through what it would be like setting up the process for a team. Data collection efforts require planning, particularly for large efforts with many interpreters involved. We will discuss these planning aspects here.
+Data collection efforts require planning, particularly for large efforts with many interpreters involved. We will discuss these planning aspects here.
 
-In this part, you will assume the role of a _coordinator_ and an interpreter for a small team working to validate the land cover classification from Module 2. A coordinator is responsible for organizing the team and tracking compliance information. An interpreter is responsible for collecting data.
+In this part, you will assume the role of a _coordinator_ and an interpreter for a small team working to validate the land cover classification (see "Creating a classification using machine learning algorithms in SEPAL" under Classification). A coordinator is responsible for organizing the team and tracking compliance information. An interpreter is responsible for collecting data.
 
-Identify the reference data sources.
+**Identify the reference data sources.**
 
 Ideally, you would have plots revisited in the field. However, this is rarely attainable given limited resources. An alternative is to collect reference observations through careful examination of the sample units using high resolution satellite data, or moderate resolution if high resolution is not available. The more data you have at your disposal the better.
 
 If you have no additional data, you can use remote sensing data, such as Landsat data, for collecting reference observations, as long as the process to collect the reference data is more accurate than the process used to create the map being evaluated. Careful manual examination can be regarded as being a more accurate process than automated classification.
 
-Consider what additional data you might be able to include in your verification. Do you have access to satellite data at a finer resolution than Landsat? Could you incorporate additional datasets such as stump data or on the ground verifications? You might try searching databases, such as https://developers.google.com/earth-engine/datasets/.
+Consider what additional data you might be able to include in your verification. Do you have access to satellite data at a finer resolution than Landsat? Could you incorporate additional datasets such as stump data or on the ground verifications?
 
-In CEO, these are the additional data sources that you have added to your CEO project. The CEO-SEPAL bridge uses only the default imagery, which is currently Mapbox Satellite.
-
-Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation (see Module 5).
+Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation.
 
 .. image:: images/data_source_recording.png
    :alt: A data source recording document.
@@ -75,7 +80,6 @@ Compile a list of your data sources and review it with your interpreters. Record
    Minutes to interpret 1 sample unit * number of sample units = required level of effort for data collection
 
 2. If information is available from previous inventories, use that experience to set the value on the time required for assessing sample units from previous experience using the same response design. Otherwise, carry out a test.
-3. For this exercise, consider how long it took you to create your training data in Module 2 and use the formula above to estimate how long it will take to classify all your samples.
 
 **Identify data collection participants.**
 
@@ -134,7 +138,7 @@ Compile a list of your data sources and review it with your interpreters. Record
 
 1. As a first step in the data collection, the coordinator and the trainer organize and prepare a training event for the interpreters who have confirmed their participation. The training should cover the following topics as a minimum:
 
-  a. the response design and the interpretation key (detailing location specific examples from all the classes in the classification system with visualization from multiple data sources available),
+  a. The response design and the interpretation key (detailing location specific examples from all the classes in the classification system with visualization from multiple data sources available),
   b. The software used for the data collection and how to ensure the data management and storage,
   c. The data sources available, and
   d. Quality management practices.
@@ -144,9 +148,9 @@ Compile a list of your data sources and review it with your interpreters. Record
 The trainer should then implement the training event following these basic principles:
 
 1. Create an environment for active participation, where participants can share questions and opinions
-2. encourage communication between the interpreters
-3. record attendance of the interpreters, and
-4. assess the capacity of the interpreters at the end of the training and record the results.
+2. Encourage communication between the interpreters
+3. Record attendance of the interpreters, and
+4. Assess the capacity of the interpreters at the end of the training and record the results.
 5. Thinking about the basic principles for a training (a-d above) briefly write out how you might achieve these goals.
 
    Following the training, the coordinator and the trainer should prepare a report summarizing:
@@ -155,7 +159,7 @@ The trainer should then implement the training event following these basic princ
   b. The attendance (example below), and
   c. The results of the assessment of capacity.
 
-This information should be documented as part of the decision making process for the verification (see Module 5).
+This information should be documented as part of the decision making process for the verification.
 
 +---------------+---------+---------+
 | Name          | Day 1   | Day N   |
@@ -168,8 +172,6 @@ This information should be documented as part of the decision making process for
 **Distribute and assign sample units to interpreters.**
 
 1. As coordinator, you will decide on a fraction of sample units to be assessed multiple times by all interpreters for cross-checking. Using approximately 2.5% of plots for cross checks is a good starting point. The samples that are duplicated should have a unique identification, and/or be recorded in some way.
-
-   Note that we’ll discuss this aspect of quality management in Part 4, so don't worry about that at this time.
 
 2. The coordinator should then allocate sample units to interpreters based on some system.
 
@@ -190,12 +192,10 @@ This information should be documented as part of the decision making process for
 |                        |                  | _versionnumber.csv                         |                             |
 +------------------------+------------------+--------------------------------------------+-----------------------------+
 
-In CEO, multiple interpreters can work on the same project at the same time. This makes it very easy to collect data collaboratively. When you later download the data, each interpreter's email address will be attached to the point they collected. If you use CEO-SEPAL, you cannot collect this information at the time of writing.
+3.3 Collecting data
+====================
 
-Part 3. Collecting data
-------------------------
-
-After training and sample allocation, it is time to collect data. This can occur in the CEO-SEPAL interface (for smaller projects) or via CEO for larger or multi-user projects. Here, we will demonstrate collecting data in CEO to ensure compliance with SOP and oversight requiring interpreter names be collected for the points they collect, however the directions are largely the same for the CEO-SEPAL bridge.  How to set up a CEO project is discussed in Exercise 4.1 Part 2. How to set up a CEO-SEPAL project is discussed at the end of Exercise 4.1 Part 1.
+After training and sample allocation, it is time to collect data. Here, we will demonstrate collecting data in CEO to ensure compliance with SOP and oversight requiring interpreter names be collected for the points they collect. Please see the tutorial on OpenMRV named "Sample design and stratification" under Sampling design.
 
 **Data collection by interpreters.**
 
@@ -208,7 +208,7 @@ In general, data collection should include the following steps:
 
 **Data collection in CEO**
 
-1. To collect data in CEO, navigate to the project you created in Exercise 4.1 Part 2. Your screen should look like this:
+1. To collect data in CEO, navigate to the project you created in the tutorial on OpenMRV named "Sample design and stratification" under Sampling design. Your screen should look like this:
 
 .. image:: images/data_collection_CEO.png
    :alt: The data collection interface in CEO
@@ -241,20 +241,9 @@ In general, data collection should include the following steps:
 7. Click on the S next to the project.
 8. This will download your project’s sample data. Save it to your hard drive.
 
-**Data collection in CEO-SEPAL bridge**
-
-1. For this example, navigate to the web address associated with your CEO-SEPAL bridge project. It should look something like this: https://collect.earth/collection?projectId=18301&tokenKey=b1216bbb-9395-41f8-bc02-f898c98465bf. You must be logged out of CEO for this link to work.
-2. Click **Go to first plot**. This will take you to your first plot.
-3. With the CEO-SEPAL bridge, there is only one question. It is “CLASS”, where you must assign the appropriate value to your point.
-
-  a. The CEO-SEPAL bridge uses the names you typed in during the legend labelling stage of the Sample Design.
-  b. Click on Save to save your answers and move on to the next plot.
-
-4. Continue answering questions until you reach the last plot.
-
 **Data assembly**
 
-Data assembly is required ONLY when you have multiple data interpreters, each working on their own project. If you have used the CEO pathway above with multiple interpreters contributing to the same project, this step is not needed.
+Data assembly is required ONLY when you have multiple data interpreters, each working on their own project. If you have used the CEO pathway described just above with multiple interpreters contributing to the same project, this step is not needed.
 
 1. If you have multiple interpreters, after the data collection is completed the coordinator should create a consolidated database with all the collected sample data.
 
@@ -264,14 +253,12 @@ Data assembly is required ONLY when you have multiple data interpreters, each wo
 2. Each sample in the consolidated database notes the round of data collection. The database can be amended to include additional rounds of data collection. Multiple versions are recorded and explanations between versions are included in the documentation template.
 3. In CEO, this is handled through the Institution’s Project interface.
 
-**Congratulations, you have successfully completed the first steps to collecting data with quality management in mind. In the following parts we will discuss how to incorporate these quality practices in detail and techniques to control for potential errors.**
-
-Part 4. Quality management and archiving - Quality Assurance
--------------------------------------------------------------
+3.4 Quality management and archiving - Quality Assurance
+=========================================================
 
 Quality assurance and control are fundamental in ensuring that your validation and resulting area estimates are as accurate as can be and are unbiased. This part will cover the steps of how to perform quality assurance.
 
-For change detection maps, you will want to check for and exclude impossible transitions through logical checks. Make sure that the changes make sense. E.x. having a transition from Water <= 20% to Aquaculture may make sense, but a transition from Water <= 20% to Developed High Intensity would not.
+For change detection maps, you will want to check for and exclude impossible transitions through logical checks. Make sure that the changes make sense. For example, having a transition from Water <= 20% to Aquaculture may make sense, but a transition from Water <= 20% to Developed High Intensity would not.
 
 Also be sure to document all impossible transitions. These should be included in your response design tree as well.
 
@@ -279,7 +266,6 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
 
 * Auxiliary data checks: use an external data source, such as externally created maps, to compare to the sample unit classification. Discrepancies between the two datasets can be flagged for rechecking. Confirmed differences between the two datasets can be documented to showcase why sample-based area estimation may give different results than other data sources.
 
-  * For example, the Copernicus Global Land Cover Layers: CGLS-LC100 collection 2, available via GEE, can be used as a comparison layer https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_Landcover_100m_Proba-V_Global.
   * Ask questions when comparing your map and auxiliary maps:
 
     * Where do you notice agreement between the two maps?
@@ -312,10 +298,9 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
   * Have your colleagues show you sample units that they are unsure about.
   * Discuss these sample units and make changes to the labels based on your discussion.
 
-You must create a project using CEO to add additional questions about confidence level. If you create a project via the ceo-sepal interface, you will have only one question about land use/cover class.
 
-Part 5. Quality management and archiving - Quality Control
------------------------------------------------------------
+3.5 Quality management and archiving - Quality Control
+=======================================================
 
 Quality control refers to the quality of interpretation through cross-validation based on a set of samples that were assessed by two or more interpreters. See also the cold data check mentioned above. These checks can be conducted in CEO by creating multiple projects with the same sample plots. Multiple interpreters can each complete one of these projects, allowing for comparison.
 
@@ -478,4 +463,25 @@ Now calculate the per-class agreement. Note that percent should be calculated by
 | Total                  | Percent          | Percent         | Percent          | Percent             |
 +------------------------+------------------+-----------------+------------------+---------------------+
 
-**Congratulations! You now know how to assess important quality assurance metrics for your project.**
+
+
+4. Frequently Asked Questions (FAQs)
+-------------------------------------
+
+**How do I make a CEO account?**
+
+In your browser window, navigate to https://collect.earth/. CEO supports Google Chrome, Mozilla Firefox, and Microsoft Edge. Click **Login/Register** on the upper right. To set up a new account, click on **Register a new account** and follow the instructions. Please also see the tutorial called "An introduction to SEPAL" under the SEPAL tool.
+
+**What happens if I lose my CEO password?**
+
+You can resent your password by navigating to https://collect.earth/ and clicking on **Forgot your password?**, and then following the instructions.
+
+5. References
+-------------
+
+Much of this information is based on Standard Operating Procedures developed by Till Neeff at FAO for global application.
+
+
+======================================
+
+.. Andrea, put footer information here

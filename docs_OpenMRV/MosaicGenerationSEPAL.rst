@@ -1,25 +1,37 @@
--------------------------------------------------------
-Exercise 1.2. Mosaic generation (Landsat & Sentinel 2)
--------------------------------------------------------
+.. Andrea, add metadata here
 
-SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. Mosaic creation is the first step for the image classification and two date change detection processes covered in Modules 2 and 3 respectively. These mosaics can be downloaded locally or to your Google Drive.
+-----------------------------
+Mosaic generation with SEPAL
+-----------------------------
 
-In this exercise, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway.
+1. Background
+--------------
 
-+-------------------------------------------+----------------------+
-|  Objectives                               |   Prerequisites      |
-+===========================================+======================+
-|Learn how to create an image mosaic        | SEPAL account        |
-+-------------------------------------------+----------------------+
-| Become familiar with a variety of options |                      |
-| for selecting dates, sensors, mosaicking  |                      |
-| and download options.                     |                      |
-+-------------------------------------------+----------------------+
-| Create a cloud-free mosaic for 2016       |                      |
-+-------------------------------------------+----------------------+
+SEPAL provides a robust interface for generating Landsat and Sentinel 2 mosaics. These mosaics can be downloaded locally or to your Google Drive.
 
-Part 1. Create a Landsat Mosaic
---------------------------------
+Creating mosaics is a critical first step for creating classification maps (see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification) and change detection maps (see the tutorial on OpenMRV named "Two date change detection" under Change detection).
+
+
+2. Learning Objectives
+-----------------------
+
+In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway. You will also create mosaics for the State of Rondonia (Brazil).
+
+* Create an image mosaic in SEPAL.
+* Become familiar with a variety of options for selecting dates, sensors, mosaicking and download options in SEPAL.
+
+
+2.1 Pre-requisites
+===================
+
+* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
+
+
+3. Tutorial: Mosaic generation in SEPAL
+----------------------------------------
+
+3.1 Create a Landsat mosaic using Area of Interest
+===================================================
 
 1. If SEPAL is not already open, click to open SEPAL in your browser: https://sepal.io/ and login.
 2. Click on the **Processing** tab.
@@ -58,7 +70,7 @@ Part 1. Create a Landsat Mosaic
   a. This interface allows you to refine the dates or seasons you are interested in.
   b. You can select a **target date** (The date in which pixels in the mosaic should ideally come from), as well as adjust the start and end date flags.
   c. You can also include additional seasons from the past or the future by adjusting the **Past Seasons** and **Future Seasons** slider. This will include additional years’ data of the same dates specified. For example, if you’re interested in August 2015, including one future season will also include data from August 2016. This is useful if you’re interested in a specific time of year but there is significant cloud cover.
-  d. For this exercise, let’s create imagery for the dry season of 2019.
+  d. For this tutorial, let’s create imagery for the dry season of 2019.
 
     i. Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.
     ii. Click **Apply**.
@@ -69,7 +81,7 @@ Part 1. Create a Landsat Mosaic
 
 |
 
-7. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected.Then click **Done**.
+7. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected. Then click **Done**.
 
   * **L8** began operating in 2012 and is continuing to collect data
   * **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present
@@ -182,7 +194,7 @@ Part 1. Create a Landsat Mosaic
 16. You can also change the composing method using the **CMP** button on the lower right.
 
   a. Notice that there are several additional options including shadow tolerance, haze tolerance, NDVI importance, cloud masking and cloud buffering.
-  b. For this exercise, we will leave these at their default settings.
+  b. For this tutorial, we will leave these at their default settings.
   c. If you make changes, click Apply after you’re done.
 
 .. image:: images/composite.png
@@ -227,17 +239,49 @@ Part 1. Create a Landsat Mosaic
   a. For example, if you have too many clouds in your mosaic, then you may want to adjust some of your settings or choose a different time of year when there is a lower likelihood of cloud cover.
   b. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
 
-Part 2. Name and Save your Recipe and Mosaic
----------------------------------------------
+
+3.2 Creating a mosaic for a drawn AOI
+======================================
+
+We will create a mosaic for an area in the Amazon basin.
+
+1. Navigate to the Process tab, then create a new optical mosaic by selecting Optical Mosaic on the Process menu.
+2. Under **Area of Interest:**
+
+  a. Select **Draw Polygon** from the dropdown list.
+
+.. image:: images/aoi_dropdown.png
+   :alt: Area of interest dropdown menu.
+   :width: 450px
+   :align: center
+
+|
+
+  b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
+
+.. image:: images/rondonia.png
+   :alt: A polygon drawn around the State of Rondonia.
+   :align: center
+
+|
+
+3. Now use what you have learned the "Create a Landsat mosaic using Area of Interest" section above to create a mosaic with imagery from the year 2019. Don’t forget to consider which satellites you would like to include and which scenes you would like to include.
+4. Your preview should include imagery data across your entire area of interest. Try also to get a cloud-free mosaic.
+5. Name your mosaic for easy retrieval.
+6. When you’re satisfied with your mosaic, **Retrieve** it to Google Earth Engine using the directions below in "Name and save your recipe and mosaic".
+
+
+3.3 Name and save your recipe and mosaic
+=========================================
 
 1. Now, we will name the ‘recipe’ for creating the mosaic and explore options for the recipe.
 
-  a. You will use this recipe when working with the classification or change detection tools, as well as when loading SEPAL mosaics into SEPAL’s Collect Earth Online.
-  b. You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name. For this example use *MiaNdombe_LS8_2019_Dry.*
+  a. You can use this recipe when working with the classification or change detection tools (see e.g. the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification).
+  b. You can make the recipe easier to find by naming it. Click on the tab in the upper right and type in a new name.
   c. Now let's explore options for the recipe. Click on the three lines in the upper right hand corner.
 
     * You can **Save the recipe** (SEPAL will do this automatically on retrieval) so that it is available later.
-    * You can also **Duplicate the recipe**. This is useful for creating two years of data, as we will do in Module 3.
+    * You can also **Duplicate the recipe**. This is useful for creating two years of data.
     * Finally you can **Export the recipe**. This downloads a zip file with a JSON of your mosaic specifications.
 
   d. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
@@ -266,7 +310,7 @@ Part 2. Name and Save your Recipe and Mosaic
 
 |
 
-4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery.
+4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery (e.g. see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification).
 
    To download this imagery mosaic to your SEPAL account, click the **Retrieve** button.
 
@@ -287,7 +331,7 @@ Part 2. Name and Save your Recipe and Mosaic
   a. **Bands to Retrieve:** select the desired bands you would like to include in the download.
 
     i. Select the **Blue, Green, Red, NIR, SWIR 1 and SWIR 2** bands. These are visible spectrum and infrared data collected by Landsat.
-    ii. Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness. More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
+    ii. Other bands that are available include Aerosol, Thermal, Brightness, Greenness, and Wetness.
     iii. Metadata on Date, Day of Year, and Days from Target can also be selected.
 
   b. **Scale:** the resolution of the mosaic. Landsat data is collected at 30m resolution, so we will leave the slider there.
@@ -303,66 +347,10 @@ Part 2. Name and Save your Recipe and Mosaic
 
 |
 
-.. note::
-   This will take 25 minutes or more to finish downloading, however, you can move on to the next exercise without waiting for the download to finish.
+3.4 Finding your Earth Engine Asset
+====================================
 
-**Congratulations! You have successfully completed this exercise. You now know how to create a Landsat mosaic using the many customizable parameters in SEPAL.**
-
-
-
-.. Integrate this::
-
--------------------------------------------------
-Exercise 2.2. Create a mosaic for classification
--------------------------------------------------
-
-We first need an image to classify before running a classification. For best results, we will need to create an optical mosaic with good coverage of our study area. We will build on knowledge gained in Module 1 to create an optical mosaic in SEPAL and retrieve it to Google Earth Engine.
-
-In SEPAL you can run a classification on either a mosaic recipe or on a GEE asset. It is best practice to run a classification using an asset rather than on-the-fly with a recipe. This will improve how quickly your classification will export and avoid computational limitations.
-
-+--------------------------------------------+-----------------------------+
-| Objectives                                 | Prerequisites               |
-+============================================+=============================+
-| Build on knowledge gained in Module 1.     | SEPAL account               |
-+--------------------------------------------+-----------------------------+
-| Create a mosaic to be the basis for        | Module 1                    |
-| your classification                        |                             |
-+--------------------------------------------+-----------------------------+
-
-Part 1. Creating and exporting a mosaic for a drawn AOI
---------------------------------------------------------
-
-We will create a mosaic for an area in the Amazon basin. If any of the steps for creating a mosaic are unfamiliar, please revisit Module 1, particularly Exercise 1.2.
-
-1. Navigate to the Process tab, then create a new optical mosaic by selecting Optical Mosaic on the Process menu.
-2. Under **Area of Interest:**
-
-  a. Select **Draw Polygon** from the dropdown list.
-
-.. image:: images/aoi_dropdown.png
-   :alt: Area of interest dropdown menu.
-   :width: 450px
-   :align: center
-
-|
-
-  b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
-
-.. image:: images/rondonia.png
-   :alt: A polygon drawn around the State of Rondonia.
-   :align: center
-
-|
-
-3. Now use what you have learned in Module 1 to create a mosaic with imagery from the year 2019 (whole year or part of year, your choice). Don’t forget to consider which satellites you would like to include and which scenes you would like to include (all, some).
-4. Your preview should include imagery data across your entire area of interest. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
-5. Name your mosaic for easy retrieval. Try “Module2_Amazon”.
-6. When you’re satisfied with your mosaic, **Retrieve** it to Google Earth Engine. Be sure to include the red, green, blue, nir, swir1, and swir2 layers. You may choose to add the greenness, etc. layers as well.
-
-Part 2. Finding your Earth Engine Asset
-----------------------------------------
-
-For future exercises, you may need to know how to find your Earth Engine Asset.
+For other tutorials hosted on OpenMRV, you may need to know how to find your Earth Engine Asset.
 
 1. Navigate to https://code.earthengine.google.com/ and login.
 2. Navigate to your **Assets** tab in the left hand column.
@@ -374,3 +362,15 @@ For future exercises, you may need to know how to find your Earth Engine Asset.
 .. image:: images/mosaic_information.png
    :alt: Your mosaic’s information pane.
    :align: center
+
+
+4. Frequently Asked Questions (FAQs)
+-------------------------------------
+
+**Where can I find more information about Landsat bands?**
+
+More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat-data-continuity-mission/.
+
+==========================================
+
+.. Andrea, add footer information here!
