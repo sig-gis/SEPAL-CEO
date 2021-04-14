@@ -2,7 +2,7 @@
 title: Mosaic generation with SEPAL
 summary: In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of the Democratic Republic of the Congo, where REDD+ projects are currently underway. You will also create mosaics for the State of Rondonia (Brazil).
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -48,13 +48,13 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 ===================
 
 * A SEPAL account. Please check under tool "SEPAL" here on OpenMRV for an introduction to SEPAL.
-
+* A GEE account. Please check under tool "SEPAL" here on OpenMRV for an introduction to SEPAL.
 
 3. Tutorial: Mosaic generation in SEPAL
 ----------------------------------------
 
-3.1 Create a Landsat mosaic using Area of Interest
-===================================================
+3.1 Create a Landsat mosaic using select Country/Province
+==========================================================
 
 1. If SEPAL is not already open, click to open SEPAL in your browser: https://sepal.io/ and login.
 2. Click on the **Processing** tab.
@@ -108,7 +108,7 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 
   * **L8** began operating in 2012 and is continuing to collect data
   * **L7** began operating in 2001, but has a scan-line error that can be problematic for dates between 2005-present
-  * **L4-5 TM,** collected data from July 1982-May 2012
+  * **L4-5** collected data from July 1982-May 2012
   * **Sentinel 2 A+B** began operating in June 2015
 
 8. Now SEPAL will load a preview of your data. By default it will show you where RGB band data is available. You can click on the RGB image at the bottom to choose from other combinations of bands or metadata.
@@ -263,8 +263,8 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   b. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
 
 
-3.2 Creating a mosaic for a drawn AOI
-======================================
+3.2 Creating a mosaic by drawing a polygon
+===========================================
 
 We will create a mosaic for an area in the Amazon basin.
 
@@ -288,7 +288,7 @@ We will create a mosaic for an area in the Amazon basin.
 
 |
 
-3. Now use what you have learned the "Create a Landsat mosaic using Area of Interest" section above to create a mosaic with imagery from the year 2019. Don’t forget to consider which satellites you would like to include and which scenes you would like to include.
+3. Now use what you have learned the "Create a Landsat mosaic using select Country/Province" section above to create a mosaic with imagery from the year 2019. Don’t forget to consider which satellites you would like to include and which scenes you would like to include.
 4. Your preview should include imagery data across your entire area of interest. Try also to get a cloud-free mosaic.
 5. Name your mosaic for easy retrieval.
 6. When you’re satisfied with your mosaic, **Retrieve** it to Google Earth Engine using the directions below in "Name and save your recipe and mosaic".
@@ -402,12 +402,12 @@ More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-Copyright 2021, World Bank 
+Copyright 2021, World Bank
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Mosaic generation with SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+Dyson, K. 2021. Mosaic generation with SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. image:: images/wb_fcpf_gfoi.png
 

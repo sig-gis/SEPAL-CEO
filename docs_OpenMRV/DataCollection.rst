@@ -1,8 +1,8 @@
 ---
 title: Data collection with data quality management approaches
-summary: This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations. You will also learn how to create a data quality assurance plan that meets the needs and budgets of your specific mapping projects and management needs.
+summary: This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations. You will also learn how to create a data quality assurance plan that meets the needs and budgets of your specific mapping projects.
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -42,7 +42,7 @@ Data collection with data quality management approaches
 1. Background
 --------------
 
-This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations.
+This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations using SEPAL.
 
 However, to ensure accurate human interpretation of land cover, you will need to adopt data quality management approaches. Adopting data quality management approaches is important for ensuring that each sample location is assigned an accurate label. Examples include: three interpreters examine each sample location independently, or a subsample of the data points are cross checked by another interpreter.
 
@@ -59,7 +59,7 @@ Much of this information is based on Standard Operating Procedures developed by 
 * A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 * A previously generated map. Please see the tutorials here on OpenMRV under process "Classification" and tools "SEPAL" and "GEE".
 * A classification scheme. Please see the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
-* A sampling design and corresponding Collect Earth Online (CEO) project. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". You can find more information about CEO, sampling design, sample selection and other tools under processes "Sampling design" and "Sample data collection" and tools "SEPAL", "QGIS", "AREA2", "GEE", "CEO", and "CE". 
+* A sampling design and corresponding Collect Earth Online (CEO) project. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". You can find more information about CEO, sampling design, sample selection and other tools under processes "Sampling design" and "Sample data collection" and tools "SEPAL", "QGIS", "AREA2", "GEE", "CEO", and "CE".
 
 
 3. Tutorial: Data collection with data quality management approaches
@@ -72,7 +72,7 @@ Much of this information is based on Standard Operating Procedures developed by 
 
 Your classification scheme should be consistent between your stratification of a map and your data collection.
 
-If you have not already done so, please create a response design using the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL" (we will use the classification scheme from this tutorial). If your classification was trained using training points that differ substantially from your classification scheme, you may need to collect new training data and re-run your classification (see process "Classification" here OpenMRV). Alternatively, you can find more information about response design here on OpenMRV under process "Sample data collection" and tools "GEE", "AREA2", "CEO", and "CE".
+If you have not already done so, please create a response design using the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL" (we will use the classification scheme from this tutorial). If your classification was trained using training points that differ substantially from your classification scheme, you may need to collect new training data and re-run your classification (see process "Classification" here on OpenMRV). Alternatively, you can find more information about response design here on OpenMRV under process "Sample data collection" and tools "GEE", "AREA2", "CEO", and "CE".
 
 We will use the classification scheme below, used to classify a Forest/Non-forest land cover map:
 
@@ -90,7 +90,7 @@ We defined Forest as an area with over 70% tree cover. We defined Non-forest as 
 
 Data collection efforts require planning, particularly for large efforts with many interpreters involved. We will discuss these planning aspects here.
 
-In this part, you will assume the role of a _coordinator_ and an interpreter for a small team working to validate the land cover classification (see "Creating a classification using machine learning algorithms in SEPAL" under Classification). A coordinator is responsible for organizing the team and tracking compliance information. An interpreter is responsible for collecting data.
+In this part, you will assume the role of a coordinator and an interpreter for a small team working to validate the land cover classification (see process "Classification" and tool "SEPAL" here on OpenMRV). A coordinator is responsible for organizing the team and tracking compliance information. An interpreter is responsible for collecting data.
 
 **Identify the reference data sources.**
 
@@ -156,11 +156,12 @@ Compile a list of your data sources and review it with your interpreters. Record
 | Yuri Gagarin | example@example.org | Institute for Collecting Data   | Sample interpretation    |
 +--------------+---------------------+---------------------------------+--------------------------+
 
+|
 
 3. Based on this information, you will decide on the format and modality for the data collection and on a timeline.
 
   a. For example, the format of the data collection can be a mapathon set-up where a large group collects the data over a short amount of time or a smaller team that collects the data over long periods. The modality for the data collection concerns where the team collects the data, either in the same location or disparate locations eg. in a mapathon, the interpreters could be in the same room interpreting the data.
-  b. If the data collection is set up in disparate locations, modes of communication should be specified to help improve the consistency in the data interpretation.
+  b. If the data collection is set up in different locations, modes of communication should be specified to help improve the consistency in the data interpretation.
   c. Multiple re-measurements for all samples is another option.
 
 4. The logistics manager (if different from the coordinator) will arrange logistics, including space for data collection, sufficient time for data collection, and salary arrangements.
@@ -227,6 +228,8 @@ This information should be documented as part of the decision making process for
 |                        |                  | _versionnumber.csv                         |                             |
 +------------------------+------------------+--------------------------------------------+-----------------------------+
 
+|
+
 3.3 Collecting data
 ====================
 
@@ -274,7 +277,7 @@ In general, data collection should include the following steps:
 |
 
 7. Click on the S next to the project.
-8. This will download your project’s sample data. Save it to your hard drive.
+8. This will download your project’s sample data. Save it to your hard drive and note the location.
 
 **Data assembly**
 
@@ -326,6 +329,8 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
 +--------------+-----------------------+-----------------------+-----------------+
 | Yuri Gagarin | Forest                | Forest                | Water           |
 +--------------+-----------------------+-----------------------+-----------------+
+
+|
 
 * Hot checks: sample units that are flagged as low confidence. These marked sample units should be further reviewed by the coordinator or group of interpreters meeting together. Once reviewed, labels that are deemed to be incorrect on these sample units should be adjusted by the interpreter.
 
@@ -525,12 +530,12 @@ Much of this information is based on Standard Operating Procedures developed by 
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-Copyright 2021, World Bank 
+Copyright 2021, World Bank
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Data collection with data quality management approaches. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+Dyson, K. 2021. Data collection with data quality management approaches. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. image:: images/wb_fcpf_gfoi.png
 

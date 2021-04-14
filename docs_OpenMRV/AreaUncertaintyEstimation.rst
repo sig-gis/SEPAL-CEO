@@ -2,7 +2,7 @@
 title: Area and uncertainty estimation
 summary: In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -25,9 +25,7 @@ Area and uncertainty estimation
 1. Background
 --------------
 
-All maps have errors, for example model output errors from pixel mixing or input data noise. Our objective is to create unbiased estimates of the area for each mapped category.
-
-To do this, we will use sample-based estimations of area and error instead of ‘pixel counting’ approaches. Pixel counting approaches simply sum the area belonging to each different class. However, this doesn’t account for classification errors--for example, the probability that a pixel classified as wetland should be open water. Therefore, the pixel counting approach provides no quantification of sampling errors and no assurance that estimates are unbiased or that uncertainties are reduced (Stehman, 2005; GFOI, 2016).
+All maps have errors, for example model output errors from pixel mixing or input data noise. Our objective is to create unbiased estimates of the area for each mapped category. To do this, we will use sample-based estimations of area and error instead of ‘pixel counting’ approaches. Pixel counting approaches simply sum the area belonging to each different class. However, this doesn’t account for classification errors--for example, the probability that a pixel classified as wetland should be open water. Therefore, the pixel counting approach provides no quantification of sampling errors and no assurance that estimates are unbiased or that uncertainties are reduced (Stehman, 2005; GFOI, 2016).
 
 Sample-based estimations of area and error create estimations of errors in pixel classification and use this to inform estimations of area. Therefore, sample-based estimations are in keeping with the IPCC General Guidelines (2006) that estimates should not be over- or under- estimates, and that uncertainty should be reduced as much as practically possible.
 
@@ -72,10 +70,11 @@ In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” too
 
 2.1 Pre-requisites
 ===================
+
 * A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 * A previously generated map. Please see the tutorials here on OpenMRV under process "Classification" and tools "SEPAL" and "GEE".
 * A classification scheme. Please see the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
-* A sampling design and corresponding Collect Earth Online (CEO) project. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". You can find more information about CEO, sampling design, sample selection and other tools under processes "Sampling design" and "Sample data collection" and tools "SEPAL", "QGIS", "AREA2", "GEE", "CEO", and "CE". 
+* A sampling design and corresponding Collect Earth Online (CEO) project. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". You can find more information about CEO, sampling design, sample selection and other tools under processes "Sampling design" and "Sample data collection" and tools "SEPAL", "QGIS", "AREA2", "GEE", "CEO", and "CE".
 * Completed verification data or reference data. Please see the tutorial here on OpenMRV under process "Sample data collection" and tool "SEPAL". More information can be found under tools "CEO", "CE", "GEE", and "AREA2"
 
 3. Tutorial: Area and uncertainty estimation
@@ -290,12 +289,12 @@ REDD Compass: https://www.reddcompass.org/
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-Copyright 2021, World Bank 
+Copyright 2021, World Bank
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Area and uncertainty estimation. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+Dyson, K. 2021. Area and uncertainty estimation. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. image:: images/wb_fcpf_gfoi.png
 
