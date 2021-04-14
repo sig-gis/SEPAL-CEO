@@ -2,7 +2,7 @@
 title: Two date change detection
 summary: In this tutorial you will create optical mosaics for change detection using SEPAL, become associated with methods of detecting change for an area of interest using the SEPAL platform, and conduct a two-date change detection.
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -243,7 +243,7 @@ This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://cre
 
 Copyright 2021, World Bank 
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
 
 | Attribution
 Dyson, K. 2021. Two date change detection. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
