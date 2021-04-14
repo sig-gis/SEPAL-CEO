@@ -1,6 +1,28 @@
-.. Andrea, insert metadata here
+---
+title: Creating a classification using machine learning algorithms in SEPAL
+summary: In SEPAL you can run a classification on either a mosaic SEPAL recipe or on a GEE asset. In this tutorial, you will complete a classification of a mosaicked image using a random forests classifier contained within the easy-to-use Classification tool in SEPAL.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- Land cover mapping
+- Forest mapping
+- Random Forests
+- Supervised Classification
 
+group:
+- category: SEPAL
+  stage: Classification
+---
 
 ---------------------------------------------------------------------
 Creating a classification using machine learning algorithms in SEPAL
@@ -25,7 +47,7 @@ There are both supervised (uses human guidance including training data) and unsu
 
 In SEPAL you can run a classification on either a mosaic recipe or on a GEE asset. It is best practice to run a classification using an asset rather than on-the-fly with a recipe. This will improve how quickly your classification will export and avoid computational limitations.
 
-To complete the classification of our mosaicked image you are going to use a random forests classifier contained within the easy-to-use Classification tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives, if selected.
+To complete the classification of a mosaicked image you are going to use a random forests classifier contained within the easy-to-use Classification tool in SEPAL. The image values used to train the model include the Landsat mosaic values and some derivatives, if selected.
 
 After we create the map, you might find that there are some areas that are not classifying well. The classification process is iterative, and there are ways you can modify the process to get better results. One way is to collect more or better reference data to train the model. You can test different classification algorithms, or explore object based approaches opposed to pixel based approaches. The possibilities are many and should relate back to the nature of the classes you hope to map. Last but certainly not least is to improve the quality of your training data.
 
@@ -35,9 +57,9 @@ After we create the map, you might find that there are some areas that are not c
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
-* Land cover categories. Please see the tutorial on OpenMRV named "Response design for classification" under Training data collect.
-* Landsat mosaic. Please see the tutorial on OpenMRV named "Mosaic generation with SEPAL" under Pre-processing.
+* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
+* Land cover categories. Please see the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
+* Landsat mosaic. Please see the tutorial here on OpenMRV under process "Pre-processing" and tool "SEPAL".
 
 3. Tutorial: Creating a classification using machine learning algorithms in SEPAL
 ----------------------------------------------------------------------------------
@@ -46,7 +68,7 @@ After we create the map, you might find that there are some areas that are not c
 ===============================
 
 1. In the **Process** menu, click the green plus symbol and select **Classification.**
-2. Add the Amazon optical mosaic for classification (see the tutorial on OpenMRV named "Mosaic generation with SEPAL" under Pre-processing).
+2. Add the Amazon optical mosaic for classification (see the tutorial on OpenMRV under process "Pre-processing" and tool "SEPAL. If you haven't gone through this tutorial, the Amazon mosaic is available as a GEE asset, ID: users/openmrv/Module2_Amazon).
 
   a. Click **+ Add** and choose either **Saved Sepal Recipe** or **Earth Engine Asset** (recommended).
 
@@ -301,4 +323,19 @@ The workflow in this tutorial has been adapted from material developed by Dr. Po
 
 =======================
 
-.. Andrea, place footer content here
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Creating a classification using machine learning algorithms in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|
