@@ -183,7 +183,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 10. If you need to modify classification of any of your data points, you can click on the point to return to the classification options. You can also remove the point in this way.
 11. When you are happy with your data points, click on the **AUX** button in the bottom right. Select "Terrain" and "Water". This will add auxiliary data to the classification.
 12. Click on the **CLS** button in the bottom right. You can change your classification type to see how the output changes.
-8. If it has not already, SEPAL will now load a preview of your classification.
+13. If it has not already, SEPAL will now load a preview of your classification.
 
 .. image:: images/change_detection_model_preview.png
    :alt: A preview of the change detection model output.
@@ -223,7 +223,7 @@ With SEPAL you can examine your classification and collect additional training d
 
 
 4. Frequently Asked Questions (FAQs)
-------------------------------------
+-------------------------------------
 
 **I am getting an error stating "Google Earth Engine error: Failed to create preview" at the final stage of my classification. Help!**
 
