@@ -1,4 +1,22 @@
-.. Andrea, add metadata here?
+---
+title: Area and uncertainty estimation
+summary: In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- SEPAL
+- Accuracy
+- Accuracy assessment
+- Area Estimation
+
+group:
+- category: SEPAL
+  stage: Area estimation/Accuracy Assessment
+---
 
 --------------------------------
 Area and uncertainty estimation
@@ -54,11 +72,11 @@ At the heart of the analysis is the implementation of an unbiased area estimator
 
 2.1 Pre-requisites
 ===================
-
-* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
-* A previously generated map. Please see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification.
-* A sampling design created in SEPAL. Please see the tutorial on OpenMRV named "Sample design and stratification" under Sampling design.
-* Completed verification data or reference data. Please see the tutorial on OpenMRV named "Data collection with data quality management approaches" under Sampling data accuracy.
+* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
+* A previously generated map. Please see the tutorials here on OpenMRV under process "Classification" and tools "SEPAL" and "GEE".
+* A classification scheme. Please see the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
+* A sampling design and corresponding Collect Earth Online (CEO) project. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". You can find more information about CEO, sampling design, sample selection and other tools under processes "Sampling design" and "Sample data collection" and tools "SEPAL", "QGIS", "AREA2", "GEE", "CEO", and "CE". 
+* Completed verification data or reference data. Please see the tutorial here on OpenMRV under process "Sample data collection" and tool "SEPAL". More information can be found under tools "CEO", "CE", "GEE", and "AREA2"
 
 3. Tutorial: Area and uncertainty estimation
 ---------------------------------------------
@@ -66,7 +84,7 @@ At the heart of the analysis is the implementation of an unbiased area estimator
 3.1 Preparing CEO collected data for analysis in SEPAL
 =======================================================
 
-1. Open the .csv file you downloaded from Collect Earth Online (see the tutorial on OpenMRV named "Data collection with data quality management approaches" under Sampling data accuracy). It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”.
+1. Open the .csv file you downloaded from Collect Earth Online (see the tutorial here on OpenMRV under process "Sample data collection" and tool "SEPAL"). It will probably have a name like “ceo-project-name-sample-data-yyyy-mm-dd.csv”. If you haven't gone through the tutorial mentioned, we made this csv file available `here <https://drive.google.com/file/d/1TkoVUxUOR8HTJE3IohOK6s8kwyZ77wGP/view?usp=sharing>`_ (it is highly recommended going through the tutorial for a better understanding of the whole process).
 2. Inspect the column data.
 
   a. You should have a column named “PL_MAP_CLASS” that consists of numeric values. These are the classes assigned by the classification.
@@ -157,11 +175,11 @@ The concept is derived from map accuracy assessment principles: characterized fr
 
 2. Select the **Inputs** page on the left side of the screen. You will see two data requirements under the **Select input files** section.
 
-  a. **Reference Data** this refers to the table that you classified and exported (see the tutorial on OpenMRV named "Data collection with data quality management approaches" under Sample data collection). It will contain a column that identifies the map output class for each point as well as a column for the value from the image interpreter (validation classification).
+  a. **Reference Data** this refers to the table that you classified and exported (see the tutorial on OpenMRV under process "Sample data collection" and tool "SEPAL", mentioned above). It will contain a column that identifies the map output class for each point as well as a column for the value from the image interpreter (validation classification).
 
     i. Select the **Reference data** button and navigate to the .csv file you downloaded from CEO and then uploaded to SEPAL.
 
-  b. **Area data** this is a CSV that was automatically created during the Stratified Area Estimator--Design workflow. Please see the tutorial on OpenMRV named "Sample design and stratification" under Sampling Design. It contains area values for each mapped land cover class.
+  b. **Area data** this is a CSV that was automatically created during the Stratified Area Estimator--Design workflow. Please see the tutorial on OpenMRV under process "Sample data collection" and tool "SEPAL", mentioned above. It contains area values for each mapped land cover class. If you haven't gone through this tutorial, we made this csv file available `here <https://drive.google.com/file/d/1M7-mBI7UdlKEwzAj5DSTLuRUEGwk_5ff/view?usp=sharing>`_ (it is highly recommended going through the tutorial for a better understanding of the whole process).
 
     i. Click the **Area data** button.
     ii. Open the **sae_design_AmazonClassification** folder, or the folder labeled sae_design_your-name-here if you did not call your classification AmazonClassification.
@@ -220,7 +238,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
 7. Under **Area estimates,** the table shows you the area estimates, and producer’s and user’s accuracies, all of which were calculated from the error matrix and the class areas (sample weights) from the map product you are assessing.
 
   a. Estimations are broken up into simple and stratified estimates, each of which has its own confidence interval.
-  b. In the prerequisite tutorial (see the tutorial on OpenMRV named "Sample design and stratification" under Sampling Design) we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
+  b. In the prerequisite tutorial (see the tutorial here on OpenMRV under process "Sampling Design" and tool "SEPAL") we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
   c. Note that all area estimates are in map units.
   d. You can change your desired **confidence interval** using the slider at the top of the panel.
   e. You can Download area estimates as tabular data (.csv) using the button.
@@ -233,7 +251,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
 
 8. The **Graph** plots area estimates based on: map pixel count, stratified random sample, simple random sample, unbiased stratified random and direct estimate stratified random.
 
-  a. In the prerequisite tutorial (see the tutorial on OpenMRV named "Data collection with data quality management approaches" under Sample data collection) we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
+  a. In the prerequisite tutorial (see the tutorial here on OpenMRV under process "Sample data collection" and tool "SEPAL") we collected validation data using a stratified sample, so the values we need to use are the stratified random values.
   b. Need to define unbiased stratified random and direct estimate stratified random.
   c. Note that the Map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
 
@@ -254,14 +272,31 @@ In Stratified Area Estimator - Analysis tool, there is an **Introduction** page 
 5. References
 --------------
 
-* GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome
-* GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1, (GOFC-GOLD Land Cover Project Office, Wageningen University, The Netherlands)
-* Gallego, FJ. 2004. Remote sensing and land cover area estimation. International Journal of Remote Sensing, 25(15): 3019-3047, DOI: 10.1080/01431160310001619607
-* IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
-* REDD Compass: https://www.reddcompass.org/
+Gallego, F.J., 2004. Remote sensing and land cover area estimation. International Journal of Remote Sensing, 25(15), pp.3019-3047. https://doi.org/10.1080/01431160310001619607
 
+GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome
 
+GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1, (GOFC-GOLD Land Cover Project Office, Wageningen University, The Netherlands)
+
+IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
+
+REDD Compass: https://www.reddcompass.org/
 
 -------------------
 
-.. Andrea, add footer information here.
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Area and uncertainty estimation. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|
