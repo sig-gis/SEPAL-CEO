@@ -1,4 +1,33 @@
-.. Andrea, insert metadata here please
+---
+title: Response design for classification
+summary: In this tutorial, you will inform your response design by building a decision tree for your classification.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- Land cover mapping
+- Forest mapping
+- Random Forests
+- Supervised Classification
+- Response design
+- Accuracy
+- Accuracy assessment
+
+group:
+- category: SEPAL
+  stage: Classification
+- category: SEPAL
+  stage: Area estimation/Accuracy Assessment
+---
 
 
 -----------------------------------
@@ -8,7 +37,7 @@ Response design for classification
 1. Background
 --------------
 
-Creating consistent labelling protocols is necessary for creating accurate training data and accurate sample based estimates (see the tutorial named "Area and uncertainty estimation" hosted on OpenMRV). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover / land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection. The response design lays out an objective procedure that interpreters can follow and that reduces interpreter bias.
+Creating consistent labelling protocols is necessary for creating accurate training data and accurate sample based estimates (see the tutorial here on OpenMRV under process "Area estimation / Accuracy Assessment" and tool "SEPAL"). They are especially important when more than one researcher is working on a project and for reproducible data collection. Response design helps a user assign a land cover / land use class to a spatial point. The response design is part of the metadata for the assessment and should contain the information necessary to reproduce the data collection. The response design lays out an objective procedure that interpreters can follow and that reduces interpreter bias.
 
 
 2. Learning objectives
@@ -59,7 +88,7 @@ In this tutorial, you will inform your response design by building a decision tr
 
     i. We’ll define Forest as an area with over 70% tree cover.
     ii. We’ll define Non-forest as areas with less than 70% tree cover. This will capture urban areas, water, and agricultural fields.
-    iii. We will use these definitions for the tutorial hosted on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL."
+    iii. We will use these definitions for the tutorial hosted on OpenMRV under process "Classification" and tool "SEPAL".
 
   b. For creating your own classifications, here’s some things to keep in mind:
 
@@ -79,4 +108,19 @@ In this tutorial, you will inform your response design by building a decision tr
 
 =========================
 
-.. Andrea, add footer information here
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Response design for classification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|

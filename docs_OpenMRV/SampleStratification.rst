@@ -1,4 +1,42 @@
-.. Andrea, insert metadata here
+---
+title: Sample design and stratification
+summary: We will use the SEPAL SAE-Design tool to create a stratified area estimate. The SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map will depend on your expected overall accuracy.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- CEO
+- Planet Labs
+- Sampling design
+- Sample design
+- Sample selection
+- Sample
+- Sampling frame
+- Stratified
+- Simple Random
+- Systematic
+- Response design
+- Survey
+- Survey design
+- Reference data
+- Reference classification
+- Reference observations
+
+group:
+- category: SEPAL
+  stage: Sampling
+- category: Collect Earth Online
+  stage: Reference data collection
+---
 
 ---------------------------------
 Sample design and stratification
@@ -19,8 +57,8 @@ We will use the SEPAL SAE-Design tool to create a stratified area estimate. The 
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account and a Collect Earth Online (CEO) account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
-* A previously generated map. Please see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification.
+* A SEPAL account and a Collect Earth Online (CEO) account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL and CEO.
+* A previously generated map. Here the process will be demonstrated for the output of the tutorial here on OpenMRV under process "Classification" and tool "SEPAL". This is made available to you as a GEE asset (ID: users/openmrv/Classification_Module2_Amazon), but you will need to first export it to your Google Drive, download it to your local machine, and then upload it to SEPAL following instructions below if you are going to use it in this tutorial. Information about the Export process can be found here on OpenMRV under process "Pre-processing" and tool "GEE".
 
 3. Tutorial: Sample design and stratification
 ----------------------------------------------
@@ -28,7 +66,7 @@ We will use the SEPAL SAE-Design tool to create a stratified area estimate. The 
 3.1 [Optional] Uploading your classification map
 =================================================
 
-You will need to upload a classification map if you did not create a classification map in the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification.
+You will need to upload a classification map if you did not create a classification map in the tutorials here on OpenMRV under process "Classification" and tools "SEPAL" and "GEE". Alternatively, you can use the GEE asset 'users/openmrv/Classification_Module2_Amazon' (note: you will need to first export this asset to your Google Drive and download it to you local machine prior to uploading it to SEPAL).
 
 There are two tools that can be used to upload files. The first is RStudio, and the second is the File transfer Management app.
 
@@ -70,9 +108,9 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 3.2 Creating a stratified random sample
 ========================================
 
-We will use SEPAL to create a stratified random sample. We will use a raster of your classification either saved to SEPAL (please see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification) or uploaded to SEPAL using the instructions in 3.1 above. This classification is a previously generated map.
+We will use SEPAL to create a stratified random sample. We will use a raster of your classification either saved to SEPAL (please see the tutorial here on OpenMRV under process "Classification" and tool "SEPAL") or uploaded to SEPAL using the instructions in 3.1 above. This classification is a previously generated map.
 
-If you have a large area you are stratifying, please first increase the size of your instance (see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials).
+If you have a large area you are stratifying, please first increase the size of your instance (if you need an introduction to SEPAL, see the tutorial here on OpenMRV under tool "SEPAL" to see how increase the size of your instace).
 
 A well-prepared sample can provide a robust estimate of the parameters of interest for the population (percent forest cover, for example). The goal of a sample is to provide an unbiased estimate of some population measure (e.g. proportion of area), with the smallest variance possible, given constraints including resource availability. Two things to think about for sample design are: do you have a probability based sample design? That is, does every sample location have some probability of being sampled? And second, is it geographically balanced? That is, are all regions in the study area represented. These factors are required for the standard operating procedures when reporting for REDD+.
 
@@ -113,11 +151,10 @@ These directions will provide a stratified random sample of the proper sampling 
 6. The steps necessary to design the stratified area estimator are located on the left side of the screen and they need to be completed sequentially from top to bottom.
 7. Select **Map input** on the left side of the screen.
 
-  a. For this tutorial, we’ll use the classification from the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification. You may also use an uploaded classification.
-  b. In the **Data type** section, click **Input.**
-  c. In the **Browse** window that opens, navigate to the saved SEPAL classification or your uploaded classifiation and select it.
-  d. Then click **Select.**
-  e. Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this tutorial will be saved.
+  a. In the **Data type** section, click **Input.**
+  b. In the **Browse** window that opens, navigate to the saved SEPAL classification or your uploaded classifiation and select it.
+  c. Then click **Select.**
+  d. Note that the **Output folder** section shows you where in your SEPAL workspace all the files generated from this tutorial will be saved.
 
 8. Next, click **Strata areas** on the left side of the screen.
 9. In the **Area calculation** section, select **OFT.** OFT stands for the Open Foris Geospatial Toolkit. R is slower but avoids some errors that arise with OFT.
@@ -348,7 +385,7 @@ For projects with large sample sizes, where you want to have multiple people col
   a. Collect earth will ask you to confirm, click OK.
   b. You can now visit your project from your institution’s page!
 
-16. For instructions on collecting data, please see the tutorial hosted on OpenMRV titled "Data collection with data quality management approaches" under Sampling design.
+16. For instructions on collecting data, please see the tutorials here on OpenMRV under process "Sampling design" and tools "SEPAL" and "CEO".
 
 4. Frequently Asked Questions (FAQs)
 -------------------------------------
@@ -360,14 +397,34 @@ For more information, please see the Institutional Manual available on the colle
 5. References
 --------------
 
-* Olofsson et al. 2014. Good practices for assessing accuracy and estimating area of land change, Remote Sensing of Environment 148, 42-57
-* GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome
-* GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1, (GOFC-GOLD Land Cover Project Office, Wageningen University, The Netherlands)
-* Gallego, FJ. 2004. Remote sensing and land cover area estimation. International Journal of Remote Sensing, 25(15): 3019-3047, DOI: 10.1080/01431160310001619607
-* IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
-* REDD Compass: https://www.reddcompass.org/
+Gallego, F.J., 2004. Remote sensing and land cover area estimation. International Journal of Remote Sensing, 25(15), pp.3019-3047. https://doi.org/10.1080/01431160310001619607
+
+GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome
+
+GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1, (GOFC-GOLD Land Cover Project Office, Wageningen University, The Netherlands)
+
+IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
+
+Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. https://doi.org/10.1016/j.rse.2014.02.015
+
+REDD Compass: https://www.reddcompass.org/
 
 
 =======================================
 
-.. Andrea, put footer information here!
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Sample design and stratification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|

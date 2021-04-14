@@ -1,4 +1,28 @@
-.. Andrea, add metadata information here
+---
+title: Two date change detection
+summary: In this tutorial you will create optical mosaics for change detection using SEPAL, become associated with methods of detecting change for an area of interest using the SEPAL platform, and conduct a two-date change detection.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- Planet Labs
+- Change detection
+- Deforestation mapping
+- Degradation mapping
+
+group:
+- category: SEPAL
+  stage: Change Detection
+---
 
 --------------------------
 Two date change detection
@@ -21,7 +45,7 @@ Most methods for change detection use algorithms backed by statistical methods t
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
+* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
 
 ----------------------------------------
 3. Tutorial: Two date change detection
@@ -159,7 +183,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 10. If you need to modify classification of any of your data points, you can click on the point to return to the classification options. You can also remove the point in this way.
 11. When you are happy with your data points, click on the **AUX** button in the bottom right. Select "Terrain" and "Water". This will add auxiliary data to the classification.
 12. Click on the **CLS** button in the bottom right. You can change your classification type to see how the output changes.
-8. If it has not already, SEPAL will now load a preview of your classification.
+13. If it has not already, SEPAL will now load a preview of your classification.
 
 .. image:: images/change_detection_model_preview.png
    :alt: A preview of the change detection model output.
@@ -199,7 +223,7 @@ With SEPAL you can examine your classification and collect additional training d
 
 
 4. Frequently Asked Questions (FAQs)
-------------------------------------
+-------------------------------------
 
 **I am getting an error stating "Google Earth Engine error: Failed to create preview" at the final stage of my classification. Help!**
 
@@ -211,4 +235,19 @@ If you don’t see the Google Earth Engine asset option, you’ll need to connec
 
 ===================================
 
-.. Andrea, insert footer information here
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Two date change detection. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|

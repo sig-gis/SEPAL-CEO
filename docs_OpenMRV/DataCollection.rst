@@ -1,4 +1,39 @@
-.. Andrea, add metadata here?
+---
+title: Data collection with data quality management approaches
+summary: This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations. You will also learn how to create a data quality assurance plan that meets the needs and budgets of your specific mapping projects and management needs.
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- CEO
+- Planet Labs
+- High Resolution
+- Sampling design
+- Sample design
+- Sample selection
+- Sample
+- Sampling frame
+- Stratified
+- Response design
+- Survey
+- Survey design
+- Reference data
+- Reference classification
+- Reference observations
+
+group:
+- category: Collect Earth Online
+  stage: Reference data collection
+---
 
 --------------------------------------------------------
 Data collection with data quality management approaches
@@ -21,10 +56,10 @@ Much of this information is based on Standard Operating Procedures developed by 
 
 2.1 Pre-requisites
 
-* A SEPAL account. Please see the tutorial on OpenMRV named "An introduction to SEPAL" under the SEPAL tool materials.
-* A previously generated map. Please see the tutorial on OpenMRV named "Creating a classification using machine learning algorithms in SEPAL" under Classification.
-* A classification scheme. Please see the tutorial on OpenMRV named "Response design for classification" under Training data collection.
-* A sampling design and corresponding CEO project. Please see the tutorial on OpenMRV named "Sample design and stratification" under Sampling design.
+* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
+* A previously generated map. Please see the tutorials here on OpenMRV under process "Classification" and tools "SEPAL" and "GEE".
+* A classification scheme. Please see the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
+* A sampling design and corresponding Collect Earth Online (CEO) project. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". You can find more information about CEO, sampling design, sample selection and other tools under processes "Sampling design" and "Sample data collection" and tools "SEPAL", "QGIS", "AREA2", "GEE", "CEO", and "CE". 
 
 
 3. Tutorial: Data collection with data quality management approaches
@@ -37,9 +72,9 @@ Much of this information is based on Standard Operating Procedures developed by 
 
 Your classification scheme should be consistent between your stratification of a map and your data collection.
 
-If you have not already done so, please create a response design using the tutorial on OpenMRV named "Response design for classification" under Training data collection. If your classification was trained using training points that differ substantially from your classification scheme, you may need to collect new training data and re-run your classification (see "Creating a classification using machine learning algorithms in SEPAL" under Classification).
+If you have not already done so, please create a response design using the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL" (we will use the classification scheme from this tutorial). If your classification was trained using training points that differ substantially from your classification scheme, you may need to collect new training data and re-run your classification (see process "Classification" here OpenMRV). Alternatively, you can find more information about response design here on OpenMRV under process "Sample data collection" and tools "GEE", "AREA2", "CEO", and "CE".
 
-As a reminder, your classification used to classify our Forest/Non-forest land cover map was as follows:
+We will use the classification scheme below, used to classify a Forest/Non-forest land cover map:
 
 .. image:: images/classification_scheme.png
    :alt: The classification tree.
@@ -195,7 +230,7 @@ This information should be documented as part of the decision making process for
 3.3 Collecting data
 ====================
 
-After training and sample allocation, it is time to collect data. Here, we will demonstrate collecting data in CEO to ensure compliance with SOP and oversight requiring interpreter names be collected for the points they collect. Please see the tutorial on OpenMRV named "Sample design and stratification" under Sampling design.
+After training and sample allocation, it is time to collect data. Here, we will demonstrate collecting data in CEO to ensure compliance with SOP and oversight requiring interpreter names be collected for the points they collect. Please see the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL" (we will use the Collect Earth Online project created in this tutorial). More information about sampling design and sample data collection can be found here on OpenMRV under processes "Sampling design" and "Sample data collection", and tools "QGIS", "GEE", "AREA2", "CEO", and "CE".
 
 **Data collection by interpreters.**
 
@@ -208,7 +243,7 @@ In general, data collection should include the following steps:
 
 **Data collection in CEO**
 
-1. To collect data in CEO, navigate to the project you created in the tutorial on OpenMRV named "Sample design and stratification" under Sampling design. Your screen should look like this:
+1. To collect data in CEO, navigate to the project you created in the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". Your screen should look like this:
 
 .. image:: images/data_collection_CEO.png
    :alt: The data collection interface in CEO
@@ -484,4 +519,19 @@ Much of this information is based on Standard Operating Procedures developed by 
 
 ======================================
 
-.. Andrea, put footer information here
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. Data collection with data quality management approaches. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|

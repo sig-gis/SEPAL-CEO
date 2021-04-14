@@ -1,4 +1,67 @@
-.. Andrea, add metadata here!
+---
+title: An introduction to SEPAL
+summary: The System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL) is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE). More information can be found at https://sepal.io/
+author: Karen Dyson
+creation date: April, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-1
+- Optical sensors
+- Remote sensing
+- GEE
+- SEPAL
+- CEO
+- Planet Labs
+- Change detection
+- Land cover mapping
+- Forest mapping
+- Deforestation mapping
+- Degradation mapping
+- Forest degradation mapping
+- Random Forests
+- K-means
+- Supervised Classification
+- High Resolution
+- Overall accuracy
+- User's accuracy
+- Producer's accuracy
+- Sampling design
+- Sample design
+- Sample selection
+- Sample
+- Sampling frame
+- Stratified
+- Simple Random
+- Systematic
+- Response design
+- Survey
+- Survey design
+- Accuracy
+- Accuracy assessment
+- Area Estimation
+- Reference data
+- Reference classification
+- Reference observations
+- Colombia
+- Mozambique
+- Cambodia
+
+group:
+- category: SEPAL
+  stage: Composite creation/Pre-process
+- category: SEPAL
+  stage: Change Detection
+- category: SEPAL
+  stage: Classification
+- category: SEPAL
+  stage: Sampling
+- category: SEPAL
+  stage: Area estimation/Accuracy Assessment
+---
 
 ---------------------------------------
 An introduction to SEPAL
@@ -224,8 +287,23 @@ Signing up for Google Earth Engine is required in order to properly export image
 --------------
 
 * The SEPAL wiki, found online at https://github.com/openforis/sepal/wiki
-* Gomes, V.C., Queiroz, G.R. and Ferreira, K.R., 2020. An overview of platforms for big earth observation data management and analysis. Remote Sensing, 12(8), p.1253.
+* Gomes, V.C., Queiroz, G.R. and Ferreira, K.R., 2020. An overview of platforms for big earth observation data management and analysis. Remote Sensing, 12(8), p.1253. https://doi.org/10.3390/rs12081253
 
 =======================
 
-.. Andrea, insert footer information here!
+.. image:: images/cc.png
+
+|
+
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+
+Copyright 2021, World Bank 
+
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+
+| Attribution
+Dyson, K. 2021. An introduction to SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+
+.. image:: images/wb_fcpf_gfoi.png
+
+|
