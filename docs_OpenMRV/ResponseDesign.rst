@@ -2,7 +2,7 @@
 title: Response design for classification
 summary: In this tutorial, you will inform your response design by building a decision tree for your classification.
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -114,12 +114,12 @@ In this tutorial, you will inform your response design by building a decision tr
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-Copyright 2021, World Bank 
+Copyright 2021, World Bank
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Response design for classification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+Dyson, K. 2021. Response design for classification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. image:: images/wb_fcpf_gfoi.png
 
