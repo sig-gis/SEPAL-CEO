@@ -2,7 +2,7 @@
 title: Sample design and stratification
 summary: We will use the SEPAL SAE-Design tool to create a stratified area estimate. The SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map will depend on your expected overall accuracy.
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -53,6 +53,7 @@ Stratified random sampling is an easy to use, easy to understand, and well suppo
 We will use the SEPAL SAE-Design tool to create a stratified area estimate. The SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map will depend on your expected overall accuracy.
 
 * Generate a stratified random sample.
+* Create a CEO project using your stratified random sample.
 
 2.1 Pre-requisites
 ===================
@@ -418,12 +419,12 @@ REDD Compass: https://www.reddcompass.org/
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-Copyright 2021, World Bank 
+Copyright 2021, World Bank
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Sample design and stratification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+Dyson, K. 2021. Sample design and stratification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. image:: images/wb_fcpf_gfoi.png
 

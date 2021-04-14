@@ -2,7 +2,7 @@
 title: Creating a classification using machine learning algorithms in SEPAL
 summary: In SEPAL you can run a classification on either a mosaic SEPAL recipe or on a GEE asset. In this tutorial, you will complete a classification of a mosaicked image using a random forests classifier contained within the easy-to-use Classification tool in SEPAL.
 author: Karen Dyson
-creation date: April, 2021
+creation date: March, 2021
 language: English
 publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
 
@@ -206,9 +206,7 @@ Not all pixels in the same classes have the exact same values—there is some na
 |
 
 .. note::
-   If you are using QGIS etc. to collect training data, you should also collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain.
-
-   Note that you may not have any clouds in your Landsat imagery.
+   If you are using QGIS etc. to collect training data, you should also collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain. However, you may not have any clouds in your Landsat imagery.
 
 14. Continue collecting Non-forest points. Again, be sure to spread the points out across the study area.
 15. Once again when you are done collecting data for these categories, zoom out to the full extent of the study region.
@@ -314,12 +312,17 @@ With SEPAL you can examine your classification and collect additional training d
 4. Frequently Asked Questions (FAQs)
 -------------------------------------
 
+**My classification results are poor. What can I do to improve them?**
+
+In SEPAL, there are multiple things you can do to improve your classification results. First, try collecing more trianing data points for each class. These should capture the variability within each class and cover the different areas of the study area. When collecting data points, make sure that the point contains only the land cover class of interest (no plots with a mixture of your land cover categories). Second, you can try different classifiers available in SEPAL, including classification and regression trees (CART), Naive Bayes, support vector machine (SVM), minimum distance, and decision trees (requires a CSV). These options are located under the **CLS** tab.
 
 
 5. References
 --------------
 
 The workflow in this tutorial has been adapted from material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University.
+
+Additional information
 
 =======================
 
@@ -329,12 +332,12 @@ The workflow in this tutorial has been adapted from material developed by Dr. Po
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-Copyright 2021, World Bank 
+Copyright 2021, World Bank
 
-This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Creating a classification using machine learning algorithms in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_ 
+Dyson, K. 2021. Creating a classification using machine learning algorithms in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. image:: images/wb_fcpf_gfoi.png
 
