@@ -51,7 +51,6 @@ Part 1. Specify the classification scheme
    :align: center
 
 
-
 .. figure:: images/classification_scheme.png
    :alt: The classification scheme we will use for this exercise, with two classes forest and non-forest
    :width: 450
@@ -120,15 +119,12 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 2. Under **Area of Interest:**
 
   a. Select **Draw Polygon** from the dropdown list.
+  b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
 .. figure:: images/aoi_dropdown.png
    :alt: Area of interest dropdown menu.
    :width: 450
    :align: center
-
-|
-
-  b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
 .. figure:: images/rondonia.png
    :alt: A polygon drawn around the State of Rondonia.
