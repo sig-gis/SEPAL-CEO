@@ -74,11 +74,11 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 1. For either approach, first select the purple wrench **Apps** button. If you have an existing tab open, you may need to click the **plus** sign in the top right.
 2. To use RStudio, choose the **R Studio** application. You may be prompted to enter your SEPAL username and password to enter R Studio.
 
-.. image:: images/apps_rstudio.png
+.. figure:: images/apps_rstudio.png
    :alt: The apps screen, with RStudio shown.
    :align: center
 
-|
+
 
   a. This will open an instance of RStudio, an IDE for the R programming language.
   b. You should see a ‘Files’ tab in the lower right window.
@@ -87,11 +87,11 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 
   c. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
 
-.. image:: images/rstudio_interface.png
+.. figure:: images/rstudio_interface.png
    :alt: The RStudio interface in SEPAL.
    :align: center
 
-|
+
 
   d. In the **Upload Files** window, click **Choose File.**
   e. Navigate to the correct location on your drive, select your map and click Open.
@@ -122,20 +122,20 @@ These directions will provide a stratified random sample of the proper sampling 
 3. Type ‘stratified’ into the search bar or scroll through the different process apps to find “Stratified Area Estimator--Design”
 4. Select **Stratified Area Estimator-Design.** Note that loading the tool takes a few minutes.
 
-.. image:: images/stratified_area_estimator_design.png
+.. figure:: images/stratified_area_estimator_design.png
    :alt: Stratified Area Estimator-Design tool.
    :align: center
 
-|
+
 
 .. note::
    Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.
 
-   .. image:: images/fail_stratified_estimator_tool.png
+   .. figure:: images/fail_stratified_estimator_tool.png
       :alt: Failure of the stratified area estimator tool.
       :align: center
 
-|
+
 
 5. When the tool loads properly, it will look like the image below. Read some of the information on the **Introduction** page to acquaint yourself with the tool.
 
@@ -143,11 +143,11 @@ These directions will provide a stratified random sample of the proper sampling 
   b. The Description, Background, and "How to use the tool" panels provide more information about the tool.
   c. The Reference and Documents panel provides links to other information about stratified sampling, such as REDD Compass.
 
-.. image:: images/stratified_estimator_interface.png
+.. figure:: images/stratified_estimator_interface.png
    :alt: The stratified estimator interface.
    :align: center
 
-|
+
 
 6. The steps necessary to design the stratified area estimator are located on the left side of the screen and they need to be completed sequentially from top to bottom.
 7. Select **Map input** on the left side of the screen.
@@ -162,11 +162,11 @@ These directions will provide a stratified random sample of the proper sampling 
 
    If you choose to use OFT, it will return values for the map that are incorrect if your map stored using certain formats (e.g. signed 8 bit). If this is the case, then please use the R option and it will work correctly. If using OFT, always compare the **Display map** with the **Legend labeling** values returned to make sure they match.
 
-.. image:: images/stratified_estimator_map_legend.png
+.. figure:: images/stratified_estimator_map_legend.png
    :alt: Stratified estimator tool showing the display map and legend and areas filled out.
    :align: center
 
-|
+
 
 10. The **“Do you want to display the map”** checkbox allows you to display your geotiff under “Display map”.
 
@@ -206,11 +206,11 @@ These directions will provide a stratified random sample of the proper sampling 
 .. warning::
    DO NOT assign your No Data class to either high or low confidence.
 
-.. image:: images/high_low_expected_user_accuracy.png
+.. figure:: images/high_low_expected_user_accuracy.png
    :alt: High and low expected user accuracy.
    :align: center
 
-|
+
 
 15. When you’re satisfied, click on **Sampling Size** on the left panel.
 
@@ -225,11 +225,11 @@ These directions will provide a stratified random sample of the proper sampling 
   e. You can also check the “Do you want to modify the sampling size” box.
   f. If you would like, you can edit the name of the file & download a csv with the sample design. The file contains the table shown above with some additional calculations. However, SEPAL will automatically save this file.
 
-.. image:: images/stratified_estimator_sampling.png
+.. figure:: images/stratified_estimator_sampling.png
    :alt: The stratified estimator sampling size and distribution of samples screen.
    :align: center
 
-|
+
 
 16. When you’re ready, click on **Sample allocation** to the left.
 
@@ -239,11 +239,11 @@ These directions will provide a stratified random sample of the proper sampling 
     i. The resulting **distribution of samples** should look similar to the below image. These values will vary depending on your map and the standard error of expected overall accuracy you set.
     ii. Sometimes this step fails, no download button will appear, and you will need to refresh the page and restart the process.
 
-.. image:: images/stratified_estimator_map.png
+.. figure:: images/stratified_estimator_map.png
    :alt: The stratified estimator tool's sample allocation screen.
    :align: center
 
-|
+
 
 17. Now fill out the four fields to the right.
 
@@ -268,11 +268,11 @@ For projects with large sample sizes, where you want to have multiple people col
 2. Open your downloaded .csv file in Excel or the spreadsheet program of your choice.
 3. First, make sure that your data doesn’t contain a strata of ‘no data’. This can occur if your classification isn’t a perfect rectangle, as seen in this example of Nepal (the red circles are samples that the tool created in the ‘no data’ area). **If you have ‘no data’ rows, return to the SEPAL stratified estimator, and be sure to not include your no data class in the strata selection step.**
 
-.. image:: images/example_data_sepal_classification.png
+.. figure:: images/example_data_sepal_classification.png
    :alt: Example data from the SEPAL classification.
    :align: center
 
-|
+
 
 4. Now we need to add the correct columns for CEO. Remember that Latitude is the Y axis and longitude is the X axis. For CEO, the first three columns must be in the following order: longitude, latitude, plotid. The spelling and order matter. If they are wrong CEO will not work correctly.
 
@@ -353,12 +353,12 @@ You can view an example of preparing the .csv for CEO on `You Tube <https://www.
     xi. Create one answer for each of your land use types. **Here we will use 1 and 2 to match our “Forest” and “Non-forest” in our classification.** Be sure to include all your land use types.
     xiii. You can add additional survey questions if you’d like to experiment. An example of two survey cards is shown below.
 
-.. image:: images/example_survey_card.png
+.. figure:: images/example_survey_card.png
    :alt: An example survey card setup
    :width: 450
    :align: center
 
-|
+
 
 11. When you’re done, click [Create Project].
 
@@ -424,9 +424,7 @@ REDD Compass: https://www.reddcompass.org/
 
 =======================================
 
-.. image:: images/cc.png
-
-|
+.. figure:: images/cc.png
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -437,6 +435,6 @@ This work was developed by Karen Dyson under World Bank contract with the Food a
 | Attribution
 Dyson, K. 2021. Sample design and stratification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
+.. figure:: images/wb_fcpf_gfoi.png
 
 |

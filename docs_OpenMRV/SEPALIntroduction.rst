@@ -99,21 +99,21 @@ In this tutorial, you will be introduced to the SEPAL interface. You will learn 
 3.1 Sign up to SEPAL
 =====================
 
-|
 
-.. image:: images/sepal_splash_page.png
+
+.. figure:: images/sepal_splash_page.png
    :alt: Sepal splash page.
    :align: center
 
-|
+
 
 You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-.. image:: images/request_sepal.png
+.. figure:: images/request_sepal.png
    :alt: Request access to sepal.io
    :align: center
 
-|
+
 
 1. If you do not have a SEPAL account, you can request access here: http://tinyurl.com/fao-sepal.
 
@@ -149,11 +149,11 @@ Signing up for Google Earth Engine is required in order to properly export image
 1. Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login**.
 
-.. image:: images/sepal_login.png
+.. figure:: images/sepal_login.png
    :alt: SEPAL login page
    :align: center
 
-|
+
 
 .. note::
    When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
@@ -163,11 +163,11 @@ Signing up for Google Earth Engine is required in order to properly export image
 
 1. Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
-.. image:: images/sepal_home.png
+.. figure:: images/sepal_home.png
    :alt: SEPAL home screen
    :align: center
 
-|
+
 
 2. There are four main navigation tabs in the dock on the left side of the screen.
 
@@ -191,23 +191,23 @@ Signing up for Google Earth Engine is required in order to properly export image
 
 6. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
-.. image:: images/user_report_panel.png
+.. figure:: images/user_report_panel.png
    :alt: User Report panel.
    :width: 350px
    :align: center
 
-|
+
 
 3.6 The Process tab
 ====================
 
 1. Click the **Process** tab on the left side of the window.
 
-.. image:: images/process_tab_location.png
+.. figure:: images/process_tab_location.png
    :alt: Arrow pointing out the process tab location
    :align: center
 
-|
+
 
 2. You should now see four options in the center of the screen.
 
@@ -225,12 +225,12 @@ Signing up for Google Earth Engine is required in order to properly export image
 
 2. For example, click the **downloads** folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.
 
-.. image:: images/files_menu.png
+.. figure:: images/files_menu.png
    :alt: The files menu
    :align: center
    :width: 350
 
-|
+
 
 3. Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.
 
@@ -256,23 +256,23 @@ Signing up for Google Earth Engine is required in order to properly export image
   d. Press Enter on your keyboard.
   e. Wait for the new instance to start. This will take several minutes.
 
-.. image:: images/terminal.png
+.. figure:: images/terminal.png
    :alt: The terminal page, including an example of changing the instance
    :align: center
    :width: 450
 
-|
+
 
 3.9 The Apps tab
 -----------------
 
 1. Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.
 
-.. image:: images/apps_interface.png
+.. figure:: images/apps_interface.png
    :alt: The Apps interface
    :align: center
 
-|
+
 
 2. This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
@@ -291,9 +291,7 @@ Signing up for Google Earth Engine is required in order to properly export image
 
 =======================
 
-.. image:: images/cc.png
-
-|
+.. figure:: images/cc.png
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -304,6 +302,6 @@ This work was developed by Karen Dyson under World Bank contract with the Food a
 | Attribution
 Dyson, K. 2021. An introduction to SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
+.. figure:: images/wb_fcpf_gfoi.png
 
 |

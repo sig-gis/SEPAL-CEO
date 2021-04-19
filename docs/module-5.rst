@@ -214,22 +214,22 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 
   Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
 
-.. image:: images/version_control_system.png
+.. figure:: images/version_control_system.png
    :alt: Figure showing how version control systems work.
 
-|
+
 
   Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
 
 
-.. image:: images/version_control_multiple_contributors.png
+.. figure:: images/version_control_multiple_contributors.png
    :alt: Version control with multiple contributors
 
-|
+
 
   A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.github.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.github.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
 
-|
+
 
 Of version control systems, Git (and implementation GitHub that includes a GUI Desktop version) is perhaps the most widely used. Here we provide a very basic overview of Git and links to additional resources.
 
@@ -252,20 +252,20 @@ Part 2: Google Earth Engine version control
 
 Google Earth Engine has implemented version control and version history for all scripts and repositories written on the platform. To access the version control, click the history icon next to a script in order to compare or revert it to an older version.
 
-.. image:: images/gee_scripts.png
+.. figure:: images/gee_scripts.png
    :alt: The GEE scripts tab.
    :width: 450
    :align: center
 
-|
+
 
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
-.. image:: images/earth_engine_code_editor.png
+.. figure:: images/earth_engine_code_editor.png
    :alt: Earth engine code editor
    :align: center
 
-|
+
 
 **Congratulations, you have learned about version control options for your project!**
 
@@ -325,7 +325,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                               |                                      |
 +-----------------------------------------+--------------------------------------+
 
-|
+=====================
 
 +-------------------------------------------+-------------------------------------+
 | Creating Band Ratios, Indices and Image   |                                     |
@@ -343,7 +343,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                                 |                                     |
 +-------------------------------------------+-------------------------------------+
 
-|
+=====================
 
 +------------------------------------+-----------------------------------------------+
 | Image Classification Scheme        |                                               |
@@ -369,7 +369,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-|
+=====================
 
 +------------------------------------+-----------------------------------------------+
 | Collect Reference Data             |                                               |
@@ -387,7 +387,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-|
+=====================
 
 +------------------------------------+-----------------------------------------------+
 | Perform Land Cover Classification  |                                               |
@@ -404,7 +404,7 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-|
+=====================
 
 +------------------------------------+-----------------------------------------------+
 | Perform Accuracy Assessment        |                                               |
@@ -420,6 +420,6 @@ When completing this exercise, think about the work you have completed in Module
 | analysis)                          |                                               |
 +------------------------------------+-----------------------------------------------+
 
-|
+
 
 **Congratulations! You have completed the SEPAL-CEO Area Estimation workbook!**

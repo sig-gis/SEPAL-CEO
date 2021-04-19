@@ -74,14 +74,14 @@ Before we can identify change, we first need to have images to compare. We will 
 .. note::
    If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.
 
-|
 
-.. image:: images/retrieval_mosaic.png
+
+.. figure:: images/retrieval_mosaic.png
    :alt: The retrieval screen for mosaics.
    :width: 450
    :align: center
 
-|
+
 
 4. Repeat steps 2 & 3 but change the **Date** parameter to 2020.
 
@@ -113,7 +113,7 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
   d. Click **Apply**.
   e. Repeat steps a-d above for your 2020 optical mosaic.
 
-.. image:: images/two_assets.png
+.. figure:: images/two_assets.png
    :alt: Two assets ready for classification.
    :align: center
 
@@ -128,12 +128,12 @@ You can view a demonstration of setting up this classification on `YouTube <http
 
 Now that we have the mosaics created, we will collect change training data. While more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2020: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2020 there are four pathways: a pixel can be forest in 2015 and in 2020 (stable forest); a pixel can be non-forest in 2015 and in 2020 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this tutorial to guide your own change classification, remember to write down your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
-.. image:: images/land_cover_flow_chart.png
+.. figure:: images/land_cover_flow_chart.png
    :alt: A land cover change flow chart.
    :width: 450
    :align: center
 
-|
+
 
 1. In the Legend menu, click **+ Add** This will add a place for you to write your first class label.
 
@@ -144,11 +144,11 @@ Now that we have the mosaics created, we will collect change training data. Whil
   d. Choose colors for each class as you see fit.
   e. Click **Close**.
 
-.. image:: images/3_classes.png
+.. figure:: images/3_classes.png
    :alt: Classification legend.
    :align: center
 
-|
+
 
 2. Now, we’ll create training data. First, let's pull up the correct imagery. Click on "Select layers to view." As a reminder, available base layers include SEPAL (Minimal dark Sepal default layer), Google Satellite, and Planet NICFI composites.
 
@@ -185,7 +185,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 
   d. One trick for determining change is to place a "Change" point in an area of suspected change. Then you can compare 2015 and 2020 imagery without losing the place you were looking at. If it is not Change, you can switch which classification you have identified the point as.
 
-.. image:: images/finding_change.png
+.. figure:: images/finding_change.png
    :alt: Using Google imagery to examine areas for change.
    :align: center
 
@@ -195,7 +195,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 12. Click on the **CLS** button in the bottom right. You can change your classification type to see how the output changes.
 13. If it has not already, SEPAL will now load a preview of your classification.
 
-.. image:: images/change_detection_model_preview.png
+.. figure:: images/change_detection_model_preview.png
    :alt: A preview of the change detection model output.
    :width: 450
    :align: center
@@ -227,11 +227,11 @@ Following analysis you should spend some time looking at your change detection i
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-.. image:: images/examine_change_detection_map.png
+.. figure:: images/examine_change_detection_map.png
    :alt: Examining your change detection map
    :align: center
 
-|
+
 
 1. Turn on the imagery for your Classification and pan and zoom around the map.
 2. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
@@ -251,9 +251,7 @@ If you don’t see the Google Earth Engine asset option, you’ll need to connec
 
 ===================================
 
-.. image:: images/cc.png
-
-|
+.. figure:: images/cc.png
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -264,6 +262,6 @@ This work was developed by Karen Dyson under World Bank contract with the Food a
 | Attribution
 Dyson, K. 2021. Two date change detection. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
+.. figure:: images/wb_fcpf_gfoi.png
 
 |

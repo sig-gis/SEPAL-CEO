@@ -67,12 +67,12 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   b. Select from EE table
   c. Draw a polygon
 
-.. image:: images/area_of_interest.png
+.. figure:: images/area_of_interest.png
    :alt: The Area of Interest menu
    :width: 350
    :align: center
 
-|
+
 
 5. We will use the **Select a country/province** option.
 
@@ -82,11 +82,11 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   d. [Optional] You can add a **Buffer** to your mosaic. This will include an area around the province of the specified size in your mosaic.
   e. Click **Next.**
 
-.. image:: images/country_province.png
+.. figure:: images/country_province.png
    :alt: The Country or Province selection screen.
    :align: center
 
-|
+
 
 6. In the **Date** menu you can select the **Year** you are interested in or click on **More**.
 
@@ -98,11 +98,11 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
     i. Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.
     ii. Click **Apply**.
 
-.. image:: images/date_menu.png
+.. figure:: images/date_menu.png
    :alt: The date menu.
    :align: center
 
-|
+
 
 7. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected. Then click **Done**.
 
@@ -117,69 +117,69 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   b. To do so, notice the five tabs in the lower right. You can adjust the initial search parameters using the first three of these tabs. For example, Click on **Dat** to expand the date range if you would like.
   c. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
-.. image:: images/mosaic_preview.png
+.. figure:: images/mosaic_preview.png
    :alt: A preview of your mosaic.
    :align: center
 
-|
+
 
 9. We’re now going to go through the **scene selection process**. This allows you to change which specific images to include in your mosaic.
 
   a. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply**.
   b. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
-.. image:: images/scene_selection.png
+.. figure:: images/scene_selection.png
    :alt: Selecting scenes for your mosaic.
    :align: center
 
-|
+
 
 10. Click Apply. The result should look like the below image.
 
   a. Notice the collection of circles over the Mai Ndombe study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven’t selected the scenes yet.
 
-  .. image:: images/scene_selection_zeros.png
+  .. figure:: images/scene_selection_zeros.png
      :alt: Scene selection process showing zeros before selection.
      :align: center
 
-|
+
 
   b. Click the Auto-Select button to auto-select some scenes.
 
-.. image:: images/auto_select_scenes.png
+.. figure:: images/auto_select_scenes.png
    :alt: Arrow showing the button for auto selecting scenes.
    :width: 550
    :align: center
 
-|
+
 
 11. You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click **Select Scenes**. If there is only one scene for an area, that will be the only one selected despite the minimum.
 
-.. image:: images/auto_select_scenes_menu.png
+.. figure:: images/auto_select_scenes_menu.png
    :alt: Menu for auto selecting scenes.
    :width: 350
    :align: center
 
-|
+
 
 12. You should now see imagery overlain with circles indicating how many scenes are selected.
 
-.. image:: images/imagery_number_scenes.png
+.. figure:: images/imagery_number_scenes.png
    :alt: Example of the imagery with the number of scenes selected
    :width: 450
    :align: center
 
-|
+
 
 13. You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
 
     Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
 
-.. image:: images/select_scenes_interface.png
+.. figure:: images/select_scenes_interface.png
    :alt: The select scenes interface showing 0 available and 4 selected scenes
    :align: center
 
-|
+
 
 14. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
 
@@ -190,29 +190,29 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   a. To expand the Landsat image, hover over one of the images and click **Preview**. Click on the image to close the zoomed in graphic and return to the list of scenes.
   b. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
 
-.. image:: images/remove_preview_scenes.png
+.. figure:: images/remove_preview_scenes.png
    :alt: Removing or previewing selected scenes.
    :align: center
 
-|
 
-.. image::images/scene_preview.png
+
+.. figure::images/scene_preview.png
    :alt: Scene preview screen.
    :align: center
 
-|
+
 
 15. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
 
   a. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
   b. You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
-.. image:: images/select_scenes_1.png
+.. figure:: images/select_scenes_1.png
    :alt: Select scenes screen showing one available scene and 3 selected scenes
    :width: 450
    :align: center
 
-|
+
 
 16. You can also change the composing method using the **CMP** button on the lower right.
 
@@ -220,20 +220,20 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   b. For this tutorial, we will leave these at their default settings.
   c. If you make changes, click Apply after you’re done.
 
-.. image:: images/composite.png
+.. figure:: images/composite.png
    :alt: The composite menu.
    :width: 350px
    :align: center
 
-|
+
 
 17. Now we’ll explore the **Bands** dropdown. Click on the **Red Green Blue** at the bottom of the page.
 
-.. image:: images/arrow_bands.png
+.. figure:: images/arrow_bands.png
    :alt: Arrow pointing at the red, green, blue bands.
    :align: center
 
-|
+
 
 18. The below dropdown menu will appear.
 
@@ -241,21 +241,21 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   b. Once selected, the preview will automatically show what the composite will look like.
   c. Use the scroll wheel on your mouse to zoom in to the mosaic and then click and drag to pan around the image. This will help you assess the quality of the mosaic.
 
-.. image:: images/bands_menu.png
+.. figure:: images/bands_menu.png
    :alt: The band combinations menu.
    :width: 350px
    :align: center
 
-|
+
 
 19. The map now shows the complete mosaic that incorporates all of the user-defined settings. Here is an example, yours may look different depending on which scenes you chose.
 
-.. image:: images/completed_mosaic.png
+.. figure:: images/completed_mosaic.png
    :alt: The imagery preview with the completed mosaic shown.
    :width: 450
    :align: center
 
-|
+
 
 20. Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
 
@@ -276,20 +276,20 @@ We will create a mosaic for an area in the Amazon basin.
 
   a. Select **Draw Polygon** from the dropdown list.
 
-.. image:: images/aoi_dropdown.png
+.. figure:: images/aoi_dropdown.png
    :alt: Area of interest dropdown menu.
    :width: 450px
    :align: center
 
-|
+
 
   b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
-.. image:: images/rondonia.png
+.. figure:: images/rondonia.png
    :alt: A polygon drawn around the State of Rondonia.
    :align: center
 
-|
+
 
 3. Now use what you have learned the "Create a Landsat mosaic using select Country/Province" section above to create a mosaic with imagery from the year 2019. Don’t forget to consider which satellites you would like to include and which scenes you would like to include.
 4. Your preview should include imagery data across your entire area of interest. Try also to get a cloud-free mosaic.
@@ -314,45 +314,45 @@ You can view a demonstration of this mosaic creation on `YouTube <https://www.yo
 
   d. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
 
-.. image:: images/save_duplicate_export_recipe.png
+.. figure:: images/save_duplicate_export_recipe.png
    :alt: Save, duplicate, export recipe menu.
    :align: center
 
-|
+
 
 2. Now if you click on the three lines icon, you should see an additional option: **Revert to old revision...**
 
-.. image:: images/revert_to_old_revision.png
+.. figure:: images/revert_to_old_revision.png
    :alt: After saving the menu adds a revert to old revision option.
    :align: center
 
-|
+
 
 3. Clicking on this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.
 
    Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
 
-.. image:: images/revision_menu.png
+.. figure:: images/revision_menu.png
    :alt: Revisions menu dropdown.
    :align: center
 
-|
+
 
 4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery (e.g. see the tutorials here on OpenMRV under process "Classification" and tool "SEPAL").
 
    To download this imagery mosaic to your SEPAL account, click the **Retrieve** button.
 
-.. image:: images/retrieve.png
+.. figure:: images/retrieve.png
    :alt: The retrieve button.
    :align: center
 
-|
 
-.. image:: images/retrieve_menu.png
+
+.. figure:: images/retrieve_menu.png
    :alt: The retrieve menu
    :align: center
 
-|
+
 
 5. A window will appear with the following options:
 
@@ -369,11 +369,11 @@ You can view a demonstration of this mosaic creation on `YouTube <https://www.yo
 
 7. You will notice the **Tasks** icon is now spinning. If you click on it, you will see the data retrieval is in process. This step will take some time.
 
-.. image:: images/retrieval_task.png
+.. figure:: images/retrieval_task.png
    :alt: Retrieval task being carried out
    :align: center
 
-|
+
 
 .. warning::
    If you are retrieving multiple mosaics, be sure to retrieve your mosaics using different names. If you do not change the recipe name between retrieving mosaics, the export may fail since both mosaics have the same name.
@@ -392,7 +392,7 @@ For other tutorials hosted on OpenMRV, you may need to know how to find your Ear
 5. You will see a window with information about your mosaic pop up.
 6. Click on the two overlapping box icon to copy your asset’s location.
 
-.. image:: images/mosaic_information.png
+.. figure:: images/mosaic_information.png
    :alt: Your mosaic’s information pane.
    :align: center
 
@@ -406,9 +406,9 @@ More information on these can be found at: https://landsat.gsfc.nasa.gov/landsat
 
 ==========================================
 
-.. image:: images/cc.png
+.. figure:: images/cc.png
 
-|
+
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -419,6 +419,4 @@ This work was developed by Karen Dyson under World Bank contract with the Food a
 | Attribution
 Dyson, K. 2021. Mosaic generation with SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
-
-|
+.. figure:: images/wb_fcpf_gfoi.png

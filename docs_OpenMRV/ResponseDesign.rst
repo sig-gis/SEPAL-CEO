@@ -60,22 +60,22 @@ In this tutorial, you will inform your response design by building a decision tr
 
 1. Create a decision tree for your land cover or land use classes. There may be one already in use by your department.  The tree should capture the most important classifications for your study. Here is an example:
 
-.. image:: images/land_cover_decision_tree.png
+.. figure:: images/land_cover_decision_tree.png
    :alt: Decision tree for land cover
    :width: 450
    :align: center
 
-|
+
 
   a. This example includes a hierarchical component. For example, the green and red categories have multiple sub-categories, which might be multiple types of forest or crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
   b. For this tutorial, we’ll use a simplified land cover and land use classification as in this second image:
 
-.. image:: images/classification_scheme.png
+.. figure:: images/classification_scheme.png
    :alt: The classification scheme we will use for this exercise, with two classes forest and non-forest
    :width: 450
    :align: center
 
-|
+
 
 2. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC (Intergovernmental Panel on Climate Change) land-use categories, CLC (CORINE land cover), or LUCAS (land cover and land use, landscape).
 
@@ -108,9 +108,9 @@ In this tutorial, you will inform your response design by building a decision tr
 
 =========================
 
-.. image:: images/cc.png
+.. figure:: images/cc.png
 
-|
+
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -121,6 +121,4 @@ This work was developed by Karen Dyson under World Bank contract with Spatial In
 | Attribution
 Dyson, K. 2021. Response design for classification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
-
-|
+.. figure:: images/wb_fcpf_gfoi.png

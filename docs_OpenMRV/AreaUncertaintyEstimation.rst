@@ -33,11 +33,11 @@ This tutorial will work through calculating sample-based estimates of error and 
 
 Error matrices are a common tool to quantify agreement (sometimes called a confusion matrix). The error matrix organizes the acquired sample data in a way that summarizes key results and aids the quantification of accuracy and area. This is a simple cross-tabulation that compares the (algorithm assigned) map category labels to the (human assigned) reference category labels (your validation classification). The count for each pairwise combination are included in the blue and yellow cells in the following example.
 
-.. image:: images/confusion_matrix_example.png
+.. figure:: images/confusion_matrix_example.png
    :alt: A confusion matrix example.
    :align: center
 
-|
+
 
 * The main diagonal of the error matrix (blue cells) includes the count of the number of correct classifications.
 * The off-diagonal elements (yellow cells) show map classification errors.
@@ -46,11 +46,11 @@ Error matrices are a common tool to quantify agreement (sometimes called a confu
 
 Here’s another example for a project using 4 classes:
 
-.. image:: images/example_error_matrix_4class.png
+.. figure:: images/example_error_matrix_4class.png
    :alt: Example error matrix for a 4 class project.
    :align: center
 
-|
+
 
 In this example, the user’s accuracy for Forest is 94.7%; so the error of commission is 5.3%. The user’s accuracy for water is 90%, which means the error of commission is 10%. What this means is that according to the reference data, the map creator mapped 5.3% of Forest land cover in the wrong class and 10% of water in the wrong class.
 
@@ -103,12 +103,12 @@ In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” too
 
   d. Fill the entire column.
 
-.. image:: images/example_dataset.png
+.. figure:: images/example_dataset.png
    :alt: An example dataset
    :width: 400
    :align: center
 
-|
+
 
 5. Save your .csv file.
 
@@ -120,11 +120,11 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 1. For either approach, first select the purple wrench **Apps** button. If you have an existing tab open, you may need to click the **plus** sign in the top right.
 2. To use RStudio, choose the **R Studio** application. You may be prompted to enter your SEPAL username and password to enter R Studio.
 
-.. image:: images/apps_rstudio.png
+.. figure:: images/apps_rstudio.png
    :alt: The apps screen, with RStudio shown.
    :align: center
 
-|
+
 
   a. This will open an instance of RStudio, an IDE for the R programming language.
   b. You should see a ‘Files’ tab in the lower right window.
@@ -133,11 +133,11 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 
   c. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
 
-.. image:: images/rstudio_interface.png
+.. figure:: images/rstudio_interface.png
    :alt: The RStudio interface in SEPAL.
    :align: center
 
-|
+
 
   d. In the **Upload Files** window, click **Choose File.**
   e. Navigate to the correct location on your drive, select your map and click Open.
@@ -168,11 +168,11 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
     i. You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool.
     ii. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
-.. image:: images/stratified_estimator_analysis_tool.png
+.. figure:: images/stratified_estimator_analysis_tool.png
    :alt: The stratified estimator analysis tool.
    :align: center
 
-|
+
 
 2. Select the **Inputs** page on the left side of the screen. You will see two data requirements under the **Select input files** section.
 
@@ -187,12 +187,12 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
     iii. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification).
     iv. Within this folder, select **area_rast.csv** (see image below).
 
-.. image:: images/add_classification.png
+.. figure:: images/add_classification.png
    :alt: Adding the classification
    :width: 450
    :align: center
 
-|
+
 
 3. Next, you will need to adjust some parameters so that the tool recognizes the column names for your reference data and area data that contain the necessary information for your accuracy assessment. You should now see a populated **Required input** panel on the right side of the screen.
 
@@ -206,12 +206,12 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
 
   e. You can add a **Display data** column to enable validation on the fly. You can choose any column. We recommend either your map class (e.g. PL_MAP_CLASS) or your reference data class (e.g. question name column).
 
-.. image:: images/required_input_fields.png
+.. figure:: images/required_input_fields.png
    :alt: The required input fields.
    :width: 450
    :align: center
 
-|
+
 
 4. Once you have set these input parameters, select **Check** on the left side of the window.
 
@@ -227,12 +227,12 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
     i. The rows represent your assignments while the columns represent the map classifier’s.
     ii. The diagonal represents the number of samples that are in agreement, while the off diagonal cells represent points that were not mapped correctly (or potentially not interpreted correctly).
 
-.. image:: images/confusion_matrix_output_sepal.png
+.. figure:: images/confusion_matrix_output_sepal.png
    :alt: The confusion matrix output by SEPAL.
    :width: 450
    :align: center
 
-|
+
 
 6. Typically you would have to create the confusion table yourself and calculate the accuracies, however, the SAE-Analysis tool does this for you. You can download confusion matrix as tabular data (.csv) using the button.
 
@@ -244,11 +244,11 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
   d. You can change your desired **confidence interval** using the slider at the top of the panel.
   e. You can Download area estimates as tabular data (.csv) using the button.
 
-.. image:: images/area_estimate.png
+.. figure:: images/area_estimate.png
    :alt: The area estimates screen in SEPAL.
    :align: center
 
-|
+
 
 8. The **Graph** plots area estimates based on: map pixel count, stratified random sample, simple random sample, unbiased stratified random and direct estimate stratified random.
 
@@ -256,12 +256,12 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
   b. Need to define unbiased stratified random and direct estimate stratified random.
   c. Note that the Map pixel count value differs from these stratified random sample estimates. This shows how using a map pixel count is a poor estimation of actual area.
 
-.. image:: images/area_estimate_graph.png
+.. figure:: images/area_estimate_graph.png
    :alt: A graph of the area estimates based on different sample design.
    :width: 450
    :align: center
 
-|
+
 
 4. Frequently Asked Questions (FAQs)
 ------------------------------------
@@ -285,9 +285,7 @@ REDD Compass: https://www.reddcompass.org/
 
 -------------------
 
-.. image:: images/cc.png
-
-|
+.. figure:: images/cc.png
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -298,6 +296,4 @@ This work was developed by Karen Dyson under World Bank contract with the Food a
 | Attribution
 Dyson, K. 2021. Area and uncertainty estimation. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
-
-|
+.. figure:: images/wb_fcpf_gfoi.png
