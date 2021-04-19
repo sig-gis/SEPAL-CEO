@@ -252,8 +252,6 @@ In general, data collection should include the following steps:
    :alt: The data collection interface in CEO
    :align: center
 
-|
-
 2. Click **Go to first plot.** This will take you to your first plot.
 3. Answer all of the questions for your first plot by clicking on the appropriate answers.
 
@@ -264,8 +262,6 @@ In general, data collection should include the following steps:
 .. figure:: images/data_collection_process.png
    :alt: The data collection process in CEO
    :align: center
-
-|
 
 4. Continue answering questions until you reach the last plot.
 5. When you have finished answering all of the questions, navigate to your Institution’s page.

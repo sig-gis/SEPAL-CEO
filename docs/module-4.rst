@@ -101,8 +101,6 @@ These directions will provide a stratified random sample of the proper sampling 
    :alt: Stratified Area Estimator-Design tool.
    :align: center
 
-
-
 .. note::
    Sometimes the tool fails to load properly (none of the text loads) as seen below. In this case, please close the tab and repeat the above steps.
 
@@ -257,7 +255,7 @@ You can view a demonstration of creating this stratification on `YouTube <https:
 
 .. raw:: html
 
-   <iframe width="600" height="280" src="https://www.youtube.com/embed/mbskeQNjj7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="300" src="https://www.youtube.com/embed/mbskeQNjj7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Part 2. Creating a CEO project via CSV
@@ -304,6 +302,7 @@ For projects with large sample sizes, where you want to have multiple people col
 7. Save your updated .csv, making sure you save it as a .csv and not as an .xlsx file.
 
    You can view an example of preparing the .csv for CEO on `You Tube <https://www.youtube.com/watch?v=6xBjc8wYSNw>`_.
+
 8. Navigate to https://collect.earth.
 
   a. Creating a project in CEO requires you to be the administrator of an institution.
@@ -416,7 +415,9 @@ You can view a demonstration of creating a CEO project using a .csv on `YouTube 
 
 .. raw:: html
 
-   <iframe width="600" height="280" src="https://www.youtube.com/embed/j8eTVqkEcDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="300" src="https://www.youtube.com/embed/j8eTVqkEcDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+|
 
 **Congratulations! You have created a stratified random sampling design for your map and a project (CEO or CEO-SEPAL) to collect reference data.**
 
@@ -668,7 +669,7 @@ You can view a demonstration of collecting data on CEO on `YouTube <https://www.
 
 .. raw:: html
 
-   <iframe width="600" height="280" src="https://www.youtube.com/embed/gMJP17Ue6lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="300" src="https://www.youtube.com/embed/gMJP17Ue6lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -1013,7 +1014,7 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
 
 .. raw:: html
 
-   <iframe width="600" height="280" src="https://www.youtube.com/embed/kFTfKEjj2F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="300" src="https://www.youtube.com/embed/kFTfKEjj2F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. First, open the Stratified Area Estimator-Analysis Tool
 
