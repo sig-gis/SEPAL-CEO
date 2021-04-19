@@ -124,7 +124,7 @@ There are two tools that can be used to upload files. The first is RStudio, and 
    :alt: The apps screen, with RStudio shown.
    :align: center
 
-
+|
 
   a. This will open an instance of RStudio, an IDE for the R programming language.
   b. You should see a ‘Files’ tab in the lower right window.
@@ -137,7 +137,7 @@ There are two tools that can be used to upload files. The first is RStudio, and 
    :alt: The RStudio interface in SEPAL.
    :align: center
 
-
+|
 
   d. In the **Upload Files** window, click **Choose File.**
   e. Navigate to the correct location on your drive, select your map and click Open.

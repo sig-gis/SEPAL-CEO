@@ -184,7 +184,7 @@ You can view a demonstration of this exercise on `YouTube <https://www.youtube.c
 
 .. raw:: html
 
-   <iframe width="600" height="280" src="https://www.youtube.com/embed/N8kIBBE3tdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="300" src="https://www.youtube.com/embed/N8kIBBE3tdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Part 1. Create a Landsat Mosaic
 --------------------------------
@@ -204,8 +204,6 @@ Part 1. Create a Landsat Mosaic
    :alt: The Area of Interest menu
    :width: 350
    :align: center
-
-
 
 5. We will use the **Select a country/province** option.
 
