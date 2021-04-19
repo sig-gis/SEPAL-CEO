@@ -34,11 +34,11 @@ Creating a classification using machine learning algorithms in SEPAL
 Image classification is frequently used to map land cover, describing what the landscape is composed of (grass, trees, water, impervious surface), and to map land use, describing the organization of human systems on the landscape (farms, cities, wilderness). Learning to do image classification well requires experience.
 
 
-.. image:: images/random_forest_model_outcome.png
+.. figure:: images/random_forest_model_outcome.png
    :alt: The outcome of a random forest model.
    :align: center
 
-|
+
 
 There are both supervised (uses human guidance including training data) and unsupervised (no human guidance) classification methods. The random forest approach used here uses training data and is thus a supervised classification method. The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on how each pixel should be classified. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
 
@@ -92,11 +92,11 @@ After we create the map, you might find that there are some areas that are not c
   d. Choose colors for each class as you see fit.
   e. Click **Close**.
 
-.. image:: images/classification_legend.png
+.. figure:: images/classification_legend.png
    :alt: Classification legend.
    :align: center
 
-|
+
 
 You can view a demonstration of the classification setup on `YouTube <https://www.youtube.com/watch?v=HBlYrwmq5ak>`_.
 
@@ -118,11 +118,11 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Select RGB, Jun 2019 (6 months).
   c. You can also select "Show labels" to enable labels that can help you orient yourself in the landscape.
 
-.. image:: images/layer_view.png
+.. figure:: images/layer_view.png
    :alt: The layers available.
    :align: center
 
-|
+
 
 3. Now click on the point icon. When you mouse over this icon, it says "Enable reference data collection."
 4. With reference data collection enabled, you can start adding points to your map.
@@ -138,11 +138,11 @@ Not all pixels in the same classes have the exact same values—there is some na
 
      If you haven’t classified the point yet, then you can just click somewhere else on the map instead of deleting the record.
 
-.. image:: images/collecting_forest_data.png
+.. figure:: images/collecting_forest_data.png
    :alt: Collecting forest data in the SEPAL interface.
    :align: center
 
-|
+
 
 .. note::
    Ideally you should switch back to the Landsat mosaic to make sure that this forested area is not covered with a cloud. If you mistakenly classify a cloudy pixel as Forest, then the results will be impacted negatively if your Landsat mosaic does have cloud-covered areas.
@@ -164,7 +164,7 @@ Not all pixels in the same classes have the exact same values—there is some na
   a. To disable the classification preview to continue to collect training data, return to the map layer selector.
   b. Uncheck the "Classification" Overlay.
 
-.. image:: images/classification_overlay.png
+.. figure:: images/classification_overlay.png
    :alt: Disabling the classification overlay.
    :width: 450
    :align: center
@@ -178,11 +178,11 @@ Not all pixels in the same classes have the exact same values—there is some na
     ii. Collect 10-15 data points for Water and be sure to spread them throughout the region, including lakes and rivers.
     v. Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019. (Jun 2019 and Dec 2019).
 
-.. image:: images/data_points_water.png
+.. figure:: images/data_points_water.png
    :alt: Collecting data points in water.
    :align: center
 
-|
+
 
 12. Let’s now collect some building and road non-forest Training Data.
 
@@ -190,22 +190,22 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
   c. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
-.. image:: images/data_points_residential.png
+.. figure:: images/data_points_residential.png
    :alt: Collecting residential and other human settlement area data points.
    :align: center
 
-|
+
 
 13. Next, place several points in grassland/pasture, shrub, and agricultural areas around the study area.
 
   a. Shrubs or small, non-forest vegetation can sometimes be hard to identify, even with high-resolution imagery. Do your best to find vegetation that is clearly not forest.
   b. The texture of the vegetation is one of the best ways to differentiate between trees and grasses/shrubs. Look at the below image and notice the clear contrast between the area where the points are placed and the other areas in the image that have rougher textures and that create shadows.
 
-.. image:: images/data_points_low_vegetation.png
+.. figure:: images/data_points_low_vegetation.png
    :alt: Collecting low vegetation data
    :align: center
 
-|
+
 
 .. note::
    If you are using QGIS etc. to collect training data, you should also collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain. However, you may not have any clouds in your Landsat imagery.
@@ -239,11 +239,11 @@ You can view a demonstration of the training data collection on `YouTube <https:
 
 2. Now you will be asked to confirm the link between the legend you input previously and your classification. You should see a screen as follows. If you need to change anything, click the green plus buttons. Otherwise, click **Done**, then click **Close**.
 
-.. image:: images/link.png
+.. figure:: images/link.png
    :alt: link between legend and classification
    :align: center
 
-|
+
 
 3.4 Review additional classification options
 ---------------------------------------------
@@ -269,7 +269,7 @@ You can view a demonstration of the training data collection on `YouTube <https:
   b. Select "Classification"
   c. Make sure Classification now has a check mark next to it, indicating that the layer is now turned on.
 
-.. image:: images/classification_preview.png
+.. figure:: images/classification_preview.png
    :alt: A preview of a classification.
    :align: center
 
@@ -289,7 +289,7 @@ You can view a demonstration of the training data collection on `YouTube <https:
   f. Once the download begins, you will see the spinning wheel in the bottom left of the webpage in **Tasks.** Click the spinning wheel to observe the progress of your export.
   g. When complete, if you chose SEPAL workspace, the file will be in your SEPAL downloads folder. (Browse > downloads > classification name folder). If you chose GEE Asset the file will be in your GEE Assets.
 
-.. image:: images/retrieval_interface.png
+.. figure:: images/retrieval_interface.png
    :alt: The retrieval interface.
    :width: 450
    :align: center
@@ -304,11 +304,11 @@ Following analysis you should spend some time looking at your change detection i
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-.. image:: images/examine_classification_map.png
+.. figure:: images/examine_classification_map.png
    :alt: Examining your change detection map
    :align: center
 
-|
+
 
 1. Turn on the imagery for your Classification and pan and zoom around the map.
 2. Compare your Classification map to the imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
@@ -332,9 +332,9 @@ Additional information
 
 =======================
 
-.. image:: images/cc.png
+.. figure:: images/cc.png
 
-|
+
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -345,6 +345,6 @@ This work was developed by Karen Dyson under World Bank contract with Spatial In
 | Attribution
 Dyson, K. 2021. Creating a classification using machine learning algorithms in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
+.. figure:: images/wb_fcpf_gfoi.png
 
 |

@@ -51,14 +51,14 @@ Before we can identify change, we first need to have images to compare. We will 
 .. note::
    If you don’t see the Google Earth Engine asset option, you’ll need to connect your Google account to SEPAL by clicking on your user name in the lower right.
 
-|
 
-.. image:: images/retrieval_mosaic.png
+
+.. figure:: images/retrieval_mosaic.png
    :alt: The retrieval screen for mosaics.
    :width: 450
    :align: center
 
-|
+
 
 4. Repeat steps 2 & 3 but change the **Date** parameter to 2020.
 
@@ -97,7 +97,7 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
   d. Click **Apply**.
   e. Repeat steps a-d above for your 2020 optical mosaic and click **Next**.
 
-.. image:: images/two_assets.png
+.. figure:: images/two_assets.png
    :alt: Two assets ready for classification.
    :align: center
 
@@ -116,12 +116,12 @@ Part 3. Collect change classification training data
 
 Now that we have the mosaics created, we will collect change training data. While more complex systems can be used, we will consider two land cover classes that each pixel can be in 2015 or 2020: forest and non-forest. Thinking about change detection, we will use three options: stable forest, stable non-forest, and change. That is, between 2015 and 2020 there are four pathways: a pixel can be forest in 2015 and in 2020 (stable forest); a pixel can be non-forest in 2015 and in 2020 (stable non-forest); or it can change from forest to non-forest or from non-forest to forest. If you use this manual to guide your own change classification, remember to log your decisions including how you are thinking about change detection (what classes can change and how), and the imagery and other settings used for your classification.
 
-.. image:: images/land_cover_flow_chart.png
+.. figure:: images/land_cover_flow_chart.png
    :alt: A land cover change flow chart.
    :width: 450
    :align: center
 
-|
+
 
 1. In the Legend menu, click **+ Add** This will add a place for you to write your first class label.
 
@@ -132,11 +132,11 @@ Now that we have the mosaics created, we will collect change training data. Whil
   d. Choose colors for each class as you see fit.
   e. Click **Close**.
 
-.. image:: images/3_classes.png
+.. figure:: images/3_classes.png
    :alt: Classification legend.
    :align: center
 
-|
+
 
 2. Now, we’ll create training data. First, let's pull up the correct imagery. Click on "Select layers to show." As a reminder, available base layers include SEPAL (Minimal dark Sepal default layer), Google Satellite, and Planet NICFI composites.
 
@@ -173,7 +173,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 
   d. One trick for determining change is to place a "Change" point in an area of suspected change. Then you can compare 2015 and 2020 imagery without losing the place you were looking at. If it is not Change, you can switch which classification you have identified the point as.
 
-.. image:: images/finding_change.png
+.. figure:: images/finding_change.png
    :alt: Using Google imagery to examine areas for change.
    :align: center
 
@@ -183,12 +183,12 @@ Now that we have the mosaics created, we will collect change training data. Whil
 12. Click on the **CLS** button in the bottom right. You can change your classification type to see how the output changes.
 8. If it has not already, SEPAL will now load a preview of your classification.
 
-.. image:: images/change_detection_model_preview.png
+.. figure:: images/change_detection_model_preview.png
    :alt: A preview of the change detection model output.
    :width: 450
    :align: center
 
-|
+
 
 .. note::
    If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.
@@ -229,11 +229,11 @@ Following analysis you should spend some time looking at your change detection i
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-.. image:: images/examine_change_detection_map.png
+.. figure:: images/examine_change_detection_map.png
    :alt: Examining your change detection map
    :align: center
 
-|
+
 
 1. Turn on the imagery for your Classification and pan and zoom around the map.
 2. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?
@@ -285,11 +285,11 @@ More information can be found online at http://bfast.r-forge.r-project.org/.
   b. Select **Landsat 8 SR** from the select satellite products dropdown.
   c. Click **Get Data.** It may take a moment to download all the data for the point
 
-.. image:: images/BFAST_explorer_interface.png
+.. figure:: images/BFAST_explorer_interface.png
    :alt: The BFAST Explorer interface.
    :align: center
 
-|
+
 
 4. Click the **Analysis** button at the top next to the **Map** button.
 5. **Satellite product:** Add your satellite data by selecting them from the satellite products dropdown menu.
@@ -305,11 +305,11 @@ Each BFSAT algorithm methodology has characteristics which affect when and why y
 8. Select bfastmonitor as the algorithm.
 9. You can explore different bands (including spectral bands e.g. b1) along with the different algorithms.
 
-.. image:: images/BFAST_visualization.png
+.. figure:: images/BFAST_visualization.png
    :alt: Additional BFAST visualization.
    :align: center
 
-|
+
 
 10. You can also download all the time series data by clicking the blue **Data** button. All the data will be downloaded as a .CSV, ordered by the acquisition date.
 11. You can also download the time series plot as an image, by pressing the blue **Plot** button. A window will appear offering some raster (.JPEG, .PNG) and a vectorial (.SVG) image output formats.
@@ -342,11 +342,11 @@ TimeSync is a tool that researchers and managers can use to validate remotely se
 
 From TimeSync’s Introduction materials, here is an example output:
 
-.. image:: images/TimeSync_example.png
+.. figure:: images/TimeSync_example.png
    :alt: An example from TimeSync.
    :align: center
 
-|
+
 
 For more information on TimeSync, including an online tutorial (for version 2 of TimeSync), go to: https://www.timesync.forestry.oregonstate.edu/tutorial.html. There you can register for an account and work through an online tutorial with examples and watch a recorded TimeSync training session. You can also find the manual for version 3 of TimeSync here: http://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_doc.pdf, and an introductory presentation here: https://timesync.forestry.oregonstate.edu/training/TimeSync_V3_UserManual_presentation.pdf.
 
@@ -361,10 +361,10 @@ From Kennedy, R.E., Yang, Z., Gorelick, N., Braaten, J., Cavalcante, L., Cohen, 
 
 From LandTrendr’s documentation, here’s an example output in the GUI. However, LandTrendr has significant non-GUI data analysis capabilities. For a comprehensive guide to running LT in GEE visit: https://emapr.github.io/LT-GEE/landtrendr.html.
 
-.. image:: images/LandTrendr.png
+.. figure:: images/LandTrendr.png
    :alt: The LandTrendr interface
    :align: center
 
-|
+
 
 **Congratulations! You have completed this introduction to time-series analysis tools.**

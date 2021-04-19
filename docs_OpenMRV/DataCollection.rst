@@ -76,12 +76,12 @@ If you have not already done so, please create a response design using the tutor
 
 We will use the classification scheme below, used to classify a Forest/Non-forest land cover map:
 
-.. image:: images/classification_scheme.png
+.. figure:: images/classification_scheme.png
    :alt: The classification tree.
    :width: 450
    :align: center
 
-|
+
 
 We defined Forest as an area with over 70% tree cover. We defined Non-forest as areas with less than 70% tree cover. This captured land covers including urban areas, water, and agricultural fields.
 
@@ -102,11 +102,11 @@ Consider what additional data you might be able to include in your verification.
 
 Compile a list of your data sources and review it with your interpreters. Recording this information is important for documentation.
 
-.. image:: images/data_source_recording.png
+.. figure:: images/data_source_recording.png
    :alt: A data source recording document.
    :align: center
 
-|
+
 
 **Determine level of effort.**
 
@@ -248,7 +248,7 @@ In general, data collection should include the following steps:
 
 1. To collect data in CEO, navigate to the project you created in the tutorial here on OpenMRV under process "Sampling design" and tool "SEPAL". Your screen should look like this:
 
-.. image:: images/data_collection_CEO.png
+.. figure:: images/data_collection_CEO.png
    :alt: The data collection interface in CEO
    :align: center
 
@@ -261,7 +261,7 @@ In general, data collection should include the following steps:
   b. Scroll in and out with your mouse wheel (or press the +/- buttons) to view the landscape context and see your plots properly.
   c. Click on **Save** to save your answers and move on to the next plot.
 
-.. image:: images/data_collection_process.png
+.. figure:: images/data_collection_process.png
    :alt: The data collection process in CEO
    :align: center
 
@@ -271,11 +271,11 @@ In general, data collection should include the following steps:
 5. When you have finished answering all of the questions, navigate to your Institution’s page.
 6. Your project name should now be green, indicating that all plots have been completed. If it is yellow, click on the project name and answer the remaining questions.
 
-.. image:: images/ceo_sepal_manual.png
+.. figure:: images/ceo_sepal_manual.png
    :alt: A partly completed project.
    :align: center
 
-|
+
 
 7. Click on the S next to the project.
 8. This will download your project’s sample data. Save it to your hard drive and note the location.
@@ -333,8 +333,6 @@ Conduct ongoing hot, cold and auxiliary data checks during data collection and c
 +--------------+-----------------------+-----------------------+-----------------+
 | Yuri Gagarin | Forest                | Forest                | Water           |
 +--------------+-----------------------+-----------------------+-----------------+
-
-|
 
 * Hot checks: sample units that are flagged as low confidence. These marked sample units should be further reviewed by the coordinator or group of interpreters meeting together. Once reviewed, labels that are deemed to be incorrect on these sample units should be adjusted by the interpreter.
 
@@ -442,8 +440,6 @@ Quality control refers to the quality of interpretation through cross-validation
 | Class 3 (Yuri Gagarin) | 1                   | 4                   | 95                  |
 +------------------------+---------------------+---------------------+---------------------+
 
-|
-
 +---------------+---------------------------------------------------------------+
 | Interpreter   |  Overall agreement                                            |
 +===============+===============================================================+
@@ -528,9 +524,7 @@ Much of this information is based on Standard Operating Procedures developed by 
 
 ======================================
 
-.. image:: images/cc.png
-
-|
+.. figure:: images/cc.png
 
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
@@ -541,6 +535,4 @@ This work was developed by Karen Dyson under World Bank contract with Spatial In
 | Attribution
 Dyson, K. 2021. Data collection with data quality management approaches. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
-.. image:: images/wb_fcpf_gfoi.png
-
-|
+.. figure:: images/wb_fcpf_gfoi.png

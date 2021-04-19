@@ -45,19 +45,19 @@ Part 1. Specify the classification scheme
   a. This example includes a hierarchical component. For example, the green and red categories have multiple sub-categories, which might be multiple types of forest or crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
   b. For this Exercise, we’ll use a simplified land cover and land use classification as in the second image:
 
-.. image:: images/land_cover_decision_tree.png
+.. figure:: images/land_cover_decision_tree.png
    :alt: Decision tree for land cover
    :width: 450
    :align: center
 
-|
 
-.. image:: images/classification_scheme.png
+
+.. figure:: images/classification_scheme.png
    :alt: The classification scheme we will use for this exercise, with two classes forest and non-forest
    :width: 450
    :align: center
 
-|
+
 
 2. When creating your own decision tree, be sure to specify if your classification scheme was derived from a template, including the IPCC (Intergovernmental Panel on Climate Change) land-use categories, CLC (CORINE land cover), or LUCAS (land cover and land use, landscape).
 
@@ -120,20 +120,20 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 
   a. Select **Draw Polygon** from the dropdown list.
 
-.. image:: images/aoi_dropdown.png
+.. figure:: images/aoi_dropdown.png
    :alt: Area of interest dropdown menu.
    :width: 450px
    :align: center
 
-|
+
 
   b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
-.. image:: images/rondonia.png
+.. figure:: images/rondonia.png
    :alt: A polygon drawn around the State of Rondonia.
    :align: center
 
-|
+
 
 3. Now use what you have learned in Module 1 to create a mosaic with imagery from the year 2019 (whole year or part of year, your choice). Don’t forget to consider which satellites you would like to include and which scenes you would like to include (all, some).
 4. Your preview should include imagery data across your entire area of interest. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
@@ -154,11 +154,11 @@ For future exercises, you may need to know how to find your Earth Engine Asset.
 5. You will see a window with information about your mosaic pop up.
 6. Click on the two overlapping box icon to copy your asset’s location.
 
-.. image:: images/mosaic_information.png
+.. figure:: images/mosaic_information.png
    :alt: Your mosaic’s information pane.
    :align: center
 
-|
+
 
 -------------------------------------------------------------------
 Exercise 2.3. Creating a classification & training data collection
@@ -213,7 +213,7 @@ Part 1. Set up your classification
   d. Choose colors for each class as you see fit.
   e. Click **Done**.
 
-.. image:: images/classification_legend.png
+.. figure:: images/classification_legend.png
    :alt: Classification legend.
    :align: center
 
@@ -242,11 +242,11 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Select RGB, Jun 2019 (6 months).
   c. You can also select "Show labels" to enable labels that can help you orient yourself in the landscape.
 
-.. image:: images/layer_view.png
+.. figure:: images/layer_view.png
    :alt: The layers available.
    :align: center
 
-|
+
 
 3. Now click on the point icon. When you mouse over this icon, it says "Enable reference data collection."
 4. With reference data collection enabled, you can start adding points to your map.
@@ -262,11 +262,11 @@ Not all pixels in the same classes have the exact same values—there is some na
 
      If you haven’t classified the point yet, then you can just click somewhere else on the map instead of deleting the record.
 
-.. image:: images/collecting_forest_data.png
+.. figure:: images/collecting_forest_data.png
    :alt: Collecting forest data in the SEPAL interface.
    :align: center
 
-|
+
 
 .. note::
    Ideally you should switch back to the Landsat mosaic to make sure that this forested area is not covered with a cloud. If you mistakenly classify a cloudy pixel as Forest, then the results will be impacted negatively if your Landsat mosaic does have cloud-covered areas.
@@ -288,7 +288,7 @@ Not all pixels in the same classes have the exact same values—there is some na
   a. To disable the classification preview to continue to collect training data, return to the map layer selector.
   b. Uncheck the "Classification" Overlay.
 
-.. image:: images/classification_overlay.png
+.. figure:: images/classification_overlay.png
    :alt: Disabling the classification overlay.
    :width: 450
    :align: center
@@ -302,11 +302,11 @@ Not all pixels in the same classes have the exact same values—there is some na
     ii. Collect 10-15 data points for Water and be sure to spread them throughout the lakes and rivers of Rondonia.
     iii. Some wetland areas may have varying amounts of water throughout the year, so it is important to check both Planet NICFI maps for 2019. (Jun 2019 and Dec 2019).
 
-.. image:: images/data_points_water.png
+.. figure:: images/data_points_water.png
    :alt: Collecting data points in water.
    :align: center
 
-|
+
 
 12. Let’s now collect some building and road non-forest Training Data.
 
@@ -314,22 +314,22 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Place a point or points within these areas and classify them as Non-forest. Do your best to avoid placing the points over areas of the town with lots of trees.
   c. Find some roads, and place points and classify as Non-forest. These may look like areas of bare soil. Both bare soil and roads are classified as Non-forest, so place some points on both.
 
-.. image:: images/data_points_residential.png
+.. figure:: images/data_points_residential.png
    :alt: Collecting residential and other human settlement area data points.
    :align: center
 
-|
+
 
 13. Next, place several points in grassland/pasture, shrub, and agricultural areas around the study area.
 
   a. Shrubs or small, non-forest vegetation can sometimes be hard to identify, even with high-resolution imagery. Do your best to find vegetation that is clearly not forest.
   b. The texture of the vegetation is one of the best ways to differentiate between trees and grasses/shrubs. Look at the below image and notice the clear contrast between the area where the points are placed and the other areas in the image that have rougher textures and that create shadows.
 
-.. image:: images/data_points_low_vegetation.png
+.. figure:: images/data_points_low_vegetation.png
    :alt: Collecting low vegetation data
    :align: center
 
-|
+
 
 .. note::
    If you are using QGIS etc. to collect training data, you should also collect **cloud** training data in the **Non-forest** class, if your Landsat has any clouds. If there are some clouds that were not removed during the Landsat mosaic creation process you will need to create training data for the clouds that remain so that the classifier knows what those pixels represent. Sometimes clouds were detected during the mosaic process and were mostly removed. However, you can see some of the edges of those clouds remain.
@@ -356,13 +356,13 @@ You can view a demonstration of the training data collection on `YouTube <https:
 Exercise 2.4. Classification using machine learning algorithms (Random Forests) in SEPAL
 -----------------------------------------------------------------------------------------
 
-|
 
-.. image:: images/random_forest_model_outcome.png
+
+.. figure:: images/random_forest_model_outcome.png
    :alt: The outcome of a random forest model.
    :align: center
 
-|
+
 
 As mentioned in the Module introduction, the classification algorithm you will be using today is called random forest.  The random forest algorithm creates numerous decision trees for each pixel. Each of these decision trees votes on what the pixel should be classified as. The land cover class that receives the most votes is then assigned as the map class for that pixel. Random forests are efficient on large data and accurate when compared to other classification algorithms.
 
@@ -403,11 +403,11 @@ Part 0. [Optional] Add training data collected outside of sepal
 
 2. Now you will be asked to confirm the link between the legend you input previously and your classification. You should see a screen as follows. If you need to change anything, click the green plus buttons. Otherwise, click **Done**, then click **Close**.
 
-.. image:: images/link.png
+.. figure:: images/link.png
    :alt: link between legend and classification
    :align: center
 
-|
+
 
 Part 1. Review additional classification options
 -------------------------------------------------
@@ -431,7 +431,7 @@ Part 1. Review additional classification options
   b. Select "Classification"
   c. Make sure Classification now has a check mark next to it, indicating that the layer is now turned on.
 
-.. image:: images/classification_preview.png
+.. figure:: images/classification_preview.png
    :alt: A preview of a classification.
    :align: center
 
@@ -448,12 +448,12 @@ Part 1. Review additional classification options
   f. Once the download begins, you will see the spinning wheel in the bottom left of the webpage in **Tasks.** Click the spinning wheel to observe the progress of your export.
   g. When complete, if you chose SEPAL workspace, the file will be in your SEPAL downloads folder. (Browse > downloads > classification name folder). If you chose GEE Asset the file will be in your GEE Assets.
 
-.. image:: images/retrieval_interface.png
+.. figure:: images/retrieval_interface.png
    :alt: The retrieval interface.
    :width: 450
    :align: center
 
-|
+
 
 .. note::
    For some users, the classification preview may only appear after clicking on the 'Retrieve' button.
@@ -474,11 +474,11 @@ Following analysis you should spend some time looking at your land cover classif
 
 With SEPAL you can examine your classification and collect additional training data to improve the classification.
 
-.. image:: images/examine_classification_map.png
+.. figure:: images/examine_classification_map.png
    :alt: Examining your change detection map
    :align: center
 
-|
+
 
 1. Turn on the imagery for your Classification and pan and zoom around the map.
 2. Compare your Classification map to the 2015 and 2020 imagery. Where do you see areas that are correct? Where do you see areas that are incorrect?

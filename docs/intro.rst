@@ -23,11 +23,11 @@ These exercises include step-by-step directions and are built to facilitate lear
 
 To visualize the flow of this manual, see below:
 
-.. image:: images/manual_content.png
+.. figure:: images/manual_content.png
    :alt: Visualization of manual content
    :align: center
 
-|
+
 
 Our primary tool for this Manual is the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). SEPAL is a web based cloud computing platform that enables users to create image composites, process images, download files, create stratified sampling designs, and more all from your browser. SEPAL is a system for earth observations, data access, processing & analysis for land monitoring, which is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries. SEPAL is part of the Open Foris suite of tools. Geoprocessing is possible via Jupyter, JavaScript, R, R Shiny apps, and Rstudio. SEPAL also integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE).
 
@@ -54,21 +54,21 @@ Getting started
 Sign Up to SEPAL
 -----------------
 
-|
 
-.. image:: images/sepal_splash_page.png
+
+.. figure:: images/sepal_splash_page.png
    :alt: Sepal splash page.
    :align: center
 
-|
+
 
 You can request an account by visiting `sepal.io <sepal.io>`_ and clicking “Sign Up”. This will take you to a Google Doc signup form to fill out. You will be set up with an account within a day or so.
 
-.. image:: images/request_sepal.png
+.. figure:: images/request_sepal.png
    :alt: Request access to sepal.io
    :align: center
 
-|
+
 
 1. If you do not have a SEPAL account, you can request access here: http://tinyurl.com/fao-sepal.
 
@@ -128,9 +128,9 @@ Project planning and methods documentation play a key role in any remote sensing
 
 8. Partnerships (vendors, agencies, bureaus, etc.)
 
-|
+ 
 
-.. image:: images/copyright.png
+.. figure:: images/copyright.png
    :alt: CC-BY-ShareAlike
    :align: center
 
