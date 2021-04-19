@@ -107,6 +107,7 @@ In SEPAL you can run a classification on either a mosaic recipe or on a GEE asse
 You can view a demonstration of the mosaic creation on `YouTube <https://www.youtube.com/watch?v=HiFOaXoclHQ>`_.
 
 .. raw:: html
+
    <iframe width="1352" height="633" src="https://www.youtube.com/embed/HiFOaXoclHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -122,18 +123,16 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 
 .. figure:: images/aoi_dropdown.png
    :alt: Area of interest dropdown menu.
-   :width: 450px
+   :width: 450
    :align: center
 
-
+|
 
   b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
 .. figure:: images/rondonia.png
    :alt: A polygon drawn around the State of Rondonia.
    :align: center
-
-
 
 3. Now use what you have learned in Module 1 to create a mosaic with imagery from the year 2019 (whole year or part of year, your choice). Don’t forget to consider which satellites you would like to include and which scenes you would like to include (all, some).
 4. Your preview should include imagery data across your entire area of interest. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
