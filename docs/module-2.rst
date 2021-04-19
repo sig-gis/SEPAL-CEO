@@ -104,6 +104,12 @@ In SEPAL you can run a classification on either a mosaic recipe or on a GEE asse
 | your classification                        |                             |
 +--------------------------------------------+-----------------------------+
 
+You can view a demonstration of the mosaic creation on `YouTube <https://www.youtube.com/watch?v=HiFOaXoclHQ>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/HiFOaXoclHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Part 1. Creating and exporting a mosaic for a drawn AOI
 --------------------------------------------------------
 
@@ -133,6 +139,8 @@ We will create a mosaic for an area in the Amazon basin. If any of the steps for
 4. Your preview should include imagery data across your entire area of interest. This is important for your classification. Try also to get a cloud-free mosaic, as this makes your classification easier.
 5. Name your mosaic for easy retrieval. Try “Module2_Amazon”.
 6. When you’re satisfied with your mosaic, **Retrieve** it to Google Earth Engine. Be sure to include the red, green, blue, nir, swir1, and swir2 layers. You may choose to add the greenness, etc. layers as well.
+
+
 
 Part 2. Finding your Earth Engine Asset
 ----------------------------------------
@@ -177,10 +185,6 @@ In this assignment, you will create training data points using high-resolution i
 |                                      | Mosaic created in Exercise 2.2. |
 +--------------------------------------+---------------------------------+
 
-|
-
-
-
 Part 1. Set up your classification
 -----------------------------------
 
@@ -213,7 +217,12 @@ Part 1. Set up your classification
    :alt: Classification legend.
    :align: center
 
-|
+
+You can view a demonstration of the classification setup on `YouTube <https://www.youtube.com/watch?v=HBlYrwmq5ak>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/HBlYrwmq5ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 Part 2. Collect training data points
 -------------------------------------
@@ -334,6 +343,13 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Are all points clustered in the same area?
   c. It’s best to make sure you have data points covering the full spatial extent of the study region, add more points in areas that are sparsely represented if needed.
 
+
+You can view a demonstration of the training data collection on `YouTube <https://www.youtube.com/watch?v=8HgGQnHl5mE>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/8HgGQnHl5mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 **Congratulations! You have learned how to collect training data in SEPAL's classification interface. Stay on this screen for the next Exercise.**
 
 -----------------------------------------------------------------------------------------
@@ -402,8 +418,6 @@ Part 1. Review additional classification options
   b. Click on **Water** and **Terrain**.
   c. Click **Apply.**
 
-  10. Select **Terrain** and **Water.**
-
 2. Click on **CLS** to examine the classifier being used.
 
   a. The default is a random forest with 25 trees.
@@ -443,6 +457,13 @@ Part 1. Review additional classification options
 
 .. note::
    For some users, the classification preview may only appear after clicking on the 'Retrieve' button.
+
+
+You can view a demonstration of running and exporting the classification on `YouTube <https://www.youtube.com/watch?v=6b1X7RWPt6I>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/6b1X7RWPt6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 Part 2. QA/QC considerations and methods
 -----------------------------------------

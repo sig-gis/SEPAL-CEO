@@ -252,6 +252,13 @@ These directions will provide a stratified random sample of the proper sampling 
 20. When the project has been created, you can skip down to Exercise 4.2.
 21. You can download a .shp file to examine your points in QGIS, ArcGIS, or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this manual. Directions can be found in the Institutional manual found here: https://collect.earth/support.
 
+
+You can view a demonstration of creating this stratification on `YouTube <https://www.youtube.com/watch?v=mbskeQNjj7A>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/mbskeQNjj7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Part 2. Creating a CEO project via CSV
 ----------------------------------------
 
@@ -294,6 +301,8 @@ For projects with large sample sizes, where you want to have multiple people col
   d. Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns, in that order.
 
 7. Save your updated .csv, making sure you save it as a .csv and not as an .xlsx file.
+
+   You can view an example of preparing the .csv for CEO on `You Tube <https://www.youtube.com/watch?v=6xBjc8wYSNw>`_.
 8. Navigate to https://collect.earth.
 
   a. Creating a project in CEO requires you to be the administrator of an institution.
@@ -401,6 +410,11 @@ For projects with large sample sizes, where you want to have multiple people col
   b. You can now visit your project from your institution’s page and start collecting data!
 
 More detailed instructions, including descriptions of many useful options, can be found in the manuals for CEO: https://collect.earth/support.
+
+You can view a demonstration of creating a CEO project using a .csv on `YouTube <https://www.youtube.com/watch?v=j8eTVqkEcDI>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/j8eTVqkEcDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Congratulations! You have created a stratified random sampling design for your map and a project (CEO or CEO-SEPAL) to collect reference data.**
 
@@ -647,6 +661,13 @@ In general, data collection should include the following steps:
 
 7. Click on the S next to the project.
 8. This will download your project’s sample data. Save it to your hard drive.
+
+You can view a demonstration of collecting data on CEO on `YouTube <https://www.youtube.com/watch?v=gMJP17Ue6lQ>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/gMJP17Ue6lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 **Data collection in CEO-SEPAL bridge**
 
@@ -984,6 +1005,11 @@ Part 3. Using the stratified estimator in SEPAL
 The aim of this stratified sampling design tool is to analyze results from a stratified sampling design that can be used for area estimates. The idea is to combine a map (used as a stratification of the landscape of interest) with a visual map interpretation of samples to produce an area estimation.
 
 The concept is derived from map accuracy assessment principles: characterized frequency of errors (omission and commission) for each map class may be used to compute area estimates and also to estimate the uncertainties (confidence intervals) for the areas for each class.
+
+You can view a demonstration of completing the Stratified Area Estimator-Analysis tool on `YouTube <https://www.youtube.com/watch?v=kFTfKEjj2F4>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/kFTfKEjj2F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. First, open the Stratified Area Estimator-Analysis Tool
 

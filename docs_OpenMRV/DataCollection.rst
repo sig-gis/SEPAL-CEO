@@ -280,6 +280,9 @@ In general, data collection should include the following steps:
 7. Click on the S next to the project.
 8. This will download your project’s sample data. Save it to your hard drive and note the location.
 
+You can view a demonstration of collecting data on CEO on `YouTube <https://www.youtube.com/watch?v=gMJP17Ue6lQ>`_.
+
+
 **Data assembly**
 
 Data assembly is required ONLY when you have multiple data interpreters, each working on their own project. If you have used the CEO pathway described just above with multiple interpreters contributing to the same project, this step is not needed.

@@ -98,6 +98,8 @@ After we create the map, you might find that there are some areas that are not c
 
 |
 
+You can view a demonstration of the classification setup on `YouTube <https://www.youtube.com/watch?v=HBlYrwmq5ak>`_.
+
 3.2 Collect training data points
 ---------------------------------
 
@@ -215,6 +217,9 @@ Not all pixels in the same classes have the exact same values—there is some na
   b. Are all points clustered in the same area?
   c. It’s best to make sure you have data points covering the full spatial extent of the study region, add more points in areas that are sparsely represented if needed.
 
+You can view a demonstration of the training data collection on `YouTube <https://www.youtube.com/watch?v=8HgGQnHl5mE>`_.
+
+
 3.3 [Optional] Add training data collected outside of SEPAL
 ------------------------------------------------------------
 
@@ -289,7 +294,8 @@ Not all pixels in the same classes have the exact same values—there is some na
    :width: 450
    :align: center
 
-|
+You can view a demonstration of running and exporting the classification on `YouTube <https://www.youtube.com/watch?v=6b1X7RWPt6I>`_.
+
 
 3.6 Examine and modify your classification
 -------------------------------------------

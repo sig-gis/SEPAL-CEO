@@ -263,6 +263,9 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
   b. The algorithm used to create this mosaic attempts to remove all cloud cover, but is not always successful in doing so. Portions of clouds often remain in the mosaic.
 
 
+You can view a demonstration of this approach on `YouTube <https://www.youtube.com/watch?v=N8kIBBE3tdM>`_.
+
+
 3.2 Creating a mosaic by drawing a polygon
 ===========================================
 
@@ -292,6 +295,8 @@ We will create a mosaic for an area in the Amazon basin.
 4. Your preview should include imagery data across your entire area of interest. Try also to get a cloud-free mosaic.
 5. Name your mosaic for easy retrieval.
 6. When you’re satisfied with your mosaic, **Retrieve** it to Google Earth Engine using the directions below in "Name and save your recipe and mosaic".
+
+You can view a demonstration of this mosaic creation on `YouTube <https://www.youtube.com/watch?v=HiFOaXoclHQ>`_.
 
 
 3.3 Name and save your recipe and mosaic
