@@ -69,6 +69,10 @@ Before we can identify change, we first need to have images to compare. We will 
    It may take a significant amount of time before your mosaics finish exporting.
 
 
+You can view a demonstration of creating these mosaics on `YouTube <https://www.youtube.com/watch?v=X6bRlgXpTnM>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/X6bRlgXpTnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Part 2. Start the classification
@@ -99,6 +103,11 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
 
 .. warning::
    Selecting **Saved Sepal Recipe** may cause an error stating "Google Earth Engine error: Failed to create preview" at the final stage of your classification. This occurs because GEE gets overloaded. If you encounter this error, please retrieve your classification as described in Exercise 2.2.
+
+You can view a demonstration of setting up this classification on `YouTube <https://www.youtube.com/watch?v=2i391dPnCRY>`_.
+
+.. raw:: html
+  <iframe width="1352" height="633" src="https://www.youtube.com/embed/2i391dPnCRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -184,6 +193,13 @@ Now that we have the mosaics created, we will collect change training data. Whil
 .. note::
    If any of the previous sections is unclear, review Modules 1 or 2 for more detailed explanations of how to process mosaics, and collect training data with CEO.
 
+You can view a demonstration of collecting training data on `YouTube <https://www.youtube.com/watch?v=rqFvk5T3tzA>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/rqFvk5T3tzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 Part 3. Two date classification retrieval
 -------------------------------------------
 
@@ -194,6 +210,15 @@ Now that the hard work of setting up the mosaics and creating and adding the tra
 3. Choose 30 m resolution.
 4. Select the Class, Class probability, Forest % and Non-forest % bands.
 5. Click **Retrieve.**
+
+You can view a demonstration of completing and exporting this classification on `YouTube <https://www.youtube.com/watch?v=wJSSSs5tod0>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/wJSSSs5tod0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
 
 Part 4: Quality assurance and quality control
 ----------------------------------------------

@@ -27,11 +27,11 @@ Part 1. Open SEPAL
 1. Navigate to `https://sepal.io/ <https://sepal.io/>`_ to open SEPAL.
 2. Type in your **Username** and **Password** and click **Login**.
 
-.. image:: images/sepal_login.png
+.. figure:: images/sepal_login.png
    :alt: SEPAL login page
    :align: center
 
-|
+
 
 .. note::
    When working in SEPAL, do not click your browser’s back button. This will go back to the previous webpage. Use the buttons within SEPAL to navigate to previous pages. There may also be an arrow in the upper left or right-hand corner of the SEPAL interface to navigate to a previous window.
@@ -41,11 +41,11 @@ Part 2. SEPAL Interface Home
 
 1. Once you are logged in, you will see the following screen. Notice that your username is displayed in the bottom right of the window.
 
-.. image:: images/sepal_home.png
+.. figure:: images/sepal_home.png
    :alt: SEPAL home screen
    :align: center
 
-|
+
 
 2. There are four main navigation tabs in the dock on the left side of the screen.
 
@@ -67,23 +67,23 @@ Part 2. SEPAL Interface Home
 
 5. Next to your **Account Information** is a section called **User Report**, represented by the **$ X/h**. This shows you the allotted budgets you have. An instance refers to any of the various processes that you can perform in SEPAL. If you are running any processes in your current session, they will show up here under Sessions.
 
-.. image:: images/user_report_panel.png
+.. figure:: images/user_report_panel.png
    :alt: User Report panel.
    :width: 350px
    :align: center
 
-|
+
 
 Part 3. Process Tab
 --------------------
 
 1. Click the **Process** tab on the left side of the window.
 
-.. image:: images/process_tab_location.png
+.. figure:: images/process_tab_location.png
    :alt: Arrow pointing out the process tab location
    :align: center
 
-|
+
 
 2. You should now see four options in the center of the screen.
 
@@ -101,12 +101,12 @@ Part 4. Files Tab
 
 2. For example, click the **downloads** folder to expand it. This will display the folders containing any of the data you have downloaded in SEPAL. If you have not downloaded mosaics in SEPAL yet, then this folder will be empty.
 
-.. image:: images/files_menu.png
+.. figure:: images/files_menu.png
    :alt: The files menu
    :align: center
    :width: 350
 
-|
+
 
 3. Notice that there are four buttons at the top right of the window. The three rightmost buttons are inactive, but activate when you select a file.
 
@@ -132,23 +132,23 @@ Part 5. Terminal Tab
   d. Press Enter on your keyboard.
   e. Wait for the new instance to start. This will take several minutes.
 
-.. image:: images/terminal.png
+.. figure:: images/terminal.png
    :alt: The terminal page, including an example of changing the instance
    :align: center
    :width: 450
 
-|
+
 
 Part 6. Apps Tab
 -----------------
 
 1. Click the **Apps** tab on the left side of the screen. This will open up a screen that shows applications that you can access through SEPAL.
 
-.. image:: images/apps_interface.png
+.. figure:: images/apps_interface.png
    :alt: The Apps interface
    :align: center
 
-|
+
 
 2. This will bring up a list of apps you can run in SEPAL. More information about each app is found by clicking on the “i” on the right hand side. Some of the apps include:
 
@@ -180,6 +180,11 @@ In this exercise, you will create a Landsat mosaic for the Mai Ndombe region of 
 | Create a cloud-free mosaic for 2016       |                      |
 +-------------------------------------------+----------------------+
 
+You can view a demonstration of this exercise on `YouTube <https://www.youtube.com/watch?v=N8kIBBE3tdM>`_.
+
+.. raw:: html
+   <iframe width="1352" height="633" src="https://www.youtube.com/embed/N8kIBBE3tdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Part 1. Create a Landsat Mosaic
 --------------------------------
 
@@ -194,12 +199,12 @@ Part 1. Create a Landsat Mosaic
   b. Select from EE table
   c. Draw a polygon
 
-.. image:: images/area_of_interest.png
+.. figure:: images/area_of_interest.png
    :alt: The Area of Interest menu
    :width: 350
    :align: center
 
-|
+
 
 5. We will use the **Select a country/province** option.
 
@@ -209,11 +214,11 @@ Part 1. Create a Landsat Mosaic
   d. [Optional] You can add a **Buffer** to your mosaic. This will include an area around the province of the specified size in your mosaic.
   e. Click **Next.**
 
-.. image:: images/country_province.png
+.. figure:: images/country_province.png
    :alt: The Country or Province selection screen.
    :align: center
 
-|
+
 
 6. In the **Date** menu you can select the **Year** you are interested in or click on **More**.
 
@@ -225,11 +230,11 @@ Part 1. Create a Landsat Mosaic
     i. Select July 1 of 2019 as your target date (2019-07-01), and move your date flags to May 1-September 30.
     ii. Click **Next**.
 
-.. image:: images/date_menu.png
+.. figure:: images/date_menu.png
    :alt: The date menu.
    :align: center
 
-|
+
 
 7. Now select the **Data Sources (SRC)** you’d like. Here, select the **Landsat L8 & L8 T2** option. The color of the label turns brown once it has been selected.Then click **Done**.
 
@@ -244,69 +249,69 @@ Part 1. Create a Landsat Mosaic
   b. To do so, notice the five tabs in the lower right. You can adjust the initial search parameters using the first three of these tabs. For example, Click on **Dat** to expand the date range if you would like.
   c. The last two tabs are for **scene selection** and **composite,** which are more advanced filtering steps. We’ll cover those now.
 
-.. image:: images/mosaic_preview.png
+.. figure:: images/mosaic_preview.png
    :alt: A preview of your mosaic.
    :align: center
 
-|
+
 
 9. We’re now going to go through the **scene selection process**. This allows you to change which specific images to include in your mosaic.
 
   a. You can change the scenes that are selected using the **SCN** button on the lower right of the screen. You can use all scenes or select which are prioritized. You can revert any changes by clicking on **Use All Scenes** and then **Apply**.
   b. Change the **Scenes** by selecting **Select Scenes** with Priority: **Target Date**
 
-.. image:: images/scene_selection.png
+.. figure:: images/scene_selection.png
    :alt: Selecting scenes for your mosaic.
    :align: center
 
-|
+
 
 10. Click Apply. The result should look like the below image.
 
   a. Notice the collection of circles over the Mai Ndombe study area and that they are all populated with a zero. These represent the locations of scenes in the study area and the numbers of images per scene that are selected. The number is currently 0 because we haven’t selected the scenes yet.
 
-  .. image:: images/scene_selection_zeros.png
+  .. figure:: images/scene_selection_zeros.png
      :alt: Scene selection process showing zeros before selection.
      :align: center
 
-|
+
 
   b. Click the Auto-Select button to auto-select some scenes.
 
-.. image:: images/auto_select_scenes.png
+.. figure:: images/auto_select_scenes.png
    :alt: Arrow showing the button for auto selecting scenes.
    :width: 550
    :align: center
 
-|
+
 
 11. You may set a minimum and maximum number of images per scene area that will be selected. Increase the minimum to 2 and the maximum to 100. Click **Select Scenes**. If there is only one scene for an area, that will be the only one selected despite the minimum.
 
-.. image:: images/auto_select_scenes_menu.png
+.. figure:: images/auto_select_scenes_menu.png
    :alt: Menu for auto selecting scenes.
    :width: 350
    :align: center
 
-|
+
 
 12. You should now see imagery overlain with circles indicating how many scenes are selected.
 
-.. image:: images/imagery_number_scenes.png
+.. figure:: images/imagery_number_scenes.png
    :alt: Example of the imagery with the number of scenes selected
    :width: 450
    :align: center
 
-|
+
 
 13. You will notice that the circles that previously displayed a zero now display a variety of numbers. These numbers represent the number of Landsat images per scene that meet your specifications.
 
     Hover your mouse over one of the circles to see the footprint (outline) of the Landsat scene that it represents. Click on that circle.
 
-.. image:: images/select_scenes_interface.png
+.. figure:: images/select_scenes_interface.png
    :alt: The select scenes interface showing 0 available and 4 selected scenes
    :align: center
 
-|
+
 
 14. In the window that opens, you will see a list of selected scenes on the right side of the screen. These are the images that will be added to the mosaic. There are three pieces of information for each:
 
@@ -317,29 +322,29 @@ Part 1. Create a Landsat Mosaic
   a. To expand the Landsat image, hover over one of the images and click **Preview**. Click on the image to close the zoomed in graphic and return to the list of scenes.
   b. To remove a scene from the composite, click the **Remove** button when you hover over the selected scene.
 
-.. image:: images/remove_preview_scenes.png
+.. figure:: images/remove_preview_scenes.png
    :alt: Removing or previewing selected scenes.
    :align: center
 
-|
 
-.. image::images/scene_preview.png
+
+.. figure::images/scene_preview.png
    :alt: Scene preview screen.
    :align: center
 
-|
+
 
 15. On the left hand side, you will see **Available Scenes,** which are images that will not be included in the mosaic but can be added to it. If you have removed an image and would like to re-add it or if there are additional scenes you would like to add, hover over the image and click **Add.**
 
   a. Once you are satisfied with the selected imagery for a given area, click **Close** in the bottom right corner.
   b. You can then select different scenes (represented by the circles) and evaluate the imagery for each scene.
 
-.. image:: images/select_scenes_1.png
+.. figure:: images/select_scenes_1.png
    :alt: Select scenes screen showing one available scene and 3 selected scenes
    :width: 450
    :align: center
 
-|
+
 
 16. You can also change the composing method using the **CMP** button on the lower right.
 
@@ -347,20 +352,20 @@ Part 1. Create a Landsat Mosaic
   b. For this exercise, we will leave these at their default settings.
   c. If you make changes, click Apply after you’re done.
 
-.. image:: images/composite.png
+.. figure:: images/composite.png
    :alt: The composite menu.
    :width: 350px
    :align: center
 
-|
+
 
 17. Now we’ll explore the **Bands** dropdown. Click on the **Red Green Blue** at the bottom of the page.
 
-.. image:: images/arrow_bands.png
+.. figure:: images/arrow_bands.png
    :alt: Arrow pointing at the red, green, blue bands.
    :align: center
 
-|
+
 
 18. The below dropdown menu will appear.
 
@@ -368,21 +373,21 @@ Part 1. Create a Landsat Mosaic
   b. Once selected, the preview will automatically show what the composite will look like.
   c. Use the scroll wheel on your mouse to zoom in to the mosaic and then click and drag to pan around the image. This will help you assess the quality of the mosaic.
 
-.. image:: images/bands_menu.png
+.. figure:: images/bands_menu.png
    :alt: The band combinations menu.
    :width: 350px
    :align: center
 
-|
+
 
 19. The map now shows the complete mosaic that incorporates all of the user-defined settings. Here is an example, yours may look different depending on which scenes you chose.
 
-.. image:: images/completed_mosaic.png
+.. figure:: images/completed_mosaic.png
    :alt: The imagery preview with the completed mosaic shown.
    :width: 450
    :align: center
 
-|
+
 
 20. Using what you’ve learned, take some time to explore adjusting some of the input parameters and examine the influence on the output. Once you have a composite you are happy with, we will download the mosaic (instructions follow).
 
@@ -404,45 +409,45 @@ Part 2. Name and Save your Recipe and Mosaic
 
   d. Click on **Save recipe….** This will also let you rename the mosaic if you choose.
 
-.. image:: images/save_duplicate_export_recipe.png
+.. figure:: images/save_duplicate_export_recipe.png
    :alt: Save, duplicate, export recipe menu.
    :align: center
 
-|
+
 
 2. Now if you click on the three lines icon, you should see an additional option: **Revert to old revision...**
 
-.. image:: images/revert_to_old_revision.png
+.. figure:: images/revert_to_old_revision.png
    :alt: After saving the menu adds a revert to old revision option.
    :align: center
 
-|
+
 
 3. Clicking on this option brings up a list of auto-saved versions from SEPAL. You can use this to revert changes if you make a mistake.
 
    Now, when you open SEPAL and click the Search option, you will see a row with this name that contains the parameters you just set.
 
-.. image:: images/revision_menu.png
+.. figure:: images/revision_menu.png
    :alt: Revisions menu dropdown.
    :align: center
 
-|
+
 
 4. Finally, we will save the mosaic itself. This is called ‘retrieving’ the mosaic. This step is necessary to perform analysis on the imagery.
 
    To download this imagery mosaic to your SEPAL account, click the **Retrieve** button.
 
-.. image:: images/retrieve.png
+.. figure:: images/retrieve.png
    :alt: The retrieve button.
    :align: center
 
-|
 
-.. image:: images/retrieve_menu.png
+
+.. figure:: images/retrieve_menu.png
    :alt: The retrieve menu
    :align: center
 
-|
+
 
 5. A window will appear with the following options:
 
@@ -459,11 +464,11 @@ Part 2. Name and Save your Recipe and Mosaic
 
 7. You will notice the **Tasks** icon is now spinning. If you click on it, you will see the data retrieval is in process. This step will take some time.
 
-.. image:: images/retrieval_task.png
+.. figure:: images/retrieval_task.png
    :alt: Retrieval task being carried out
    :align: center
 
-|
+
 
 .. note::
    This will take 25 minutes or more to finish downloading, however, you can move on to the next exercise without waiting for the download to finish.

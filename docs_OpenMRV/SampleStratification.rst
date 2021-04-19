@@ -255,6 +255,10 @@ These directions will provide a stratified random sample of the proper sampling 
 
 19. You can also download a .shp file to examine your points in QGIS, ArcGIS, or another GIS program. You can also create a CEO project using a .shp file, however that is outside of the scope of this tutorial.
 
+You can view a demonstration of creating this stratification on `YouTube <https://www.youtube.com/watch?v=mbskeQNjj7A>`_.
+
+
+
 3.3 Preparing your CSV for CEO
 ===============================
 
@@ -278,6 +282,8 @@ For projects with large sample sizes, where you want to have multiple people col
   d. Reorder the columns in Excel so that LAT, LONG, PLOTID are the first three columns, in that order.
 
 5. Save your updated .csv, making sure you save it as a .csv and not as an .xlsx file.
+
+You can view an example of preparing the .csv for CEO on `You Tube <https://www.youtube.com/watch?v=6xBjc8wYSNw>`_.
 
 3.4 Creating a CEO project using your CSV
 ==========================================
@@ -388,6 +394,10 @@ For projects with large sample sizes, where you want to have multiple people col
   b. You can now visit your project from your institution’s page!
 
 16. For instructions on collecting data, please see the tutorials here on OpenMRV under process "Sampling design" and tools "SEPAL" and "CEO".
+
+You can view a demonstration of creating a CEO project using a .csv on `YouTube <https://www.youtube.com/watch?v=j8eTVqkEcDI>`_.
+
+
 
 4. Frequently Asked Questions (FAQs)
 -------------------------------------

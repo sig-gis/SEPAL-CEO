@@ -88,7 +88,8 @@ Before we can identify change, we first need to have images to compare. We will 
 .. note::
    It may take a significant amount of time before your mosaics finish exporting.
 
-|
+You can view a demonstration of creating these mosaics on `YouTube <https://www.youtube.com/watch?v=X6bRlgXpTnM>`_.
+
 
 3.2 Start the classification
 =============================
@@ -118,6 +119,9 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
 
 .. warning::
    Selecting **Saved Sepal Recipe** may cause an error stating "Google Earth Engine error: Failed to create preview" at the final stage of your classification. This occurs because GEE gets overloaded. If you encounter this error, please retrieve your classification to GEE.
+
+You can view a demonstration of setting up this classification on `YouTube <https://www.youtube.com/watch?v=2i391dPnCRY>`_.
+
 
 3.3 Collect change classification training data
 ================================================
@@ -196,7 +200,10 @@ Now that we have the mosaics created, we will collect change training data. Whil
    :width: 450
    :align: center
 
-|
+You can view a demonstration of collecting training data on `YouTube <https://www.youtube.com/watch?v=rqFvk5T3tzA>`_.
+
+
+
 
 3.5 Two date classification retrieval
 ======================================
@@ -208,6 +215,10 @@ Now that the hard work of setting up the mosaics and creating and adding the tra
 3. Choose 30 m resolution.
 4. Select the Class, Class probability, Forest % and Non-forest % bands.
 5. Click **Retrieve.**
+
+
+You can view a demonstration of completing and exporting this classification on `YouTube <https://www.youtube.com/watch?v=wJSSSs5tod0>`_.
+
 
 3.6 Quality assurance and quality control
 ==========================================

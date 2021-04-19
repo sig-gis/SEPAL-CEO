@@ -159,6 +159,8 @@ The aim of this stratified sampling design tool is to analyze results from a str
 
 The concept is derived from map accuracy assessment principles: characterized frequency of errors (omission and commission) for each map class may be used to compute area estimates and also to estimate the uncertainties (confidence intervals) for the areas for each class.
 
+You can view a demonstration of completing the Stratified Area Estimator-Analysis tool on `YouTube <https://www.youtube.com/watch?v=kFTfKEjj2F4>`_.
+
 1. First, open the Stratified Area Estimator-Analysis Tool.
 
   a. In the Apps SEPAL window select Stratified Area Estimator - Analysis.
