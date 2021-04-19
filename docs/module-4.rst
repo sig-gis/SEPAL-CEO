@@ -256,7 +256,7 @@ These directions will provide a stratified random sample of the proper sampling 
 You can view a demonstration of creating this stratification on `YouTube <https://www.youtube.com/watch?v=mbskeQNjj7A>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/mbskeQNjj7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/mbskeQNjj7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Part 2. Creating a CEO project via CSV
@@ -414,7 +414,7 @@ More detailed instructions, including descriptions of many useful options, can b
 You can view a demonstration of creating a CEO project using a .csv on `YouTube <https://www.youtube.com/watch?v=j8eTVqkEcDI>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/j8eTVqkEcDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/j8eTVqkEcDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Congratulations! You have created a stratified random sampling design for your map and a project (CEO or CEO-SEPAL) to collect reference data.**
 
@@ -665,7 +665,7 @@ In general, data collection should include the following steps:
 You can view a demonstration of collecting data on CEO on `YouTube <https://www.youtube.com/watch?v=gMJP17Ue6lQ>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/gMJP17Ue6lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/gMJP17Ue6lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -1009,7 +1009,7 @@ The concept is derived from map accuracy assessment principles: characterized fr
 You can view a demonstration of completing the Stratified Area Estimator-Analysis tool on `YouTube <https://www.youtube.com/watch?v=kFTfKEjj2F4>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/kFTfKEjj2F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/kFTfKEjj2F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. First, open the Stratified Area Estimator-Analysis Tool
 

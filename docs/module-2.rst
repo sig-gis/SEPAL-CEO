@@ -108,7 +108,7 @@ You can view a demonstration of the mosaic creation on `YouTube <https://www.you
 
 .. raw:: html
 
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/HiFOaXoclHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/HiFOaXoclHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Part 1. Creating and exporting a mosaic for a drawn AOI
@@ -220,7 +220,7 @@ Part 1. Set up your classification
 You can view a demonstration of the classification setup on `YouTube <https://www.youtube.com/watch?v=HBlYrwmq5ak>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/HBlYrwmq5ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/HBlYrwmq5ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Part 2. Collect training data points
@@ -346,7 +346,7 @@ Not all pixels in the same classes have the exact same values—there is some na
 You can view a demonstration of the training data collection on `YouTube <https://www.youtube.com/watch?v=8HgGQnHl5mE>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/8HgGQnHl5mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/8HgGQnHl5mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 **Congratulations! You have learned how to collect training data in SEPAL's classification interface. Stay on this screen for the next Exercise.**
@@ -461,7 +461,7 @@ Part 1. Review additional classification options
 You can view a demonstration of running and exporting the classification on `YouTube <https://www.youtube.com/watch?v=6b1X7RWPt6I>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/6b1X7RWPt6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/6b1X7RWPt6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Part 2. QA/QC considerations and methods
