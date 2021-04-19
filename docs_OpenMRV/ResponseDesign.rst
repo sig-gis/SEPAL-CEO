@@ -60,12 +60,10 @@ In this tutorial, you will inform your response design by building a decision tr
 
 1. Create a decision tree for your land cover or land use classes. There may be one already in use by your department.  The tree should capture the most important classifications for your study. Here is an example:
 
-.. figure:: images/land_cover_decision_tree.png
-   :alt: Decision tree for land cover
-   :width: 450
-   :align: center
-
-|
+  .. figure:: images/land_cover_decision_tree.png
+     :alt: Decision tree for land cover
+     :width: 450
+     :align: center
 
   a. This example includes a hierarchical component. For example, the green and red categories have multiple sub-categories, which might be multiple types of forest or crops or urban areas. You can also have classification schemes that are all one level with no hierarchical component.
   b. For this tutorial, we’ll use a simplified land cover and land use classification as in this second image:

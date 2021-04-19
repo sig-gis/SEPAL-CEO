@@ -128,7 +128,6 @@ Project planning and methods documentation play a key role in any remote sensing
 
 8. Partnerships (vendors, agencies, bureaus, etc.)
 
- 
 
 .. figure:: images/copyright.png
    :alt: CC-BY-ShareAlike

@@ -142,8 +142,6 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
      :alt: Scene selection process showing zeros before selection.
      :align: center
 
-|
-
   b. Click the Auto-Select button to auto-select some scenes.
 
 .. figure:: images/auto_select_scenes.png
@@ -276,18 +274,16 @@ We will create a mosaic for an area in the Amazon basin.
 
   a. Select **Draw Polygon** from the dropdown list.
 
-.. figure:: images/aoi_dropdown.png
-   :alt: Area of interest dropdown menu.
-   :width: 450px
-   :align: center
-
-|
+  .. figure:: images/aoi_dropdown.png
+     :alt: Area of interest dropdown menu.
+     :width: 450px
+     :align: center
 
   b. Navigate using the map to the State of Rondonia (Brazil) and either draw a polygon around it or draw a polygon within the borders. A smaller polygon will export faster.
 
-.. figure:: images/rondonia.png
-   :alt: A polygon drawn around the State of Rondonia.
-   :align: center
+  .. figure:: images/rondonia.png
+     :alt: A polygon drawn around the State of Rondonia.
+     :align: center
 
 
 
