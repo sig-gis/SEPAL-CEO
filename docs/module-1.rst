@@ -183,7 +183,8 @@ In this exercise, you will create a Landsat mosaic for the Mai Ndombe region of 
 You can view a demonstration of this exercise on `YouTube <https://www.youtube.com/watch?v=N8kIBBE3tdM>`_.
 
 .. raw:: html
-   <iframe width="1352" height="633" src="https://www.youtube.com/embed/N8kIBBE3tdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/N8kIBBE3tdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Part 1. Create a Landsat Mosaic
 --------------------------------
