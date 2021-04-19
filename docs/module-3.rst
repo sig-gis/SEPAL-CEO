@@ -72,6 +72,7 @@ Before we can identify change, we first need to have images to compare. We will 
 You can view a demonstration of creating these mosaics on `YouTube <https://www.youtube.com/watch?v=X6bRlgXpTnM>`_.
 
 .. raw:: html
+
    <iframe width="600" height="280" src="https://www.youtube.com/embed/X6bRlgXpTnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -107,7 +108,8 @@ However, SEPAL has a built-in reference data collection tool in the classifier. 
 You can view a demonstration of setting up this classification on `YouTube <https://www.youtube.com/watch?v=2i391dPnCRY>`_.
 
 .. raw:: html
-  <iframe width="600" height="280" src="https://www.youtube.com/embed/2i391dPnCRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <iframe width="600" height="280" src="https://www.youtube.com/embed/2i391dPnCRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -196,6 +198,7 @@ Now that we have the mosaics created, we will collect change training data. Whil
 You can view a demonstration of collecting training data on `YouTube <https://www.youtube.com/watch?v=rqFvk5T3tzA>`_.
 
 .. raw:: html
+
    <iframe width="600" height="280" src="https://www.youtube.com/embed/rqFvk5T3tzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -214,6 +217,7 @@ Now that the hard work of setting up the mosaics and creating and adding the tra
 You can view a demonstration of completing and exporting this classification on `YouTube <https://www.youtube.com/watch?v=wJSSSs5tod0>`_.
 
 .. raw:: html
+
    <iframe width="600" height="280" src="https://www.youtube.com/embed/wJSSSs5tod0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 

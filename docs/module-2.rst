@@ -220,6 +220,7 @@ Part 1. Set up your classification
 You can view a demonstration of the classification setup on `YouTube <https://www.youtube.com/watch?v=HBlYrwmq5ak>`_.
 
 .. raw:: html
+
    <iframe width="600" height="280" src="https://www.youtube.com/embed/HBlYrwmq5ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -346,6 +347,7 @@ Not all pixels in the same classes have the exact same values—there is some na
 You can view a demonstration of the training data collection on `YouTube <https://www.youtube.com/watch?v=8HgGQnHl5mE>`_.
 
 .. raw:: html
+
    <iframe width="600" height="280" src="https://www.youtube.com/embed/8HgGQnHl5mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -461,6 +463,7 @@ Part 1. Review additional classification options
 You can view a demonstration of running and exporting the classification on `YouTube <https://www.youtube.com/watch?v=6b1X7RWPt6I>`_.
 
 .. raw:: html
+
    <iframe width="600" height="280" src="https://www.youtube.com/embed/6b1X7RWPt6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
