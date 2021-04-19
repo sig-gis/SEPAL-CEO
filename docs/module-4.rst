@@ -1024,9 +1024,9 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
     i. You will land on the **Introduction** page which allows you to choose your language and provides background information on the tool. Note that Reference and Documents are in the same place as the Design tool.
     ii. The pages that contain the necessary steps for the workflow are on the left side of the screen and need to be completed sequentially.
 
-.. figure:: images/stratified_estimator_analysis_tool.png
-   :alt: The stratified estimator analysis tool.
-   :align: center
+  .. figure:: images/stratified_estimator_analysis_tool.png
+     :alt: The stratified estimator analysis tool.
+     :align: center
 
 
 
@@ -1049,10 +1049,10 @@ You can view a demonstration of completing the Stratified Area Estimator-Analysi
     iii. As a reminder, if you exported your classification to the SEPAL workspace, the file will be in your SEPAL downloads folder. (downloads > classification folder > sae_design_AmazonClassification).
     iv. Within this folder, select **area_rast.csv** (see image below).
 
-.. figure:: images/add_classification.png
-   :alt: Adding the classification
-   :width: 450
-   :align: center
+  .. figure:: images/add_classification.png
+     :alt: Adding the classification
+     :width: 450
+     :align: center
 
 
 

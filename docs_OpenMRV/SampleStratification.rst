@@ -74,11 +74,9 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 1. For either approach, first select the purple wrench **Apps** button. If you have an existing tab open, you may need to click the **plus** sign in the top right.
 2. To use RStudio, choose the **R Studio** application. You may be prompted to enter your SEPAL username and password to enter R Studio.
 
-.. figure:: images/apps_rstudio.png
-   :alt: The apps screen, with RStudio shown.
-   :align: center
-
-|
+  .. figure:: images/apps_rstudio.png
+     :alt: The apps screen, with RStudio shown.
+     :align: center
 
   a. This will open an instance of RStudio, an IDE for the R programming language.
   b. You should see a ‘Files’ tab in the lower right window.
@@ -87,11 +85,9 @@ There are two tools that can be used to upload files. The first is RStudio, and 
 
   c. Click the **Upload** button that is located in the lower right side of the R Studio interface (see below).
 
-.. figure:: images/rstudio_interface.png
-   :alt: The RStudio interface in SEPAL.
-   :align: center
-
-|
+  .. figure:: images/rstudio_interface.png
+     :alt: The RStudio interface in SEPAL.
+     :align: center
 
   d. In the **Upload Files** window, click **Choose File.**
   e. Navigate to the correct location on your drive, select your map and click Open.

@@ -214,18 +214,14 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 
   Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.
 
-.. figure:: images/version_control_system.png
-   :alt: Figure showing how version control systems work.
-
-|
+  .. figure:: images/version_control_system.png
+     :alt: Figure showing how version control systems work.
 
   Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
 
 
-.. figure:: images/version_control_multiple_contributors.png
-   :alt: Version control with multiple contributors
-
-|
+  .. figure:: images/version_control_multiple_contributors.png
+     :alt: Version control with multiple contributors
 
   A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.github.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.github.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
 
