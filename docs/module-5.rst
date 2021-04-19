@@ -217,7 +217,7 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 .. figure:: images/version_control_system.png
    :alt: Figure showing how version control systems work.
 
-
+|
 
   Once you think of changes as separate from the document itself, you can then think about “playing back” different sets of changes on the base document, ultimately resulting in different versions of that document. For example, two users can make independent sets of changes on the same document.
 
@@ -225,7 +225,7 @@ The following explanation is adapted from the Software Carpentry Git lesson.
 .. figure:: images/version_control_multiple_contributors.png
    :alt: Version control with multiple contributors
 
-
+|
 
   A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a `commit <http://swcarpentry.github.io/git-novice/reference.html#commit>`_, and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a `repository <http://swcarpentry.github.io/git-novice/reference.html#repository>`_. Repositories can be kept in sync across different computers, facilitating collaboration among different people.”
 
@@ -257,15 +257,11 @@ Google Earth Engine has implemented version control and version history for all 
    :width: 450
    :align: center
 
-
-
 Detailed information can be found under “Development Environments: Earth Engine Code Editor” here: https://developers.google.com/earth-engine/guides/playground
 
 .. figure:: images/earth_engine_code_editor.png
    :alt: Earth engine code editor
    :align: center
-
-
 
 **Congratulations, you have learned about version control options for your project!**
 
