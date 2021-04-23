@@ -328,8 +328,6 @@ In SEPAL, there are multiple things you can do to improve your classification re
 
 The workflow in this tutorial has been adapted from material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University.
 
-Additional information
-
 =======================
 
 .. figure:: images/cc.png
