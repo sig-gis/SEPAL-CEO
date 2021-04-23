@@ -515,7 +515,7 @@ You can resent your password by navigating to https://collect.earth/ and clickin
 5. References
 -------------
 
-Much of this information is based on Standard Operating Procedures developed by Till Neeff at FAO for global application.
+Much of this information is based on Standard Operating Procedures for sample-based area estimation which can be found here on OpenMRV.
 
 
 ======================================

@@ -407,9 +407,9 @@ For more information, please see the Institutional Manual available on the colle
 
 Gallego, F.J., 2004. Remote sensing and land cover area estimation. International Journal of Remote Sensing, 25(15), pp.3019-3047. https://doi.org/10.1080/01431160310001619607
 
-GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome
+GFOI. 2016. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative, Edition 2.0, Food and Agriculture Organization, Rome. Available online at https://www.fs.fed.us/rm/pubs_journals/2020/rmrs_2020_espejo_a001.pdf
 
-GOFC-GOLD. 2016. A sourcebook of methods and procedures for monitoring and reporting anthropogenic greenhouse gas emissions and removals associated with deforestation, gains and losses of carbon stocks in forests remaining forests, and forestation. GOFC-GOLD Report version COP22-1, (GOFC-GOLD Land Cover Project Office, Wageningen University, The Netherlands)
+Chapter 2 and Chapter 3 of: GFOI (2020) Integrating remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative. Edition 3.0.  Available online at https://www.reddcompass.org/download-the-mgd
 
 IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
 

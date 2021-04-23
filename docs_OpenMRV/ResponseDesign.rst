@@ -102,7 +102,7 @@ In this tutorial, you will inform your response design by building a decision tr
 4. References
 --------------
 
-* Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests. 2020. Methods and Guidance Document from the Global Forest Observations Initiative (GFOI).  Available online at https://www.reddcompass.org/download-the-mgd
+* Chapter 2 of: GFOI (2020) Integrating remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative. Edition 3.0.  Available online at https://www.reddcompass.org/download-the-mgd
 
 =========================
 
