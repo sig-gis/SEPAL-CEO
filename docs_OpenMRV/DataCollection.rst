@@ -1,5 +1,5 @@
 ---
-title: Data collection with data quality management approaches
+title: Data collection with data quality management approaches in SEPAL
 summary: This tutorial will guide you through collecting reference data by visually interpreting land cover at sample locations. You will also learn how to create a data quality assurance plan that meets the needs and budgets of your specific mapping projects.
 author: Karen Dyson
 creation date: March, 2021
@@ -35,9 +35,9 @@ group:
   stage: Reference data collection
 ---
 
---------------------------------------------------------
-Data collection with data quality management approaches
---------------------------------------------------------
+----------------------------------------------------------------
+Data collection with data quality management approaches in SEPAL
+----------------------------------------------------------------
 
 1. Background
 --------------
@@ -529,6 +529,6 @@ Copyright 2021, World Bank
 This work was developed by Karen Dyson under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Data collection with data quality management approaches. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
+Dyson, K. 2021. Data collection with data quality management approaches in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. figure:: images/wb_fcpf_gfoi.png
