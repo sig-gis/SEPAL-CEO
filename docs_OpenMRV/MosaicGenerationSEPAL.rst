@@ -47,8 +47,8 @@ In this tutorial, you will create a Landsat mosaic for the Mai Ndombe region of 
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account. Please check under tool "SEPAL" here on OpenMRV for an introduction to SEPAL.
-* A GEE account. Please check under tool "SEPAL" here on OpenMRV for an introduction to SEPAL.
+* A SEPAL account. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV.
+* A GEE account. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV.
 
 3. Tutorial: Mosaic generation in SEPAL
 ----------------------------------------
