@@ -57,9 +57,9 @@ After we create the map, you might find that there are some areas that are not c
 2.1 Pre-requisites
 ===================
 
-* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
-* Land cover categories. Please see the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
-* Landsat mosaic. Please see the tutorial here on OpenMRV under process "Pre-processing" and tool "SEPAL".
+* A SEPAL account. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV.
+* Land cover categories. Please check the tutorial here on OpenMRV under process "Training data collection" and tool "SEPAL".
+* Landsat mosaic. Please check the tutorial here on OpenMRV under process "Pre-processing" and tool "SEPAL".
 
 3. Tutorial: Creating a classification using machine learning algorithms in SEPAL
 ----------------------------------------------------------------------------------
@@ -326,7 +326,7 @@ In SEPAL, there are multiple things you can do to improve your classification re
 5. References
 --------------
 
-The workflow in this tutorial has been adapted from material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University.
+The workflow in this tutorial has been adapted from material developed by Dr. Pontus Olofsson, Christopher E. Holden, and Eric L. Bullock at the Boston Education in Earth Observation Data Analysis in the Department of Earth & Environment, Boston University. https://github.com/beeoda
 
 =======================
 
