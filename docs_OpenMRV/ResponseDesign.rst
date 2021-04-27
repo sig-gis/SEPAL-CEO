@@ -30,9 +30,9 @@ group:
 ---
 
 
------------------------------------
-Response design for classification
------------------------------------
+-------------------------------------------
+Response design for classification in SEPAL
+-------------------------------------------
 
 1. Background
 --------------
@@ -117,6 +117,6 @@ Copyright 2021, World Bank
 This work was developed by Karen Dyson under World Bank contract with Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Response design for classification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
+Dyson, K. 2021. Response design for classification in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. figure:: images/wb_fcpf_gfoi.png
