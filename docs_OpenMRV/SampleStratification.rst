@@ -1,5 +1,5 @@
 ---
-title: Sample design and stratification
+title: Sample design and stratification in SEPAL
 summary: We will use the SEPAL SAE-Design tool to create a stratified area estimate. The SAE-Design tool will generate a set of stratified random points that are placed in each of the different land cover classes represented in your map. The number of points in each class will be scaled to the area each class covers in the map. The total sample size, the number of points used to validate the map will depend on your expected overall accuracy.
 author: Karen Dyson
 creation date: March, 2021
@@ -38,9 +38,9 @@ group:
   stage: Reference data collection
 ---
 
----------------------------------
-Sample design and stratification
----------------------------------
+-----------------------------------------
+Sample design and stratification in SEPAL
+-----------------------------------------
 
 1. Background
 --------------
@@ -389,7 +389,7 @@ You can view an example of preparing the .csv for CEO on `You Tube <https://www.
   a. Collect earth will ask you to confirm, click OK.
   b. You can now visit your project from your institution’s page!
 
-16. For instructions on collecting data, please see the tutorials here on OpenMRV under process "Sampling design" and tools "SEPAL" and "CEO".
+16. For instructions on collecting data, please see the tutorials here on OpenMRV under process "Sample Data Collection" and tools "SEPAL" and "CEO".
 
 You can view a demonstration of creating a CEO project using a .csv on `YouTube <https://www.youtube.com/watch?v=j8eTVqkEcDI>`_.
 
@@ -429,7 +429,7 @@ Copyright 2021, World Bank
 This work was developed by Karen Dyson under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Sample design and stratification. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
+Dyson, K. 2021. Sample design and stratification in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. figure:: images/wb_fcpf_gfoi.png
 
