@@ -1,5 +1,5 @@
 ---
-title: Response design for classification
+title: Response design for classification in SEPAL
 summary: In this tutorial, you will inform your response design by building a decision tree for your classification.
 author: Karen Dyson
 creation date: March, 2021
