@@ -1,5 +1,5 @@
 ---
-title: Area and uncertainty estimation
+title: Area and uncertainty estimation in SEPAL
 summary: In this tutorial, we will use the SEPAL “Stratified estimator--Analysis” tool to conduct the area and uncertainty estimation. This tool quantifies the agreement between the validation reference points and the map product, providing information on how well the class locations were predicted.
 author: Karen Dyson
 creation date: March, 2021
@@ -18,9 +18,9 @@ group:
   stage: Area estimation/Accuracy Assessment
 ---
 
---------------------------------
-Area and uncertainty estimation
---------------------------------
+----------------------------------------
+Area and uncertainty estimation in SEPAL
+----------------------------------------
 
 1. Background
 --------------
@@ -288,6 +288,6 @@ Copyright 2021, World Bank
 This work was developed by Karen Dyson under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
 
 | Attribution
-Dyson, K. 2021. Area and uncertainty estimation. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
+Dyson, K. 2021. Area and uncertainty estimation in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
 
 .. figure:: images/wb_fcpf_gfoi.png
