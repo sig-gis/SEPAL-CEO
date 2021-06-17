@@ -39,8 +39,6 @@ The BIOTA tool is part of the Sattelite Monitoring for Forest Management (SMFM) 
 -   Above-ground biomass change
 -   Classified forest change types (deforestation, degradation, etc)
 
-In this exercise, we will generate a biomass and a forest change map, however you should be able to generate any desired outputs.
-
 More information can be found online at https://www.smfm-project.com/.
 
 2. Learning objectives
