@@ -34,13 +34,15 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
 
    Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells are typically python code that runs some operation or analysis. 
 
+
 .. figure:: images/notebook_cell.png
    :alt: Example of a Jupyter Notebook cell.
    :width: 450
    :align: center
 
-   1. Running cells
-   
+
+
+2. Running cells
    To run a cell, click on the cell then locate and click the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
 .. figure:: images/notebook_run.png
@@ -49,20 +51,19 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
    :align: center
 
 
-1. Kernel
+3. Kernel
    
    The kernel is the computation engine that executes the code in the jupyter notebook. In this case it is a python 3 kernel. For this tutorial you do not need to know much about this, but if you notebook freezes or you need to reset for any reason you can find kernel operations on the tool bar menu.
+
+   Restarting the kernel:
+     a. Navigate to the tool bar at the top of the notebook and select *Kernel*.
+     b. From the dropdown menu, select *restart Kernel and Clear Outputs*
 
 .. figure:: images/notebook_kernel.png
    :alt: Example restarting Jupyter Notebook kernel.
    :width: 450
    :align: center
 
-
-
-   Restarting the kernel:
-      a. Navigate to the tool bar at the top of the notebook and select *Kernel*.
-      b. From the dropdown menu, select *restart Kernel and Clear Outputs*
 
 Part 1. Preparing you data
 --------------------------------------------
@@ -117,24 +118,25 @@ Part 2. Setup
    :width: 450
    :align: center
 
-   2. Install the package via the SEPAL Terminal
+   Successful setup.
 
-      1. Navigate to your SEPAL **Terminal**
-      2. Start a new instance or  join your current instance
-      3. Clone the deforest github repository to you SEPAL account
-         ``` git clone https://github.com/smfm-project/deforest ``` 
+2. Install the package via the SEPAL Terminal
+   1. Navigate to your SEPAL **Terminal**
+   2. Start a new instance or  join your current instance
+   3. Clone the deforest github repository to you SEPAL account
+    ``` git clone https://github.com/smfm-project/deforest ``` 
+
+
 
 .. figure:: images/clone_deforest.png
-         :alt: Cloning a repository via the SEPAL terminal.
-         :width: 450
-         :align: center
+   :alt: Cloning a repository via the SEPAL terminal.
+   :width: 450
+   :align: center
 
-   3. Take a moment to read through the help document of the deforest tool. In the next part we will explain in more detail what some of the paramters.
+   
 
-.. .. figure:: images/retrieval_mosaic.png
-..    :alt: The retrieval screen for mosaics.
-..    :width: 450
-..    :align: center
+3. Take a moment to read through the help document of the deforest tool. In the next part we will explain in more detail some of the parameters.
+
 
 
 Part 2.Process the time series
@@ -197,6 +199,7 @@ Now that we have run the deforestation processing change, we can visualize our o
    :width: 450
    :align: center
 
+   
    The confirmed image shows the years of change that have been detected in the time series. Stable forest is colored green, and non forest is colored yellow, and the change years colored by a blue gradient. 
 
    It is recommended that the user discards the first 2-3 years of change, or uses a very high quality forest baseline map to mask out locations that weren't forest at the start of the time serries. This is needed since our input imagery is a a forest probability time series which initially considers the landscape as forest.
@@ -211,6 +214,7 @@ Next, well check out the deforest warning output.
    :width: 450
    :align: center
 
+   
    This image shows the combined probability of non-forest existing at the end of our time series in locations that have not yet been flagged as deforested. This can be used to provide information on locations that have not yet reached the threshold for confirmed changes, but are looking likely to possible. 
 
 
