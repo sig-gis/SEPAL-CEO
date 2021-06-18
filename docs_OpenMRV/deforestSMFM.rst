@@ -1,5 +1,29 @@
+---
+title: Detecting deforestation with the SMFM Deforest tool in SEPAL
+summary: The DEnse FOREst Time Series (deforest) tool is a method for detecting changes in forest cover in a time series of Earth observation data.
+author: John Dilger
+creation date: June, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- SEPAL
+- Land cover mapping
+- Forest mapping
+- Supervised Classification
+
+group:
+- category: SEPAL
+  stage: Classification
+---
+
 =================================
-Module N. SMFM Deforest
+SMFM Deforest tool
 =================================
 
 
@@ -15,8 +39,7 @@ This module should take you approximately **some amount of time**.
 Exercise N.1. Data preparation
 ----------------------------------------
 
-In this exercise we will be using the sample data that is included with the tool. 
-In this example, you will create optical mosaics and classify them, building on skills learned in Modules 1 and 2. Alternatively, you may also use two classifications from your own research area.
+For this exercise we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create an time serries of forest probability using tools with the SEPAL platform.
 
 .. csv-table::
    :header: "Objectives","Prerequisites"
@@ -28,11 +51,11 @@ In this example, you will create optical mosaics and classify them, building on 
 Part 0. (Optional) Jupyter notebook basics
 -------------------------------------------
 
-If you are unfamiliar with Jupyter notebooks this section is meant to get you aquatinted enough with the system to successfully use the SMFM Deforest tool. A notebook is significantly different than most SEPAL applications, but is a powerful tool used in data science and other disciplines.
+If you are unfamiliar with Jupyter notebooks this section is meant to get you aquatinted enough with the system to successfully run the SMFM Deforest tool. A notebook is significantly different than most SEPAL applications, but they are a powerful tool used in data science and other disciplines.
 
 1. Cells
 
-   Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells are typically python code that runs some operation or analysis. 
+   Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool we will be using Python. 
 
 
 .. figure:: images/notebook_cell.png
@@ -43,6 +66,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
 
 
 2. Running cells
+   
    To run a cell, click on the cell then locate and click the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
 .. figure:: images/notebook_run.png
@@ -72,39 +96,40 @@ Part 1. Preparing you data
    SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL. 
 
 
-This tutorial will work with the current SEPAL implementation, but note that the data preparation steps can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
+This tutorial will use the demo data that is packaged with the SMFM Deforest tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note though, that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
 
-If you already have a times series of percent forest coverage feel free to use that, or there is demo data that can be downloaded to test the tool as well.
+If you already have a times series of percent forest coverage feel free to use that.
 
-A. SEPAL workflow
+A. Download demo data
 
-   1. Create an optical mosaic with of Ghana selecting Landsat 8
+   1. Navigate to your SEPAL **Terminal**
+   2. Start a new instance or  join your current instance
+   3. Clone the deforest github repository to you SEPAL account useing the following command
+   
+   ``` git clone https://github.com/smfm-project/deforest ``` 
+   
+B. SEPAL workflow
+
+   1. Create an optical mosaic for your area of interest
    2. Save the mosaic as a recipe
    3. Open a new classification and point to the optical mosaic recipe as the image to classify
    
-      1. Select bands: blue, green, red, nir, swir1, & swir2
-      2. Derive forest/non-forest training data
+      1. Select the bands you want to include in the classification
+      2. Add forest/non-forest training data
  
          1. Sample points directly in SEPAL
-         2. Optionally, use Earth Engine asset : users/TEST/ghana_samples
+         2. Optionally, use Earth Engine asset 
    
       3. Apply the classifier
       4. Select the **%forest output**
       5. Save the classification as a recipe
    4. Open a new time-series
-      1.  Select Ghana as your AOI 
-      2.  Choose dates: 2015-01-01 through 2021-01-01
-      3.  In the 'SRC' box select Landsat 8 and the classification to apply
+      1.  Select the same area of interest as your mosaic 
+      2.  Choose a date range for the time series 
+      3.  In the 'SRC' box select satellites you used in the previous steps and the classification to apply
       4.  Then you can download the time series to your SEPAL workspace
 .. note::
-   It will take many hours to download the classified time series to your account.
-
-B. Download demo data
-
-   1. Navigate to your SEPAL **Terminal**
-   2. Start a new instance or  join your current instance
-   3. Clone the deforest github repository to you SEPAL account
-
+   It will take many hours to download the classified time series to your account depending upon how large your area of interest is.
 
 Part 2. Setup
 --------------------------------------------
@@ -121,10 +146,12 @@ Part 2. Setup
    Successful setup.
 
 2. Install the package via the SEPAL Terminal
+   
    1. Navigate to your SEPAL **Terminal**
    2. Start a new instance or  join your current instance
    3. Clone the deforest github repository to you SEPAL account
     ``` git clone https://github.com/smfm-project/deforest ``` 
+   4. Return to the SMFM notebook and repeat step 1.
 
 
 
@@ -139,18 +166,18 @@ Part 2. Setup
 
 
 
-Part 2.Process the time series
+Part 3. Process the time series
 ---------------------------------
 
-The we will run the deforest tool on our time series. The following workflow follows if you are using custom data, but if you are using the demo data skip to step 2.
+Processing the time series imagery can be done with a single line of code using the Deforest change.py command line interface.
 
-1. Change the command to point to the time series of of percent forest images you exported in earlier steps. The command should look similar as below
+1. To use the demo imagery you do not need to change any of the inputs, but if you are using a custom time serries you will need to make some modifications. To change the command to point to a custom time series of of percent forest images you will need to update the path to your time serries. 
 
 Original::
 
    !python3 ~/deforest/sepal/change.py ~/deforest/sepal/example_data/Time_series_2021-03-24_10-53-03/0/ -o ~/ -n sampleOutput -d 12-01 04-30 -t 0.999 -s 6000 -v 
 
-New::
+Example path to time serries updated::
 
    !python3 ~/deforest/sepal/change.py  ~/downloads/PATH_TO_TIME_SERIES/0/ -o ~/ -n sampleOutputT -d 12-01 01-08 -t 0.999 -s 6000 -v 
 
@@ -188,7 +215,7 @@ If you would like to use a time frame other than the example update the **date r
 Part 3. Data visualization
 ---------------------------
 
-Now that we have run the deforestation processing change, we can visualize our output maps. The outputs of the SMFM tool are two images **confirmed** and **warning**. We will look at the confirmed image first.
+Now that we have run the deforestation processing chain, we can visualize our output maps. The outputs of the SMFM tool are two images **confirmed** and **warning**. We will look at the confirmed image first.
 
 1. Run the first **Data visualization** cell.
 
