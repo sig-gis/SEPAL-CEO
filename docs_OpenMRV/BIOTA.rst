@@ -172,6 +172,8 @@ Once the downloads are finalized for both years, you are able to see the downloa
     :alt: SEPAL Files with downloaded data.
     :align: center
 
+You can view a demonstration of the above steps on `YouTube <https://youtu.be/d759Aqi85HE>`_.
+
 3.3 Processing the data and producing outputs
 =============================================
 
@@ -205,6 +207,7 @@ Once done, you will see a message similar to the one below, and all outputs will
     :alt: Process finalized.
     :align: center
 
+You can view a demonstration of the above steps on `YouTube <https://youtu.be/OMGESeERRGo>`_.
 
 3.4 Displaying your outputs
 ===========================
@@ -276,6 +279,8 @@ Then, the file will be located in your SEPAL Files. You can download this map by
 .. figure:: images/biota_export_file.png
     :alt: Exported map in the Files.
     :align: center
+
+You can view a demonstration of the above steps on `YouTube <https://youtu.be/my8U5TaV9IU>`_.
 
 3.5 Additional Resources
 ========================
