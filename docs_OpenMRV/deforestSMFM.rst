@@ -1,3 +1,28 @@
+---
+title: SMFM Deforest tool with SEPAL
+summary: In this tutorial, you will learn how to use the nse FOREst Time Series (deforest) tool is a method for detecting changes in forest cover in a time series of Earth observation data.
+author: John Dilger
+creation date: June, 2021
+language: English
+publisher and license: Copyright 2021, World Bank. This work is licensed under a Creative Commons Attribution 3.0 IGO
+
+tags:
+- OpenMRV
+- Landsat
+- Sentinel-2
+- Optical sensors
+- Remote sensing
+- SEPAL
+- Composite
+- Mosaic
+
+group:
+- category: SEPAL
+  stage: Composite creation/Pre-process
+---
+
+
+
 =================================
 Module N. SMFM Deforest
 =================================
