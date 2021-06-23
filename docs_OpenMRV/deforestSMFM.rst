@@ -117,10 +117,9 @@ If you already have a times series of percent forest coverage feel free to use t
    
 2. Use SEPAL workflow to generate time series of forest probability images
 
-   1. Create an optical mosaic for your area of interest
+   1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see... <<<>>>.
    2. Save the mosaic as a recipe
-   3. Open a new classification and point to the optical mosaic recipe as the image to classify
-   
+   3.Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see... <<<>>>.   
       1. Select the bands you want to include in the classification
       2. Add forest/non-forest training data
  
@@ -143,7 +142,7 @@ If you already have a times series of percent forest coverage feel free to use t
 
 1. Click and run the first cell under the **Setup** header
    
-   1. If the help text is outputted beneath the cell move onto the 3rd step. If there is an error continue to step 2.
+   1. If the help text is outputted beneath the cell move onto the 3rd step. If there is an error continue to step 2. <<<error might say python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory>>>
 
 .. figure:: images/smfm_notebook_1_setup.png
    :alt: Successful setup.
@@ -154,9 +153,9 @@ If you already have a times series of percent forest coverage feel free to use t
 
 2. Install the package via the SEPAL Terminal
    
-   1. Navigate to your SEPAL **Terminal**
-   2. Start a new instance or  join your current instance
-   3. Clone the deforest github repository to you SEPAL account
+   1. Navigate to your SEPAL **Terminal**.
+   2. Start a new instance or  join your current instance.<<<what does joining mean>>>
+   3. Clone the deforest github repository to you SEPAL account.
     ``` git clone https://github.com/smfm-project/deforest ``` 
    4. Return to the SMFM notebook and repeat step 1.
 
@@ -169,7 +168,7 @@ If you already have a times series of percent forest coverage feel free to use t
 
    
 
-3. Take a moment to read through the help document of the deforest tool. In the next part we will explain in more detail some of the parameters.
+3. Take a moment to read through the help document of the deforest tool. In the next part we will explain in more detail some of the parameters.<<<where is this? I see a help tab at the top as well as a location for full documentation...>>>
 
 
 
@@ -219,6 +218,8 @@ If you would like to use a time frame other than the example update the **date r
    .. note::
       The exclamation mark (**!**) is used to run commands using the underlying operating system. When we run *!ls* in the notebook it is the same as running *ls* in the terminal.
 
+      <<<does the tool save the output anywhere? we should mention how to download from SEPAL if desired>>>
+      
 Part 3. Data visualization
 ---------------------------
 
