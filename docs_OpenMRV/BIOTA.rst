@@ -31,7 +31,7 @@ Calculating biomass and forest change in SEPAL
 
 In this exercise, you will learn how to use the BIOmass Tool for Alos (BIOTA) to calculate above-ground biomass in dry forests and savannas, as well as a change type map.
 
-The BIOTA tool is part of the Sattelite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_. The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics. The tool allows you to produce outputs of:
+The BIOTA tool is part of the Satellite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by `LTS International <https://ltsi.co.uk/>`_ and the `University of Edinburgh <https://www.ed.ac.uk/geosciences>`_. The tool relies on the use of JAXA's `ALOS PALSAR <https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm>`_ L-band mosaics. The tool allows you to produce outputs of:
 
 -   Calibrated Gamma0 backscatter
 -   Forest cover
@@ -44,7 +44,7 @@ More information can be found online at https://www.smfm-project.com/.
 2. Learning objectives
 -----------------------
 
-* Generate maps of above-ground biomass (AGB), Gamma0 backscatter, forest cover, AGB change, deforestation risk, and change type. 
+* Generate maps of above-ground biomass (AGB), Gamma0 backscatter, forest cover, AGB change, deforestation risk, and change type.
 
 2.1 Pre-requisites
 ===================
@@ -62,42 +62,41 @@ More information can be found online at https://www.smfm-project.com/.
 Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" into the search field. Select "SMFM Biota".
 
 .. note::
+   Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, as seen below, please close the tab and repeat the above steps. If this does not work, reload SEPAL.
 
-    Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, as seen below, please close the tab and repeat the above steps. If this does not work, reload SEPAL.
+   .. figure:: images/biota_fail.png
+      :alt: Failure of the BIOTA tool.
+      :align: center
 
-    .. figure:: images/biota_fail.png
-        :alt: Failure of the BIOTA tool.
-        :align: center
+   If none of these steps work, you might need to start another instance. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV for steps on how to use the terminal to start a higher instance. A 'm4' instance should be enough.
 
-    If none of these steps work, you might need to start another instance. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV for steps on how to use the terminal to start a higher instance. A 'm4' instance should be enough.
-
-You should see an interface like the one below. 
+You should see an interface like the one below.
 
 .. figure:: images/biota_interface.png
-    :alt: The SMFM BIOTA interface.
-    :align: center
+   :alt: The SMFM BIOTA interface.
+   :align: center
 
 .. tip::
+   Depending on your computer screen size, sometimes the left column will be on top of the content, as seen below:
 
-    Depending on your computer screen size, sometimes the left column will be on top of the content, as seen below:
+   .. figure:: images/biota_column.png
+      :alt: Left column on top of the tool.
+      :align: center
 
-    .. figure:: images/biota_column.png
-        :alt: Left column on top of the tool.
-        :align: center
+   If this is the case, you can:
 
-    If this is the case, you can:
-    
-    -   Adjust your browser zoom level, or
+   -   Adjust your browser zoom level, or
 
-    .. figure:: images/biota_chrome.png
-        :alt: Example of how to adjust the zoom level on Google Chrome.
-        :align: center
+   .. figure:: images/biota_chrome.png
+      :alt: Example of how to adjust the zoom level on Google Chrome.
+      :align: center
 
-    -   Keep the zoom level but click outside of the column to hide it. Then, to open it again, you will need to click on the three dots located at the top right side.
+   -   Keep the zoom level but click outside of the column to hide it. Then, to open it again, you will need to click on the three dots located at the top right side.
 
-    .. figure:: images/biota_three_dots.png
-        :alt: How to show the left column again.
-        :align: center
+   .. figure:: images/biota_three_dots.png
+      :alt: How to show the left column again.
+      :align: center
+
 
 3.2 Downloading the ALOS mosaics
 ================================
@@ -111,8 +110,7 @@ Under :code:`Required Inputs` you need the define Latitude and Longitude coordin
     :align: center
 
 .. note::
-
-    The BIOTA tool was designed for woodlands and dry forests as it uses a generic equation to calibrate Gamma0 backscatter to forest AGB developed using forest plot data from Mozambique, Tanzania, and Malawi, in southern Africa. For global applicability, the tool supports the calibration of country-specific backscatter-AGB relationships through determined parameters that will be explained later.
+   The BIOTA tool was designed for woodlands and dry forests as it uses a generic equation to calibrate Gamma0 backscatter to forest AGB developed using forest plot data from Mozambique, Tanzania, and Malawi, in southern Africa. For global applicability, the tool supports the calibration of country-specific backscatter-AGB relationships through determined parameters that will be explained later.
 
 Next, we define the two years of interest. For this exercise, we will leave the default values, 2016 for Year 1 and 2017 for Year 2. Year 2 is used for calculating changes.
 
@@ -121,8 +119,8 @@ The tool gives you the option to choose either 1x1 or 5x5 degree tile size. We w
 Before selecting :code:`Download Images`, we will look into the :code:`Optional Inputs` tab.
 
 .. figure:: images/biota_optional_inputs_tab.png
-    :alt: Location of the optional inputs tab.
-    :align: center
+   :alt: Location of the optional inputs tab.
+   :align: center
 
 Different parameters can be changed here. These include the parameters that should be calibrated according to your area of interest and specific forest characteristics. Default values are specific to southern African forests.
 
@@ -157,20 +155,19 @@ We will leave the parameters with default values.
 Now, go back to the :code:`Required Inputs` tab and click :code:`Download Images` at the bottom. This will download all ALOS data tiles into your SEPAL account.
 
 .. note::
-
-    Depending on your point coordinates, it may take a significant amount of time before your data finish downloading. For the point in Tanzania, it should take about 5 minutes.
+   Depending on your point coordinates, it may take a significant amount of time before your data finish downloading. For the point in Tanzania, it should take about 5 minutes.
 
 You can see the status of the downloads at the bottom of the page.
 
 .. figure:: images/biota_download_status.png
-    :alt: Status about the download.
-    :align: center
+   :alt: Status about the download.
+   :align: center
 
-Once the downloads are finalized for both years, you are able to see the downloaded files under the SEPAL :code:`Files`. Go to :code:`module_results` > :code:`smfm` > :code:`data`. 
+Once the downloads are finalized for both years, you are able to see the downloaded files under the SEPAL :code:`Files`. Go to :code:`module_results` > :code:`smfm` > :code:`data`.
 
 .. figure:: images/biota_files.png
-    :alt: SEPAL Files with downloaded data.
-    :align: center
+   :alt: SEPAL Files with downloaded data.
+   :align: center
 
 You can view a demonstration of the above steps on `YouTube <https://youtu.be/d759Aqi85HE>`_.
 
@@ -182,30 +179,29 @@ Now that the download finished, we can process the data to produce the desired o
 Click on the :code:`Process` tab on the left side.
 
 .. figure:: images/biota_process.png
-    :alt: BIOTA Process window.
-    :align: center
+   :alt: BIOTA Process window.
+   :align: center
 
 For Year 1, we will choose "Forest property" - this will automatically check all outputs available ("Gamma0", "Biomass", "Forest Cover"). For Year 2 we will choose "Forest Change" (changes between 2016 and 2017), which will also select all available outputs ("Biomass change", "Change type", "Deforestation risk"). These will be explained later. Now, click on :code:`Get Outputs` to start the processes.
 
 .. figure:: images/biota_process_get.png
-    :alt: Select outputs and start the process by clicking on "Get outputs".
-    :align: center
+   :alt: Select outputs and start the process by clicking on "Get outputs".
+   :align: center
 
 .. note::
-
-    Depending on your point coordinates, it may take a significant amount of time before your data finish downloading. For the point in Tanzania, it should take about 2 minutes.
+   Depending on your point coordinates, it may take a significant amount of time before your data finish downloading. For the point in Tanzania, it should take about 2 minutes.
 
 Similarly to before, the tool will show the process status at the bottom. You will also note a change of color from white to yellow next to each output. White means not started, Yellow means processing and Green means finalized.
 
 .. figure:: images/biota_output_processing.png
-    :alt: Status of outputs.
-    :align: center
+   :alt: Status of outputs.
+   :align: center
 
-Once done, you will see a message similar to the one below, and all outputs will have a green "light". 
+Once done, you will see a message similar to the one below, and all outputs will have a green "light".
 
 .. figure:: images/biota_output_done.png
-    :alt: Process finalized.
-    :align: center
+   :alt: Process finalized.
+   :align: center
 
 You can view a demonstration of the above steps on `YouTube <https://youtu.be/OMGESeERRGo>`_.
 
@@ -219,16 +215,16 @@ On the same window, under :code:`Display Outputs`, you can select the process to
 First select Biomass. Then press :code:`Display`. You will see the map pop up on your screen:
 
 .. figure:: images/biota_display.png
-    :alt: Biomass map.
-    :align: center
+   :alt: Biomass map.
+   :align: center
 
 This is showing above-ground biomass in tonnes per hectare (tC/ha) for the 1x1 degree tile in Tanzania. To go back to the interface and select the other outputs, you can click anywhere on the screen outside of the map and do the same for the other results.
 
-If you followed these exact steps, your outputs should look similar to the ones below: 
+If you followed these exact steps, your outputs should look similar to the ones below:
 
 .. figure:: images/biota_all.png
-    :alt: BIOTA outputs for Tanzania.
-    :align: center
+   :alt: BIOTA outputs for Tanzania.
+   :align: center
 
 A summary of each output is described in the table below:
 
@@ -271,14 +267,14 @@ There are 7 change types described in the BIOTA tool, each of which is defined a
 You can also use the :code:`Write Raster` option to save this map into your SEPAL account. Once you click on `Write Raster` you should see a message in green informing that your export has been completed.
 
 .. figure:: images/biota_export.png
-    :alt: Map export complete for the Change type output.
-    :align: center
+   :alt: Map export complete for the Change type output.
+     :align: center
 
 Then, the file will be located in your SEPAL Files. You can download this map by selecting it and clicking on the Download button at the top right corner. This will download the output as a TIF file that can be used in a GIS software.
 
 .. figure:: images/biota_export_file.png
-    :alt: Exported map in the Files.
-    :align: center
+   :alt: Exported map in the Files.
+   :align: center
 
 You can view a demonstration of the above steps on `YouTube <https://youtu.be/my8U5TaV9IU>`_.
 
@@ -292,39 +288,38 @@ On the left side, you can access:
 -   Bug report: in case you notice a bug or have issues using the tool, use this option to report the bug or issue. This will take you to an issue creation page on the GitHub repository of the tool.
 
 .. figure:: images/biota_resources.png
-    :alt: Additional Resources.
-    :align: center
+   :alt: Additional Resources.
+   :align: center
 
 4. Frequently Asked Questions (FAQs)
 -------------------------------------
-   
+
 **The tool doesn't load. What should I do?**
-   
-The easiest and fastest way to get the tool to load is to launch a higher instance. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV for steps on how to use the terminal to start a higher instance. A 'm4' instance should be enough. 
+
+The easiest and fastest way to get the tool to load is to launch a higher instance. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV for steps on how to use the terminal to start a higher instance. A 'm4' instance should be enough.
 
 **What does "Contiguity" mean in the `Optional parameters`?**
-    
+
 The criterion of contiguity between two spatial units. The rook criterion defines neighbors by the existence of a common edge between two spatial units. The queen criterion is somewhat more encompassing and defines neighbors as spatial units sharing a common edge or a common vertex:
 
 .. figure:: images/biota_contiguity.png
-    :alt: Queen vs Rook contiguity.
-    :align: center
+   :alt: Queen vs Rook contiguity.
+   :align: center
 
 
 ===================================
-    
+
 .. figure:: images/cc.png
-    
+
 This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
-    
+
 Copyright 2021, World Bank
-    
-This work was developed by Andrea Puzzi Nicolau under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
-    
+
+This work was developed by Andrea Puzzi Nicolau under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation.
+
 | Attribution
 Nicolau, A, P. 2021. Calculating biomass and forest change in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
-    
+
 .. figure:: images/wb_fcpf_gfoi.png
-    
+
 |
-    
