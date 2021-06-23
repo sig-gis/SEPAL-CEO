@@ -109,38 +109,38 @@ If you already have a times series of percent forest coverage feel free to use t
 
 1. Download demo data
 
-   1. Navigate to your SEPAL **Terminal**
-   2. Start a new instance or  join your current instance
-   3. Clone the deforest github repository to you SEPAL account useing the following command
+   1. Navigate to your SEPAL **Terminal**.
+   2. Start a new instance or  join your current instance.
+   3. Clone the deforest github repository to you SEPAL account useing the following command.
    
    ``` git clone https://github.com/smfm-project/deforest ``` 
    
 2. Use SEPAL workflow to generate time series of forest probability images
 
    1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see... <<<>>>.
-   2. Save the mosaic as a recipe
+   2. Save the mosaic as a recipe.
    3.Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see... <<<>>>.   
-      1. Select the bands you want to include in the classification
-      2. Add forest/non-forest training data
+      1. Select the bands you want to include in the classification.
+      2. Add forest/non-forest training data.
  
-         1. Sample points directly in SEPAL
-         2. Optionally, use Earth Engine asset 
+         1. Sample points directly in SEPAL.
+         2. Optionally, use Earth Engine asset. 
    
-      3. Apply the classifier
-      4. Select the **%forest output**
-      5. Save the classification as a recipe
+      3. Apply the classifier.
+      4. Select the **%forest output**.
+      5. Save the classification as a recipe.
    4. Open a new time-series
-      1.  Select the same area of interest as your mosaic 
-      2.  Choose a date range for the time series 
-      3.  In the 'SRC' box select satellites you used in the previous steps and the classification to apply
-      4.  Then you can download the time series to your SEPAL workspace
+      1.  Select the same area of interest as your mosaic. 
+      2.  Choose a date range for the time series.
+      3.  In the 'SRC' box select satellites you used in the previous steps and the classification to apply.
+      4.  Then you can download the time series to your SEPAL workspace.
 .. note::
    It will take many hours to download the classified time series to your account depending upon how large your area of interest is.
 
 3.3 Setup Deforest tool
 =======================
 
-1. Click and run the first cell under the **Setup** header
+1. Click and run the first cell under the **Setup** header.
    
    1. If the help text is outputted beneath the cell move onto the 3rd step. If there is an error continue to step 2. <<<error might say python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory>>>
 
@@ -201,7 +201,7 @@ Example path to time serries updated::
    "Output name","-n","Output file name prefix"
    "Date range","-d","A date range filter. Dates need to be formatted as '-d MM-DD MM-DD' "
    "Threshold","-t","Set a threshold probability to identify deforestation (between 0 and 1). High thresholds are more strict in the identification of deforestation. Defaults to 0.99."
-   "Scale","-s","Scale inputs by a factor of 6000. In a full-scale run this should be set to 10000, here it's used to correct an inadequate classifcation."
+   "Scale","-s","Scale inputs by a factor of 6000. In a full-scale run this should be set to 10000, here it's used to correct an inadequate classification."
    "Verbose","-v","Prints information to the console as the tool is run."
 
 If you would like to use a time frame other than the example update the **date range** switch. 
@@ -218,7 +218,18 @@ If you would like to use a time frame other than the example update the **date r
    .. note::
       The exclamation mark (**!**) is used to run commands using the underlying operating system. When we run *!ls* in the notebook it is the same as running *ls* in the terminal.
 
-      <<<does the tool save the output anywhere? we should mention how to download from SEPAL if desired>>>
+   The output deforestation image will be saved to the home directory of SEPAL account(home/username) by default. If you want to save your images in a different location it can be changed by adding the new path after the **-o** switch.
+
+   2. (Optional) Download outputs to local computer
+      1. Navigate to the *Files* section of your SEPAL account.
+      2. Locate the output image to download and click to select it. In this case the image is named *sampleOutput_confirmed*.
+      3. Click the download icon.
+   
+
+.. figure:: images/smfm_download.png
+      :alt: Download image from SEPAL.
+      :width: 450
+      :align: center
       
 Part 3. Data visualization
 ---------------------------
