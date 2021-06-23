@@ -14,6 +14,7 @@ Welcome to Area Estimation with SEPAL and CEO!
    Module 3. Image change detection <module-3>
    Module 4. Sample-based estimation of area and accuracy <module-4>
    Module 5. Documentation and archiving <module-5>
+   Module N. ok <module-N>
 
 
 Indices and tables
