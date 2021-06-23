@@ -221,6 +221,7 @@ If you would like to use a time frame other than the example update the **date r
    The output deforestation image will be saved to the home directory of SEPAL account(home/username) by default. If you want to save your images in a different location it can be changed by adding the new path after the **-o** switch.
 
    2. (Optional) Download outputs to local computer
+   
       1. Navigate to the *Files* section of your SEPAL account.
       2. Locate the output image to download and click to select it. In this case the image is named *sampleOutput_confirmed*.
       3. Click the download icon.
