@@ -105,7 +105,7 @@ For this exercise we will be using the sample data that is included with the too
 
 This tutorial will use the demo data that is packaged with the SMFM Deforest tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note though, that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
 
-If you already have a times series of percent forest coverage feel free to use that.
+If you already have a time series of percent forest coverage feel free to use that.
 
 1. Download demo data
 
@@ -145,9 +145,11 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
 .. note::
    Sometimes the tool takes a few minutes to load. Wait until you see the tool's interface. In case the tool fails to load properly, please close the tab and repeat the above steps. If this does not work, reload SEPAL.
 
-1. Click and run the first cell under the **Setup** header.
+1. Click and run the first cell under the **Setup** header. This cell runs two command, the first installs the deforest Python module and the second runs the **--help** switch to display some documentation on running the tool.
    
-   1. If the help text is outputted beneath the cell move onto the 3rd step. If there is an error continue to step 2. <<<error might say python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory>>>
+   1. If the help text is outputted beneath the cell move onto the 3rd step. If there is an error continue to step 2. The error message might say:
+   
+``` python3: can't open file '/home/username/deforest/sepal/change.py': [Errno 2] No such file or directory ```
 
 .. figure:: images/smfm_notebook_1_setup.png
    :alt: Successful setup.
@@ -159,7 +161,7 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
 2. Install the package via the SEPAL Terminal
    
    1. Navigate to your SEPAL **Terminal**.
-   2. Start a new instance or  join your current instance.<<<what does joining mean>>>
+   2. Type *1* to access the terminal of session #1. You can think of a session as an instance of a virtual machine that is connected to your SEPAL account. 
    3. Clone the deforest github repository to you SEPAL account.
     ``` git clone https://github.com/smfm-project/deforest ``` 
    4. Return to the SMFM notebook and repeat step 1.
@@ -173,7 +175,7 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
 
    
 
-3. Take a moment to read through the help document of the deforest tool. In the next part we will explain in more detail some of the parameters.<<<where is this? I see a help tab at the top as well as a location for full documentation...>>>
+1. Once you hae successfully set up the tool, take a moment to read through the help document of the deforest tool that is output below the Jupyter notebook cell you just ran. In the next part we will explain in more detail some of the parameters.
 
 
 
@@ -182,7 +184,7 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
 
 Processing the time series imagery can be done with a single line of code using the Deforest change.py command line interface.
 
-1. To use the demo imagery, you do not need to change any of the inputs. However, if you are using a custom time series you will need to make some modifications. To change the command to point to a custom timeseries of percent forest images you will need to update the path to your time series.
+1. To use the demo imagery, you do not need to change any of the inputs. However, if you are using a custom time series you will need to make some modifications. To change the command to point to a custom time series of percent forest images you will need to update the path to your time series.
 Original::
 
    !python3 ~/deforest/sepal/change.py ~/deforest/sepal/example_data/Time_series_2021-03-24_10-53-03/0/ -o ~/ -n sampleOutput -d 12-01 04-30 -t 0.999 -s 6000 -v 
