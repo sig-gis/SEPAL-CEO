@@ -232,8 +232,8 @@ If you would like to use a time frame other than the example update the **date r
       :width: 450
       :align: center
       
-Part 3. Data visualization
----------------------------
+3.5 Data visualization
+======================
 
 Now that we have run the deforestation processing chain, we can visualize our output maps. The outputs of the SMFM tool are two images **confirmed** and **warning**. We will look at the confirmed image first.
 
@@ -267,3 +267,22 @@ Next, well check out the deforest warning output.
 
 
 **Congratulations! You have completed this introduction to SMFM Deforest time-series analysis tools.**
+
+
+===================================
+    
+.. figure:: images/cc.png
+    
+This work is licensed under a `Creative Commons Attribution 3.0 IGO <https://creativecommons.org/licenses/by/3.0/igo/>`_
+    
+Copyright 2021, World Bank
+    
+This work was developed by John Dilger under World Bank contract with the Food and Agriculture Organization and Spatial Informatics Group, LLC for the development of new Measurement, Reporting, and Verification related resources to support countries’ MRV implementation. 
+    
+| Attribution
+Dilger, J. 2021. Detecting deforestation with the SMFM Deforest tool in SEPAL. © World Bank. License: `Creative Commons Attribution license (CC BY 3.0 IGO) <https://creativecommons.org/licenses/by/3.0/igo/>`_
+    
+.. figure:: images/wb_fcpf_gfoi.png
+    
+|
+    
