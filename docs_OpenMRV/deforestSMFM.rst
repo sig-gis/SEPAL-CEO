@@ -22,33 +22,41 @@ group:
   stage: Classification
 ---
 
-=================================
+-----------------------------------------
 SMFM Deforest tool
-=================================
+-----------------------------------------
 
+1. Background
+--------------
 
 The DEnse FOREst Time Series (deforest) tool is a method for detecting changes in forest cover in a time series of Earth observation data. As input it takes a time series of forest probability measurements, producing a map of deforestation and an 'early warning' map of unconfirmed changes. The method is based on the 'Baysian time series' approach of `Reiche et al. (2018) <https://www.sciencedirect.com/science/article/abs/pii/S0034425717304959?via%3Dihub>`_.
 
-The tool was designed as part of the Satellite Montioring for Forest Management (SMFM) project. The SMFM project (2017 - 2020) aimed to address global challenges relating to the montioring of tropical dry forest ecosystems, and was conducted in partnership with teams in Mozambique, Namibia and Zambia. For more informaton, see https://www.smfm-project.com/.
+The tool was designed as part of the Satellite Monitoring for Forest Management (SMFM) project. The SMFM project (2017 - 2020) aimed to address global challenges relating to the monitoring of tropical dry forest ecosystems, and was conducted in partnership with teams in Mozambique, Namibia and Zambia. For more informaton, see https://www.smfm-project.com/.
 
 Full documentation is hosted at http://deforest.rtfd.io/.
 
 This module should take you approximately **some amount of time**.
 
-----------------------------------------
-Exercise N.1. Data preparation
-----------------------------------------
+2. Learning objectives
+-----------------------
 
-For this exercise we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create an time serries of forest probability using tools with the SEPAL platform.
+We will use the SMFM Deforest tool to create images of deforestation by year and a probability of future deforestation based on a time series of forest probability images. 
 
-.. csv-table::
-   :header: "Objectives","Prerequisites"
-   :widths: 20, 20
+* Map deforestation for a time period
+* Map and identify areas that could possibly deforested in the future.
 
-   "Learn how to use the SMFM Deforest tool", "SEPAL account"
-   "","Completed SEPAL modules on mosaics, classification, & time series"
+2.1 Pre-requisites
+===================
 
-Part 0. (Optional) Jupyter notebook basics
+* A SEPAL account. Please see the tutorial here on OpenMRV under tool "SEPAL" for an introduction to SEPAL.
+
+3. Tutorial: SMFM Deforest
+---------------------------
+
+3.1 [Optional] Jupyter notebooks introduction
+=============================================
+
+Part 0. [Optional] Jupyter notebook basics
 -------------------------------------------
 
 If you are unfamiliar with Jupyter notebooks this section is meant to get you aquatinted enough with the system to successfully run the SMFM Deforest tool. A notebook is significantly different than most SEPAL applications, but they are a powerful tool used in data science and other disciplines.
@@ -58,7 +66,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
    Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool we will be using Python. 
 
 
-.. figure:: images/notebook_cell.png
+.. figure:: images/smfm_notebook_cell.png
    :alt: Example of a Jupyter Notebook cell.
    :width: 450
    :align: center
@@ -69,7 +77,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
    
    To run a cell, click on the cell then locate and click the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
-.. figure:: images/notebook_run.png
+.. figure:: images/smfm_notebook_run.png
    :alt: Example running a Jupyter Notebook cell.
    :width: 450
    :align: center
@@ -83,24 +91,25 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
      a. Navigate to the tool bar at the top of the notebook and select *Kernel*.
      b. From the dropdown menu, select *restart Kernel and Clear Outputs*
 
-.. figure:: images/notebook_kernel.png
+.. figure:: images/smfm_notebook_kernel.png
    :alt: Example restarting Jupyter Notebook kernel.
    :width: 450
    :align: center
 
 
-Part 1. Preparing you data
---------------------------------------------
+3.2 Data preparation
+=====================
+
+For this exercise we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create an time serries of forest probability using tools with the SEPAL platform.
 
 .. warning::
    SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL. 
-
 
 This tutorial will use the demo data that is packaged with the SMFM Deforest tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note though, that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
 
 If you already have a times series of percent forest coverage feel free to use that.
 
-A. Download demo data
+1. Download demo data
 
    1. Navigate to your SEPAL **Terminal**
    2. Start a new instance or  join your current instance
@@ -108,7 +117,7 @@ A. Download demo data
    
    ``` git clone https://github.com/smfm-project/deforest ``` 
    
-B. SEPAL workflow
+2. Use SEPAL workflow to generate time series of forest probability images
 
    1. Create an optical mosaic for your area of interest
    2. Save the mosaic as a recipe
@@ -131,14 +140,14 @@ B. SEPAL workflow
 .. note::
    It will take many hours to download the classified time series to your account depending upon how large your area of interest is.
 
-Part 2. Setup
---------------------------------------------
+3.3 Setup Deforest tool
+=======================
 
 1. Click and run the first cell under the **Setup** header
    
    1. If the help text is outputted beneath the cell move onto the 3rd step. If there is an error continue to step 2.
 
-.. figure:: images/notebook_1_setup.png
+.. figure:: images/smfm_notebook_1_setup.png
    :alt: Successful setup.
    :width: 450
    :align: center
@@ -155,7 +164,7 @@ Part 2. Setup
 
 
 
-.. figure:: images/clone_deforest.png
+.. figure:: images/smfm_clone_deforest.png
    :alt: Cloning a repository via the SEPAL terminal.
    :width: 450
    :align: center
@@ -166,8 +175,8 @@ Part 2. Setup
 
 
 
-Part 3. Process the time series
----------------------------------
+3.4 Process the time series
+===========================
 
 Processing the time series imagery can be done with a single line of code using the Deforest change.py command line interface.
 
@@ -221,7 +230,7 @@ Now that we have run the deforestation processing chain, we can visualize our ou
 
    a. If you changed the name of you output file be sure to update the path on line 8 for the variable *confirmed*
 
-.. figure:: images/confirmations.png
+.. figure:: images/smfm_confirmations.png
    :alt: Example of a Jupyter Notebook cell.
    :width: 450
    :align: center
@@ -236,7 +245,7 @@ Next, well check out the deforest warning output.
 2. Run the second **Data visualization** cell
    
 
-.. figure:: images/warnings.png
+.. figure:: images/smfm_warnings.png
    :alt: Example of a Jupyter Notebook cell.
    :width: 450
    :align: center
