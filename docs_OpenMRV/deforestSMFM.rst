@@ -56,8 +56,6 @@ We will use the SMFM Deforest tool to create images of deforestation by year and
 3.1 [Optional] Jupyter notebooks introduction
 =============================================
 
-Part 0. [Optional] Jupyter notebook basics
--------------------------------------------
 
 If you are unfamiliar with Jupyter notebooks this section is meant to get you aquatinted enough with the system to successfully run the SMFM Deforest tool. A notebook is significantly different than most SEPAL applications, but they are a powerful tool used in data science and other disciplines.
 
