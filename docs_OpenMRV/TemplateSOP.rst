@@ -299,7 +299,7 @@ In the future, you may want to revise your SOPs. This may happen when you develo
 
 When you revise your SOPs you will need to keep a few things in mind. The first is that you will need to keep track of versioning. With versioning, you use a unique version name or version number for each update to your SOP. For example, the first version of your sampling design for your sample-based area estimate SOPs may be 1.0 and your revision may be 2.0. FAO’s SOP templates include a field for versioning.
 
-.. figure:: /images/versioning.png
+.. figure:: images/versioning.png
    :alt: The versioning section of the Sample Design SOP template.
 
 Second, you will need to keep track of any revisions you make to your document. This is important so that future users of the SOP can see what changed and why. Including a section within the SOP briefly explaining what was changed from the last version is a good way to document this.
@@ -311,13 +311,13 @@ Third, you will need to revise the document in a methodical fashion. In these di
 3. If your different SOP versions do not have versioning, consider adding versioning. At the very least, add versioning to your updated SOP.
 4. In the Version Log section of the SOP template, fill in details of the historic versions of the SOP. You may choose to only fill in details for the previous SOP, or you may include additional previous versions.
 
-.. figure:: /images/changelog1.png
+.. figure:: images/changelog1.png
    :alt: Record information about your previous SOP in the Version Log.
 
 5. Follow the directions in 3.4 How to adapt FAO’s templates for your SOP in order to create your updated SOP.
 6. Record what changes were made to your SOP in the updated SOP version in the Version Log section of the SOP template.
 
-.. figure:: /images/changelog2.png
+.. figure:: images/changelog2.png
    :alt: Record your changes to the SOP.
 
 7. Retain your previous SOP in an “archive” or “previous versions” folder within the same directory as the updated SOP.
