@@ -106,14 +106,14 @@ In general, one SOP is created for each major step. For example,  sampling desig
 
 If you have performed area estimation previously, consider your existing approach. Which steps does your approach include? Are there any steps not captured above? For example, perhaps you have a Data entry step. Below, write down the major steps that you need to create SOPs for.
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
+1. Step 1:
+2. Step 2:
+3. Step 3:
+4. Step 4:
+5. Step 5:
+6. Step 6:
+7. Step 7:
+8. Step 8:
 
 
 We suggest you include at least the following SOPs:
