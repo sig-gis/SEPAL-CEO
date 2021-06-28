@@ -61,7 +61,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
 
 1. Cells
 
-   Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool we will be using Python. 
+   Every notebook is broken into *cells*. Cells can come in a few formats, but typically they will be either **markdown** or **code**. Markdown cells are the descriptive text and images that accompany the coded to help a user understand the context and what the code is doing. Conversely, code cells run code or a system operation. There are many different languages which can be used in a Jupyter notebook. For this tool we will be using Python.
 
 
 .. figure:: images/smfm_notebook_cell.png
@@ -72,7 +72,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
 
 
 2. Running cells
-   
+
    To run a cell, click on the cell then locate and click the *Run* button in the upper menu. You can run a cell more quickly using the keyboard shortcut **shift-enter**.
 
 .. figure:: images/smfm_notebook_run.png
@@ -82,7 +82,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
 
 
 3. Kernel
-   
+
    The kernel is the computation engine that executes the code in the jupyter notebook. In this case it is a python 3 kernel. For this tutorial you do not need to know much about this, but if you notebook freezes or you need to reset for any reason you can find kernel operations on the tool bar menu.
 
    Restarting the kernel:
@@ -101,7 +101,7 @@ If you are unfamiliar with Jupyter notebooks this section is meant to get you aq
 For this exercise we will be using the sample data that is included with the tool. Additionally, instructions are given on how to create an time series of forest probability using tools with the SEPAL platform.
 
 .. warning::
-   SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL. 
+   SMFM Deforest is still in the process of being adapted for use on SEPAL. The forest probability time series will be derived from existing methods to produce a satellite time series implemented on SEPAL.
 
 This tutorial will use the demo data that is packaged with the SMFM Deforest tool, but steps are presented on how to use the current SEPAL implementation with the tool. Note though, that the data preparation steps in SEPAL can take many hours to complete. If you are unfamiliar with any of the preparations steps, please consult the relevant modules.
 
@@ -179,9 +179,9 @@ Navigate to the **Apps** menu by clicking on the wrench icon and typing "SMFM" i
    :width: 450
    :align: center
 
-   
 
-1. Once you have successfully set up the tool, take a moment to read through the help document of the deforest tool that is output below the Jupyter notebook cell you just ran. In the next part we will explain in more detail some of the parameters.
+3. Once you have successfully set up the tool, take a moment to read through the help document of the deforest tool that is output below the Jupyter notebook cell you just ran. In the next part we will explain in more detail some of the parameters.
+
 
 
 
@@ -193,15 +193,15 @@ Processing the time series imagery can be done with a single line of code using 
 1. To use the demo imagery, you do not need to change any of the inputs. However, if you are using a custom time series you will need to make some modifications. To change the command to point to a custom time series of percent forest images you will need to update the path to your time series.
 Original::
 
-   !python3 ~/deforest/sepal/change.py ~/deforest/sepal/example_data/Time_series_2021-03-24_10-53-03/0/ -o ~/ -n sampleOutput -d 12-01 04-30 -t 0.999 -s 6000 -v 
+   !python3 ~/deforest/sepal/change.py ~/deforest/sepal/example_data/Time_series_2021-03-24_10-53-03/0/ -o ~/ -n sampleOutput -d 12-01 04-30 -t 0.999 -s 6000 -v
 
 Example path to time series updated::
 
-   !python3 ~/deforest/sepal/change.py  ~/downloads/PATH_TO_TIME_SERIES/0/ -o ~/ -n sampleOutputT -d 12-01 01-08 -t 0.999 -s 6000 -v 
+   !python3 ~/deforest/sepal/change.py  ~/downloads/PATH_TO_TIME_SERIES/0/ -o ~/ -n sampleOutputT -d 12-01 01-08 -t 0.999 -s 6000 -v
 
 
 .. note::
-   By default the time series should be downloaded to a **downloads** folder in your home directory and should have another folder in it named **0**. 
+   By default the time series should be downloaded to a **downloads** folder in your home directory and should have another folder in it named **0**.
 
 1. Parameters
 
@@ -266,7 +266,7 @@ Now that we have run the deforestation processing chain, we can visualize our ou
 Next, we will check out the deforest warning output.
 
 1. Run the second **Data visualization** cell
-   
+
 
 .. figure:: images/smfm_warnings.png
    :alt: Example of a Jupyter Notebook cell.
