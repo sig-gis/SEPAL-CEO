@@ -117,11 +117,11 @@ If you already have a time series of percent forest coverage feel free to use th
    
 2. Use SEPAL workflow to generate time series of forest probability images
 
-   1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see... <<<>>>.
+   1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Mosaic generation with SEPAL".
 
    2. Save the mosaic as a recipe.
 
-   3.Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see... <<<>>>.   
+   3.Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Classification".   
 
       1. Select the bands you want to include in the classification.
       2. Add forest/non-forest training data.
@@ -133,7 +133,7 @@ If you already have a time series of percent forest coverage feel free to use th
       4. Select the **%forest output**.
       5. Save the classification as a recipe.
    
-   4. Open a new time-series
+   1. Open a new time-series
 
       1.  Select the same area of interest as your mosaic. 
       2.  Choose a date range for the time series.
