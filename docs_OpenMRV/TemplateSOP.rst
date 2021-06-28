@@ -144,7 +144,7 @@ Even for teams familiar with SOP design, the use of templates can be useful for 
 
 The templates from the Forest Carbon Partnership Facility (FCPF) and the Food and Agriculture Organization (FAO) for stratified area estimate SOPs are hosted online on the `Forest Carbon Partnership Facility Website <https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv>`_.
 
-These templates aim to further standardize the development of SOPs for entities looking to estimate and monitor their activity data and greenhouse gas emissions. The availability of these templates helps ensure all participants in the REDD+ program have access to the necessary tools to ensure adequate quality assurance/quality control (QA/QC) systems and comprehensive reporting. The templates are generic outlines of sample-based area estimation approaches usable for most locations and conditions, but adaptations for specific ecosystems, land cover types, vegetation conditions, and other local circumstances are anticipated. Additional guidance for the development of sample-based area estimation SOPs is forthcoming. This guidance document will describe descriptions of the different options each country can choose for each field in FAO’s template SOPs, good practices and some examples and tools when available. This guidance complements the steps in this module.
+These templates aim to further standardize the development of SOPs for entities looking to estimate and monitor their activity data and greenhouse gas emissions. The availability of these templates helps ensure all participants in the REDD+ program have access to the necessary tools to ensure adequate quality assurance/quality control (QA/QC) systems and comprehensive reporting. The templates are generic outlines of sample-based area estimation approaches usable for most locations and conditions, but adaptations for specific ecosystems, land cover types, vegetation conditions, and other local circumstances are anticipated. Additional guidance for the development of sample-based area estimation SOPs is forthcoming and will be hosted here on OpenMRV. This guidance document will describe descriptions of the different options each country can choose for each field in FAO’s template SOPs, good practices and some examples and tools when available. The guidance document will complement the steps in this module.
 
 The templates for the SOPs outline current best practices for all the steps of sample-based area estimation. There is descriptive text with instructions for each stage which should be replaced with details from each user. Forms are also included, which are used to record the details about the application of the SOPs. Some of the templates have prerequisite requirements. Many of these can be generated through a pilot survey and/or careful planning.
 
@@ -200,7 +200,7 @@ If you have not previously worked through the sample-based area estimation proce
     a. Note the gray text, for example in the Version and Date of Issue fields. This text is meant for you to fill in to adapt the template to your context. You may find it helpful to write down key information that you will need to gather to complete the SOP.
     b. Note all of the roles that will be required. These are referred to either in the black or gray text, for example “The Coordinator” is referred to in the Sampling Design SOP template under Procedure in Step 0. Write down who will perform these roles in your organization. The same person may fulfill multiple roles. Do you have additional staff that will assist?
     c. The `SOP Instructions <https://www.forestcarbonpartnership.org/sites/fcp/files/Instructions.pdf>`_ have role definitions under “Assigning roles and responsibilities.”
-    d. If the guidance for the development of sample-based area estimation SOPs is available, please read the introduction and relevant sections for the SOP you have chosen. The guidance document includes detailed background information on each field that you might find very useful.
+    d. If the guidance for the development of sample-based area estimation SOPs is available here on OpenMRV, please read the introduction and relevant sections for the SOP you have chosen. The guidance document includes detailed background information on each field that you might find very useful.
 
 4. Gather information about existing sampling design processes for area estimation.
 
@@ -334,7 +334,8 @@ Third, you will need to revise the document in a methodical fashion. In these di
 * Global Forest Observations Initiative (GFOI) `Methods and Guidance Documentation <http://www.fao.org/gfoi/components/methods-and-guidance-documentation/en/>`_
 * U.S. Department of Agriculture (USDA) and United States Forest Service (USFS) `reporting formats <https://www.fia.fs.fed.us/forestcarbon/>`_
 * Forest Carbon Partnership Facility (FCPF) `Carbon Fund Methodological Framework <https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf>`_
-* Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. Available at http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/
+* Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. Available at `http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/`_
+* `<https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP guidelines for quality assurance for reporting all environmental data and procedures.
 
 **Sample-based Area Estimation Documents:**
 
@@ -360,7 +361,7 @@ Third, you will need to revise the document in a methodical fashion. In these di
 Helpful for writing an SOPs, but are not specific to sample-based area estimation for activity and emission reporting:
 
 * `How to Write a Standard Operating Procedure (SOP) <https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf>`_ --- specific to farming, but outlines good practices for what to include in an SOP in a simple manner.
-* `US Environmental Protection Agency - Guidance for Preparing Standard Operating Procedures (SOPs) <https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP guidelines for quality assurance for reporting all environmental data and procedures.
+* US Environmental Protection Agency - `Guidance for Preparing Standard Operating Procedures (SOPs) <https://www.epa.gov/quality/guidance-preparing-standard-operating-procedures-epa-qag-6-march-2001>`_
 
 
 4. Frequently Asked Questions (FAQ)
@@ -396,6 +397,7 @@ Observations Initiative. Edition 3.0.  Available online at https://www.reddcompa
 Olofsson, P., Foody, G. M., Herold, M., Stehman, S. V., Woodcock, C. E., & Wulder, M. A. (2014). Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, 42-57.
 
 Measurement, Reporting and Verification (MRV) | Forest Carbon Partnership Facility. forestcarbonpartnership.org. (2018). Retrieved 8 June 2021, from https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv.
+
 United States, Environmental Protection Agency. (2007). Guidance for Preparing Standard Operating Procedures (SOPs) - EPA QA/G-6. Washington, DC: United States, Environmental Protection Agency.
 
 
