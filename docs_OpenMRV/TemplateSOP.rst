@@ -381,8 +381,10 @@ Citing the work of others is an important part of your SOP, and can provide furt
 5. References
 --------------
 Bihn, E., Schermann, M., Wszelaki, A., Wall, G., & Amundson, S. (2014). On-Farm Decision Tree Project: Appendix—How to Write an SOP (1st ed.). Retrieved 9 June 2021, from https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf.
+
 Bogor, Indonesia: Indonesia’s Work Programme for 2010 ITTO PD 519/08/Rev. 1 (F) Forest Policy and Climate Change Center, FORDA.
 Forest Carbon Partnership Facility. (2016). FCPF Carbon Fund Methodological Framework. Retrieved 7 June 2021, from https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf.
+
 Forestry Research and Development Agency Ministry of Forestry, Indonesia. (2010). Standard Operating Procedures (SOPs) for Field Measurement (p. 1).
 IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
 
@@ -391,6 +393,7 @@ Observations Initiative. Edition 3.0.  Available online at https://www.reddcompa
 Olofsson, P., Foody, G. M., Herold, M., Stehman, S. V., Woodcock, C. E., & Wulder, M. A. (2014). Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, 42-57.
 
 Measurement, Reporting and Verification (MRV) | Forest Carbon Partnership Facility. forestcarbonpartnership.org. (2018). Retrieved 8 June 2021, from https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv.
+
 United States, Environmental Protection Agency. (2007). Guidance for Preparing Standard Operating Procedures (SOPs) - EPA QA/G-6. Washington, DC: United States, Environmental Protection Agency.
 
 
