@@ -35,7 +35,7 @@ The tool was designed as part of the Satellite Monitoring for Forest Management 
 
 Full documentation is hosted at http://deforest.rtfd.io/.
 
-This module should take you approximately **1-2 hours**.
+This module should take you approximately 1-2 hours.
 
 2. Learning objectives
 -----------------------
@@ -121,7 +121,7 @@ If you already have a time series of percent forest coverage feel free to use th
 
    2. Save the mosaic as a recipe.
 
-   3.Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Classification".   
+   3. Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see the tutorials here on OpenMRV under process "Classification".   
 
       1. Select the bands you want to include in the classification.
       2. Add forest/non-forest training data.
