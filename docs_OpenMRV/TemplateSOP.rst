@@ -82,6 +82,8 @@ Benefits of a well written and utilized SOP include:
 3. Tutorial: Creating area estimation SOPs using templates
 -----------------------------------------------------------
 
+A demonstration of the steps below can be found on `YouTube <https://youtu.be/d-A5_vy9EXM>`_.
+
 3.1 What SOPs do you need?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -332,7 +334,7 @@ Third, you will need to revise the document in a methodical fashion. In these di
 * Global Forest Observations Initiative (GFOI) `Methods and Guidance Documentation <http://www.fao.org/gfoi/components/methods-and-guidance-documentation/en/>`_
 * U.S. Department of Agriculture (USDA) and United States Forest Service (USFS) `reporting formats <https://www.fia.fs.fed.us/forestcarbon/>`_
 * Forest Carbon Partnership Facility (FCPF) `Carbon Fund Methodological Framework <https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf>`_
-* Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. Available at `http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/`_
+* Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. Available at http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/
 
 **Sample-based Area Estimation Documents:**
 
@@ -343,14 +345,13 @@ Third, you will need to revise the document in a methodical fashion. In these di
 
 **Tools:**
 
-* ‘AcATaMa QGIS plugin for Accuracy Assessment of Thematic Maps <https://smbyc.github.io/AcATaMa/>’_
-* ‘Collect Earth Online <https://collect.earth/support>’_
-* ‘Collect Earth (Desktop) <http://www.openforis.org/tools/collect-earth/>’_
-<https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP guidelines for quality assurance for reporting all environmental data and procedures.
+* `AcATaMa QGIS plugin for Accuracy Assessment of Thematic Maps <https://smbyc.github.io/AcATaMa/>`_
+* `Collect Earth Online <https://collect.earth/support>`_
+* `Collect Earth (Desktop) <http://www.openforis.org/tools/collect-earth/>`_
 
 **QA/QC Resources:**
 
-* See the tutorial here on ‘OpenMRV <http://www.openmrv.org>’_ under process "Area estimation / Accuracy Assessment" and tool "SEPAL"
+* See the tutorial here on `OpenMRV <http://www.openmrv.org>`_ under process "Area estimation / Accuracy Assessment" and tool "SEPAL"
 * Forthcoming guidance: Guidance for the development of sample-based area estimation SOP.
 * Forthcoming white paper: Jonckheere, I., R. Hamilton, J. M. Michel, E. Donegan. Forthcoming 2021. Issues and good practices in sample-based area estimation.
 
@@ -358,9 +359,8 @@ Third, you will need to revise the document in a methodical fashion. In these di
 
 Helpful for writing an SOPs, but are not specific to sample-based area estimation for activity and emission reporting:
 
-* `How to Write a Standard Operating Procedure (SOP)
-<https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf>`_ --- specific to farming, but outlines good practices for what to include in an SOP in a simple manner.
-* `US Environmental Protection Agency - Guidance for Preparing Standard Operating Procedures (SOPs)
+* `How to Write a Standard Operating Procedure (SOP) <https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf>`_ --- specific to farming, but outlines good practices for what to include in an SOP in a simple manner.
+* `US Environmental Protection Agency - Guidance for Preparing Standard Operating Procedures (SOPs) <https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP guidelines for quality assurance for reporting all environmental data and procedures.
 
 
 4. Frequently Asked Questions (FAQ)
@@ -368,7 +368,7 @@ Helpful for writing an SOPs, but are not specific to sample-based area estimatio
 
 **How can I access the FAO template SOPs?**
 
-Please visit the `Forest Carbon Partnership Facility Website <https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv>`_
+Please visit the `Forest Carbon Partnership Facility Website <https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv>`_.
 
 **Does my SOP have to be in English, like the FAO templates?**
 
@@ -382,9 +382,13 @@ Citing the work of others is an important part of your SOP, and can provide furt
 5. References
 --------------
 Bihn, E., Schermann, M., Wszelaki, A., Wall, G., & Amundson, S. (2014). On-Farm Decision Tree Project: Appendix—How to Write an SOP (1st ed.). Retrieved 9 June 2021, from https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf.
+
 Bogor, Indonesia: Indonesia’s Work Programme for 2010 ITTO PD 519/08/Rev. 1 (F) Forest Policy and Climate Change Center, FORDA.
+
 Forest Carbon Partnership Facility. (2016). FCPF Carbon Fund Methodological Framework. Retrieved 7 June 2021, from https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf.
+
 Forestry Research and Development Agency Ministry of Forestry, Indonesia. (2010). Standard Operating Procedures (SOPs) for Field Measurement (p. 1).
+
 IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
 
 Observations Initiative. Edition 3.0.  Available online at https://www.reddcompass.org/download-the-mgd
