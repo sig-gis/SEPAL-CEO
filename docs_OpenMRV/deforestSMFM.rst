@@ -286,7 +286,7 @@ You can view a demonstration of the above steps on `YouTube <https://youtu.be/9B
 -   Source code: The source code of the Deforest tool and Jupyter notebook can be found in the `GitHub repository <https://github.com/smfm-project/deforest>`_.
 -   Bug report: in case you notice a bug or have issues using the tool, you can report an issue using the `Issues section <https://github.com/smfm-project/deforest/issues>`_ of the Github repository. This will take you to an issue creation page on the GitHub repository of the tool.
 
-1. Frequently Asked Questions (FAQs)
+4. Frequently Asked Questions (FAQs)
 -------------------------------------
 
 **The tool doesn't load. What should I do?**
