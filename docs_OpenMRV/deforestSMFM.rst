@@ -118,8 +118,11 @@ If you already have a time series of percent forest coverage feel free to use th
 2. Use SEPAL workflow to generate time series of forest probability images
 
    1. Create an optical mosaic for your area of interest using the Process tab Optical Mosaic process. If this is unfamiliar to you, please see... <<<>>>.
+
    2. Save the mosaic as a recipe.
+
    3.Open a new classification and point to the optical mosaic recipe as the image to classify. Use the Process tab Classification process. If this is unfamiliar to you, please see... <<<>>>.   
+
       1. Select the bands you want to include in the classification.
       2. Add forest/non-forest training data.
  
@@ -129,11 +132,14 @@ If you already have a time series of percent forest coverage feel free to use th
       3. Apply the classifier.
       4. Select the **%forest output**.
       5. Save the classification as a recipe.
+   
    4. Open a new time-series
+
       1.  Select the same area of interest as your mosaic. 
       2.  Choose a date range for the time series.
       3.  In the 'SRC' box select satellites you used in the previous steps and the classification to apply.
       4.  Then you can download the time series to your SEPAL workspace.
+
 .. note::
    It will take many hours to download the classified time series to your account depending upon how large your area of interest is.
 
