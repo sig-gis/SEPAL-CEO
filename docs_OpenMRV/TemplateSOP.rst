@@ -188,6 +188,10 @@ If you have not previously worked through the sample-based area estimation proce
     a. For this example, we will use the Sampling Design template.
     b. `Download the template for the SOP and the blank form template. <https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv>`_
 
+.. figure:: images/SOP_link.png
+   :alt: The link to view and download the SOP templates from FAO and FCPF.
+   :align: center
+
 2. There are two key parts to FAO’s sample-based area estimate SOP templates.
 
     a. Templates for Standard Operating Procedures (SOPs). These contain current best practices for completing a sample-based area estimation.
