@@ -278,8 +278,31 @@ Next, we will check out the deforest warning output.
 
 
 
-**Congratulations! You have completed this introduction to SMFM Deforest time-series analysis tools.**
+You can view a demonstration of the above steps on `YouTube <https://youtu.be/9BswdPlncfM>`_.
 
+3.6 Additional Resources
+========================
+
+On the left side, you can access:
+
+-   Source code: this takes you to the source code of the tool, which is a GitHub repository.
+-   Wiki: the "README" file of the tool, you can find additional information and instructions about how to use the tool.
+-   Bug report: in case you notice a bug or have issues using the tool, use this option to report the bug or issue. This will take you to an issue creation page on the GitHub repository of the tool.
+
+.. figure:: images/biota_resources.png
+   :alt: Additional Resources.
+   :align: center
+
+4. Frequently Asked Questions (FAQs)
+-------------------------------------
+
+**The tool doesn't load. What should I do?**
+
+The easiest and fastest way to get the tool to load is to launch a higher instance. Please check the tutorial "An introduction to SEPAL" under tool "SEPAL" here on OpenMRV for steps on how to use the terminal to start a higher instance. A 'm4' instance should be enough.
+
+**Can the warning probability threshold be increased or decreased?**
+
+The warning probability threshold can be adjusted when creating the warning image (*warn_im*.) Update the *mask* parameter so that *warning <= THRESHOLD*. Where *THRESHOLD* is a deforestation probability value between 0 - 1.
 
 ===================================
     
