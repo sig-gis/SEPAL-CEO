@@ -333,6 +333,7 @@ Third, you will need to revise the document in a methodical fashion. In these di
 * U.S. Department of Agriculture (USDA) and United States Forest Service (USFS) `reporting formats <https://www.fia.fs.fed.us/forestcarbon/>`_
 * Forest Carbon Partnership Facility (FCPF) `Carbon Fund Methodological Framework <https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf>`_
 * Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E. and Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment, 148, pp.42-57. Available at `http://www.fao.org/sustainable-forest-management/toolbox/tools/tool-detail/en/c/411863/`_
+* `<https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP guidelines for quality assurance for reporting all environmental data and procedures.
 
 **Sample-based Area Estimation Documents:**
 
@@ -343,14 +344,13 @@ Third, you will need to revise the document in a methodical fashion. In these di
 
 **Tools:**
 
-* ‘AcATaMa QGIS plugin for Accuracy Assessment of Thematic Maps <https://smbyc.github.io/AcATaMa/>’_
-* ‘Collect Earth Online <https://collect.earth/support>’_
-* ‘Collect Earth (Desktop) <http://www.openforis.org/tools/collect-earth/>’_
-<https://www.hsdl.org/?abstract&did=802131>`_ --- generalized SOP guidelines for quality assurance for reporting all environmental data and procedures.
+* `AcATaMa QGIS plugin for Accuracy Assessment of Thematic Maps <https://smbyc.github.io/AcATaMa/>`_
+* `Collect Earth Online <https://collect.earth/support>`_
+* `Collect Earth (Desktop) <http://www.openforis.org/tools/collect-earth/>`_
 
 **QA/QC Resources:**
 
-* See the tutorial here on ‘OpenMRV <http://www.openmrv.org>’_ under process "Area estimation / Accuracy Assessment" and tool "SEPAL"
+* See the tutorial here on `OpenMRV <http://www.openmrv.org>`_ under process "Area estimation / Accuracy Assessment" and tool "SEPAL"
 * Forthcoming guidance: Guidance for the development of sample-based area estimation SOP.
 * Forthcoming white paper: Jonckheere, I., R. Hamilton, J. M. Michel, E. Donegan. Forthcoming 2021. Issues and good practices in sample-based area estimation.
 
@@ -358,9 +358,8 @@ Third, you will need to revise the document in a methodical fashion. In these di
 
 Helpful for writing an SOPs, but are not specific to sample-based area estimation for activity and emission reporting:
 
-* `How to Write a Standard Operating Procedure (SOP)
-<https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf>`_ --- specific to farming, but outlines good practices for what to include in an SOP in a simple manner.
-* `US Environmental Protection Agency - Guidance for Preparing Standard Operating Procedures (SOPs)
+* `How to Write a Standard Operating Procedure (SOP) <https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf>`_ --- specific to farming, but outlines good practices for what to include in an SOP in a simple manner.
+* US Environmental Protection Agency - `Guidance for Preparing Standard Operating Procedures (SOPs) <https://www.epa.gov/quality/guidance-preparing-standard-operating-procedures-epa-qag-6-march-2001>`_
 
 
 4. Frequently Asked Questions (FAQ)
