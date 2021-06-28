@@ -82,6 +82,8 @@ Benefits of a well written and utilized SOP include:
 3. Tutorial: Creating area estimation SOPs using templates
 -----------------------------------------------------------
 
+A demonstration of the steps below can be found on `YouTube <https://youtu.be/d-A5_vy9EXM>`_.
+
 3.1 What SOPs do you need?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -367,7 +369,7 @@ Helpful for writing an SOPs, but are not specific to sample-based area estimatio
 
 **How can I access the FAO template SOPs?**
 
-Please visit the `Forest Carbon Partnership Facility Website <https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv>`_
+Please visit the `Forest Carbon Partnership Facility Website <https://www.forestcarbonpartnership.org/measurement-reporting-and-verification-mrv>`_.
 
 **Does my SOP have to be in English, like the FAO templates?**
 
@@ -383,9 +385,11 @@ Citing the work of others is an important part of your SOP, and can provide furt
 Bihn, E., Schermann, M., Wszelaki, A., Wall, G., & Amundson, S. (2014). On-Farm Decision Tree Project: Appendix—How to Write an SOP (1st ed.). Retrieved 9 June 2021, from https://gaps.cornell.edu/sites/gaps.cornell.edu/files/shared/documents/How-to-Write-SOP.pdf.
 
 Bogor, Indonesia: Indonesia’s Work Programme for 2010 ITTO PD 519/08/Rev. 1 (F) Forest Policy and Climate Change Center, FORDA.
+
 Forest Carbon Partnership Facility. (2016). FCPF Carbon Fund Methodological Framework. Retrieved 7 June 2021, from https://forestcarbonpartnership.org/system/files/documents/FCPF%20Carbon%20Fund%20Methodological%20Framework%20revised%202016_1.pdf.
 
 Forestry Research and Development Agency Ministry of Forestry, Indonesia. (2010). Standard Operating Procedures (SOPs) for Field Measurement (p. 1).
+
 IPCC. 2006. Guidelines for national Greenhouse Gas Inventories. Volume 4: Agriculture, Forestry and Other Land Use. http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol4.html
 
 Observations Initiative. Edition 3.0.  Available online at https://www.reddcompass.org/download-the-mgd

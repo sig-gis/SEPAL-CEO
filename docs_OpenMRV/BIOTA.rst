@@ -1,6 +1,6 @@
 ---
 title: Calculating biomass and forest change in SEPAL
-summary: In this exercise, you will learn how to use the BIOmass Tool for Alos (BIOTA) to calculate above-ground biomass in dry forests and savannas, as well as change maps. The BIOTA tool is part of the Sattelite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by LTS International (https://ltsi.co.uk/) and the University of Edinburgh (https://www.ed.ac.uk/geosciences). The tool relies on the use of JAXA's ALOS PALSAR (https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm) L-band mosaics. More information can be found online at https://www.smfm-project.com/
+summary: In this exercise, you will learn how to use the BIOmass Tool for Alos (BIOTA) to calculate above-ground biomass in dry forests and savannas, as well as change maps. The BIOTA tool is part of the Satellite Monitoring for Forest Management (SMFM) project by the World Bank, and it was developed by LTS International (https://ltsi.co.uk/) and the University of Edinburgh (https://www.ed.ac.uk/geosciences). The tool relies on the use of JAXA's ALOS PALSAR (https://www.eorc.jaxa.jp/ALOS/en/about/palsar.htm) L-band mosaics. More information can be found online at https://www.smfm-project.com/
 author: Andrea Puzzi Nicolau
 creation date: June, 2021
 language: English
